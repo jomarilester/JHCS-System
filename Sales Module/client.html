@@ -12,6 +12,8 @@
     <!-- Bootstrap core CSS     -->
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
 	<link href="../assets/css/dataTables.bootstrap.min.css" rel="stylesheet" />
+		<link href="../assets/css/jquery.dataTable.min.css" rel="stylesheet" />
+
     <!--  Material Dashboard CSS    -->
     <link href="../assets/css/material-dashboard.css?v=1.2.0" rel="stylesheet" />
     <!--  CSS for Demo Purpose, don't include it in your project     -->
@@ -19,6 +21,20 @@
     <!--     Fonts and icons     -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons' rel='stylesheet' type='text/css'>
+	 <link rel="shortcut icon" href="favicon.ico">
+
+	<style>
+	
+/*
+		td.highlight {
+			background-color: whitesmoke !important;
+		}
+*/
+		.table thead, thead th {
+			text-align: center;
+			font-size: 140%;
+		}
+	</style>
 </head>
 
 <body>
@@ -52,12 +68,6 @@
                         <a href="./client.html">
                             <i class="material-icons">Client</i>
                             <p>Client</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./salesreport.html">
-                            <i class="material-icons">Supplier</i>
-                            <p>Supplier</p>
                         </a>
                     </li>
                     <li>
@@ -136,131 +146,109 @@
             <div class="content">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-md-8">
+                        <div class="col-sm-5">
+							<div class="row">
+									<a class="btn btn-primary btn-lg" data-toggle="modal" data-target="#contact" data-original-title style="float: right">
+									Add New Client
+									</a>
+									<div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
+										<div class="modal-dialog">
+											<div class="panel panel-primary">
+												<div class="panel-heading">
+													<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+													<h4 class="panel-title" id="contactLabel"><span class="glyphicon glyphicon-info-sign"></span> Add New Client !.</h4>
+												</div>
+												<form action="#" method="post" accept-charset="utf-8">
+												<div class="modal-body" style="padding: 5px;">
+																											<div class="row">
+													<div class="col-lg-12 col-md-12 col-sm-12" style="padding-bottom: 10px;">
+																<input class="form-control" name="client" placeholder="Company Name" type="text" required />
+															</div>
+													</div>
+													  <div class="row">
+															<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+																<input class="form-control" name="firstname" placeholder="Firstname" type="text" required autofocus />
+															</div>
+															<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+																<input class="form-control" name="lastname" placeholder="Lastname" type="text" required />
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+																<input class="form-control" name="position" placeholder="Position" type="text" required />
+															</div>
+															<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+																<input class="form-control" name="email" placeholder="E-mail" type="text" required />
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+																<input class="form-control" name="TelNo" placeholder="Tel. No." type="text" required />
+															</div>
+															<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+																<input class="form-control" name="type" placeholder="Client Type" type="text" required />
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-lg-12 col-md-12 col-sm-12">
+																<textarea style="resize:vertical;" class="form-control" placeholder="Address" rows="3" name="address" required></textarea>
+															</div>
+														</div>
+														
+														<div class="row">
+															
+														</div>
+													</div>  
+													<div class="panel-footer" style="margin-bottom:-14px;">
+														<input type="submit" class="btn btn-success" value="Add"/>
+															<!--<span class="glyphicon glyphicon-ok"></span>-->
+														<input type="reset" class="btn btn-danger" value="Clear" />
+															<!--<span class="glyphicon glyphicon-remove"></span>-->
+														<button style="float: right;" type="button" class="btn btn-default btn-close" data-dismiss="modal">Close</button>
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
                             <div class="card">
 								<div class="card-content">
-								<table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
+								<table id="example" class="table hover order-column" cellspacing="0" width="100%">
 									<thead>
-										<tr>
-											<th>Name</th>
-											<th>Position</th>
-											<th>Office</th>
-											<th>Age</th>
-											<th>Start date</th>
-											<th>Salary</th>
-										</tr>
+											<th><b>Client</b></th>
 									</thead>
-									<tfoot>
-										<tr>
-											<th>Name</th>
-											<th>Position</th>
-											<th>Office</th>
-											<th>Age</th>
-											<th>Start date</th>
-											<th>Salary</th>
-										</tr>
-									</tfoot>
 									<tbody>
 										<tr>
-											<td>Tiger Nixon</td>
-											<td>System Architect</td>
-											<td>Edinburgh</td>
-											<td>61</td>
-											<td>2011/04/25</td>
-											<td>$320,800</td>
+											<td style="background-color: #c4c4c4;">The Legend Villas</td>
 										</tr>
 										<tr>
-											<td>Garrett Winters</td>
-											<td>Accountant</td>
-											<td>Tokyo</td>
-											<td>63</td>
-											<td>2011/07/25</td>
-											<td>$170,750</td>
+											<td>Pizza Volante</td>
 										</tr>
 										<tr>
-											<td>Ashton Cox</td>
-											<td>Junior Technical Author</td>
-											<td>San Francisco</td>
-											<td>66</td>
-											<td>2009/01/12</td>
-											<td>$86,000</td>
+											<td>Whiterock</td>
 										</tr>
 										<tr>
-											<td>Cedric Kelly</td>
-											<td>Senior Javascript Developer</td>
-											<td>Edinburgh</td>
-											<td>22</td>
-											<td>2012/03/29</td>
-											<td>$433,060</td>
+											<td>Don Churros</td>
 										</tr>
 										<tr>
-											<td>Airi Satou</td>
-											<td>Accountant</td>
-											<td>Tokyo</td>
-											<td>33</td>
-											<td>2008/11/28</td>
-											<td>$162,700</td>
+											<td>Marios BC</td>
 										</tr>
 										<tr>
-											<td>Brielle Williamson</td>
-											<td>Integration Specialist</td>
-											<td>New York</td>
-											<td>61</td>
-											<td>2012/12/02</td>
-											<td>$372,000</td>
+											<td>Bloomfield Hotel/ Patch Cafe</td>
 										</tr>
 										<tr>
-											<td>Herrod Chandler</td>
-											<td>Sales Assistant</td>
-											<td>San Francisco</td>
-											<td>59</td>
-											<td>2012/08/06</td>
-											<td>$137,500</td>
+											<td>Connies Kitchen</td>
 										</tr>
 										<tr>
-											<td>Rhona Davidson</td>
-											<td>Integration Specialist</td>
-											<td>Tokyo</td>
-											<td>55</td>
-											<td>2010/10/14</td>
-											<td>$327,900</td>
+											<td>Avery Bonta</td>
 										</tr>
 										<tr>
-											<td>Colleen Hurst</td>
-											<td>Javascript Developer</td>
-											<td>San Francisco</td>
-											<td>39</td>
-											<td>2009/09/15</td>
-											<td>$205,500</td>
-										</tr>
-										<tr>
-											<td>Sonya Frost</td>
-											<td>Software Engineer</td>
-											<td>Edinburgh</td>
-											<td>23</td>
-											<td>2008/12/13</td>
-											<td>$103,600</td>
-										</tr>
-										<tr>
-											<td>Jena Gaines</td>
-											<td>Office Manager</td>
-											<td>London</td>
-											<td>30</td>
-											<td>2008/12/19</td>
-											<td>$90,560</td>
-										</tr>
-										<tr>
-											<td>Quinn Flynn</td>
-											<td>Support Lead</td>
-											<td>Edinburgh</td>
-											<td>22</td>
-											<td>2013/03/03</td>
-											<td>$342,000</td>
+											<td>FIO Frappe</td>
 										</tr>
 									</tbody>
 								</table>
 							</div><br><hr><br>
-                                <div class="card-header" data-background-color="purple">
+<!--                                <div class="card-header" data-background-color="purple">
                                     <h4 class="title">Edit Profile</h4>
                                     <p class="category">Complete your profile</p>
                                 </div>
@@ -342,23 +330,53 @@
                                         <button type="submit" class="btn btn-primary pull-right">Update Profile</button>
                                         <div class="clearfix"></div>
                                     </form>
-                                </div>
+                                </div>-->
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-sm-7">
+								
+							<br><hr><br>
                             <div class="card card-profile">
                                 <div class="card-avatar">
                                     <a href="#pablo">
-                                        <img class="img" src="../assets/img/faces/marc.jpg" />
+                                        <img class="img" src="../img/TheLegendVillasLogo.jpg" />
                                     </a>
                                 </div>
                                 <div class="content">
-                                    <h6 class="category text-gray">CEO / Co-Founder</h6>
-                                    <h4 class="card-title">Alec Thompson</h4>
-                                    <p class="card-content">
-                                        Don't be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye I love Rick Owens’ bed design but the back is...
-                                    </p>
-                                    <a href="#pablo" class="btn btn-primary btn-round">Follow</a>
+                                    <h3 class="card-title">The Legend Villas</h3>
+                                    <h6 class="category text-gray">Jesselyn Amagan - General Manager</h6>
+                                    <table class="card-content" cellspacing="0" width="50%" align="center">
+										<tbody>
+											<tr>
+												<td ><b>Address:</b></td>
+												<td align="left">Mandaluyong City</td>
+											</tr>
+											<tr>
+												<td><b>Tel:</b></td>
+												<td align="left">+444 444 444</td>
+											</tr>
+											<tr>
+												<td><b>Email:</b></td>
+												<td align="left">chef22@manor.com</td>
+											</tr>
+										</tbody>
+									</table><br><br>
+									<table class="card-content" cellspacing="0" width="50%" align="center">
+										<tbody >
+											<tr>
+												<td><b>Type:</b></td>
+												<td align="left">Coffee Service</td>
+											</tr>
+											<tr>
+												<td><b>Orders:</b></td>
+												<td align="left">Sumatr + Guatamela</td>
+											</tr>
+										</tbody>
+									</table>
+									<br><br>
+                                    <a href="#pablo" class="btn btn-primary btn-round">Order History</a>
+									<a href="#pablo" class="btn btn-primary btn-round">Payment History</a>
+									<a href="#pablo" class="btn btn-primary btn-round">Receivables</a><br>
                                 </div>
                             </div>
                         </div>
@@ -433,8 +451,13 @@
 	
 	<script type="text/javascript">
 			$(document).ready(function() {
-			$('#example').DataTable();
-		} )
+    var table = $('#example').DataTable( {
+        select: {
+            style: 'single'
+        }
+    } );
+
+} );
 	
 	</script>
 
