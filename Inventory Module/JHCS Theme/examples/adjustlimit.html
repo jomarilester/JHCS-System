@@ -65,7 +65,7 @@
                     </li>
                     <li class="active">
                         <a href="./adjustlimit.html">
-                            <i class="material-icons">assessment</i>
+                            <i class="material-icons">category</i>
                             <p>Adjust Stock Limit</p>
                         </a>
                     </li>
@@ -86,7 +86,6 @@
                             <i class="material-icons text-gray">list</i>
                             <p>List of Returns</p>
                         </a>
-                    </notification
                     <li>
                         <a href="./sampleslist.html">
                             <i class="material-icons text-gray">list</i>
@@ -130,7 +129,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#"> Adjust Stock Limit</a>
+                        <a class="navbar-brand" href="#"> </a>
                     </div>
                     <div class="collapse navbar-collapse">
                         <ul class="nav navbar-nav navbar-right">
@@ -184,7 +183,89 @@
                     </div>
                 </div>
             </nav>
-            <div id="map"></div>
+            <div class="content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="card">
+                                <div class="card-header" data-background-color="purple">
+                                    <h4 class="title">Adjust Stock Limit</h4>
+                                </div>
+                                <div class="card-content">
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group label-floating">
+                                                    <label for="type">Select Item</label>
+                                                        <select class="form-control" id="type" name="type">
+                                                            <option> </option>
+                                                        </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group label-floating">
+                                                    <label class="control-label">Stock Limit</label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group label-floating">
+                                                    <label class="control-label">Reorder Level</label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div align="center">
+                                        <button type="submit" class="btn btn-success accept">Save</button>
+                                        <button type="button" class="btn btn-danger decline">Cancel</button>
+                                        <div class="clearfix"></div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="container-fluid">
+                    <nav class="pull-left">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Company
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Portfolio
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Blog
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <p class="copyright pull-right">
+                        &copy;
+                        <script>
+                            document.write(new Date().getFullYear())
+                        </script>
+                        <a href="http://www.creative-tim.com">Creative Tim</a>, made with love for a better web
+                    </p>
+                </div>
+            </footer>
         </div>
     </div>
 </body>
@@ -206,16 +287,5 @@
 <script src="../assets/js/material-dashboard.js?v=1.2.0"></script>
 <!-- Material Dashboard DEMO methods, don't include it in your project! -->
 <script src="../assets/js/demo.js"></script>
-<script type="text/javascript">
-    $(document).ready(function() {
-        if ($('.main-panel > .content').length == 0) {
-            $('.main-panel').css('height', '100%');
-        }
-
-
-        // Javascript method's body can be found in assets/js/demos.js
-        demo.initGoogleMaps();
-    });
-</script>
 
 </html>
