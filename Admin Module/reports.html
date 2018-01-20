@@ -6,7 +6,7 @@
     <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png" />
     <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>Material Dashboard by Creative Tim</title>
+    <title>John Hay Coffee Services</title>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
     <!-- Bootstrap core CSS     -->
@@ -29,91 +29,45 @@
         Tip 2: you can also add an image using data-image tag
     -->
             <div class="logo">
-                <img src="../img/logo.png" alt="image1" width="250px" height="150px">
+                    <img src="../assets/img/logo.png" alt="image1" width="250px" height="150px">
             </div>
             <div class="sidebar-wrapper">
                 <ul class="nav">
                     <li>
                         <a href="dashboard.html">
                             <i class="material-icons">dashboard</i>
+                            
                             <p>Dashboard</p>
                         </a>
                     </li>
+                    <li>
+                        <a href="./sales.html">
+                            <i class="material-icons">shopping_cart</i>
+                            <p>Sales</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./inventory.html">
+                            <i class="material-icons">content_paste</i>
+                            <p>Inventory</p>
+                        </a>
+                    </li>
                     <li class="active">
-                        <a href="./addcategory.html">
-                            <i class="material-icons">add</i>
-                            <p>Add Category</p>
+                        <a href="./reports.html">
+                            <i class="material-icons">print</i>
+                            <p>Reports</p>
+                        </a>
+                    </li>
+                     <li>
+                        <a href="./accounts.html">
+                            <i class="material-icons">person</i>
+                            <p>User Accounts</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./categorylist.html">
-                            <i class="material-icons">list</i>
-                            <p>Category List</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./additem.html">
-                            <i class="material-icons">add</i>
-                            <p>Add Item</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./itemlist.html">
-                            <i class="material-icons">list</i>
-                            <p>Item List</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./adjustlimit.html">
-                            <i class="material-icons">category</i>
-                            <p>Adjust Stock Limit</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./addreturns.html">
-                            <i class="material-icons text-gray">add</i>
-                            <p>Add Returns</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./addsample.html">
-                            <i class="material-icons text-gray">add</i>
-                            <p>Add Sample</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./returnslist.html">
-                            <i class="material-icons text-gray">list</i>
-                            <p>List of Returns</p>
-                        </a>
-                    <li>
-                        <a href="./sampleslist.html">
-                            <i class="material-icons text-gray">list</i>
-                            <p>List of Samples</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./inventoryout.html">
-                            <i class="material-icons text-gray">notification</i>
-                            <p>Inventory Out</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./coffeeinventory.html">
-                            <i class="material-icons text-gray">notifications</i>
-                            <p>Monthly Coffee Inventory</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./machineinventory.html">
-                            <i class="material-icons text-gray">notifications</i>
-                            <p>Machine Inventory</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./packinginventory.html">
-                            <i class="material-icons text-gray">notifications</i>
-                            <p>Packing Inventory</p>
+                        <a href="./notifications.html">
+                            <i class="material-icons">announcement</i>
+                            <p>Notifications</p>
                         </a>
                     </li>
                 </ul>
@@ -129,7 +83,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#"> </a>
+                        <a class="navbar-brand" href="#"> Reports </a>
                     </div>
                     <div class="collapse navbar-collapse">
                         <ul class="nav navbar-nav navbar-right">
@@ -167,6 +121,19 @@
                                 <a href="#pablo" class="dropdown-toggle" data-toggle="dropdown">
                                     <i class="material-icons">person</i>
                                     <p class="hidden-lg hidden-md">Profile</p>
+                                    </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#">Profile</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Settings</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Logout</a>
+                                    </li>
+                                    
+                                </ul>
                                 </a>
                             </li>
                         </ul>
@@ -186,27 +153,25 @@
             <div class="content">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-md-8">
-                            <div class="card">
+                        <div class="col-md-12">
+                            <div class="card card-plain">
                                 <div class="card-header" data-background-color="purple">
-                                    <h4 class="title">Add Category</h4>
+                                    <h4 class="title">Material Design Icons</h4>
+                                    <p class="category">Handcrafted by our friends from
+                                        <a target="_blank" href="https://design.google.com/icons/">Google</a>
+                                    </p>
                                 </div>
                                 <div class="card-content">
-                                    <form>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="form-group label-floating">
-                                                    <label class="control-label">Category</label>
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div align="center">
-                                        <button type="submit" class="btn btn-success accept">Add</button>
-                                        <button type="button" class="btn btn-danger decline">Cancel</button>
-                                        <div class="clearfix"></div>
-                                        </div>
-                                    </form>
+                                    <div class="iframe-container hidden-sm hidden-xs">
+                                        <iframe src="https://design.google.com/icons/">
+                                            <p>Your browser does not support iframes.</p>
+                                        </iframe>
+                                    </div>
+                                    <div class="col-md-6 hidden-lg hidden-md text-center">
+                                        <h5>The icons are visible on Desktop mode inside an iframe. Since the iframe is not working on Mobile and Tablets please visit the icons on their original page on Google. Check the
+                                            <a href="https://design.google.com/icons/" target="_blank">Material Icons</a>
+                                        </h5>
+                                    </div>
                                 </div>
                             </div>
                         </div>

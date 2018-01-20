@@ -40,21 +40,9 @@
                         </a>
                     </li>
                     <li>
-                        <a href="./addcategory.html">
-                            <i class="material-icons">add</i>
-                            <p>Add Category</p>
-                        </a>
-                    </li>
-                    <li>
                         <a href="./categorylist.html">
                             <i class="material-icons">list</i>
                             <p>Category List</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./additem.html">
-                            <i class="material-icons">add</i>
-                            <p>Add Item</p>
                         </a>
                     </li>
                     <li>
@@ -65,20 +53,8 @@
                     </li>
                     <li>
                         <a href="./adjustlimit.html">
-                            <i class="material-icons">category</i>
+                            <i class="material-icons">assessment</i>
                             <p>Adjust Stock Limit</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./addreturns.html">
-                            <i class="material-icons text-gray">add</i>
-                            <p>Add Returns</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./addsample.html">
-                            <i class="material-icons text-gray">add</i>
-                            <p>Add Sample</p>
                         </a>
                     </li>
                     <li>
@@ -129,7 +105,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#"> List of Samples </a>
+                        <a class="navbar-brand" href="#"> </a>
                     </div>
                     <div class="collapse navbar-collapse">
                         <ul class="nav navbar-nav navbar-right">
@@ -189,9 +165,69 @@
                         <div class="col-md-12">
                             <div class="card">
                                 <div class="card-header" data-background-color="purple">
-                                    <h4 class="title">Simple Table</h4>
-                                    <p class="category">Here is a subtitle for this table</p>
+                                    <h4 class="title">List of Samples</h4>
                                 </div>
+									<a class="btn btn-primary btn-lg" data-toggle="modal" data-target="#contact" data-original-title style="float: right">
+									Add Samples
+									</a>
+									<div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
+										<div class="modal-dialog">
+											<div class="panel panel-primary">
+												<div class="panel-heading">
+													<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+													<h4 class="panel-title" id="contactLabel"><span class="glyphicon glyphicon-info-sign"></span> Add Samples!</h4>
+												</div>
+												<form action="#" method="post" accept-charset="utf-8">
+												<div class="modal-body" style="padding: 5px;">
+													  <div class="row">
+															<div class="col-md-6">
+                                                                <div class="form-group label-floating">
+                                                                    <label for="type">Coffee Bean</label>
+                                                                        <select class="form-control" id="type" name="coffeebean">
+                                                                            <option>  </option>
+                                                                        </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+																<input class="form-control" name="blend" placeholder="Blend" type="text" required />
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+																<input class="form-control" name="ground" placeholder="Ground" type="text" required />
+															</div>
+															<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+																<input class="form-control" name="weight" placeholder="Weight in grams" type="text" required />
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+																<input class="form-control" name="qty" placeholder="Qty/Bag" type="text" required />
+															</div>
+															<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+																<input class="form-control" name="date" placeholder="Date" type="text" rows="8" required />
+															</div>
+														</div>
+                                                        <div class="row">
+															<div class="col-lg-12 col-md-12 col-sm-12">
+																<textarea style="resize:vertical;" class="form-control" placeholder="Remarks" rows="3" name="remarks" required></textarea>
+															</div>
+														</div>
+														<div class="row">
+															
+														</div>
+													</div>  
+													<div class="panel-footer" style="margin-bottom:-14px;">
+														<input type="submit" class="btn btn-success" value="Add"/>
+															<!--<span class="glyphicon glyphicon-ok"></span>-->
+														<input type="reset" class="btn btn-danger" value="Clear" />
+															<!--<span class="glyphicon glyphicon-remove"></span>-->
+														<button style="float: right;" type="button" class="btn btn-default btn-close" data-dismiss="modal">Close</button>
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
                                 <div class="card-content table-responsive">
                                     <table class="table">
                                         <thead class="text-primary">
@@ -205,37 +241,49 @@
                                                 <td>1</td>
                                                 <td>01/31/18</td>
                                                 <td>Sample for Leon Araneta</td>
-                                                <td><a href="#pablo" class="btn btn-primary btn-round">Details</a> <a href="#pablo" class="btn btn-primary btn-round">Delete</a></td>
+                                                <td><a href="#pablo" class="btn btn-info btn-round">Details</a> 
+                                                    <a href="#pablo" class="btn btn-danger">Delete</a>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>2</td>
                                                 <td>01/26/18</td>
                                                 <td>Coffee for Guards at Gate 4</td>
-                                                <td><a href="#pablo" class="btn btn-primary btn-round">Details</a> <a href="#pablo" class="btn btn-primary btn-round">Delete</a></td>
+                                                <td><a href="#pablo" class="btn btn-info btn-round">Details</a> 
+                                                    <a href="#pablo" class="btn btn-danger">Delete</a>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>3</td>
                                                 <td>01/23/18</td>
                                                 <td>Sample for CSE Sumatra night</td>
-                                                <td><a href="#pablo" class="btn btn-primary btn-round">Details</a> <a href="#pablo" class="btn btn-primary btn-round">Delete</a></td>
+                                                <td><a href="#pablo" class="btn btn-info btn-round">Details</a> 
+                                                    <a href="#pablo" class="btn btn-danger">Delete</a>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>4</td>
                                                 <td>01/14/18</td>
                                                 <td>Free taste in Session Road</td>
-                                                <td><a href="#pablo" class="btn btn-primary btn-round">Details</a> <a href="#pablo" class="btn btn-primary btn-round">Delete</a></td>
+                                                <td><a href="#pablo" class="btn btn-info btn-round">Details</a> 
+                                                    <a href="#pablo" class="btn btn-danger">Delete</a>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>5</td>
                                                 <td>01/11/18</td>
                                                 <td>Freebies for Manor Hotel</td>
-                                                <td><a href="#pablo" class="btn btn-primary btn-round">Details</a> <a href="#pablo" class="btn btn-primary btn-round">Delete</a></td>
+                                                <td><a href="#pablo" class="btn btn-info btn-round">Details</a> 
+                                                    <a href="#pablo" class="btn btn-danger">Delete</a>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>6</td>
                                                 <td>01/04/18</td>
                                                 <td>Sample for Tazabelle</td>
-                                                <td><a href="#pablo" class="btn btn-primary btn-round">Details</a> <a href="#pablo" class="btn btn-primary btn-round">Delete</a></td>
+                                                <td><a href="#pablo" class="btn btn-info btn-round">Details</a> 
+                                                    <a href="#pablo" class="btn btn-danger">Delete</a>
+                                                </td>
                                             </tr>
                                         </tbody>
                                     </table>
