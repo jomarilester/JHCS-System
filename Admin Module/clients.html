@@ -239,82 +239,14 @@
                     </div>
                 </div>
             </nav>
-    
-                                    <a class="btn btn-primary btn-lg" data-toggle="modal" data-target="#contact" data-original-title style="float: right">
-									Add New User
-									</a>
-                                    
-                                    <div class="modal fade" id="contact" tabindex="1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
-										<div class="modal-dialog">
-											<div class="panel panel-primary">
-												<div class="panel-heading">
-													<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-													<h4 class="panel-title" id="contactLabel"><span class="glyphicon glyphicon-info-sign"></span> Add New User</h4>
-												</div>
-												<form action="#" method="post" accept-charset="utf-8">
-												<div class="modal-body" style="padding-left: 100px;">
-                                                    
-													  <div class="row">
-															<div class="col-lg-10 col-md-6 col-sm-6" style="padding-bottom: 15px;">
-																<input class="form-control" name="firstname" placeholder="First Name" type="text" required autofocus />
-															</div>
-                                                          </div>
-                                                          <div class="row">
-															<div class="col-lg-10 col-md-6 col-sm-6" style="padding-bottom: 15px;">
-																<input class="form-control" name="lastname" placeholder="Last Name" type="text" required />
-															</div>
-														</div>
-                                                    <div class="row">
-															<div class="col-lg-10 col-md-6 col-sm-6" style="padding-bottom: 15px;">
-                                                                <select class="form-control" name="position" placeholder="Position" type="text" required >
-                                                                    <option>Sales Clerk</option>
-                                                                    <option>Inventory Custodian</option>
-                                                                    <option>Manager</option>
-                                                                    <option>Delivery Man</option>
-                                                                </select>
-                                                           </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div>
-                                                            <div class="col-lg-10 col-md-6 col-sm-6" style="padding-bottom: 15px;">
-                                                                <input class="form-control" name="email" placeholder="E-mail" type="text" required />
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-															<div class="col-lg-10 col-md-6 col-sm-6" style="padding-bottom: 15px;">
-																<input class="form-control" name="cp number" placeholder="Cellphone Number" type="text" required />
-															</div>
-                                                    </div>
-														<div class="row">
-															<div class="col-lg-10 col-md-12 col-sm-12">
-																<textarea style="resize:vertical;" class="form-control" placeholder="Address" rows="2" name="address" required></textarea>
-															</div>
-														</div>
-														
-														<div class="row">
-															
-														</div>
-													</div>  
-													<div class="panel-footer" style="margin-bottom:-14px;">
-														<input type="submit" class="btn btn-success" value="Add"/>
-															<!--<span class="glyphicon glyphicon-ok"></span>-->
-														<input type="reset" class="btn btn-danger" value="Clear" />
-															<!--<span class="glyphicon glyphicon-remove"></span>-->
-														<button style="float: right;" type="button" class="btn btn-default btn-close" data-dismiss="modal">Close</button>
-													</div>
-												</form>
-											</div>
-										</div>
-									</div>
-    
+                                   
             <div class="content">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="card">
                                 <div class="card-header" data-background-color="purple">
         
-                                     <h4 class="title">List of Users</h4>
+                                     <h4 class="title">List of Clients</h4>
                                 </div>
                                 <div class="card-content table-responsive">
 			<div class="col-md-10 col-md-offset-1">
@@ -326,23 +258,27 @@
 					<table id="fresh-datatables" class="table table-striped table-no-bordered table-hover" cellspacing="0" width="100%" style="width:100%">
 						<thead>
 							<tr>
-								<th>Family Name</th>
+                                <th>Company Name</th>
+								<th>Last Name</th>
                                 <th>First Name</th>
                                 <th>Position</th>
                                 <th>Address</th>
                                 <th>Email</th>
-                                <th>CP Number</th>
+                                <th>Telephone Number</th>
+                                <th>Client Type</th>
 								<th class="disabled-sorting">Actions</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
-								<td>Fernandez</td>
-								<td>Mariella</td>
-								<td>Manager</td>
-								<td>Liwanag Loakan</td>
-								<td>2153118@slu.edu.ph</td>
-                                <td>09174131225</td>
+								<th>Marios</th>
+								<th>Malidem</th>
+                                <th>Leo</th>
+                                <th>Manager</th>
+                                <th>South Drive</th>
+                                <th>leomalicdem@gmail.com</th>
+                                <th>442-4759</th>
+                                <th>Wholesale</th>
 								<td>
 									<a href="#" class="like"><i class="fa fa-heart"></i></a>
 									<a href="#" class="edit"><i class="fa fa-edit"></i></a>
@@ -350,12 +286,14 @@
 								</td>
 							</tr>
 							<tr>
-								<td>Maslian</td>
-								<td>Averey</td>
-								<td>Sales Clerk</td>
-								<td>Quirino Hill</td>
-								<td>2152578@slu.edu.ph</td>
-                                <td>09174131225</td>
+								<th>Volante</th>
+								<th>Marife</th>
+                                <th>Fernandez</th>
+                                <th>Manager</th>
+                                <th>Mines View Park</th>
+                                <th>mafifernandez@gmail.com</th>
+                                <th>442-4896</th>
+                                <th>Wholesale</th>
 								<td>
 									<a href="#" class="like"><i class="fa fa-heart"></i></a>
 									<a href="#" class="edit"><i class="fa fa-edit"></i></a>
@@ -363,12 +301,14 @@
 								</td>
                             </tr>
                             <tr>
-								<td>Dullao</td>
-								<td>Jeanne</td>
-								<td>Inventory Custodian</td>
-								<td>Ambiong</td>
-								<td>2155296@slu.edu.ph</td>
-                                <td>09174131225</td>
+								<th>Point and Grill</th>
+								<th>Calpito</th>
+                                <th>Annyssa</th>
+                                <th>Manager</th>
+                                <th>Session Road</th>
+                                <th>maecalpito@gmail.com</th>
+                                <th>442-4785</th>
+                                <th>Wholesale</th>
 								<td>
 									<a href="#" class="like"><i class="fa fa-heart"></i></a>
 									<a href="#" class="edit"><i class="fa fa-edit"></i></a>
@@ -376,12 +316,14 @@
 								</td>
                             </tr>
                             <tr>
-								<td>Caguioa</td>
-								<td>Christine</td>
-								<td>Accountant</td>
-								<td>Green Valley</td>
-								<td>2152498@slu.edu.ph</td>
-                                <td>09174131225</td>
+								<th>De Vera Inn</th>
+								<th>Ramos</th>
+                                <th>Khalil</th>
+                                <th>Manager</th>
+                                <th>Aurora Hill</th>
+                                <th>khalil22@gmail.com</th>
+                                <th>442-4875</th>
+                                <th>Retail</th>
 								<td>
 									<a href="#" class="like"><i class="fa fa-heart"></i></a>
 									<a href="#" class="edit"><i class="fa fa-edit"></i></a>
@@ -389,12 +331,14 @@
 								</td>
                             </tr>
                             <tr>
-								<td>Calpito</td>
-								<td>Keiffer</td>
-								<td>Delivery Man</td>
-								<td>Liwanag Loakan</td>
-								<td>2152579@slu.edu.ph</td>
-                                <td>09174131225</td>
+								<th>Eurotel</th>
+								<th>Reid</th>
+                                <th>James</th>
+                                <th>Manager</th>
+                                <th>Legarda</th>
+                                <th>jamesreid@gmail.com</th>
+                                <th>442-4859</th>
+                                <th>Wholesale</th>
 								<td>
 									<a href="#" class="like"><i class="fa fa-heart"></i></a>
 									<a href="#" class="edit"><i class="fa fa-edit"></i></a>
