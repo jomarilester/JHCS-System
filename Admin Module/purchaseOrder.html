@@ -5,10 +5,20 @@
     <meta charset="utf-8" />
     <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png" />
     <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="../assets/img/favicon.ico">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>Material Dashboard by Creative Tim</title>
+    
+    <!--   Style   -->
+	<link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/fresh-datatables.css">
+
+	<!--   Fonts   -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=2.0">
     <!-- Bootstrap core CSS     -->
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
     <!--  Material Dashboard CSS    -->
@@ -18,6 +28,14 @@
     <!--     Fonts and icons     -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons' rel='stylesheet' type='text/css'>
+    
+    <!--   Style   -->
+	<link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/fresh-datatables.css">
+
+	<!--   Fonts   -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+
 </head>
 
 <body>
@@ -28,6 +46,7 @@
 
         Tip 2: you can also add an image using data-image tag
     -->
+            
             <div class="logo ">
                 <img src="../assets/img/logo.png" alt="image1" width="250px" height="150px">
             </div>
@@ -40,13 +59,13 @@
                             <p>Dashboard</p>
                         </a>
                     </li>
-                    <li class="active">
+                    <li>
                         <a href="./sales.html">
                             <i class="material-icons">bubble_chart</i>
                             <p>Sales</p>
                         </a>
                     </li>
-                    <li>
+                    <li  class="active">
                         <a href="./purchaseOrder.html">
                             <i class="material-icons">motorcycle</i>
                             <p>Purchase Orders</p>
@@ -153,7 +172,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#"> Sales </a>
+                        <a class="navbar-brand" href="#"></a>
                     </div>
                     <div class="collapse navbar-collapse">
                         <ul class="nav navbar-nav navbar-right">
@@ -220,116 +239,177 @@
                     </div>
                 </div>
             </nav>
+    
+                                    <a class="btn btn-primary btn-lg" data-toggle="modal" data-target="#contact" data-original-title style="float: right">
+									Add New User
+									</a>
+                                    
+                                    <div class="modal fade" id="contact" tabindex="1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
+										<div class="modal-dialog">
+											<div class="panel panel-primary">
+												<div class="panel-heading">
+													<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+													<h4 class="panel-title" id="contactLabel"><span class="glyphicon glyphicon-info-sign"></span> Add New User</h4>
+												</div>
+												<form action="#" method="post" accept-charset="utf-8">
+												<div class="modal-body" style="padding-left: 100px;">
+                                                    
+													  <div class="row">
+															<div class="col-lg-10 col-md-6 col-sm-6" style="padding-bottom: 15px;">
+																<input class="form-control" name="firstname" placeholder="First Name" type="text" required autofocus />
+															</div>
+                                                          </div>
+                                                          <div class="row">
+															<div class="col-lg-10 col-md-6 col-sm-6" style="padding-bottom: 15px;">
+																<input class="form-control" name="lastname" placeholder="Last Name" type="text" required />
+															</div>
+														</div>
+                                                    <div class="row">
+															<div class="col-lg-10 col-md-6 col-sm-6" style="padding-bottom: 15px;">
+                                                                <select class="form-control" name="position" placeholder="Position" type="text" required >
+                                                                    <option>Sales Clerk</option>
+                                                                    <option>Inventory Custodian</option>
+                                                                    <option>Manager</option>
+                                                                    <option>Delivery Man</option>
+                                                                </select>
+                                                           </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div>
+                                                            <div class="col-lg-10 col-md-6 col-sm-6" style="padding-bottom: 15px;">
+                                                                <input class="form-control" name="email" placeholder="E-mail" type="text" required />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+															<div class="col-lg-10 col-md-6 col-sm-6" style="padding-bottom: 15px;">
+																<input class="form-control" name="cp number" placeholder="Cellphone Number" type="text" required />
+															</div>
+                                                    </div>
+														<div class="row">
+															<div class="col-lg-10 col-md-12 col-sm-12">
+																<textarea style="resize:vertical;" class="form-control" placeholder="Address" rows="2" name="address" required></textarea>
+															</div>
+														</div>
+														
+														<div class="row">
+															
+														</div>
+													</div>  
+													<div class="panel-footer" style="margin-bottom:-14px;">
+														<input type="submit" class="btn btn-success" value="Add"/>
+															<!--<span class="glyphicon glyphicon-ok"></span>-->
+														<input type="reset" class="btn btn-danger" value="Clear" />
+															<!--<span class="glyphicon glyphicon-remove"></span>-->
+														<button style="float: right;" type="button" class="btn btn-default btn-close" data-dismiss="modal">Close</button>
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
+    
             <div class="content">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-md-8">
-                            <div class="card">
+                        <div class="card">
                                 <div class="card-header" data-background-color="purple">
-                                    <h4 class="title">Edit Profile</h4>
-                                    <p class="category">Complete your profile</p>
+        
+                                     <h4 class="title">List of Users</h4>
                                 </div>
-                                <div class="card-content">
-                                    <form>
-                                        <div class="row">
-                                            <div class="col-md-5">
-                                                <div class="form-group label-floating">
-                                                    <label class="control-label">Company (disabled)</label>
-                                                    <input type="text" class="form-control" disabled>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <div class="form-group label-floating">
-                                                    <label class="control-label">Username</label>
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="form-group label-floating">
-                                                    <label class="control-label">Email address</label>
-                                                    <input type="email" class="form-control">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="form-group label-floating">
-                                                    <label class="control-label">Fist Name</label>
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group label-floating">
-                                                    <label class="control-label">Last Name</label>
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="form-group label-floating">
-                                                    <label class="control-label">Adress</label>
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-4">
-                                                <div class="form-group label-floating">
-                                                    <label class="control-label">City</label>
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="form-group label-floating">
-                                                    <label class="control-label">Country</label>
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="form-group label-floating">
-                                                    <label class="control-label">Postal Code</label>
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <label>About Me</label>
-                                                    <div class="form-group label-floating">
-                                                        <label class="control-label"> Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo.</label>
-                                                        <textarea class="form-control" rows="5"></textarea>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <button type="submit" class="btn btn-primary pull-right">Update Profile</button>
-                                        <div class="clearfix"></div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card card-profile">
-                                <div class="card-avatar">
-                                    <a href="#pablo">
-                                        <img class="img" src="../assets/img/faces/marc.jpg" />
-                                    </a>
-                                </div>
-                                <div class="content">
-                                    <h6 class="category text-gray">CEO / Co-Founder</h6>
-                                    <h4 class="card-title">Alec Thompson</h4>
-                                    <p class="card-content">
-                                        Don't be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye I love Rick Owens’ bed design but the back is...
-                                    </p>
-                                    <a href="#pablo" class="btn btn-primary btn-round">Follow</a>
-                                </div>
-                            </div>
-                        </div>
+                                <div class="card-content table-responsive">
+			<div class="col-md-10 col-md-offset-1">
+				<div class="fresh-datatables full-color-purple">
+                            
+					<!--  Available colors for the full background: full-color-blue, full-color-azure, full-color-green, full-color-red, full-color-orange, full-color-purple, full-color-gray
+					Available colors only for the toolbar: toolbar-color-blue, toolbar-color-azure, toolbar-color-green, toolbar-color-red, toolbar-color-orange, toolbar-color-purple, toolbar-color-gray -->
+
+					<table id="fresh-datatables" class="table table-striped table-no-bordered table-hover" cellspacing="0" width="100%" style="width:100%">
+						<thead>
+							<tr>
+								<th>Family Name</th>
+                                <th>First Name</th>
+                                <th>Position</th>
+                                <th>Address</th>
+                                <th>Email</th>
+                                <th>CP Number</th>
+								<th class="disabled-sorting">Actions</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Fernandez</td>
+								<td>Mariella</td>
+								<td>Manager</td>
+								<td>Liwanag Loakan</td>
+								<td>2153118@slu.edu.ph</td>
+                                <td>09174131225</td>
+								<td>
+									<a href="#" class="like"><i class="fa fa-heart"></i></a>
+									<a href="#" class="edit"><i class="fa fa-edit"></i></a>
+									<a href="#" class="remove"><i class="fa fa-times"></i></a>
+								</td>
+							</tr>
+							<tr>
+								<td>Maslian</td>
+								<td>Averey</td>
+								<td>Sales Clerk</td>
+								<td>Quirino Hill</td>
+								<td>2152578@slu.edu.ph</td>
+                                <td>09174131225</td>
+								<td>
+									<a href="#" class="like"><i class="fa fa-heart"></i></a>
+									<a href="#" class="edit"><i class="fa fa-edit"></i></a>
+									<a href="#" class="remove"><i class="fa fa-times"></i></a>
+								</td>
+                            </tr>
+                            <tr>
+								<td>Dullao</td>
+								<td>Jeanne</td>
+								<td>Inventory Custodian</td>
+								<td>Ambiong</td>
+								<td>2155296@slu.edu.ph</td>
+                                <td>09174131225</td>
+								<td>
+									<a href="#" class="like"><i class="fa fa-heart"></i></a>
+									<a href="#" class="edit"><i class="fa fa-edit"></i></a>
+									<a href="#" class="remove"><i class="fa fa-times"></i></a>
+								</td>
+                            </tr>
+                            <tr>
+								<td>Caguioa</td>
+								<td>Christine</td>
+								<td>Accountant</td>
+								<td>Green Valley</td>
+								<td>2152498@slu.edu.ph</td>
+                                <td>09174131225</td>
+								<td>
+									<a href="#" class="like"><i class="fa fa-heart"></i></a>
+									<a href="#" class="edit"><i class="fa fa-edit"></i></a>
+									<a href="#" class="remove"><i class="fa fa-times"></i></a>
+								</td>
+                            </tr>
+                            <tr>
+								<td>Calpito</td>
+								<td>Keiffer</td>
+								<td>Delivery Man</td>
+								<td>Liwanag Loakan</td>
+								<td>2152579@slu.edu.ph</td>
+                                <td>09174131225</td>
+								<td>
+									<a href="#" class="like"><i class="fa fa-heart"></i></a>
+									<a href="#" class="edit"><i class="fa fa-edit"></i></a>
+									<a href="#" class="remove"><i class="fa fa-times"></i></a>
+								</td>
+                            </tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
                     </div>
+			</div>
+		</div>
                 </div>
-            </div>
             <footer class="footer">
                 <div class="container-fluid">
                     <nav class="pull-left">
@@ -386,5 +466,47 @@
 <script src="../assets/js/material-dashboard.js?v=1.2.0"></script>
 <!-- Material Dashboard DEMO methods, don't include it in your project! -->
 <script src="../assets/js/demo.js"></script>
+
+<script src="../assets/js/jquery.js"></script>
+<script src="../assets/js/jquery.datatables.js"></script>
+<script >
+
+$(document).ready(function() {
+	$('#fresh-datatables').DataTable({
+		"pagingType": "full_numbers",
+		"lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
+		responsive: true,
+		language: {
+		search: "_INPUT_",
+		searchPlaceholder: "Search records",
+		}
+
+	});
+
+
+	var table = $('#fresh-datatables').DataTable();
+
+    // Edit record
+    table.on( 'click', '.edit', function () {
+		$tr = $(this).closest('tr');
+
+		var data = table.row($tr).data();
+		alert( 'You press on Row: ' + data[0] + ' ' + data[1] + ' ' + data[2] + '\'s row.' );
+    } );
+
+    // Delete a record
+    table.on( 'click', '.remove', function (e) {
+		$tr = $(this).closest('tr');
+		table.row($tr).remove().draw();
+		e.preventDefault();
+    } );
+
+	//Like record
+	table.on( 'click', '.like', function () {
+		alert('You clicked on Like button');
+    } );
+});
+
+</script>
 
 </html>
