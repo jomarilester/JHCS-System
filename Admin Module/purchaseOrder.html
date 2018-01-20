@@ -10,11 +10,11 @@
     <title>Material Dashboard by Creative Tim</title>
     
     <!--   Style   -->
-	<link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="../assets/css/fresh-datatables.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/fresh-datatables.css">
 
-	<!--   Fonts   -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <!--   Fonts   -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
 
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
@@ -30,11 +30,11 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons' rel='stylesheet' type='text/css'>
     
     <!--   Style   -->
-	<link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="../assets/css/fresh-datatables.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/fresh-datatables.css">
 
-	<!--   Fonts   -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <!--   Fonts   -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
 
 </head>
 
@@ -65,7 +65,7 @@
                             <p>Sales</p>
                         </a>
                     </li>
-                    <li  class="active">
+                    <li class="active">
                         <a href="./purchaseOrder.html">
                             <i class="material-icons">motorcycle</i>
                             <p>Purchase Orders</p>
@@ -239,176 +239,105 @@
                     </div>
                 </div>
             </nav>
-    
-                                    <a class="btn btn-primary btn-lg" data-toggle="modal" data-target="#contact" data-original-title style="float: right">
-									Add New User
-									</a>
-                                    
-                                    <div class="modal fade" id="contact" tabindex="1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
-										<div class="modal-dialog">
-											<div class="panel panel-primary">
-												<div class="panel-heading">
-													<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-													<h4 class="panel-title" id="contactLabel"><span class="glyphicon glyphicon-info-sign"></span> Add New User</h4>
-												</div>
-												<form action="#" method="post" accept-charset="utf-8">
-												<div class="modal-body" style="padding-left: 100px;">
-                                                    
-													  <div class="row">
-															<div class="col-lg-10 col-md-6 col-sm-6" style="padding-bottom: 15px;">
-																<input class="form-control" name="firstname" placeholder="First Name" type="text" required autofocus />
-															</div>
-                                                          </div>
-                                                          <div class="row">
-															<div class="col-lg-10 col-md-6 col-sm-6" style="padding-bottom: 15px;">
-																<input class="form-control" name="lastname" placeholder="Last Name" type="text" required />
-															</div>
-														</div>
-                                                    <div class="row">
-															<div class="col-lg-10 col-md-6 col-sm-6" style="padding-bottom: 15px;">
-                                                                <select class="form-control" name="position" placeholder="Position" type="text" required >
-                                                                    <option>Sales Clerk</option>
-                                                                    <option>Inventory Custodian</option>
-                                                                    <option>Manager</option>
-                                                                    <option>Delivery Man</option>
-                                                                </select>
-                                                           </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div>
-                                                            <div class="col-lg-10 col-md-6 col-sm-6" style="padding-bottom: 15px;">
-                                                                <input class="form-control" name="email" placeholder="E-mail" type="text" required />
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-															<div class="col-lg-10 col-md-6 col-sm-6" style="padding-bottom: 15px;">
-																<input class="form-control" name="cp number" placeholder="Cellphone Number" type="text" required />
-															</div>
-                                                    </div>
-														<div class="row">
-															<div class="col-lg-10 col-md-12 col-sm-12">
-																<textarea style="resize:vertical;" class="form-control" placeholder="Address" rows="2" name="address" required></textarea>
-															</div>
-														</div>
-														
-														<div class="row">
-															
-														</div>
-													</div>  
-													<div class="panel-footer" style="margin-bottom:-14px;">
-														<input type="submit" class="btn btn-success" value="Add"/>
-															<!--<span class="glyphicon glyphicon-ok"></span>-->
-														<input type="reset" class="btn btn-danger" value="Clear" />
-															<!--<span class="glyphicon glyphicon-remove"></span>-->
-														<button style="float: right;" type="button" class="btn btn-default btn-close" data-dismiss="modal">Close</button>
-													</div>
-												</form>
-											</div>
-										</div>
-									</div>
-    
-            <div class="content">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="card">
-                                <div class="card-header" data-background-color="purple">
-        
-                                     <h4 class="title">List of Users</h4>
-                                </div>
+            <div class="content" style="margin-top: 0px;">
+                <div class="container-fluid" >
+                    <div class="card">
+                        <div class="card-header" data-background-color="purple">
+                            <h4 class="title">Purchase Order</h4>
+                        </div>
                                 <div class="card-content table-responsive">
-			<div class="col-md-10 col-md-offset-1">
-				<div class="fresh-datatables full-color-purple">
+            <div class="col-md-12 col-md-offset-0">
+                <div class="fresh-datatables full-color-purple">
                             
-					<!--  Available colors for the full background: full-color-blue, full-color-azure, full-color-green, full-color-red, full-color-orange, full-color-purple, full-color-gray
-					Available colors only for the toolbar: toolbar-color-blue, toolbar-color-azure, toolbar-color-green, toolbar-color-red, toolbar-color-orange, toolbar-color-purple, toolbar-color-gray -->
+                    <!--  Available colors for the full background: full-color-blue, full-color-azure, full-color-green, full-color-red, full-color-orange, full-color-purple, full-color-gray
+                    Available colors only for the toolbar: toolbar-color-blue, toolbar-color-azure, toolbar-color-green, toolbar-color-red, toolbar-color-orange, toolbar-color-purple, toolbar-color-gray -->
 
-					<table id="fresh-datatables" class="table table-striped table-no-bordered table-hover" cellspacing="0" width="100%" style="width:100%">
-						<thead>
-							<tr>
-								<th>Family Name</th>
+                    <table id="fresh-datatables" class="table table-striped table-no-bordered table-hover" cellspacing="0" width="100%" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th>Family Name</th>
                                 <th>First Name</th>
                                 <th>Position</th>
                                 <th>Address</th>
                                 <th>Email</th>
                                 <th>CP Number</th>
-								<th class="disabled-sorting">Actions</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Fernandez</td>
-								<td>Mariella</td>
-								<td>Manager</td>
-								<td>Liwanag Loakan</td>
-								<td>2153118@slu.edu.ph</td>
+                                <th class="disabled-sorting">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Fernandez</td>
+                                <td>Mariella</td>
+                                <td>Manager</td>
+                                <td>Liwanag Loakan</td>
+                                <td>2153118@slu.edu.ph</td>
                                 <td>09174131225</td>
-								<td>
-									<a href="#" class="like"><i class="fa fa-heart"></i></a>
-									<a href="#" class="edit"><i class="fa fa-edit"></i></a>
-									<a href="#" class="remove"><i class="fa fa-times"></i></a>
-								</td>
-							</tr>
-							<tr>
-								<td>Maslian</td>
-								<td>Averey</td>
-								<td>Sales Clerk</td>
-								<td>Quirino Hill</td>
-								<td>2152578@slu.edu.ph</td>
-                                <td>09174131225</td>
-								<td>
-									<a href="#" class="like"><i class="fa fa-heart"></i></a>
-									<a href="#" class="edit"><i class="fa fa-edit"></i></a>
-									<a href="#" class="remove"><i class="fa fa-times"></i></a>
-								</td>
+                                <td>
+                                    <a href="#" class="like"><i class="fa fa-heart"></i></a>
+                                    <a href="#" class="edit"><i class="fa fa-edit"></i></a>
+                                    <a href="#" class="remove"><i class="fa fa-times"></i></a>
+                                </td>
                             </tr>
                             <tr>
-								<td>Dullao</td>
-								<td>Jeanne</td>
-								<td>Inventory Custodian</td>
-								<td>Ambiong</td>
-								<td>2155296@slu.edu.ph</td>
+                                <td>Maslian</td>
+                                <td>Averey</td>
+                                <td>Sales Clerk</td>
+                                <td>Quirino Hill</td>
+                                <td>2152578@slu.edu.ph</td>
                                 <td>09174131225</td>
-								<td>
-									<a href="#" class="like"><i class="fa fa-heart"></i></a>
-									<a href="#" class="edit"><i class="fa fa-edit"></i></a>
-									<a href="#" class="remove"><i class="fa fa-times"></i></a>
-								</td>
+                                <td>
+                                    <a href="#" class="like"><i class="fa fa-heart"></i></a>
+                                    <a href="#" class="edit"><i class="fa fa-edit"></i></a>
+                                    <a href="#" class="remove"><i class="fa fa-times"></i></a>
+                                </td>
                             </tr>
                             <tr>
-								<td>Caguioa</td>
-								<td>Christine</td>
-								<td>Accountant</td>
-								<td>Green Valley</td>
-								<td>2152498@slu.edu.ph</td>
+                                <td>Dullao</td>
+                                <td>Jeanne</td>
+                                <td>Inventory Custodian</td>
+                                <td>Ambiong</td>
+                                <td>2155296@slu.edu.ph</td>
                                 <td>09174131225</td>
-								<td>
-									<a href="#" class="like"><i class="fa fa-heart"></i></a>
-									<a href="#" class="edit"><i class="fa fa-edit"></i></a>
-									<a href="#" class="remove"><i class="fa fa-times"></i></a>
-								</td>
+                                <td>
+                                    <a href="#" class="like"><i class="fa fa-heart"></i></a>
+                                    <a href="#" class="edit"><i class="fa fa-edit"></i></a>
+                                    <a href="#" class="remove"><i class="fa fa-times"></i></a>
+                                </td>
                             </tr>
                             <tr>
-								<td>Calpito</td>
-								<td>Keiffer</td>
-								<td>Delivery Man</td>
-								<td>Liwanag Loakan</td>
-								<td>2152579@slu.edu.ph</td>
+                                <td>Caguioa</td>
+                                <td>Christine</td>
+                                <td>Accountant</td>
+                                <td>Green Valley</td>
+                                <td>2152498@slu.edu.ph</td>
                                 <td>09174131225</td>
-								<td>
-									<a href="#" class="like"><i class="fa fa-heart"></i></a>
-									<a href="#" class="edit"><i class="fa fa-edit"></i></a>
-									<a href="#" class="remove"><i class="fa fa-times"></i></a>
-								</td>
+                                <td>
+                                    <a href="#" class="like"><i class="fa fa-heart"></i></a>
+                                    <a href="#" class="edit"><i class="fa fa-edit"></i></a>
+                                    <a href="#" class="remove"><i class="fa fa-times"></i></a>
+                                </td>
                             </tr>
-						</tbody>
-					</table>
-				</div>
-			</div>
-		</div>
+                            <tr>
+                                <td>Calpito</td>
+                                <td>Keiffer</td>
+                                <td>Delivery Man</td>
+                                <td>Liwanag Loakan</td>
+                                <td>2152579@slu.edu.ph</td>
+                                <td>09174131225</td>
+                                <td>
+                                    <a href="#" class="like"><i class="fa fa-heart"></i></a>
+                                    <a href="#" class="edit"><i class="fa fa-edit"></i></a>
+                                    <a href="#" class="remove"><i class="fa fa-times"></i></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
                     </div>
-			</div>
-		</div>
+            </div>
+        </div>
                 </div>
             <footer class="footer">
                 <div class="container-fluid">
@@ -472,38 +401,38 @@
 <script >
 
 $(document).ready(function() {
-	$('#fresh-datatables').DataTable({
-		"pagingType": "full_numbers",
-		"lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
-		responsive: true,
-		language: {
-		search: "_INPUT_",
-		searchPlaceholder: "Search records",
-		}
+    $('#fresh-datatables').DataTable({
+        "pagingType": "full_numbers",
+        "lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
+        responsive: true,
+        language: {
+        search: "_INPUT_",
+        searchPlaceholder: "Search records",
+        }
 
-	});
+    });
 
 
-	var table = $('#fresh-datatables').DataTable();
+    var table = $('#fresh-datatables').DataTable();
 
     // Edit record
     table.on( 'click', '.edit', function () {
-		$tr = $(this).closest('tr');
+        $tr = $(this).closest('tr');
 
-		var data = table.row($tr).data();
-		alert( 'You press on Row: ' + data[0] + ' ' + data[1] + ' ' + data[2] + '\'s row.' );
+        var data = table.row($tr).data();
+        alert( 'You press on Row: ' + data[0] + ' ' + data[1] + ' ' + data[2] + '\'s row.' );
     } );
 
     // Delete a record
     table.on( 'click', '.remove', function (e) {
-		$tr = $(this).closest('tr');
-		table.row($tr).remove().draw();
-		e.preventDefault();
+        $tr = $(this).closest('tr');
+        table.row($tr).remove().draw();
+        e.preventDefault();
     } );
 
-	//Like record
-	table.on( 'click', '.like', function () {
-		alert('You clicked on Like button');
+    //Like record
+    table.on( 'click', '.like', function () {
+        alert('You clicked on Like button');
     } );
 });
 
