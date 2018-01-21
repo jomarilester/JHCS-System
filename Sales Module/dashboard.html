@@ -18,16 +18,16 @@
     <!--     Fonts and icons     -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons' rel='stylesheet' type='text/css'>
+	<style>
+		
+			.dropdown-menu { right: 0; left: auto; }
+		
+	</style>
 </head>
 
 <body>
     <div class="wrapper">
         <div class="sidebar" data-color="purple" data-image="../assets/img/sidebar-1.jpg">
-            <!--
-        Tip 1: You can change the color of the sidebar using: data-color="purple | blue | green | orange | red"
-
-        Tip 2: you can also add an image using data-image tag
-    -->
             <div class="logo">
                 <img src="../assets/img/logo.png" alt="image1" width="250px" height="150px">
             </div>
@@ -52,7 +52,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="./receivables.html">
+                        <a href="./recievables.html">
                             <i class="material-icons">library_books</i>
                             <p>Receivables</p>
                         </a>
@@ -82,9 +82,22 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#"> Sales Dashboard </a>
+                        <a class="navbar-brand" href="#">Sales </a>
                     </div>
                     <div class="collapse navbar-collapse">
+						<div class="btn-group" dropdown container="body">
+  <button dropdownToggle type="button" class="btn btn-primary dropdownToggle">
+    Dropdown on Body <span class="caret"></span>
+  </button>
+  <ul *dropdownMenu class="dropdown-menu" role="menu">
+    <li role="menuitem"><a class="dropdown-item" href="#">Action</a></li>
+    <li role="menuitem"><a class="dropdown-item" href="#">Another action</a></li>
+    <li role="menuitem"><a class="dropdown-item" href="#">Something else here</a></li>
+    <li class="divider dropdown-divider"></li>
+    <li role="menuitem"><a class="dropdown-item" href="#">Separated link</a>
+    </li>
+  </ul>
+</div>
                         <ul class="nav navbar-nav navbar-right">
                             <li>
                                 <a href="#pablo" class="dropdown-toggle" data-toggle="dropdown">
@@ -116,13 +129,25 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li>
-                                <a href="#pablo" class="dropdown-toggle" data-toggle="dropdown">
+
+							<li class="dropdown">
+                                  <a href="#pablo" class="dropdown-toggle" data-toggle="dropdown">
                                     <i class="material-icons">person</i>
                                     <p class="hidden-lg hidden-md">Profile</p>
                                 </a>
+                                <ul class="dropdown-menu">
+
+                                    <li>
+                                        <a href="./user.html">User Profile</a>
+                                    </li>
+									<hr>
+                                    <li>
+                                        <a href="#">Logout</a>
+                                    </li>
+                                </ul>
                             </li>
                         </ul>
+
                         <form class="navbar-form navbar-right" role="search">
                             <div class="form-group  is-empty">
                                 <input type="text" class="form-control" placeholder="Search">
@@ -163,8 +188,8 @@
                                     <i class="material-icons">store</i>
                                 </div>
                                 <div class="card-content">
-                                    <p class="category">Collections</p>
-                                    <h3 class="title">94,245</h3>
+                                    <p class="category">New Client</p>
+                                    <h3 class="title">3</h3>
                                 </div>
                                 <div class="card-footer">
                                     <div class="stats">
@@ -206,6 +231,82 @@
                             </div>
                         </div>
                     </div>
+					<div class="row">
+						<div class="col-lg-6 col-md-12">
+                            <div class="card">
+                                <div class="card-header" data-background-color="red">
+                                    <h4 class="title">Reminders !</h4>
+                                </div>
+                                <div class="card-content table-responsive">
+                                                                               <table class="table">
+                                                <tbody>
+                                                    <tr>
+
+                                                        <td>Client C's contract has expired today !</td>
+														<td class="td-actions text-right">
+                                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+                                                                <i class="material-icons">close</i>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Client B has not yet paid for the month of November. <a href="#">See in receivables</a></td>
+														<td class="td-actions text-right">
+                                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+                                                                <i class="material-icons">close</i>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Client A is scheduled to order Type C coffee before Jan 1, 2019
+                                                        </td>
+														<td class="td-actions text-right">
+                                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+                                                                <i class="material-icons">close</i>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                </div>
+                            </div>
+                        </div>
+						<div class="col-lg-6 col-md-12">
+                            <div class="card">
+                                <div class="card-header" data-background-color="orange">
+                                    <h4 class="title">Active Clients</h4>
+                                    <p class="category">Active Clients as of 15th September, 2016</p>
+                                </div>
+                                <div class="card-content table-responsive">
+                                    <table class="table table-hover">
+                                        <thead class="text-warning">
+                                            <th>Client's Name</th>
+                                            <th>Orders</th>
+                                            <th>Stat</th>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Dakota Rice</td>
+                                                <td>Guatemala</td>
+                                                <td>3</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Minerva Hooper</td>
+                                                <td>CA, sumatra</td>
+                                                <td>10</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sage Rodriguez</td>
+                                                <td>CB, CC</td>
+                                                <td>7</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+					</div>
 
                     <div class="row">
                         <div class="col-md-4">
@@ -259,6 +360,7 @@
                         </div>
                     </div>
                 </div>
+				                        
             </div>
             <footer class="footer">
                 <div class="container-fluid">
