@@ -7,7 +7,7 @@
     <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
     <link rel="shortcut icon" type="image/png" href="../assets/img/favicon.ico">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>Material Dashboard by Creative Tim</title>
+    <title>John Hay Coffee Services</title>
     
     <!--   Style   -->
 	<link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
@@ -46,10 +46,9 @@
 
         Tip 2: you can also add an image using data-image tag
     -->
+            
             <div class="logo">
-                <a href="http://www.creative-tim.com" class="simple-text">
-                    Admin Module
-                </a>
+                    <img src="../assets/img/logo.png" alt="image1" width="250px" height="150px">
             </div>
             <div class="sidebar-wrapper">
                 <ul class="nav">
@@ -62,7 +61,7 @@
                     </li>
                     <li>
                         <a href="./sales.html">
-                            <i class="material-icons">bubble_chart</i>
+                            <i class="material-icons">shopping_cart</i>
                             <p>Sales</p>
                         </a>
                     </li>
@@ -74,7 +73,7 @@
                     </li>
                     <li>
                         <a href="./reports.html">
-                            <i class="material-icons">library_books</i>
+                            <i class="material-icons">print</i>
                             <p>Reports</p>
                         </a>
                     </li>
@@ -86,7 +85,7 @@
                     </li>
                      <li>
                         <a href="./notifications.html">
-                            <i class="material-icons">person</i>
+                            <i class="material-icons">announcement</i>
                             <p>Notifications</p>
                         </a>
                     </li>
@@ -103,7 +102,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#">List of Users</a>
+                        <a class="navbar-brand" href="#"></a>
                     </div>
                     <div class="collapse navbar-collapse">
                         <ul class="nav navbar-nav navbar-right">
@@ -170,13 +169,82 @@
                     </div>
                 </div>
             </nav>
+    
+                                    <a class="btn btn-primary btn-lg" data-toggle="modal" data-target="#contact" data-original-title style="float: right">
+									Add New User
+									</a>
+                                    
+                                    <div class="modal fade" id="contact" tabindex="1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
+										<div class="modal-dialog">
+											<div class="panel panel-primary">
+												<div class="panel-heading">
+													<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+													<h4 class="panel-title" id="contactLabel"><span class="glyphicon glyphicon-info-sign"></span> Add New User</h4>
+												</div>
+												<form action="#" method="post" accept-charset="utf-8">
+												<div class="modal-body" style="padding-left: 100px;">
+                                                    
+													  <div class="row">
+															<div class="col-lg-10 col-md-6 col-sm-6" style="padding-bottom: 15px;">
+																<input class="form-control" name="firstname" placeholder="First Name" type="text" required autofocus />
+															</div>
+                                                          </div>
+                                                          <div class="row">
+															<div class="col-lg-10 col-md-6 col-sm-6" style="padding-bottom: 15px;">
+																<input class="form-control" name="lastname" placeholder="Last Name" type="text" required />
+															</div>
+														</div>
+                                                    <div class="row">
+															<div class="col-lg-10 col-md-6 col-sm-6" style="padding-bottom: 15px;">
+                                                                <select class="form-control" name="position" placeholder="Position" type="text" required >
+                                                                    <option>Sales Clerk</option>
+                                                                    <option>Inventory Custodian</option>
+                                                                    <option>Manager</option>
+                                                                    <option>Delivery Man</option>
+                                                                </select>
+                                                           </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div>
+                                                            <div class="col-lg-10 col-md-6 col-sm-6" style="padding-bottom: 15px;">
+                                                                <input class="form-control" name="email" placeholder="E-mail" type="text" required />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+															<div class="col-lg-10 col-md-6 col-sm-6" style="padding-bottom: 15px;">
+																<input class="form-control" name="cp number" placeholder="Cellphone Number" type="text" required />
+															</div>
+                                                    </div>
+														<div class="row">
+															<div class="col-lg-10 col-md-12 col-sm-12">
+																<textarea style="resize:vertical;" class="form-control" placeholder="Address" rows="2" name="address" required></textarea>
+															</div>
+														</div>
+														
+														<div class="row">
+															
+														</div>
+													</div>  
+													<div class="panel-footer" style="margin-bottom:-14px;">
+														<input type="submit" class="btn btn-success" value="Add"/>
+															<!--<span class="glyphicon glyphicon-ok"></span>-->
+														<input type="reset" class="btn btn-danger" value="Clear" />
+															<!--<span class="glyphicon glyphicon-remove"></span>-->
+														<button style="float: right;" type="button" class="btn btn-default btn-close" data-dismiss="modal">Close</button>
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
+    
             <div class="content">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="card">
                                 <div class="card-header" data-background-color="purple">
-                                     <h4 class="title">ADD USERS HERE</h4>
-                                    <p class="category">churva</p>
+        
+                                     <h4 class="title">List of Users</h4>
                                 </div>
                                 <div class="card-content table-responsive">
 			<div class="col-md-10 col-md-offset-1">
