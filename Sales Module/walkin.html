@@ -38,10 +38,6 @@
 		.table tbody, tbody td {
 			text-align: right;
 		}
-		.col-centered{
-		float: none;
-		margin: 0 auto;
-		}
 	</style>
 </head>
 
@@ -70,7 +66,7 @@
                             <p>User Profile</p>
                         </a>
                     </li>
-					<li>
+					<li class="active">
                         <a href="./walkin.html">
                             <i class="material-icons">assessment</i>
                             <p>Walk-In</p>
@@ -82,8 +78,8 @@
                             <p>Clients</p>
                         </a>
                     </li>
-                    <li class="active">
-                        <a href="./recievables.html">
+                    <li>
+                        <a href="./receivables.html">
                             <i class="material-icons">library_books</i>
                             <p>Receivables</p>
                         </a>
@@ -146,10 +142,10 @@
             <div class="content">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-sm-9 col-centered" >
+                        <div class="col-sm-7">
                             <div class="card">
                                 <div class="card-header" data-background-color="purple">
-                                    <h3 class="title"><center>Walk-in Clients</center></h3>
+                                    <h3 class="title"><center>Walk-In Clients</center></h3>
                                 </div>
                                 <div class="card-content">	
 									  
@@ -157,8 +153,10 @@
 									<thead>
 										<tr>
 										<th><b>Client</b></th>
-										<th><b>November</b>(Current)</th>
-										<th><b>Amount</b></th>
+											<th><b>Date Ordered</b></th>
+											<th><b>Item</b></th>
+											<th><b>SP</b></th>
+										<th><b>Total Amount</b></th>
 										</tr>
 									</thead>
 									<tbody>
@@ -166,44 +164,62 @@
 											<td>Astoria Hotel and Resort</td>
 											<td>43,750.00</td>
 											<td>43,750.00</td>
+											<td>43,750.00</td>
+											<td>43,750.00</td>
 										</tr>
 										<tr>
 											<td>BloomField Hotel</td>
+											<td>43,750.00</td>
+											<td>43,750.00</td>
 											<td>11,827.20</td>
 											<td>11,827.20</td>
 										</tr>
 										<tr>
 											<td>Blue Rock Resort</td>
+											<td>43,750.00</td>
+											<td>43,750.00</td>
 											<td>11,160.00</td>
 											<td>11,160.00</td>
 										</tr>
 										<tr>
 											<td>Boracay Haven Resort</td>
-											<td></td>
+											<td>43,750.00</td>
+											<td>43,750.00</td>
+											<td>43,750.00</td>
 											<td>21,900.00</td>
 										</tr>
 										<tr>
 											<td>Bread House</td>
+											<td>43,750.00</td>
+											<td>43,750.00</td>
 											<td>9,120.00</td>
 											<td>10,020.00</td>
 										</tr>
 										<tr>
 											<td>Canto Restaurant</td>
+											<td>43,750.00</td>
+											<td>43,750.00</td>
 											<td>9,408.00</td>
 											<td>9,408.00</td>
 										</tr>
 										<tr>
 											<td>Connies Kitchen</td>
+											<td>43,750.00</td>
+											<td>43,750.00</td>
 											<td>9,100.00</td>
 											<td>15,340.00</td>
 										</tr>
 										<tr>
 											<td>Femi</td>
-											<td></td>
+											<td>43,750.00</td>
+											<td>43,750.00</td>
+											<td>asdf</td>
 											<td>0.00</td>
 										</tr>
 										<tr>
 											<td>Le Chef Deli</td>
+											<td>43,750.00</td>
+											<td>43,750.00</td>
 											<td>15,750.00</td>
 											<td>15,750.00</td>
 										</tr>
@@ -238,7 +254,42 @@
 													<td>0.00</td>
 												</tbody>
 											  </table>
-											  <hr><br></div>
+											  <hr><br>
+											<p><center>
+											  <a class="btn btn-primary" data-toggle="collapse" href="#collapsePayment" aria-expanded="false" aria-controls="collapseExample">
+												blah ...
+											  </a></center>
+											</p>
+											  <div class="collapse" id="collapsePayment">
+												  <div class="card-block">
+													<form action="#" method="post" accept-charset="utf-8">
+															<div class="modal-body" style="padding: 5px;">
+																<div class="row">
+																	<div class="col-lg-12 col-md-12 col-sm-12" style="padding-bottom: 20px;">
+																	
+																		<div class="form-group">
+																			<div class="col-xs-5 date">
+																				<div class="input-group input-append date" id="datePicker">
+																					<input type="text" class="form-control" name="date" />
+																					<span class="input-group-addon add-on"><span class="glyphicon glyphicon-calendar"></span></span>
+																				</div>
+																			</div>
+																		</div>
+																<div class="row">
+																	<div class="col-lg-12 col-md-12 col-sm-12" style="padding-bottom: 20px;">
+																		<input class="form-control" name="coffeeType" placeholder="Amount" type="text" required />
+																	</div>
+																</div>
+
+																</div>  
+																
+																	<input type="submit" class="btn btn-success" value="Save"/>
+																	<input type="reset" class="btn btn-warning" value="Cancel" />
+
+																</div></div>
+															</form>
+												  </div>
+														</div></div>
 										  </div>
 											
 <!--
@@ -253,6 +304,44 @@
                                 </div>
                             </div>
                       
+						<div class="col-sm-5">
+                            <div class="card">
+								<p><center>
+								  <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" data-background-color="red" aria-expanded="false" aria-controls="collapseExample">
+									Add Purchase Order
+								  </a></center>
+								</p>
+								<div class="collapse" id="collapseExample">
+								  <div class="card-block">
+									<form action="#" method="post" accept-charset="utf-8">
+                                            <div class="modal-body" style="padding: 5px;">
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-md-12 col-sm-12" style="padding-bottom: 20px;">
+                                                    <input class="form-control" name="coffeeType" placeholder="Client's Name" type="text" required />
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-md-12 col-sm-12" style="padding-bottom: 20px;">
+                                                        <input class="form-control" name="coffeeType" placeholder="Date" type="text" required />
+													</div>
+                                                </div>
+                                				
+												<div class="row">
+                                                    <div class="col-lg-12 col-md-12 col-sm-12" style="padding-bottom: 20px;">
+                                                        <input class="form-control" name="coffeeType" placeholder="Amount" type="text" required />
+													</div>
+                                                </div>
+                                                </div>  
+                                                <div class="panel-footer" style="margin-bottom:-14px;">
+                                                    <input type="submit" class="btn btn-success" value="Save"/>
+                                                    <input type="reset" class="btn btn-warning" value="Cancel" />
+                                                 
+                                                </div>
+                                            </form>
+								  </div>
+								</div>
+						
+							</div></div>
                     </div>
                 </div>
             </div>
@@ -320,16 +409,7 @@
 	
 	<script type="text/javascript">
 			$(document).ready(function() {
-				$('#example').DataTable({
-				  "columns": [
-					 null,
-					{ "width": "30%" },
-					null
-				  ],
-					"columnDefs": [
-                {className: "dt-body-center", "targets": [0]}
-            ]
-				} );
+				$('#example').DataTable();
 			} );
 		
 		$('table tbody tr  td').on('click',function(){

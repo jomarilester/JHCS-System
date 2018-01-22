@@ -45,6 +45,12 @@
                             <p>User Profile</p>
                         </a>
                     </li>
+					<li>
+                        <a href="./walkin.html">
+                            <i class="material-icons">assessment</i>
+                            <p>Walk-In</p>
+                        </a>
+                    </li>
                     <li>
                         <a href="./clients.html">
                             <i class="material-icons">supervisor_account</i>
@@ -75,61 +81,12 @@
         <div class="main-panel">
             <nav class="navbar navbar-transparent navbar-absolute">
                 <div class="container-fluid">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="#">Sales </a>
-                    </div>
                     <div class="collapse navbar-collapse">
-						<div class="btn-group" dropdown container="body">
-  <button dropdownToggle type="button" class="btn btn-primary dropdownToggle">
-    Dropdown on Body <span class="caret"></span>
-  </button>
-  <ul *dropdownMenu class="dropdown-menu" role="menu">
-    <li role="menuitem"><a class="dropdown-item" href="#">Action</a></li>
-    <li role="menuitem"><a class="dropdown-item" href="#">Another action</a></li>
-    <li role="menuitem"><a class="dropdown-item" href="#">Something else here</a></li>
-    <li class="divider dropdown-divider"></li>
-    <li role="menuitem"><a class="dropdown-item" href="#">Separated link</a>
-    </li>
-  </ul>
-</div>
-                        <ul class="nav navbar-nav navbar-right">
+                 <ul class="nav navbar-nav navbar-right">
                             <li>
-                                <a href="#pablo" class="dropdown-toggle" data-toggle="dropdown">
-                                    <i class="material-icons">dashboard</i>
-                                    <p class="hidden-lg hidden-md">Dashboard</p>
-                                </a>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                    <i class="material-icons">notifications</i>
-                                    <span class="notification">5</span>
-                                    <p class="hidden-lg hidden-md">Notifications</p>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a href="#">Mike John responded to your email</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">You have 5 new tasks</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">You're now friend with Andrew</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Another Notification</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Another One</a>
-                                    </li>
-                                </ul>
-                            </li>
+                                    <p class="title">Hi, User 1</p>
 
+                            </li>
 							<li class="dropdown">
                                   <a href="#pablo" class="dropdown-toggle" data-toggle="dropdown">
                                     <i class="material-icons">person</i>
@@ -188,7 +145,7 @@
                                     <i class="material-icons">store</i>
                                 </div>
                                 <div class="card-content">
-                                    <p class="category">New Client</p>
+                                    <p class="category">Collections</p>
                                     <h3 class="title">3</h3>
                                 </div>
                                 <div class="card-footer">
@@ -307,61 +264,46 @@
                             </div>
                         </div>
 					</div>
+					<div class="row">
+						<div class="col-lg-6 col-md-12">
+                            <div class="card">
+                                <div class="card-header" data-background-color="green">
+                                    <h4 class="title">Active Clients</h4>
+                                    <p class="category">Active Clients as of 15th September, 2016</p>
+                                </div>
+                                <div class="card-content table-responsive">
+                                    <table class="table table-hover">
+                                        <thead class="text-warning">
+                                            <th>Client's Name</th>
+                                            <th>Orders</th>
+                                            <th>Stat</th>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Dakota Rice</td>
+                                                <td>Guatemala</td>
+                                                <td>3</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Minerva Hooper</td>
+                                                <td>CA, sumatra</td>
+                                                <td>10</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sage Rodriguez</td>
+                                                <td>CB, CC</td>
+                                                <td>7</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+					
+					</div>
 
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="card">
-                                <div class="card-header card-chart" data-background-color="green">
-                                    <div class="ct-chart" id="dailySalesChart"></div>
-                                </div>
-                                <div class="card-content">
-                                    <h4 class="title">Daily Sales</h4>
-                                    <p class="category">
-                                        <span class="text-success"><i class="fa fa-long-arrow-up"></i> 55% </span> increase in today sales.</p>
-                                </div>
-                                <div class="card-footer">
-                                    <div class="stats">
-                                        <i class="material-icons">access_time</i> updated 4 minutes ago
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card">
-                                <div class="card-header card-chart" data-background-color="orange">
-                                    <div class="ct-chart" id="emailsSubscriptionChart"></div>
-                                </div>
-                                <div class="card-content">
-                                    <h4 class="title">Daily Collections</h4>
-                                    <p class="category">Last Campaign Performance</p>
-                                </div>
-                                <div class="card-footer">
-                                    <div class="stats">
-                                        <i class="material-icons">access_time</i> campaign sent 2 days ago
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card">
-                                <div class="card-header card-chart" data-background-color="red">
-                                    <div class="ct-chart" id="completedTasksChart"></div>
-                                </div>
-                                <div class="card-content">
-                                    <h4 class="title">Daily Receivables</h4>
-                                    <p class="category">Last Campaign Performance</p>
-                                </div>
-                                <div class="card-footer">
-                                    <div class="stats">
-                                        <i class="material-icons">access_time</i> campaign sent 2 days ago
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-				                        
-            </div>
+                            
+				</div></div>
             <footer class="footer">
                 <div class="container-fluid">
                     <nav class="pull-left">

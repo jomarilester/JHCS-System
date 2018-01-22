@@ -6,14 +6,14 @@
     <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png" />
     <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>Receivables</title>
+    <title>Material Dashboard by Creative Tim</title>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
     <!-- Bootstrap core CSS     -->
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
 	<link href="../assets/css/dataTables.bootstrap.min.css" rel="stylesheet" />
 		<link href="../assets/css/jquery.dataTable.min.css" rel="stylesheet" />
-	<link href="../assets/css/bootstrap-datepicker3.min.css" rel="stylesheet">
+
     <!--  Material Dashboard CSS    -->
     <link href="../assets/css/material-dashboard.css?v=1.2.0" rel="stylesheet" />
     <!--  CSS for Demo Purpose, don't include it in your project     -->
@@ -21,22 +21,18 @@
     <!--     Fonts and icons     -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons' rel='stylesheet' type='text/css'>
-	
+	 <link rel="shortcut icon" href="favicon.ico">
+
 	<style>
 	
-
 /*
 		td.highlight {
 			background-color: whitesmoke !important;
 		}
 */
-
 		.table thead, thead th {
 			text-align: center;
 			font-size: 140%;
-		}
-		.table tbody, tbody td {
-			text-align: right;
 		}
 		.col-centered{
 		float: none;
@@ -75,15 +71,15 @@
                             <i class="material-icons">assessment</i>
                             <p>Walk-In</p>
                         </a>
-                    </li>
-                    <li>
+                    </li>s
+                    <li class="active">
                         <a href="./clients.html">
                             <i class="material-icons">supervisor_account</i>
                             <p>Clients</p>
                         </a>
                     </li>
-                    <li class="active">
-                        <a href="./recievables.html">
+                    <li>
+                        <a href="./receivables.html">
                             <i class="material-icons">library_books</i>
                             <p>Receivables</p>
                         </a>
@@ -106,7 +102,6 @@
         <div class="main-panel">
             <nav class="navbar navbar-transparent navbar-absolute">
                 <div class="container-fluid">
-
                     <div class="collapse navbar-collapse">
                          <ul class="nav navbar-nav navbar-right">
                             <li>
@@ -143,119 +138,144 @@
                     </div>
                 </div>
             </nav>
+
             <div class="content">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-sm-9 col-centered" >
+                        <div class="col-sm-12">
                             <div class="card">
-                                <div class="card-header" data-background-color="purple">
-                                    <h3 class="title"><center>Walk-in Clients</center></h3>
-                                </div>
-                                <div class="card-content">	
-									  
-                                    <table id="example" class="table hover order-column" cellspacing="0" width="100%">
+								<div class="card-header" data-background-color="purple">
+                                    <div class="nav-tabs-navigation">
+                                        <div class="nav-tabs-wrapper">
+                                           <ul class="nav nav-tabs" data-tabs="tabs">
+                                                <li class="">
+                                                    <a href="./clientpo.html" >
+                                                        Purchase Orders
+                                                        <div class="ripple-container"></div>
+                                                    </a>
+                                                </li>
+												<span></span>
+                                                <li class="active">
+                                                    <a href="./payment.html" >
+                                                        Payment
+                                                        <div class="ripple-container"></div>
+                                                    </a>
+												</li>
+												<span></span>
+												<li class="">
+                                                    <a href="./deliveries.html" >
+                                                        Deliveries
+                                                        <div class="ripple-container"></div>
+                                                    </a>
+												</li>
+												<span></span>
+												<li class="">
+                                                    <a href="./balance.html" >
+                                                        Balance
+                                                        <div class="ripple-container"></div>
+                                                    </a>
+												</li>
+												<span></span>
+												<li class="">
+                                                    <a href="./transhistory.html" >
+                                                       Transactions History
+                                                        <div class="ripple-container"></div>
+                                                    </a>
+												</li>
+                                            </ul>
+                                        </div>
+									</div></div>
+								<div class="card-content col-sm-10 col-centered">
+									<br>
+								<div class="card-header btn btn-primary btn-lg" data-background-color="red" data-toggle="modal" data-target="#contact" data-original-title style="float:right;" >
+                                   Add Payment
+                                </div><br><br>
+								<table id="example" class="table hover order-column" cellspacing="0" width="100%">
 									<thead>
-										<tr>
-										<th><b>Client</b></th>
-										<th><b>November</b>(Current)</th>
-										<th><b>Amount</b></th>
-										</tr>
+                                            <th><b class="pull-left">Date of Payment</b></th>    
+                                            <th><b class="pull-left">OR No.</b></th>
+                                            <th><b class="pull-left">Amount</b></th>
+                                            <th><b class="pull-left">Remarks</b></th>
+                                            <th><b class="pull-left">Bank</b></th>
 									</thead>
 									<tbody>
 										<tr>
-											<td>Astoria Hotel and Resort</td>
-											<td>43,750.00</td>
-											<td>43,750.00</td>
-										</tr>
-										<tr>
-											<td>BloomField Hotel</td>
-											<td>11,827.20</td>
-											<td>11,827.20</td>
-										</tr>
-										<tr>
-											<td>Blue Rock Resort</td>
-											<td>11,160.00</td>
-											<td>11,160.00</td>
-										</tr>
-										<tr>
-											<td>Boracay Haven Resort</td>
-											<td></td>
-											<td>21,900.00</td>
-										</tr>
-										<tr>
-											<td>Bread House</td>
-											<td>9,120.00</td>
-											<td>10,020.00</td>
-										</tr>
-										<tr>
-											<td>Canto Restaurant</td>
-											<td>9,408.00</td>
-											<td>9,408.00</td>
-										</tr>
-										<tr>
-											<td>Connies Kitchen</td>
-											<td>9,100.00</td>
-											<td>15,340.00</td>
-										</tr>
-										<tr>
-											<td>Femi</td>
-											<td></td>
-											<td>0.00</td>
-										</tr>
-										<tr>
-											<td>Le Chef Deli</td>
-											<td>15,750.00</td>
-											<td>15,750.00</td>
+											<td style="background-color: #c4c4c4;">11/02/2017</td>
+                                            <td>CR0502</td>
+                                            <td>48,000</td>
+                                            <td>Tax Withheld</td>
+                                            <td>BPI-OPEX</td>
+
 										</tr>
 									</tbody>
 								</table>
-									<div class="modal fade" id="myModal">
-									  <div class="modal-dialog">
-										<div class="modal-content">
-										  <div class="modal-header">
-											<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-											<h4 class="modal-title">FEMI</h4>
-										  </div>
-										  <div class="modal-body">
-											  <p>Date Receivable Started: </p>
-											  <p>Due Date: </p>
-											  <br>
-											<table class="table">
-											  	<thead>
-													<tr>
-														<th>Total Amount</th>
-														<th>Current Month (november)</th>
-														<th>October</th>
-														<th>September</th>
-														<th>August</th>
-													</tr>
-												</thead>
-												<tbody>
-													<td>0.00</td>
-													<td>0.00</td>
-													<td>0.00</td>
-													<td>0.00</td>
-													<td>0.00</td>
-												</tbody>
-											  </table>
-											  <hr><br></div>
-										  </div>
-											
-<!--
-										  <div class="modal-footer">
-											<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-											<button type="button" class="btn btn-primary">Save changes</button>
-										  </div>
--->
-										</div>
-									  </div>
-									</div>
-                                </div>
+
                             </div>
-                      
+                        </div>
+
                     </div>
+
                 </div>
-            </div>
+				</div></div>
+												<div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
+										<div class="modal-dialog">
+											<div class="panel panel-primary">
+												<div class="panel-heading">
+													<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+													<h4 class="panel-title" id="contactLabel"><span class="glyphicon glyphicon-info-sign"></span> Edit Client Information</h4>
+												</div>
+												<form action="#" method="post" accept-charset="utf-8">
+												<div class="modal-body" style="padding: 5px;">
+													<div class="row">
+													<div class="col-lg-12 col-md-12 col-sm-12" style="padding-bottom: 10px;">
+																<input class="form-control" name="client" placeholder="Company Name" type="text" required />
+															</div>
+													</div>
+													  <div class="row">
+															<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+																<input class="form-control" name="firstname" placeholder="Firstname" type="text" required autofocus />
+															</div>
+															<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+																<input class="form-control" name="lastname" placeholder="Lastname" type="text" required />
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+																<input class="form-control" name="position" placeholder="Position" type="text" required />
+															</div>
+															<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+																<input class="form-control" name="email" placeholder="E-mail" type="text" required />
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+																<input class="form-control" name="TelNo" placeholder="Tel. No." type="text" required />
+															</div>
+															<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+																<input class="form-control" name="type" placeholder="Client Type" type="text" required />
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-lg-12 col-md-12 col-sm-12">
+																<textarea style="resize:vertical;" class="form-control" placeholder="Address" rows="3" name="address" required></textarea>
+															</div>
+														</div>
+														
+														<div class="row">
+															
+														</div>
+													</div>  
+													<div class="panel-footer" align="center">
+														<input type="submit" class="btn btn-success" value="Add"/>
+															<!--<span class="glyphicon glyphicon-ok"></span>-->
+														<input type="reset" class="btn btn-warning" value="Clear" />
+															<!--<span class="glyphicon glyphicon-remove"></span>-->
+														<button style="float: right;" type="button" class="btn btn-danger btn-close" data-dismiss="modal">Close</button>
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
             <footer class="footer">
                 <div class="container-fluid">
                     <nav class="pull-left">
@@ -295,10 +315,15 @@
     </div>
 </body>
 <!--   Core JS Files   -->
+
+<!--
+<!--
+	<script src="../assets/js/jquery-1.12.4.js" type="text/javascript"></script>
+-->
+
 <script src="../assets/js/jquery-3.2.1.min.js" type="text/javascript"></script>
 		<script src="../assets/js/jquery.dataTables.min.js" type="text/javascript"></script>
-<script src="../assets/js/dataTables.bootstrap.min.js" type="text/javascript"></script>
-<script src="../assets/js/datepicker.js" type="text/javascript"></script>
+	<script src="../assets/js/dataTables.bootstrap.min.js" type="text/javascript"></script>
 	
 <script src="../assets/js/bootstrap.min.js" type="text/javascript"></script>
 <script src="../assets/js/material.min.js" type="text/javascript"></script>
@@ -317,65 +342,17 @@
 <!-- Material Dashboard DEMO methods, don't include it in your project! -->
 <script src="../assets/js/demo.js"></script>
 	
-	
 	<script type="text/javascript">
 			$(document).ready(function() {
-				$('#example').DataTable({
-				  "columns": [
-					 null,
-					{ "width": "30%" },
-					null
-				  ],
-					"columnDefs": [
-                {className: "dt-body-center", "targets": [0]}
-            ]
-				} );
-			} );
-		
-		$('table tbody tr  td').on('click',function(){
-		$("#myModal").modal("show");
-		$("#txtfname").val($(this).closest('tr').children()[0].textContent);
-		$("#txtlname").val($(this).closest('tr').children()[1].textContent);
-		});
-		    $('#datePicker')
-        .datepicker({
-            format: 'mm/dd/yyyy'
-        })
-        .on('changeDate', function(e) {
-            // Revalidate the date field
-            $('#eventForm').formValidation('revalidateField', 'date');
-        });
-
-    $('#eventForm').formValidation({
-        framework: 'bootstrap',
-        icon: {
-            valid: 'glyphicon glyphicon-ok',
-            invalid: 'glyphicon glyphicon-remove',
-            validating: 'glyphicon glyphicon-refresh'
-        },
-        fields: {
-            name: {
-                validators: {
-                    notEmpty: {
-                        message: 'The name is required'
-                    }
-                }
-            },
-            date: {
-                validators: {
-                    notEmpty: {
-                        message: 'The date is required'
-                    },
-                    date: {
-                        format: 'MM/DD/YYYY',
-                        message: 'The date is not a valid'
-                    }
-                }
-            }
+    var table = $('#example').DataTable( {
+        select: {
+            style: 'single'
         }
-    });
-		
+    } );
+
+} );
 	
 	</script>
+
 
 </html>
