@@ -7,7 +7,7 @@
     <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>Sales Dashboard</title>
-    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, wal-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
     <!-- Bootstrap core CSS     -->
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
@@ -40,9 +40,9 @@
                         </a>
                     </li>
                     <li>
-                        <a href="./user.html">
+                        <a href="./walkin.html">
                             <i class="material-icons">account_circle</i>
-                            <p>User Profile</p>
+                            <p>Walk-in</p>
                         </a>
                     </li>
 					<li>
@@ -124,17 +124,16 @@
                         <div class="col-lg-3 col-md-6 col-sm-6">
                             <div class="card card-stats">
                                 <div class="card-header" data-background-color="orange">
-                                    <i class="material-icons">content_copy</i>
+                                    <i class="material-icons">trending_up</i>
                                 </div>
                                 <div class="card-content">
-                                    <p class="category">Monthly Sales</p>
+                                    <p class="category">Sales</p>
                                     <h3 class="title">128,000
                                     </h3>
                                 </div>
                                 <div class="card-footer">
                                     <div class="stats">
-                                        <i class="material-icons text-danger">warning</i>
-                                        <a href="#pablo">Details</a>
+                                        <i class="material-icons">date_range</i> Details
                                     </div>
                                 </div>
                             </div>
@@ -142,7 +141,7 @@
                         <div class="col-lg-3 col-md-6 col-sm-6">
                             <div class="card card-stats">
                                 <div class="card-header" data-background-color="green">
-                                    <i class="material-icons">store</i>
+                                    <i class="material-icons">collections</i>
                                 </div>
                                 <div class="card-content">
                                     <p class="category">Collections</p>
@@ -158,7 +157,7 @@
                         <div class="col-lg-3 col-md-6 col-sm-6">
                             <div class="card card-stats">
                                 <div class="card-header" data-background-color="red">
-                                    <i class="material-icons">info_outline</i>
+                                    <i class="material-icons">credit_card</i>
                                 </div>
                                 <div class="card-content">
                                     <p class="category">Recievables</p>
@@ -166,7 +165,7 @@
                                 </div>
                                 <div class="card-footer">
                                     <div class="stats">
-                                        <i class="material-icons">local_offer</i> Tracked from Github
+                                        <i class="material-icons">date_range</i> Details
                                     </div>
                                 </div>
                             </div>
@@ -174,7 +173,7 @@
                         <div class="col-lg-3 col-md-6 col-sm-6">
                             <div class="card card-stats">
                                 <div class="card-header" data-background-color="blue">
-                                    <i class="fa fa-twitter"></i>
+                                    <i class="material-icons">face</i>
                                 </div>
                                 <div class="card-content">
                                     <p class="category">Clients</p>
@@ -182,36 +181,39 @@
                                 </div>
                                 <div class="card-footer">
                                     <div class="stats">
-                                        <i class="material-icons">update</i> Just Updated
+                                        <i class="material-icons">date_range</i> Details
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 					<div class="row">
-						<div class="col-lg-6 col-md-12">
+						<div class="col-lg-12 col-md-12">
                             <div class="card">
                                 <div class="card-header" data-background-color="red">
-                                    <h4 class="title">Reminders !</h4>
+                                    <h4 class="title">Reminders</h4>
                                 </div>
                                 <div class="card-content table-responsive">
-                                                                               <table class="table">
+                                            <table class="table">
                                                 <tbody>
                                                     <tr>
 
                                                         <td>Client C's contract has expired today !</td>
 														<td class="td-actions text-right">
-                                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
-                                                                <i class="material-icons">close</i>
+                                                            <button type="submit" class="btn btn-primary pull-right">Details</button>
+                                                            <button type="button" rel="tooltip" title="Done" class="btn btn-success btn-simple btn-xs">
+                                                            <i class="material-icons">done</i>
                                                             </button>
                                                         </td>
+
                                                     </tr>
                                                     <tr>
 
                                                         <td>Client B has not yet paid for the month of November. <a href="#">See in receivables</a></td>
 														<td class="td-actions text-right">
-                                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
-                                                                <i class="material-icons">close</i>
+                                                            <button type="submit" class="btn btn-primary pull-right">Details</button>
+                                                            <button type="button" rel="tooltip" title="Done" class="btn btn-success btn-simple btn-xs">
+                                                                <i class="material-icons">done</i>
                                                             </button>
                                                         </td>
                                                     </tr>
@@ -219,8 +221,9 @@
                                                         <td>Client A is scheduled to order Type C coffee before Jan 1, 2019
                                                         </td>
 														<td class="td-actions text-right">
-                                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
-                                                                <i class="material-icons">close</i>
+                                                            <button type="submit" class="btn btn-primary pull-right">Details</button>
+                                                            <button type="button" rel="tooltip" title="Done" class="btn btn-success btn-simple btn-xs">
+                                                                <i class="material-icons">done</i>
                                                             </button>
                                                         </td>
                                                     </tr>
@@ -229,41 +232,8 @@
                                 </div>
                             </div>
                         </div>
-						<div class="col-lg-6 col-md-12">
-                            <div class="card">
-                                <div class="card-header" data-background-color="orange">
-                                    <h4 class="title">Active Clients</h4>
-                                    <p class="category">Active Clients as of 15th September, 2016</p>
-                                </div>
-                                <div class="card-content table-responsive">
-                                    <table class="table table-hover">
-                                        <thead class="text-warning">
-                                            <th>Client's Name</th>
-                                            <th>Orders</th>
-                                            <th>Stat</th>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Dakota Rice</td>
-                                                <td>Guatemala</td>
-                                                <td>3</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Minerva Hooper</td>
-                                                <td>CA, sumatra</td>
-                                                <td>10</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Sage Rodriguez</td>
-                                                <td>CB, CC</td>
-                                                <td>7</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
 					</div>
+<<<<<<< HEAD
 					<div class="row">
 						<div class="col-lg-6 col-md-12">
                             <div class="card">
@@ -304,6 +274,11 @@
 
                             
 				</div></div>
+=======
+                </div>
+				                        
+            </div>
+>>>>>>> a31b31a6ea438900ef99fbce07ffd81bcc85ecde
             <footer class="footer">
                 <div class="container-fluid">
                     <nav class="pull-left">
