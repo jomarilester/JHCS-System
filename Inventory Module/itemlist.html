@@ -8,11 +8,14 @@
     <link rel="shortcut icon" type="image/png" href="../assets/img/favicon.ico">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>Material Dashboard by Creative Tim</title>
+    
     <!--   Style   -->
     <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/fresh-datatables.css">
+
     <!--   Fonts   -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=2.0">
@@ -25,11 +28,14 @@
     <!--     Fonts and icons     -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons' rel='stylesheet' type='text/css'>
+    
     <!--   Style   -->
     <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/fresh-datatables.css">
+
     <!--   Fonts   -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+
 </head>
 
 <body>
@@ -40,6 +46,7 @@
 
         Tip 2: you can also add an image using data-image tag
     -->
+            
             <div class="logo">
                 <img src="../assets/img/logo.png" alt="image1" width="250px" height="150px">
             </div>
@@ -65,7 +72,7 @@
                     </li>
                     <hr>
                     <li>
-                        <b>Lists</b>
+                            <b>Lists</b>
                     </li>
                     <li>
                         <a href="./categorylist.html">
@@ -93,7 +100,7 @@
                     </li>
                     <hr>
                     <li>
-                        <b>Stock Management</b>
+                            <b>Stock Management</b>
                     </li>
                     <li>
                         <a href="./adjustlimit.html">
@@ -103,7 +110,7 @@
                     </li>
                     <hr>
                     <li>
-                        <b>Inventory</b>
+                            <b>Inventory</b>
                     </li>
                     <li>
                         <a href="./inventoryout.html">
@@ -146,99 +153,139 @@
                     </div>
                     <div class="collapse navbar-collapse">
                         <ul class="nav navbar-nav navbar-right">
-                            <li class="dropdown">
-                                <li>
-                                    <p class="title">Hi, User 1</p>
-                                </li>
-                                <a href="#pablo" class="dropdown-toggle" data-toggle="dropdown">
+                                <li class="dropdown">
+                                    <a href="#pablo" class="dropdown-toggle" data-toggle="dropdown">
                                         <i class="material-icons">person</i>
                                         <p class="hidden-lg hidden-md">Profile</p>
                                     </a>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a href="./user.html">User Profile</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Logout</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="./user.html">User Profile</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Logout</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
                     </div>
                 </div>
             </nav>
             <div class="modal fade" id="contact" tabindex="1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                <h4 class="panel-title" id="contactLabel" ><span class="glyphicon glyphicon-info-sign" ></span> Create New Item</h4>
+                            </div>
+                            <form action="#" method="post" accept-charset="utf-8">
+                            <div class="modal-body" style="padding-left: 100px;">
+                                
+                                  <div class="row">
+                                        <div class="col-lg-10 col-md-6 col-sm-6" style="padding-bottom: 15px;">
+                                            <input class="form-control" name="Item Name" placeholder="item Name" type="text" required autofocus />
+                                        </div>
+                                      </div>
+                                      <div class="row">
+                                        <div class="col-lg-10 col-md-6 col-sm-6" style="padding-bottom: 15px;">
+                                            <input class="form-control" name="Description" placeholder="Description" type="text" required />
+                                        </div>
+                                    </div>
+                                <div class="row">
+                                        <div class="col-lg-10 col-md-6 col-sm-6" style="padding-bottom: 15px;">
+                                            <select class="form-control" name="Type" placeholder="Type" type="text" required >
+                                                <option>Raw Coffee</option>
+                                                <option>Blended Coffee</option>
+                                                <option>Packaging</option>
+                                                <option>Coffee Machine</option>
+                                                <option>Coffee Filter</option>
+                                                <option>Sticker</option>
+                                            </select>
+                                       </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-10 col-md-6 col-sm-6" style="padding-bottom: 15px;">
+                                            <select class="form-control" name="Category" placeholder="Category" type="text" required >
+                                                <option>Light Roast</option>
+                                                <option>Medium Roast</option>
+                                                <option>City Roast</option>
+                                                <option>Existing Blend</option>
+                                                <option>Company Blend</option>
+                                                <option>Brown Bag</option>
+                                                <option>Clear Bag</option>
+                                                <option>Machine A</option>
+                                                <option>Sticker</option>
+                                            </select>
+                                       </div>
+                                </div>
+                                <div class="row">
+                                        <div class="col-lg-10 col-md-6 col-sm-6" style="padding-bottom: 15px;">
+                                            <input class="form-control" name="cp number" placeholder="Cellphone Number" type="text" required />
+                                        </div>
+                                </div>
+                                    <div class="row">
+                                        <div class="col-lg-10 col-md-12 col-sm-12">
+                                            <textarea style="resize:vertical;" class="form-control" placeholder="Address" rows="2" name="address" required></textarea>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row">
+                                        
+                                    </div>
+                                </div>  
+                                <div class="panel-footer" style="margin-bottom:-14px;">
+                                    <input type="submit" class="btn btn-success" value="Add"/>
+                                        <!--<span class="glyphicon glyphicon-ok"></span>-->
+                                    <input type="reset" class="btn btn-danger" value="Clear" />
+                                        <!--<span class="glyphicon glyphicon-remove"></span>-->
+                                    <button style="float: right;" type="button" class="btn btn-default btn-close" data-dismiss="modal">Close</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            <div class="modal fade" id="stock" tabindex="1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="panel panel-primary">
                         <div class="panel-heading">
                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                            <h4 class="panel-title" id="contactLabel"><span class="glyphicon glyphicon-info-sign" ></span> Create New Item</h4>
+                            <h4 class="panel-title" id="contactLabel" ><span class="glyphicon glyphicon-info-sign" ></span> Adjust Stock Limit</h4>
                         </div>
                         <form action="#" method="post" accept-charset="utf-8">
-                            <div class="modal-body" style="padding-left: 100px;">
-                                <div class="row">
-                                    <div class="col-lg-10 col-md-6 col-sm-6" style="padding-bottom: 15px;">
-                                        <input class="form-control" name="Item Name" placeholder="item Name" type="text" required autofocus />
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-10 col-md-6 col-sm-6" style="padding-bottom: 15px;">
-                                        <input class="form-control" name="Description" placeholder="Description" type="text" required />
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-10 col-md-6 col-sm-6" style="padding-bottom: 15px;">
-                                        <select class="form-control" name="Type" placeholder="Type" type="text" required>
-                                            <option>Raw Coffee</option>
-                                            <option>Blended Coffee</option>
-                                            <option>Packaging</option>
-                                            <option>Coffee Machine</option>
-                                            <option>Coffee Filter</option>
-                                            <option>Sticker</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-10 col-md-6 col-sm-6" style="padding-bottom: 15px;">
-                                        <select class="form-control" name="Category" placeholder="Category" type="text" required>
-                                            <option>Light Roast</option>
-                                            <option>Medium Roast</option>
-                                            <option>City Roast</option>
-                                            <option>Existing Blend</option>
-                                            <option>Company Blend</option>
-                                            <option>Brown Bag</option>
-                                            <option>Clear Bag</option>
-                                            <option>Machine A</option>
-                                            <option>Sticker</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-10 col-md-6 col-sm-6" style="padding-bottom: 15px;">
-                                        <input class="form-control" name="cp number" placeholder="Cellphone Number" type="text" required />
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-10 col-md-12 col-sm-12">
-                                        <textarea style="resize:vertical;" class="form-control" placeholder="Address" rows="2" name="address" required></textarea>
-                                    </div>
-                                </div>
-                                <div class="row">
+                    <div class="modal-body" style="padding-left: 100px;">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group label-floating">
+                                    <label for="type">(Item Name)</label>
                                 </div>
                             </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="example-number-input" class="col-2 col-form-label">Stock Limit</label>
+                          <div class="col-10">
+                            <input class="form-control" type="number" value="100" id="example-number-input">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="example-number-input" class="col-2 col-form-label">Reorder Level</label>
+                          <div class="col-10">
+                            <input class="form-control" type="number" value="1000" id="example-number-input">
+                          </div>
+                        </div>
+                        <div class="row">  
                             <div class="panel-footer" style="margin-bottom:-14px;">
-                                <input type="submit" class="btn btn-success" value="Add" />
-                                <!--<span class="glyphicon glyphicon-ok"></span>-->
-                                <input type="reset" class="btn btn-danger" value="Clear" />
-                                <!--<span class="glyphicon glyphicon-remove"></span>-->
+                                <input type="submit" class="btn btn-success" value="Add" style="float: right;" />
+                                    <!--<span class="glyphicon glyphicon-ok"></span>-->
                                 <button style="float: right;" type="button" class="btn btn-default btn-close" data-dismiss="modal">Close</button>
                             </div>
-                        </form>
+                        </div>
+                    </div>
+                    </form>
                     </div>
                 </div>
             </div>
             <div class="content" style="margin-top: 0px;">
-                <div class="container-fluid">
+                <div class="container-fluid" >
                     <div class="card">
                         <div class="card-header" data-background-color="blue">
                             <h4 class="title">List of Items<a href="newitem.html" class="btn btn-primary btn-lg" data-original-title style="float: right; margin-right: 30px; margin-top: -12px; ">
@@ -246,10 +293,13 @@
                                     </a></h4>
                         </div>
                         <div class="card-content table-responsive">
-                            <div class="col-md-12 col-md-offset-0">
+                             <div class="col-md-12 col-md-offset-0">
                                 <div class="fresh-datatables full-color-blue">
+                                    
+                                            
                                     <!--  Available colors for the full background: full-color-blue, full-color-azure, full-color-green, full-color-red, full-color-orange, full-color-purple, full-color-gray
                                     Available colors only for the toolbar: toolbar-color-blue, toolbar-color-azure, toolbar-color-green, toolbar-color-red, toolbar-color-orange, toolbar-color-purple, toolbar-color-gray -->
+
                                     <table id="fresh-datatables" class="table table-striped table-no-bordered table-hover" cellspacing="0" width="100%" style="width:100%">
                                         <thead>
                                             <tr>
@@ -259,7 +309,7 @@
                                                 <th>Category</th>
                                                 <th>Supplier</th>
                                                 <th>Normal Price</th>
-                                                <th class="disabled-sorting">Actions</th>
+                                                <th class="disabled-sorting">Adjust Stock Limit</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -271,12 +321,9 @@
                                                 <th>Supplier A</th>
                                                 <th>599</th>
                                                 <td>
-                                                    <a href="#" class="like"><i class="fa fa-heart"></i></a>
-                                                    <a href="#" class="edit"><i class="fa fa-edit"></i></a>
-                                                    <a href="#" class="remove"><i class="fa fa-times"></i></a>
+                                                    <a class="btn btn-info btn-sm" style="margin-top: 0px" data-toggle="modal" data-target="#stock" >Adjust</a>
                                                 </td>
-                                            </tr>
-                                            <tr>
+                                            </tr><tr>
                                                 <th>Coffee B</th>
                                                 <th>Raw Coffee light roast </th>
                                                 <th>Raw Coffee</th>
@@ -284,9 +331,7 @@
                                                 <th>Supplier B</th>
                                                 <th>699</th>
                                                 <td>
-                                                    <a href="#" class="like"><i class="fa fa-heart"></i></a>
-                                                    <a href="#" class="edit"><i class="fa fa-edit"></i></a>
-                                                    <a href="#" class="remove"><i class="fa fa-times"></i></a>
+                                                    <a class="btn btn-info btn-sm" style="margin-top: 0px" data-toggle="modal" data-target="#stock" >Adjust</a>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -297,9 +342,7 @@
                                                 <th>N/A</th>
                                                 <th>399</th>
                                                 <td>
-                                                    <a href="#" class="like"><i class="fa fa-heart"></i></a>
-                                                    <a href="#" class="edit"><i class="fa fa-edit"></i></a>
-                                                    <a href="#" class="remove"><i class="fa fa-times"></i></a>
+                                                    <a class="btn btn-info btn-sm" style="margin-top: 0px" data-toggle="modal" data-target="#stock" >Adjust</a>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -310,9 +353,7 @@
                                                 <th>N/A</th>
                                                 <th>400</th>
                                                 <td>
-                                                    <a href="#" class="like"><i class="fa fa-heart"></i></a>
-                                                    <a href="#" class="edit"><i class="fa fa-edit"></i></a>
-                                                    <a href="#" class="remove"><i class="fa fa-times"></i></a>
+                                                    <a class="btn btn-info btn-sm" style="margin-top: 0px" data-toggle="modal" data-target="#stock">Adjust</a>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -323,9 +364,7 @@
                                                 <th>Brown Bag Supplier</th>
                                                 <th>150</th>
                                                 <td>
-                                                    <a href="#" class="like"><i class="fa fa-heart"></i></a>
-                                                    <a href="#" class="edit"><i class="fa fa-edit"></i></a>
-                                                    <a href="#" class="remove"><i class="fa fa-times"></i></a>
+                                                    <a class="btn btn-info btn-sm" style="margin-top: 0px" data-toggle="modal" data-target="#stock" >Adjust</a>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -336,9 +375,7 @@
                                                 <th>Machine supplier</th>
                                                 <th>1999</th>
                                                 <td>
-                                                    <a href="#" class="like"><i class="fa fa-heart"></i></a>
-                                                    <a href="#" class="edit"><i class="fa fa-edit"></i></a>
-                                                    <a href="#" class="remove"><i class="fa fa-times"></i></a>
+                                                    <a class="btn btn-info btn-sm" style="margin-top: 0px" data-toggle="modal" data-target="#stock" >Adjust</a>
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -347,7 +384,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                 </div>
             </div>
             <footer class="footer">
                 <div class="container-fluid">
@@ -378,7 +415,7 @@
                     <p class="copyright pull-right">
                         &copy;
                         <script>
-                        document.write(new Date().getFullYear())
+                            document.write(new Date().getFullYear())
                         </script>
                         <a href="http://www.creative-tim.com">Creative Tim</a>, made with love for a better web
                     </p>
@@ -405,20 +442,19 @@
 <script src="../assets/js/material-dashboard.js?v=1.2.0"></script>
 <!-- Material Dashboard DEMO methods, don't include it in your project! -->
 <script src="../assets/js/demo.js"></script>
+
 <script src="../assets/js/jquery.js"></script>
 <script src="../assets/js/jquery.datatables.js"></script>
-<script>
+<script >
+
 $(document).ready(function() {
     $('#fresh-datatables').DataTable({
         "pagingType": "full_numbers",
-        "lengthMenu": [
-            [10, 25, 50, -1],
-            [10, 25, 50, "All"]
-        ],
+        "lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
         responsive: true,
         language: {
-            search: "_INPUT_",
-            searchPlaceholder: "Search records",
+        search: "_INPUT_",
+        searchPlaceholder: "Search records",
         }
 
     });
@@ -427,25 +463,26 @@ $(document).ready(function() {
     var table = $('#fresh-datatables').DataTable();
 
     // Edit record
-    table.on('click', '.edit', function() {
+    table.on( 'click', '.edit', function () {
         $tr = $(this).closest('tr');
 
         var data = table.row($tr).data();
-        alert('You press on Row: ' + data[0] + ' ' + data[1] + ' ' + data[2] + '\'s row.');
-    });
+        alert( 'You press on Row: ' + data[0] + ' ' + data[1] + ' ' + data[2] + '\'s row.' );
+    } );
 
     // Delete a record
-    table.on('click', '.remove', function(e) {
+    table.on( 'click', '.remove', function (e) {
         $tr = $(this).closest('tr');
         table.row($tr).remove().draw();
         e.preventDefault();
-    });
+    } );
 
     //Like record
-    table.on('click', '.like', function() {
+    table.on( 'click', '.like', function () {
         alert('You clicked on Like button');
-    });
+    } );
 });
+
 </script>
 
 </html>

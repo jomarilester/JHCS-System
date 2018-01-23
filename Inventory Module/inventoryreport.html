@@ -5,15 +5,23 @@
     <meta charset="utf-8" />
     <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png" />
     <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="../assets/img/favicon.ico">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>Material Dashboard by Creative Tim</title>
+    <title>Inventory Report</title>
+    <!--   Style   -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/fresh-datatables.css">
+    <!--   Fonts   -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=2.0">
     <!-- Bootstrap core CSS     -->
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
-	<link href="../assets/css/dataTables.bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/css/dataTables.bootstrap.min.css" rel="stylesheet" />
     <link href="../assets/css/jquery.dataTable.min.css" rel="stylesheet" />
-
+    <link href="../assets/FileExport/buttons.dataTables.min.css" rel="stylesheet" />
+    <link href="../assets/FileExport/jquery.dataTables.min.css" rel="stylesheet" />
     <!--  Material Dashboard CSS    -->
     <link href="../assets/css/material-dashboard.css?v=1.2.0" rel="stylesheet" />
     <!--  CSS for Demo Purpose, don't include it in your project     -->
@@ -21,43 +29,36 @@
     <!--     Fonts and icons     -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons' rel='stylesheet' type='text/css'>
-
-    
-    
-    <style>
-	
-/*
-		td.highlight {
-			background-color: whitesmoke !important;
-		}
-*/
-		.table thead, thead th {
-			text-align: center;
-			font-size: 140%;
-		}
-	</style>
+    <!--   Style   -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/fresh-datatables.css">
+    <!--   Fonts   -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
 </head>
-
-    
-
 
 <body>
     <div class="wrapper">
-        <div class="sidebar" data-color="blue" data-image="../assets/img/sidebar-0.jpg">
+        <div class="sidebar" data-color="blue" data-image="../assets/img/sidebar-1.jpg">
             <!--
         Tip 1: You can change the color of the sidebar using: data-color="purple | blue | green | orange | red"
 
         Tip 2: you can also add an image using data-image tag
     -->
-            <div class="logo">
+            <div class="logo ">
                 <img src="../assets/img/logo.png" alt="image1" width="250px" height="150px">
             </div>
             <div class="sidebar-wrapper">
                 <ul class="nav">
-                    <li>
+                    <li class="active">
                         <a href="dashboard.html">
                             <i class="material-icons">dashboard</i>
                             <p>Dashboard</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="inventorystocks.html">
+                            <i class="material-icons">assessment</i>
+                            <p>Inventory Stocks</p>
                         </a>
                     </li>
                     <li>
@@ -68,7 +69,7 @@
                     </li>
                     <hr>
                     <li>
-                            <b>Lists</b>
+                        <b>Lists</b>
                     </li>
                     <li>
                         <a href="./categorylist.html">
@@ -96,7 +97,7 @@
                     </li>
                     <hr>
                     <li>
-                            <b>Stock Management</b>
+                        <b>Stock Management</b>
                     </li>
                     <li>
                         <a href="./adjustlimit.html">
@@ -106,7 +107,7 @@
                     </li>
                     <hr>
                     <li>
-                            <b>Inventory</b>
+                        <b>Inventory</b>
                     </li>
                     <li>
                         <a href="./inventoryout.html">
@@ -120,7 +121,7 @@
                             <p>Coffee Inventory</p>
                         </a>
                     </li>
-                    <li class="active">
+                    <li>
                         <a href="./machineinventory.html">
                             <i class="material-icons text-gray">local_shipping</i>
                             <p>Machine Inventory</p>
@@ -136,129 +137,97 @@
             </div>
         </div>
         <div class="main-panel">
-           <nav class="navbar navbar-transparent navbar-absolute">
+            <nav class="navbar navbar-transparent navbar-absolute">
                 <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#"></a>
+                    </div>
                     <div class="collapse navbar-collapse">
-                         <ul class="nav navbar-nav navbar-right">
-                            <li>
-                                    <p class="navbar-header">Hi, User 1</p>
-
-                            </li>
-							<li class="dropdown">
-                                  <a href="#pablo" class="dropdown-toggle" data-toggle="dropdown">
-                                    <i class="material-icons">person</i>
-                                    <p class="hidden-lg hidden-md">Profile</p>
-                                </a>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <li>
+                                    <p class="title">Hi, User 1</p>
+                                </li>
+                                <a href="#pablo" class="dropdown-toggle" data-toggle="dropdown">
+                                        <i class="material-icons">person</i>
+                                        <p class="hidden-lg hidden-md">Profile</p>
+                                    </a>
                                 <ul class="dropdown-menu">
-
                                     <li>
                                         <a href="./user.html">User Profile</a>
                                     </li>
-									<hr>
                                     <li>
                                         <a href="#">Logout</a>
                                     </li>
                                 </ul>
                             </li>
                         </ul>
-                        
-                        
-                        <form class="navbar-form navbar-right" role="search">
-                            <div class="form-group  is-empty">
-                                <input type="text" class="form-control" placeholder="Search">
-                                <span class="material-input"></span>
-                            </div>
-                            <button type="submit" class="btn btn-white btn-round btn-just-icon">
-                                <i class="material-icons">search</i>
-                                <div class="ripple-container"></div>
-                            </button>
-                        </form>
                     </div>
                 </div>
             </nav>
-            
-            
-            
-            <div class="content">
+            <div class="content" style="margin-top: 0px;">
                 <div class="container-fluid">
-                     <div class="row">
-                        <div class="col-md-12">
-                            <div class="card">
-                                <div class="card-header" data-background-color="blue">
-                                    <h4 class="title">Machine Inventory</h4>
-                                </div>
-    
-                                <div class="card-content">
-                                    <table id="example" class="table hover order-column" cellspacing="0" width="100%">
-                                        <thead>
-                                            <th>#</th>
-                                            <th>Tagging Number</th>
-                                            <th>Client</th>
-                                            <th>Date Installed</th>
-                                            <th>No. of machines installed</th>
-                                            <th>Remarks</th>
-                                            
-                                           
-                                        </thead>
-                                        <tbody>
-                                           <tr>
-                                                <td>1</td>
-                                                <td>123456</td>
-                                                <td>Tazabelle</td>
-                                                <td>01/12/18</td>
-                                                <td>3</td> 
-                                                <td>G</td>
-                                 
-                                            </tr>
-                                            <tr>
-                                                <td>2</td>
-                                                <td>345554</td>
-                                                <td>Cafe Lupe</td>
-                                                <td>01/12/18</td>
-                                                <td>2</td>
-                                                <td>B</td>
-                          
-                                            </tr>
-                                            <tr>
-                                                <td>3</td>
-                                                <td>345745</td>
-                                                <td>The Merry Cooks, Inc.</td>
-                                                <td>01/12/18</td>
-                                                <td>1</td>
-                                                <td>B</td>
-                             
-                                            </tr>
-                                            <tr>
-                                                <td>4</td>
-                                                <td>653454</td>
-                                                <td>Patch Cafe</td>
-                                                <td>01/13/18</td>
-                                                <td>3</td>
-                                                <td>B</td>
-                  
-                                            </tr>
-                                            <tr>
-                                                <td>5</td>
-                                                <td>464543</td>
-                                                <td>Connie's Kitchen</td>
-                                                <td>01/15/18</td>
-                                                <td>5</td>
-                                                <td>B</td>
-                             
-                                            </tr>
-                                            <tr>
-                                                <td>6</td>
-                                                <td>452323</td>
-                                                <td>The Manor Hotel</td>
-                                                <td>01/15/18</td>
-                                                <td>2</td>
-                                                <td>B</td>
-                                
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
+                    <div class="card">
+                        <div class="card-header" data-background-color="blue">
+                            <h4 class="title">Inventory Report</h4>
+                        </div>
+                        <div class="card-content">
+                            <table id="example" class="display  hover order-column" cellspacing="0" width="100%">
+                                <thead>
+                                    <tr>
+                                        <th><b>Date of Installation</b></th>
+                                        <th><b>Client</b></th>
+                                        <th><b>Type of Coffee</b></th>
+                                        <th><b>Type of Machine</b></th>
+                                        <th><b>Quantity</b></th>
+                                        <th><b>Required Quantity</b></th>
+                                        <th><b>Delivered Quantity</b></th>
+                                        <th><b>Delivered Date</b></th>
+                                        <th><b>Remarks</b></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td></td>
+                                        <td>Le Chef Deli</td>
+                                        <td>Arabica 100%</td>
+                                        <td>Retail</td>
+                                        <td></td>
+                                        <td>50</td>
+                                        <td>B-0, G-50</td>
+                                        <td>Dec. 15</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>May 21, 2012</td>
+                                        <td>Le Chef Golf</td>
+                                        <td>Arabica 100% PAB2</td>
+                                        <td>Saeco/Picco</td>
+                                        <td>1/1</td>
+                                        <td>10/10</td>
+                                        <td>B-20, G-20</td>
+                                        <td>Dec. 27</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>June 5, 2012</td>
+                                        <td>Le Chef Manor</td>
+                                        <td>Arabica 100%</td>
+                                        <td>Bunn</td>
+                                        <td></td>
+                                        <td>270</td>
+                                        <td>B-110, G-240</td>
+                                        <td>Dec. 28</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -292,23 +261,26 @@
                     <p class="copyright pull-right">
                         &copy;
                         <script>
-                            document.write(new Date().getFullYear())
+                        document.write(new Date().getFullYear())
                         </script>
                         <a href="http://www.creative-tim.com">Creative Tim</a>, made with love for a better web
                     </p>
                 </div>
             </footer>
         </div>
-    </div>        
+    </div>
 </body>
 <!--   Core JS Files   -->
-        
-  
 <script src="../assets/js/jquery-3.2.1.min.js" type="text/javascript"></script>
-		<script src="../assets/js/jquery.dataTables.min.js" type="text/javascript"></script>
-	<script src="../assets/js/dataTables.bootstrap.min.js" type="text/javascript"></script>      
-        
-<script src="../assets/js/jquery-3.2.1.min.js" type="text/javascript"></script>
+<script src="../assets/js/jquery.dataTables.min.js" type="text/javascript"></script>
+<script src="../assets/js/dataTables.bootstrap.min.js" type="text/javascript"></script>
+<script src="../assets/FileExport/buttons.flash.min.js" type="text/javascript"></script>
+<script src="../assets/FileExport/dataTables.buttons.min.js" type="text/javascript"></script>
+<script src="../assets/FileExport/buttons.html5.min.js" type="text/javascript"></script>
+<script src="../assets/FileExport/buttons.print.min.js" type="text/javascript"></script>
+<script src="../assets/FileExport/jszip.min.js" type="text/javascript"></script>
+<script src="../assets/FileExport/pdfmake.min.js" type="text/javascript"></script>
+<script src="../assets/FileExport/vfs_fonts.js" type="text/javascript"></script>
 <script src="../assets/js/bootstrap.min.js" type="text/javascript"></script>
 <script src="../assets/js/material.min.js" type="text/javascript"></script>
 <!--  Charts Plugin -->
@@ -325,21 +297,15 @@
 <script src="../assets/js/material-dashboard.js?v=1.2.0"></script>
 <!-- Material Dashboard DEMO methods, don't include it in your project! -->
 <script src="../assets/js/demo.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#example').DataTable({
+        dom: 'Bfrtip',
+        buttons: [
+            'excel', 'pdf', 'print'
+        ]
+    });
+});
+</script>
 
-        
-     <script type="text/javascript">
-			$(document).ready(function() {
-    var table = $('#example').DataTable( {
-        select: {
-            style: 'single'
-        }
-    } );
-
-} );
-	
-	</script>
-   
-        
-        
-        
 </html>
