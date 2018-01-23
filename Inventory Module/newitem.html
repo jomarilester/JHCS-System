@@ -130,7 +130,9 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="itemlist.html"> Item List </a>
+                        <a class="navbar-brand" href="itemlist.html"> 
+                            <button type="submit"  class="btn btn-info pull-right">Back to Item List</button>
+                         </a>
                     </div>
                     <div class="collapse navbar-collapse">
                         <ul class="nav navbar-nav navbar-right">
@@ -221,14 +223,21 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        
                                         <div class="row">
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 form-group">
                                                 <div class="form-group label-floating">
                                                     <label class="control-label">Supplier</label>
-                                                    <input type="text" class="form-control">
+                                                    <select class="form-control" name="Category" placeholder="Category" type="text" required>
+                                                        <option>Supplier A</option>
+                                                        <option>Supplier B</option>
+                                                        <option>Supplier C</option>
+                                                        <option>Supplier D</option>
+                                                        <option>Supplier E</option>
+                                                    </select>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-6">
+                                            </div>                                            
+                                            <div class="col-md-6 form-group" >
                                                 <div class="form-group label-floating">
                                                     <label class="control-label">Normal Price</label>
                                                     <input type="text" class="form-control">
