@@ -117,16 +117,7 @@
                                 </ul>
                             </li>
                         </ul>
-                        <form class="navbar-form navbar-right" role="search">
-                            <div class="form-group  is-empty">
-                                <input type="text" class="form-control" placeholder="Search">
-                                <span class="material-input"></span>
-                            </div>
-                            <button type="submit" class="btn btn-white btn-round btn-just-icon">
-                                <i class="material-icons">search</i>
-                                <div class="ripple-container"></div>
-                            </button>
-                        </form>
+                        
                     </div>
                 </div>
             </nav>
@@ -165,7 +156,7 @@
                                             </table>
                                             <br>
                                             <br>   
-                                            <div class="btn btn-primary btn-round" data-toggle="modal" data-target="#contact" data-original-title>Edit Client's Info
+                                            <div class="btn btn-primary btn-round" data-toggle="modal" data-target="#editinfo" data-original-title>Edit Client's Info
                                             </div>
                                             <a href="./contract.html" class="btn btn-warning btn-round">View Contract</a>
                                             <button type="button" class="btn btn-success btn-round" data-toggle="modal" data-target="#balance">Check Balance</button>  
@@ -363,13 +354,13 @@
                         </div>
 					</div>
 					
-<!--modal for add purchase-->
-					<div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
+<!--modal for edit client's info-->
+									<div class="modal fade" id="editinfo" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
 										<div class="modal-dialog">
 											<div class="panel panel-primary">
 												<div class="panel-heading">
 													<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-													<h4 class="panel-title" id="contactLabel"><span class="glyphicon glyphicon-info-sign"></span> Add New Purchase Order</h4>
+													<h4 class="panel-title" id="contactLabel"><center>Edit Clients Info</center></h4>
 												</div>
 												<form action="#" method="post" accept-charset="utf-8">
 												<div class="modal-body" style="padding: 5px;">
@@ -407,6 +398,51 @@
 																<textarea style="resize:vertical;" class="form-control" placeholder="Address" rows="3" name="address" required></textarea>
 															</div>
 														</div>
+														
+														<div class="row">
+															
+														</div>
+													</div>  
+													<div class="panel-footer" align="center">
+														<input type="submit" class="btn btn-success" value="Add"/>
+															<!--<span class="glyphicon glyphicon-ok"></span>-->
+														<input type="reset" class="btn btn-warning" value="Clear" />
+													
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
+					
+<!--modal for add purchase-->
+					<div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
+										<div class="modal-dialog">
+											<div class="panel panel-primary">
+												<div class="panel-heading">
+													<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+													<h4 class="panel-title" id="contactLabel"><span class="glyphicon glyphicon-info-sign"></span> Add New Purchase Order</h4>
+												</div>
+												<form action="#" method="post" accept-charset="utf-8">
+												<div class="modal-body" style="padding: 5px;">
+													<div class="row">
+													<div class="col-lg-12 col-md-12 col-sm-12" style="padding-bottom: 10px;">
+																<input class="form-control" name="client" placeholder="Company Name" type="text" required />
+															</div>
+													</div>
+													  <div class="row">
+														  <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+														  <input class="form-control" name="coffeeType" placeholder="Date" type="date" required />
+														  </div>
+														</div>
+														<div class="row">
+															<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+																<input class="form-control" name="position" placeholder="Item" type="text" required />
+															</div>
+															<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+																<input class="form-control" name="email" placeholder="Quantity" type="text" required />
+															</div>
+														</div>
+
 
 													</div>  
 													<div class="panel-footer" align="center">
@@ -427,48 +463,29 @@
 											<div class="panel panel-primary">
 												<div class="panel-heading">
 													<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-													<h4 class="panel-title" id="contactLabel"><span class="glyphicon glyphicon-info-sign"></span>Delivery</h4>
+													<h4 class="panel-title" id="contactLabel"><center>Delivery</center></h4>
 												</div>
 												<form action="#" method="post" accept-charset="utf-8">
 												<div class="modal-body" style="padding: 5px;">
-													<div class="row">
-													<div class="col-lg-12 col-md-12 col-sm-12" style="padding-bottom: 10px;">
-																<input class="form-control" name="client" placeholder="Company Name" type="text" required />
-															</div>
-													</div>
+
 													  <div class="row">
 															<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-																<input class="form-control" name="firstname" placeholder="Firstname" type="text" required autofocus />
+																<input class="form-control" name="firstname" placeholder="DR No." type="text" required autofocus />
 															</div>
 															<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-																<input class="form-control" name="lastname" placeholder="Lastname" type="text" required />
+																<input class="form-control" name="lastname" placeholder="SI No." type="text" required />
 															</div>
 														</div>
-														<div class="row">
-															<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-																<input class="form-control" name="position" placeholder="Position" type="text" required />
-															</div>
-															<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-																<input class="form-control" name="email" placeholder="E-mail" type="text" required />
-															</div>
+														 <div class="row">
+														  <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+														  <input class="form-control" name="coffeeType" placeholder="Date" type="date" required />
+														  </div>
 														</div>
-														<div class="row">
-															<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-																<input class="form-control" name="TelNo" placeholder="Tel. No." type="text" required />
-															</div>
-															<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-																<input class="form-control" name="type" placeholder="Client Type" type="text" required />
-															</div>
-														</div>
-														<div class="row">
-															<div class="col-lg-12 col-md-12 col-sm-12">
-																<textarea style="resize:vertical;" class="form-control" placeholder="Address" rows="3" name="address" required></textarea>
-															</div>
-														</div>
+
 
 													</div>  
 													<div class="panel-footer" align="center">
-														<input type="submit" class="btn btn-success" value="Add"/>
+														<input type="submit" class="btn btn-success" value="Add Delivery"/>
 															<!--<span class="glyphicon glyphicon-ok"></span>-->
 														<input type="reset" class="btn btn-warning" value="Clear" />
 															<!--<span class="glyphicon glyphicon-remove"></span>-->
@@ -484,53 +501,55 @@
 											<div class="panel panel-primary">
 												<div class="panel-heading">
 													<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-													<h4 class="panel-title" id="contactLabel"><span class="glyphicon glyphicon-info-sign"></span> Balance</h4>
-												</div>
+													<h4 class="panel-title" id="contactLabel"><center>Balance</center> </h4>
+												</div><br><br>
+												<p>Total Balance: <b>P20,000</b></p>
 												<form action="#" method="post" accept-charset="utf-8">
 												<div class="modal-body" style="padding: 5px;">
-													<div class="row">
-													<div class="col-lg-12 col-md-12 col-sm-12" style="padding-bottom: 10px;">
-																<input class="form-control" name="client" placeholder="Company Name" type="text" required />
-															</div>
-													</div>
-													  <div class="row">
-															<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-																<input class="form-control" name="firstname" placeholder="Firstname" type="text" required autofocus />
-															</div>
-															<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-																<input class="form-control" name="lastname" placeholder="Lastname" type="text" required />
-															</div>
-														</div>
-														<div class="row">
-															<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-																<input class="form-control" name="position" placeholder="Position" type="text" required />
-															</div>
-															<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-																<input class="form-control" name="email" placeholder="E-mail" type="text" required />
-															</div>
-														</div>
-														<div class="row">
-															<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-																<input class="form-control" name="TelNo" placeholder="Tel. No." type="text" required />
-															</div>
-															<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-																<input class="form-control" name="type" placeholder="Client Type" type="text" required />
-															</div>
-														</div>
-														<div class="row">
-															<div class="col-lg-12 col-md-12 col-sm-12">
-																<textarea style="resize:vertical;" class="form-control" placeholder="Address" rows="3" name="address" required></textarea>
-															</div>
+													<p><center>
+											  <a class="btn btn-primary" data-toggle="collapse" href="#collapsePayment" aria-expanded="false" aria-controls="collapseExample" data-background-color="red">
+												Add Payment
+											  </a></center>
+											</p>
+											  <div class="collapse" id="collapsePayment">
+												  <div class="card-block">
+													<form action="#" method="post" accept-charset="utf-8">
+															<div class="modal-body" style="padding: 5px;">
+																<div class="row">
+																	<div class="col-lg-12 col-md-12 col-sm-12" style="padding-bottom: 20px;">
+																	
+																		<div class="form-group">
+																			<div class="row">
+																				<div class="col-xs-3"><p>Date of Payment: </p></div>
+																			<div class="col-xs-5 date">
+																				
+																				
+																				<div class="input-group input-append date" id="datePicker">
+																					
+																					<input type="text" class="form-control" name="date" />
+																					<span class="input-group-addon add-on"><span class="glyphicon glyphicon-calendar"></span></span>
+																				</div>
+																				
+																			</div></div>
+																		</div>
+																<div class="row">
+																	<div class="col-lg-7 col-md-7 col-sm-7" style="padding-bottom: 20px;">
+																		<input class="form-control" name="coffeeType" placeholder="Amount" type="text" required />
+																	</div>
+																</div>
+
+																</div>  
+																<center>
+																	<input type="submit" class="btn btn-success" value="Add"/>
+																	<input type="reset" class="btn btn-warning" value="Cancel" />
+																		</center>
+																</div></div>
+															</form>
+												  </div>
 														</div>
 
 													</div>  
-													<div class="panel-footer" align="center">
-														<input type="submit" class="btn btn-success" value="Add"/>
-															<!--<span class="glyphicon glyphicon-ok"></span>-->
-														<input type="reset" class="btn btn-warning" value="Clear" />
-															<!--<span class="glyphicon glyphicon-remove"></span>-->
-														<button style="float: right;" type="button" class="btn btn-danger btn-close" data-dismiss="modal">Close</button>
-													</div>
+													
 												</form>
 											</div>
 										</div>
@@ -607,7 +626,16 @@
 	<script type="text/javascript">
 			$(document).ready(function() {
     $('table.display').DataTable();
+				
 } );
+		$('#datePicker')
+        .datepicker({
+            format: 'mm/dd/yyyy'
+        })
+        .on('changeDate', function(e) {
+            // Revalidate the date field
+            $('#eventForm').formValidation('revalidateField', 'date');
+        });
 
 	
 	</script>
