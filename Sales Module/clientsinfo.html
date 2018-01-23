@@ -130,60 +130,53 @@
                     </div>
                 </div>
             </nav>
+
             <div class="content">
+					<a href="clients.html" class="btn btn-primary navbar-btn pull-left">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a> 
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="card card-profile">
-								<div class="card-header btn btn-primary btn-lg" data-background-color="orange" data-toggle="modal" data-target="#contact" data-original-title style="float: left">								
-                                  Edit Client's Info
-                                </div>
-								<a href="clientpo.html" class="card-header btn btn-primary btn-lg" data-background-color="purple" data-original-title style="float: right">
-                                     Transactions
-									<span></span>
-									<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
-									<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
-                                </a><br><br>
+								
 
-                                <div class="content">
+                                <div class="col-xs-12">
+                                    <div class="card card-profile">
+                                        <div class="content">
 
-                                    <h3 class="card-title">The Legend Villas</h3>
-                                    <h6 class="category text-gray">Jesselyn Amagan - General Manager</h6>
-                                    <table class="card-content" cellspacing="0" width="50%" align="center">
-										<tbody>
-											<tr>
-												<td ><b>Address:</b></td>
-												<td align="left">Mandaluyong City</td>
-											</tr>
-											<tr>
-												<td><b>Tel:</b></td>
-												<td align="left">+444 444 444</td>
-											</tr>
-											<tr>
-												<td><b>Email:</b></td>
-												<td align="left">chef22@manor.com</td>
-											</tr>
-										</tbody>
-									</table><br><br>
-									<table class="card-content" cellspacing="0" width="50%" align="center">
-										<tbody >
-											<tr>
-												<td><b>Type:</b></td>
-												<td align="left">Coffee Service</td>
-											</tr>
-											<tr>
-												<td><b>Orders:</b></td>
-												<td align="left">Sumatr + Guatamela</td>
-											</tr>
-										</tbody>
-									</table>
-									<br><br><hr>
-									Coffeee and Machines Details Here ..!!
-									<br><br>
-                                    <a href="./transaction.html" class="btn btn-primary btn-round">Transaction History</a>
-									<a data-toggle="modal" data-target="#corder" class="btn btn-primary btn-round">Purchase Order</a>
-									<a href="./balance.html" class="btn btn-primary btn-round">Balance</a><br>
+                                            <h3 class="card-title">The Legend Villas</h3>
+                                            <h6 class="category text-gray">Jesselyn Amagan - General Manager</h6>
+                                            <table class="card-content" cellspacing="0" width="50%" align="center">
+                                                <tbody>
+                                                    <tr>
+                                                        <td ><b>Address:</b></td>
+                                                        <td align="left">Mandaluyong City</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><b>Tel:</b></td>
+                                                        <td align="left">+444 444 444</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><b>Email:</b></td>
+                                                        <td align="left">chef22@manor.com</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <br>
+                                            <br>   
+                                            <div class="btn btn-primary btn-round" data-toggle="modal" data-target="#contact" data-original-title>Edit Client's Info
+                                            </div>
+                                            <a href="./contract.html" class="btn btn-warning btn-round">View Contract</a>
+                                            <button type="button" class="btn btn-success btn-round" data-toggle="modal" data-target="#balance">Check Balance</button>  
+                                        </div>
+                                    </div>
                                 </div>
+
+
+
+
+                           
                                 <div class="modal fade" id="corder" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
                                     <div class="modal-dialog">
                                         <div class="panel panel-primary">
@@ -244,6 +237,305 @@
                             </div>
                         </div>
                     </div>
+					<div class="row">
+                        <div class="col-sm-12">
+                            <div class="card card-nav-tabs">
+                                <div class="card-header" data-background-color="purple">
+                                    <div class="nav-tabs-navigation">
+                                        <div class="nav-tabs-wrapper">
+                                            <span class="nav-tabs-title">Transaction:</span>
+                                            <ul class="nav nav-tabs" data-tabs="tabs">
+                                                <li class="active">
+                                                    <a href="#purchaseorder" data-toggle="tab">
+                                                        <i class="material-icons">bug_report</i> Purchase Order
+                                                        <div class="ripple-container"></div>
+                                                    </a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="#deliveries" data-toggle="tab">
+                                                        <i class="material-icons">code</i> Deliveries
+                                                        <div class="ripple-container"></div>
+                                                    </a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="#payment" data-toggle="tab">
+                                                        <i class="material-icons">cloud</i> Payment
+                                                        <div class="ripple-container"></div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="purchaseorder"><br><br>
+                                            <div class="card-header btn btn-primary btn-lg" data-background-color="red" data-toggle="modal" data-target="#contact" data-original-title style="float:right;" >
+                                   Add Purchase Order
+                                </div><br><br>
+								<table id="" class="display hover order-column" cellspacing="0" width="100%">
+									<thead>
+                                            <th><b class="pull-left">Date</b></th>    
+                                            <th><b class="pull-left">Item</b></th>
+                                            <th><b class="pull-left">Qty</b></th>
+                                            <th><b class="pull-left">Unit</b></th>
+                                            <th><b class="pull-left">Item Code</b></th>
+                                            <th><b class="pull-left">Description</b></th>
+                                            <th><b class="pull-left">Unit Price</b></th>
+                                            <th><b class="pull-left">Total Price</b></th>
+										<th><b class="pull-left">Delivery Stat</b></th>
+									
+									</thead>
+									<tbody>
+										<tr>
+											<td style="background-color: #c4c4c4;">11/02/2017</td>
+                                            <td>CR0502</td>
+                                            <td>48,000</td>
+                                            <td>Tax Withheld</td>
+                                            <td>BPI-OPEX</td>
+											<td>BPI-OPEX</td>
+											<td>BPI-OPEX</td>
+											<td>BPI-OPEX</td>
+											<td><center><div class=" btn btn-primary btn-xs" data-background-color="red" data-toggle="modal" data-target="#deliverymodal" data-original-title >
+                                   pending
+                                </div></center> </td>
+										
+
+										</tr>
+									</tbody>
+								</table>
+                                        </div>
+                                        <div class="tab-pane" id="deliveries">
+                                            <table id="" class="display hover order-column" cellspacing="0" width="100%">
+									<thead>
+                                            <th><b class="pull-left">DR No.</b></th>    
+                                            <th><b class="pull-left">SI No.</b></th>
+                                            <th><b class="pull-left">Date Delivered</b></th>
+                                            <th><b class="pull-left">Type of Coffee</b></th>
+                                            <th><b class="pull-left">Type of Coffee Bag</b></th>
+                                            <th><b class="pull-left">Size</b></th>
+                                            <th><b class="pull-left">Quantity</b></th>
+                                            <th><b class="pull-left">Selling Price</b></th>
+										<th><b class="pull-left">Total Amount</b></th>
+									</thead>
+									<tbody>
+										<tr>
+                                            <td>1946</td>
+                                            <td>3246</td>
+                                            <td>03-Nov-16</td>
+                                            <td>Farmers Ground</td>
+                                            <td>Brown</td>
+                                            <td>250g</td>
+                                            <td>175</td>
+                                            <td>160</td>
+											<td>160</td>
+
+										</tr>
+									</tbody>
+								</table>
+                                        </div>
+                                        <div class="tab-pane" id="payment">
+                                            									<br>
+
+								<table id="" class="display hover order-column" cellspacing="0" width="100%">
+									<thead>
+                                            <th><b class="pull-left">Date of Payment</b></th>    
+                                            <th><b class="pull-left">OR No.</b></th>
+                                            <th><b class="pull-left">Amount</b></th>
+                                            <th><b class="pull-left">Remarks</b></th>
+                                            <th><b class="pull-left">Bank</b></th>
+									</thead>
+									<tbody>
+										<tr>
+											<td style="background-color: #c4c4c4;">11/02/2017</td>
+                                            <td>CR0502</td>
+                                            <td>48,000</td>
+                                            <td>Tax Withheld</td>
+                                            <td>BPI-OPEX</td>
+
+										</tr>
+									</tbody>
+								</table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+					</div>
+					
+<!--modal for add purchase-->
+					<div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
+										<div class="modal-dialog">
+											<div class="panel panel-primary">
+												<div class="panel-heading">
+													<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+													<h4 class="panel-title" id="contactLabel"><span class="glyphicon glyphicon-info-sign"></span> Add New Purchase Order</h4>
+												</div>
+												<form action="#" method="post" accept-charset="utf-8">
+												<div class="modal-body" style="padding: 5px;">
+													<div class="row">
+													<div class="col-lg-12 col-md-12 col-sm-12" style="padding-bottom: 10px;">
+																<input class="form-control" name="client" placeholder="Company Name" type="text" required />
+															</div>
+													</div>
+													  <div class="row">
+															<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+																<input class="form-control" name="firstname" placeholder="Firstname" type="text" required autofocus />
+															</div>
+															<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+																<input class="form-control" name="lastname" placeholder="Lastname" type="text" required />
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+																<input class="form-control" name="position" placeholder="Position" type="text" required />
+															</div>
+															<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+																<input class="form-control" name="email" placeholder="E-mail" type="text" required />
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+																<input class="form-control" name="TelNo" placeholder="Tel. No." type="text" required />
+															</div>
+															<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+																<input class="form-control" name="type" placeholder="Client Type" type="text" required />
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-lg-12 col-md-12 col-sm-12">
+																<textarea style="resize:vertical;" class="form-control" placeholder="Address" rows="3" name="address" required></textarea>
+															</div>
+														</div>
+
+													</div>  
+													<div class="panel-footer" align="center">
+														<input type="submit" class="btn btn-success" value="Add"/>
+															<!--<span class="glyphicon glyphicon-ok"></span>-->
+														<input type="reset" class="btn btn-warning" value="Clear" />
+															<!--<span class="glyphicon glyphicon-remove"></span>-->
+														<button style="float: right;" type="button" class="btn btn-danger btn-close" data-dismiss="modal">Close</button>
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
+					
+<!--modal for deliveries-->
+					<div class="modal fade" id="deliverymodal" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
+										<div class="modal-dialog">
+											<div class="panel panel-primary">
+												<div class="panel-heading">
+													<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+													<h4 class="panel-title" id="contactLabel"><span class="glyphicon glyphicon-info-sign"></span>Delivery</h4>
+												</div>
+												<form action="#" method="post" accept-charset="utf-8">
+												<div class="modal-body" style="padding: 5px;">
+													<div class="row">
+													<div class="col-lg-12 col-md-12 col-sm-12" style="padding-bottom: 10px;">
+																<input class="form-control" name="client" placeholder="Company Name" type="text" required />
+															</div>
+													</div>
+													  <div class="row">
+															<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+																<input class="form-control" name="firstname" placeholder="Firstname" type="text" required autofocus />
+															</div>
+															<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+																<input class="form-control" name="lastname" placeholder="Lastname" type="text" required />
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+																<input class="form-control" name="position" placeholder="Position" type="text" required />
+															</div>
+															<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+																<input class="form-control" name="email" placeholder="E-mail" type="text" required />
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+																<input class="form-control" name="TelNo" placeholder="Tel. No." type="text" required />
+															</div>
+															<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+																<input class="form-control" name="type" placeholder="Client Type" type="text" required />
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-lg-12 col-md-12 col-sm-12">
+																<textarea style="resize:vertical;" class="form-control" placeholder="Address" rows="3" name="address" required></textarea>
+															</div>
+														</div>
+
+													</div>  
+													<div class="panel-footer" align="center">
+														<input type="submit" class="btn btn-success" value="Add"/>
+															<!--<span class="glyphicon glyphicon-ok"></span>-->
+														<input type="reset" class="btn btn-warning" value="Clear" />
+															<!--<span class="glyphicon glyphicon-remove"></span>-->
+														<button style="float: right;" type="button" class="btn btn-danger btn-close" data-dismiss="modal">Close</button>
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
+<!--modal for checkbalance-->
+										<div class="modal fade" id="balance" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
+										<div class="modal-dialog">
+											<div class="panel panel-primary">
+												<div class="panel-heading">
+													<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+													<h4 class="panel-title" id="contactLabel"><span class="glyphicon glyphicon-info-sign"></span> Balance</h4>
+												</div>
+												<form action="#" method="post" accept-charset="utf-8">
+												<div class="modal-body" style="padding: 5px;">
+													<div class="row">
+													<div class="col-lg-12 col-md-12 col-sm-12" style="padding-bottom: 10px;">
+																<input class="form-control" name="client" placeholder="Company Name" type="text" required />
+															</div>
+													</div>
+													  <div class="row">
+															<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+																<input class="form-control" name="firstname" placeholder="Firstname" type="text" required autofocus />
+															</div>
+															<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+																<input class="form-control" name="lastname" placeholder="Lastname" type="text" required />
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+																<input class="form-control" name="position" placeholder="Position" type="text" required />
+															</div>
+															<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+																<input class="form-control" name="email" placeholder="E-mail" type="text" required />
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+																<input class="form-control" name="TelNo" placeholder="Tel. No." type="text" required />
+															</div>
+															<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+																<input class="form-control" name="type" placeholder="Client Type" type="text" required />
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-lg-12 col-md-12 col-sm-12">
+																<textarea style="resize:vertical;" class="form-control" placeholder="Address" rows="3" name="address" required></textarea>
+															</div>
+														</div>
+
+													</div>  
+													<div class="panel-footer" align="center">
+														<input type="submit" class="btn btn-success" value="Add"/>
+															<!--<span class="glyphicon glyphicon-ok"></span>-->
+														<input type="reset" class="btn btn-warning" value="Clear" />
+															<!--<span class="glyphicon glyphicon-remove"></span>-->
+														<button style="float: right;" type="button" class="btn btn-danger btn-close" data-dismiss="modal">Close</button>
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
+
                 </div>
             </div>
             <footer class="footer">
@@ -314,13 +606,9 @@
 	
 	<script type="text/javascript">
 			$(document).ready(function() {
-    var table = $('#example').DataTable( {
-        select: {
-            style: 'single'
-        }
-    } );
-
+    $('table.display').DataTable();
 } );
+
 	
 	</script>
 
