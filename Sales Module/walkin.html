@@ -7,7 +7,7 @@
     <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-    <title>Receivables</title>
+    <title>Walk-in Clients</title>
 
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
@@ -62,16 +62,9 @@
                             <p>Dashboard</p>
                         </a>
                     </li>
-
-                    <li>
-                        <a href="./user.html">
-                            <i class="material-icons">account_circle</i>
-                            <p>User Profile</p>
-                        </a>
-                    </li>
 					<li class="active">
                         <a href="./walkin.html">
-                            <i class="material-icons">assessment</i>
+                            <i class="material-icons">account_circle</i>
                             <p>Walk-In</p>
 
                         </a>
@@ -141,107 +134,98 @@
                 <div class="container-fluid">
                     <div class="row">
 
-                        <div class="col-sm-7">
+                        <div class="col-sm-12">
                             <div class="card">
                                 <div class="card-header" data-background-color="purple">
                                     <h3 class="title"><center>Walk-In Clients</center></h3>
                                 </div>
+						<div class="col-sm-5">
+                            <div class="card">
+								<p><center>
+								  <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" data-background-color="green" aria-expanded="false" aria-controls="collapseExample">
+									Add Sales
+								  </a></center>
+								</p>
+								<div class="collapse" id="collapseExample">
+								  <div class="card-block">
+									<form action="#" method="post" accept-charset="utf-8">
+                                            <div class="modal-body" style="padding: 5px;">
+                                                <div class="row">
+
+                                                    <div class="col-lg-12 col-md-12 col-sm-12" style="padding-bottom: 20px;">
+                                                    <input class="form-control" name="coffeeType" placeholder="Date" type="date" required />
+                                                    <input class="form-control" name="coffeeType" placeholder="Client's Name" type="text" required />
+                                                    <select class="form-control" name="coffee">
+                                                            <option value="" selected disabled>Type of Coffee</option>
+                                                              <option value="">Guatemala Rainforest</option>
+                                                              <option value="">Cordillera Sunrise</option>
+                                                              <option value="">Sumatra Night</option>
+                                                              <option value="">Espresso</option>
+                                                    </select>  
+                                                    <select class="form-control" name="coffee">
+                                                            <option value="" selected disabled>Type of Coffee Bag</option>
+                                                              <option value="clear">Clear</option>
+                                                              <option value="brown">Brown</option>
+                                                    </select> 
+                                                    <select class="form-control" name="coffee">
+                                                            <option value="" selected disabled>Size</option>
+                                                              <option value="clear">250g</option>
+                                                              <option value="brown">500g</option>
+                                                              <option value="brown">1000g</option>
+                                                    </select> 
+                                                    <input class="form-control" name="coffeeType" placeholder="Quantity" type="number" required />
+                                                    </div>
+                                                </div>
+                                                </div>  
+                                                <div class="panel-footer" style="margin-bottom:-14px;">
+                                                    <input type="submit" class="btn btn-success" value="Save"/>
+                                                    <input type="reset" class="btn btn-warning" value="Cancel" />
+                                                 
+                                                </div>
+                                            </form>
+								  </div>
+								</div>
+						
+							</div>
+						</div>
                                 <div class="card-content">	
 									  
                                     <table id="example" class="table hover order-column" cellspacing="0" width="100%">
-									<thead>
-										<tr>
-										<th><b>Client</b></th>
-											<th><b>Date Ordered</b></th>
-											<th><b>Item</b></th>
-											<th><b>SP</b></th>
-											<th><b>QTY</b></th>
-											<th><b>size</b></th>
-										<th><b>Total Amount</b></th>
-										</tr>
-									</thead>
+                              <thead>
+                                        <tr>
+                                        <th><b>Date</b></th>
+                                        <th><b>Client</b></th>
+                                        <th><b>Coffee</b></th>
+                                        <th><b>Coffee Bag</b></th>
+                                        <th><b>Size</b></th>
+                                        <th><b>Qty</b></th>
+                                        <th><b>Price</b></th>
+                                        <th><b>Total Amount</b></th>
+                                            
+                                        </tr>
+                                    </thead>
 									<tbody>
-										<tr>
-											<td>Astoria Hotel and Resort</td>
-											<td>43,750.00</td>
-											<td>43,750.00</td>
-											<td>43,750.00</td>
-											<td>43,750.00</td>
-											<td>43,750.00</td>
-											<td>43,750.00</td>
-										</tr>
-										<tr>
-											<td>BloomField Hotel</td>
-											<td>43,750.00</td>
-											<td>43,750.00</td>
-											<td>43,750.00</td>
-											<td>43,750.00</td>
-											<td>11,827.20</td>
-											<td>11,827.20</td>
-										</tr>
-										<tr>
-											<td>Blue Rock Resort</td>
-											<td>43,750.00</td>
-											<td>43,750.00</td>
-											<td>43,750.00</td>
-											<td>43,750.00</td>
-											<td>11,160.00</td>
-											<td>11,160.00</td>
-										</tr>
-										<tr>
-											<td>Boracay Haven Resort</td>
-											<td>43,750.00</td>
-											<td>43,750.00</td>
-											<td>43,750.00</td>
-											<td>43,750.00</td>
-											<td>43,750.00</td>
-											<td>21,900.00</td>
-										</tr>
-										<tr>
-											<td>Bread House</td>
-											<td>43,750.00</td>
-											<td>43,750.00</td>
-											<td>9,120.00</td>
-											<td>43,750.00</td>
-											<td>43,750.00</td>
-											<td>10,020.00</td>
-										</tr>
-										<tr>
-											<td>Canto Restaurant</td>
-											<td>43,750.00</td>
-											<td>43,750.00</td>
-											<td>9,408.00</td>
-											<td>43,750.00</td>
-											<td>43,750.00</td>
-											<td>9,408.00</td>
-										</tr>
-										<tr>
-											<td>Connies Kitchen</td>
-											<td>43,750.00</td>
-											<td>43,750.00</td>
-											<td>9,100.00</td>
-											<td>43,750.00</td>
-											<td>43,750.00</td>
-											<td>15,340.00</td>
-										</tr>
-										<tr>
-											<td>Femi</td>
-											<td>43,750.00</td>
-											<td>43,750.00</td>
-											<td>asdf</td>
-											<td>43,750.00</td>
-											<td>43,750.00</td>
-											<td>0.00</td>
-										</tr>
-										<tr>
-											<td>Le Chef Deli</td>
-											<td>43,750.00</td>
-											<td>43,750.00</td>
-											<td>15,750.00</td>
-											<td>43,750.00</td>
-											<td>43,750.00</td>
-											<td>15,750.00</td>
-										</tr>
+                                        <tr>
+                                            <td>Oct 1, 2017</td>
+                                            <td>Ariel Tide</td>
+                                            <td>Fiesta Blend Ground</td>
+                                            <td>brown</td>
+                                            <td>250 g</td>
+                                            <td>2</td>
+                                            <td>350</td>
+                                            <td>700</td>
+                                        </tr>
+                                        <tr>
+                                        	<td>Oct 1, 2017</td>
+                                            <td>Jan Lapid</td>
+                                            <td>Guatamela Rainforest</td>
+                                            <td>brown</td>
+                                            <td>500 g</td>
+                                            <td>1</td>
+                                            <td>650</td>
+                                            <td>650</td>
+                                        </tr>
+										
 									</tbody>
 								</table>
 									<div class="modal fade" id="myModal">
@@ -322,48 +306,6 @@
 									</div>
                                 </div>
                             </div>
-                      
-						<div class="col-sm-5">
-                            <div class="card">
-								<p><center>
-								  <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" data-background-color="red" aria-expanded="false" aria-controls="collapseExample">
-									Add Purchase Order
-
-
-								  </a></center>
-								</p>
-								<div class="collapse" id="collapseExample">
-								  <div class="card-block">
-									<form action="#" method="post" accept-charset="utf-8">
-                                            <div class="modal-body" style="padding: 5px;">
-                                                <div class="row">
-
-                                                    <div class="col-lg-12 col-md-12 col-sm-12" style="padding-bottom: 20px;">
-                                                    <input class="form-control" name="coffeeType" placeholder="Client's Name" type="text" required />
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-lg-12 col-md-12 col-sm-12" style="padding-bottom: 20px;">
-                                                        <input class="form-control" name="coffeeType" placeholder="Date" type="text" required />
-													</div>
-                                                </div>
-                                				
-												<div class="row">
-                                                    <div class="col-lg-12 col-md-12 col-sm-12" style="padding-bottom: 20px;">
-                                                        <input class="form-control" name="coffeeType" placeholder="Amount" type="text" required />
-													</div>
-                                                </div>
-                                                </div>  
-                                                <div class="panel-footer" style="margin-bottom:-14px;">
-                                                    <input type="submit" class="btn btn-success" value="Save"/>
-                                                    <input type="reset" class="btn btn-warning" value="Cancel" />
-                                                 
-                                                </div>
-                                            </form>
-								  </div>
-								</div>
-						
-							</div></div>
                     </div>
                 </div>
             </div>
