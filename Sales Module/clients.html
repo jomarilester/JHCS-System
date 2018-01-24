@@ -23,6 +23,9 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons' rel='stylesheet' type='text/css'>
 	 <link rel="shortcut icon" href="favicon.ico">
 
+    <link href="../assets/css/bootstrap-toggle.css" rel="stylesheet" />
+     
+
 	<style>
 	
 /*
@@ -196,7 +199,7 @@
 								</div>
 
                             <div class="card"><center>
-								<div class="card-header btn btn-primary btn-lg" data-background-color="red" data-toggle="modal" data-target="#contact" data-original-title >
+								<div class="card-header btn btn-primary btn-lg" data-background-color="green" data-toggle="modal" data-target="#contact" data-original-title >
                                    Add new Client
                                 </div></center><br><br>
 								<div class="card-content">
@@ -204,47 +207,37 @@
 									<thead>
                                             <th><b class="pull-left">Client</b></th>    
                                             <th><b class="pull-left"> Client Type</b></th>
-										<th></th>
+                                            <th></th>
+										    <th><b class="pull-left">Activation</b></th>
 									</thead>
 									<tbody>
 										<tr>
 											<td>The Legend Villas</td>
                                             <td >Pizza Volante</td>
 											<td><a href="./clientsinfo.html" class="btn btn-primary btn-round">View Details<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></td>
+                                            <td><input type="checkbox" data-toggle="toggle" data-on="Enabled" data-off="Disabled"></td>
 
 										</tr>
 										<tr>
-											<td>Pizza Volante</td>
+											<td>Boracay</td>
                                             <td>Coffee Service</td>
+                                            <td><a href="./clientsinfo.html" class="btn btn-primary btn-round">View Details<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></td>
 											
 										</tr>
 										<tr>
                                             <td>Pizza Volante</td>
 											<td>Coffee Service</td>
+                                            <td><a href="./clientsinfo.html" class="btn btn-primary btn-round">View Details<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></td>
 										</tr>
 										<tr>
-                                            <td>Pizza Volante</td>
+                                            <td>Mario's</td>
 											<td>Coffee Service</td>
+                                            <td><a href="./clientsinfo.html" class="btn btn-primary btn-round">View Details<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></td>
 										</tr>
 										<tr>
-                                            <td>Pizza Volante</td>
+                                            <td>True Blends</td>
 											<td>Retail</td>
-										</tr>
-										<tr>
-                                            <td>Pizza Volante</td>
-											<td>Retail</td>
-										</tr>
-										<tr>
-                                            <td>Pizza Volante</td>
-											<td>Coffee Service</td>
-										</tr>
-										<tr>
-                                            <td>Pizza Volante</td>
-											<td>Retail</td>
-										</tr>
-										<tr>
-                                            <td>Pizza Volante</td>
-											<td>Coffee Service</td>
+                                            <td><a href="./clientsinfo.html" class="btn btn-primary btn-round">View Details<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></td>
 										</tr>
 									</tbody>
 								</table>
@@ -329,6 +322,17 @@
 } );
 	
 	</script>
+
+    <script>
+  $(function() {
+    $('#toggle-two').bootstrapToggle({
+      on: 'Enabled',
+      off: 'Disabled'
+    });
+  })
+</script>
+
+
 
 
 </html>
