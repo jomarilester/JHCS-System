@@ -35,6 +35,11 @@
     <!--   Fonts   -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
 </head>
+<style type="text/css">
+label {
+    color: black;
+}
+</style>
 
 <body>
     <div class="wrapper">
@@ -63,7 +68,7 @@
                     </li>
                     <li class="active">
                         <a href="inventoryreport.html">
-                            <i class="material-icons">assessment</i>
+                            <i class="material-icons">content_paste</i>
                             <p>Inventory Report</p>
                         </a>
                     </li>
@@ -183,123 +188,231 @@
                     </div>
                 </div>
             </nav>
-            <div class="content" style="margin-top: 0px;">
+            <div class="content">
                 <div class="container-fluid">
-                    <div class="card">
-                        <div class="card-header" data-background-color="blue">
-                            <h4 class="title">Inventory Report</h4>
-                        </div>
-                        <div class="card-content">
-                            <table id="example" class="display  hover order-column" cellspacing="0" width="100%">
-                                <thead>
-                                    <tr>
-                                        <th><b>Date In</b></th>
-                                        <th><b></b></th>
-                                        <th><b>Coffee A</b></th>
-                                        <th><b>Coffee B</b></th>
-                                        <th><b>Coffee C</b></th>
-                                        <th><b>Coffee D</b></th>
-                                        <th><b>Coffee E</b></th>
-                                        <th><b>Coffee F</b></th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>09/29/2017</td>
-                                        <td>Beginning Inventory</td>
-                                        <td>71272.85</td>
-                                        <td>93918.00</td>
-                                        <td>22901.00</td>
-                                        <td>24147.50</td>
-                                        <td>74015.00</td>
-                                        <td>5605.00</td>
-                                    </tr>
-                                    <tr>
-                                        <td>10/02/2017</td>
-                                        <td>Gourmet Farms</td>
-                                        <td>119720.00</td>
-                                        <td>199165.00</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td>10/02/2017</td>
-                                        <td>Gourmet Farms</td>
-                                        <td>119870.00</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td>40600.00</td>
-                                    </tr>
-                                    <tr>
-                                        <td>10/02/2017</td>
-                                        <td>Gourmet Farms</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td>156340.00</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                    </tr>
-                                </tbody>
-                                <thead>
-                                    <tr>
-                                        <th><b>Date Out</b></th>
-                                        <th><b></b></th>
-                                        <th><b>Coffee A</b></th>
-                                        <th><b>Coffee B</b></th>
-                                        <th><b>Coffee C</b></th>
-                                        <th><b>Coffee D</b></th>
-                                        <th><b>Coffee E</b></th>
-                                        <th><b>Coffee F</b></th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>09/29/2017</td>
-                                        <td>Patch Cafe</td>
-                                        <td>4800.00</td>
-                                        <td>4800.00</td>
-                                        <td>2400.00</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td>10/02/2017</td>
-                                        <td>Connie's Kitchen</td>
-                                        <td>4800.00</td>
-                                        <td>4800.00</td>
-                                        <td>0</td>
-                                        <td>2400.00</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td>10/02/2017</td>
-                                        <td>OTC Manila</td>
-                                        <td>0</td>
-                                        <td>750.00</td>
-                                        <td>1750.00</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td>10/02/2017</td>
-                                        <td>The Merry Cooks, Inc.</td>
-                                        <td>1200.00</td>
-                                        <td>1200.00</td>
-                                        <td>600.00</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-header" data-background-color="blue">
+                                    <h4 class="title">Inventory Report</h4>
+                                </div>
+                                <div class="card-content">
+                                    <label>Set Date from </label>
+                                    <input type="date" name="">
+                                    <label> to </label>
+                                    <input type="date" name="">
+                                    <button>Submit</button>
+                                    <hr>
+                                    <table id="example" class="display  hover order-column" cellspacing="0" width="100%">
+                                        <thead>
+                                            <tr>
+                                                <th><b>Date In</b></th>
+                                                <th><b></b></th>
+                                                <th><b>Coffee A</b></th>
+                                                <th><b>Coffee B</b></th>
+                                                <th><b>Coffee C</b></th>
+                                                <th><b>Coffee D</b></th>
+                                                <th><b>Coffee E</b></th>
+                                                <th><b>Coffee F</b></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Sept 30, 2017</td>
+                                                <td>Beginning Inventory</td>
+                                                <td>3000 g</td>
+                                                <td>8000 g</td>
+                                                <td>4000 g</td>
+                                                <td>5000 g</td>
+                                                <td>3000 g</td>
+                                                <td>7000 g</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Oct 2, 2017</td>
+                                                <td>Gourmet Farms</td>
+                                                <td>2000 g</td>
+                                                <td>6000 g</td>
+                                                <td>-</td>
+                                                <td>3000 g</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Oct 2, 2017</td>
+                                                <td>Gourmet Farms</td>
+                                                <td>2000 g</td>
+                                                <td>-</td>
+                                                <td>4000 g</td>
+                                                <td>-</td>
+                                                <td>3000 g</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Oct 2, 2017</td>
+                                                <td>Gourmet Farms</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>2000 g</td>
+                                                <td>-</td>
+                                                <td>3000 g</td>
+                                                <td>8000 g</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>Total</b></td>
+                                                <td></td>
+                                                <td>7000 g</td>
+                                                <td>14000 g</td>
+                                                <td>10000 g</td>
+                                                <td>8000 g</td>
+                                                <td>9000 g</td>
+                                                <td>15000 g</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <hr>
+                                    <table id="" class="table table-hover" cellspacing="0" width="100%">
+                                        <thead>
+                                            <tr>
+                                                <th><b>Date Out</b></th>
+                                                <th><b>Client</b></th>
+                                                <th><b>Grams</b></th>
+                                                <th><b>Qty/Bag</b></th>
+                                                <th><b>Total</b></th>
+                                                <th><b>Coffee A</b></th>
+                                                <th><b>Coffee B</b></th>
+                                                <th><b>Coffee C</b></th>
+                                                <th><b>Coffee D</b></th>
+                                                <th><b>Coffee E</b></th>
+                                                <th><b>Coffee F</b></th>
+                                                <th><b>Packaging</b></th>
+                                                <th><b>Type of Service</b></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Oct 2, 2017</td>
+                                                <td>Client 1</td>
+                                                <td>500</td>
+                                                <td>50</td>
+                                                <td>-25000</td>
+                                                <td>-</td>
+                                                <td>-10000</td>
+                                                <td>-2500</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-12500</td>
+                                                <td>Clear Bag</td>
+                                                <td>Retail</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Oct 2, 2017</td>
+                                                <td>Client 2</td>
+                                                <td>500</td>
+                                                <td>1</td>
+                                                <td>-500</td>
+                                                <td>-51</td>
+                                                <td>-376</td>
+                                                <td>-</td>
+                                                <td>-73</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>Clear Bag</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Oct 3, 2017</td>
+                                                <td>Client 3</td>
+                                                <td>500</td>
+                                                <td>2</td>
+                                                <td>-1000</td>
+                                                <td>-</td>
+                                                <td>-700</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-300</td>
+                                                <td>Clear</td>
+                                                <td>Coffee Service</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Oct 3, 2017</td>
+                                                <td>Client 4</td>
+                                                <td>250</td>
+                                                <td>6</td>
+                                                <td>-1500</td>
+                                                <td>-300</td>
+                                                <td>-1200</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>Brown Bag</td>
+                                                <td>Retail</td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>Total</b></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td>-351</td>
+                                                <td>-12276</td>
+                                                <td>-2500</td>
+                                                <td>-73</td>
+                                                <td>-</td>
+                                                <td>-12800</td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>Ending Inventory</b></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td>6649</td>
+                                                <td>1724</td>
+                                                <td>7500</td>
+                                                <td>7927</td>
+                                                <td>9000</td>
+                                                <td>2200</td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -377,6 +490,10 @@ $(document).ready(function() {
             'excel', 'pdf', 'print'
         ]
     });
+});
+
+$(document).ready(function() {
+    $('table.display').DataTable();
 });
 </script>
 
