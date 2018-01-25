@@ -114,28 +114,54 @@
                             <div class="card">
                                 <div class="card-header" data-background-color="purple">
                                     <h3 class="title"><center>Collections</center></h3>
+									<div class="nav-tabs-navigation">
+                                        <div class="nav-tabs-wrapper">
+                                           
+                                            <ul class="nav nav-tabs" data-tabs="tabs">
+                                                <li class="active">
+                                                    <a href="#collection" data-toggle="tab">
+                                                        <i class="material-icons">bug_report</i> Collection
+                                                        <div class="ripple-container"></div>
+                                                    </a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="#PDC" data-toggle="tab">
+                                                        <i class="material-icons">code</i> PDC
+                                                        <div class="ripple-container"></div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="card-content">
-
+                                <div class="card-content"><br><br>
+									<div class="tab-content">
+										<div class="tab-pane active" id="collection"><br><br>
+										<div class="card-header btn btn-primary btn-lg" data-background-color="red" data-toggle="modal" data-target="#deposit" data-original-title style="float:right;" >
+                                   Add Deposit
+                                </div>
                                     <label>Set Date from </label>
                                     <input type="date" name="">
                                     <label> to </label>
                                     <input type="date" name="">
                                     <button>Submit</button>
-                                    <h4>Total Collections: 25,000</h4>
+									<h4>Total Collections (December 2017) : <b>25,000 </b> </h4>
                                     <hr>
                                     <h4>Generate Collection Report</h4>
 
-                                    <table id="example" class="display  hover order-column" cellspacing="0" width="100%">
+                                    <table id="" class="display  hover order-column" cellspacing="0" width="100%">
 									<thead>
 										<tr>
     										<th><b>OR No.</b></th>
     										<th><b>Date of Client Payment</b></th>
+											<th><b>Date Deposited</b></th>
     										<th><b>Client</b></th>
 											<th><b>DR No.</b></th>
 											<th><b>Amount</b></th>
 											<th><b>Remarks</b></th>
 											<th><b>Bank</b></th>
+											<th><b>Gross</b></th>
+											<th><b>Withheld</b></th>
 											
 										</tr>
 									</thead>
@@ -143,31 +169,156 @@
 										<tr>
 											<td>2415</td>
 											<td>Oct 1, 2017</td>
+											<td>Oct 30,2017</td>
 											<td>Bloomfield</td>
 											<td>1234</td>
 											<td>10,000</td>
-                                            <td>Tax Withheld</td>
-											<td>BPI</td>
+											<td></td>
+											<td>BPI-OPEX</td>
+                                            <td>6240.00</td>
+											<td>0.00</td>
 										</tr>
                                         <tr>
                                             <td>5678</td>
                                             <td>Oct 6, 2017</td>
+											<td>Oct 30, 2017</td>
                                             <td>Boracay</td>
-                                            <td>4040</td>
-                                            <td>15,000</td>
+                                            <td>2907</td>
+                                            <td>43,666.61</td>
                                             <td>Tax Withheld</td>
-                                            <td>BPI</td>
+                                            <td>BPI_OPEX</td>
+                                            <td>44060.00</td>
+                                            <td>393.39</td>
                                         </tr>
 									</tbody>
 								</table>
+										</div>
+										<div class="tab-pane" id="PDC">
+											<h4>Total Post Dated Check (December 2017) : <b>1,500.00 </b> </h4>
+											<div class="card-header btn btn-primary btn-lg" data-background-color="red" data-toggle="modal" data-target="#addpdc" data-original-title style="float:right;" >
+                                   Add PDC
+                                </div>
+                                            <table id="" class="display hover order-column" cellspacing="0" width="100%">
+									<thead>
+                                            <th><b>OR No.</b></th>
+    										<th><b>Client</b></th>
+											<th><b>DR No.</b></th>
+
+											<th><b>Remarks</b></th>
+											<th><b>Bank</b></th>
+											<th><b>Gross</b></th>
+									</thead>
+									<tbody>
+										<tr>
+                                            <td>1946</td>
+                                            <td>Farmers Ground</td>
+                                            <td>Brown</td>
+
+                                            <td>175</td>
+                                            <td>BPI-OPEX</td>
+											<td>160</td>
+
+										</tr>
+										<tr>
+                                            <td>1536</td>
+                                            <td>Le Chef</td>
+                                            <td>Brown</td>
+
+                                            <td>175</td>
+                                            <td>BPI-OPEX</td>
+											<td>1340</td>
+
+										</tr>
+									</tbody>
+								</table>
+                                        </div>
 									
                             </div>
+								</div>	
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 		</div></div>
+	<!--modal for add deposit-->
+									<div class="modal fade" id="deposit" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
+										<div class="modal-dialog">
+											<div class="panel panel-primary">
+												<div class="panel-heading">
+													<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+													<h4 class="panel-title" id="contactLabel"><center>Deposit</center></h4>
+												</div>
+												<form action="#" method="post" accept-charset="utf-8">
+												<div class="modal-body" style="padding: 5px;">
+													
+													  <div class="row">
+															<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+																<input class="form-control" name="firstname" placeholder="Date of Deposit" type="date" required autofocus />
+															</div>
+															<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+																<input class="form-control" name="lastname" placeholder="Total Amount Deposited" type="text" required />
+															</div>
+														</div>
+														
+													</div>  
+													<div class="panel-footer" align="center">
+														<input type="submit" class="btn btn-success" value="Add"/>
+															<!--<span class="glyphicon glyphicon-ok"></span>-->
+														<input type="reset" class="btn btn-warning" value="Clear" />
+													
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
+<!--modal for PDC-->								
+									<div class="modal fade" id="addpdc" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
+										<div class="modal-dialog">
+											<div class="panel panel-primary">
+												<div class="panel-heading">
+													<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+													<h4 class="panel-title" id="contactLabel"><center>Post Dated Check</center></h4>
+												</div>
+												<form action="#" method="post" accept-charset="utf-8">
+												<div class="modal-body" style="padding: 5px;">
+													
+													  <div class="row">
+															<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+																<input class="form-control" name="Client" placeholder="Client" type="text" required autofocus />
+															</div>
+															<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+																<input class="form-control" name="lastname" placeholder="Bank" type="text" required />
+															</div>
+														</div>
+													<div class="row">
+															<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+																<input class="form-control" name="Client" placeholder="OR No." type="text" required autofocus />
+															</div>
+															<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+																<input class="form-control" name="lastname" placeholder="DR No." type="text" required />
+															</div>
+														</div>
+													<div class="row">
+															<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+																<input class="form-control" name="Client" placeholder="Gross" type="text" required autofocus />
+															</div>
+															<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+																<input class="form-control" name="lastname" placeholder="Remarks" type="text" required />
+															</div>
+														</div>
+														
+													</div>  
+													<div class="panel-footer" align="center">
+														<input type="submit" class="btn btn-success" value="Add"/>
+															<!--<span class="glyphicon glyphicon-ok"></span>-->
+														<input type="reset" class="btn btn-warning" value="Clear" />
+													
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
 </body>
 <!--   Core JS Files   -->
 <script src="../assets/js/jquery-3.2.1.min.js" type="text/javascript"></script>
@@ -198,7 +349,7 @@
 <script src="../assets/js/demo.js"></script>
 <script type="text/javascript">
     $(document).ready(function() {
-    $('#example').DataTable( {
+    $('table.display').DataTable( {
         dom: 'Bfrtip',
         buttons: [
             'excel', 'pdf', 'print'
