@@ -9,12 +9,10 @@
     <title>Material Dashboard by Creative Tim</title>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
-    
     <!-- Bootstrap core CSS     -->
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
-	<link href="../assets/css/dataTables.bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/css/dataTables.bootstrap.min.css" rel="stylesheet" />
     <link href="../assets/css/jquery.dataTable.min.css" rel="stylesheet" />
-
     <!--  Material Dashboard CSS    -->
     <link href="../assets/css/material-dashboard.css?v=1.2.0" rel="stylesheet" />
     <!--  CSS for Demo Purpose, don't include it in your project     -->
@@ -22,25 +20,22 @@
     <!--     Fonts and icons     -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons' rel='stylesheet' type='text/css'>
-	 <link rel="shortcut icon" href="favicon.ico">
-
-    
-	<style>
-	
-/*
-		td.highlight {
-			background-color: whitesmoke !important;
-		}
+    <link rel="shortcut icon" href="favicon.ico">
+    <style>
+    /*
+        td.highlight {
+            background-color: whitesmoke !important;
+        }
 */
-		.table thead, thead th {
-			text-align: center;
-			font-size: 140%;
-		}
-	</style>
+
+    .table thead,
+    thead th {
+        text-align: center;
+        font-size: 140%;
+    }
+    </style>
 </head>
 
-    
-    
 <body>
     <div class="wrapper">
         <div class="sidebar" data-color="blue" data-image="../assets/img/sidebar-0.jpg">
@@ -52,10 +47,9 @@
             <div class="logo">
                 <img src="../assets/img/logo.png" alt="image1" width="250px" height="150px">
             </div>
-            
-          <div class="sidebar-wrapper">
+            <div class="sidebar-wrapper">
                 <ul class="nav">
-                    <li class="active">
+                    <li>
                         <a href="dashboard.html">
                             <i class="material-icons">dashboard</i>
                             <p>Dashboard</p>
@@ -79,14 +73,12 @@
                             <p>User Profile</p>
                         </a>
                     </li>
-                    
                     <li>
                         <a href="./PO.html">
                             <i class="material-icons text-gray">local_shipping</i>
                             <p>Purchase Order</p>
                         </a>
                     </li>
-                    
                     <hr>
                     <li>
                         <b>Lists</b>
@@ -119,7 +111,7 @@
                     <li>
                         <b>Inventory</b>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="./inventoryout.html">
                             <i class="material-icons text-gray">reply</i>
                             <p>Inventory Out</p>
@@ -145,51 +137,34 @@
                     </li>
                 </ul>
             </div>
-        
         </div>
-        
         <div class="main-panel">
-          <nav class="navbar navbar-transparent navbar-absolute">
+            <nav class="navbar navbar-transparent navbar-absolute">
                 <div class="container-fluid">
                     <div class="collapse navbar-collapse">
-                         <ul class="nav navbar-nav navbar-right">
+                        <ul class="nav navbar-nav navbar-right">
                             <li>
-                                    <p class="navbar-header">Hi, User 1</p>
-
+                                <p class="navbar-header">Hi, User 1</p>
                             </li>
-							<li class="dropdown">
-                                  <a href="#pablo" class="dropdown-toggle" data-toggle="dropdown">
+                            <li class="dropdown">
+                                <a href="#pablo" class="dropdown-toggle" data-toggle="dropdown">
                                     <i class="material-icons">person</i>
                                     <p class="hidden-lg hidden-md">Profile</p>
                                 </a>
                                 <ul class="dropdown-menu">
-
                                     <li>
                                         <a href="./user.html">User Profile</a>
                                     </li>
-									<hr>
+                                    <hr>
                                     <li>
                                         <a href="#">Logout</a>
                                     </li>
                                 </ul>
                             </li>
                         </ul>
-                        <form class="navbar-form navbar-right" role="search">
-                            <div class="form-group  is-empty">
-                                <input type="text" class="form-control" placeholder="Search">
-                                <span class="material-input"></span>
-                            </div>
-                            <button type="submit" class="btn btn-white btn-round btn-just-icon">
-                                <i class="material-icons">search</i>
-                                <div class="ripple-container"></div>
-                            </button>
-                        </form>
                     </div>
                 </div>
             </nav>
-            
-            
-            
             <div class="content">
                 <div class="container-fluid">
                     <div class="row">
@@ -199,34 +174,31 @@
                                     <div class="nav-tabs-navigation">
                                         <div class="nav-tabs-wrapper">
                                             <span class="nav-tabs-title"> </span>
-                                           <ul class="nav nav-tabs" data-tabs="tabs">
+                                            <ul class="nav nav-tabs" data-tabs="tabs">
                                                 <li class="active">
-                                                    <a href="./inventoryout.html" >
+                                                    <a href="./inventoryout.html">
                                                         Coffee
                                                         <div class="ripple-container"></div>
                                                     </a>
                                                 </li>
-												<span></span>
+                                                <span></span>
                                                 <li class="">
-                                                    <a href="./packagingO.html" >
+                                                    <a href="./packagingO.html">
                                                         Packaging
                                                         <div class="ripple-container"></div>
                                                     </a>
-												</li>
-												<span></span>
-												<li class="">
-                                                    <a href="./machineO.html" >
+                                                </li>
+                                                <span></span>
+                                                <li class="">
+                                                    <a href="./machineO.html">
                                                         Machines
                                                         <div class="ripple-container"></div>
                                                     </a>
-												</li>
+                                                </li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
-                                
-                                
-                                
                                 <div class="card-content ">
                                     <br>
                                     <table id="example" class="table hover order-column" cellspacing="0" width="100%">
@@ -238,7 +210,7 @@
                                             <th><b class="pull-left">Weight(g)</b></th>
                                             <th><b class="pull-left">Qty/Bag</b></th>
                                             <th><b class="pull-left">Remarks</b></th>
-                                            
+                                            <th><b class="pull-left">Actions</b></th>
                                         </thead>
                                         <tbody>
                                             <tr>
@@ -250,59 +222,58 @@
                                                 <td>32</td>
                                                 <td>G</td>
                                                 <td>
-									<a class="btn btn-warning" data-toggle="modal" data-target="#blend1">Details</a>
-									<div class="modal fade" id="blend1" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
-										<div class="modal-dialog modal-lg">
-											<div class="panel panel-primary">
-												<form action="#" method="post" accept-charset="utf-8">
-												
-                                                    
-                                                    
-                                                    <div class="modal-body" style="padding: 5px;">
-                                                    <div id="page-wrapper">
-                                                    <div class="table-responsive">
-                                                        <center><b>Tazabelle</b><br>
-                                                        <b>1/30/18</b></center>
-                                                        <table class="table table-striped" id="table-mutasi">
-                                                          <thead>
-                                                            <tr>
-                                                              <th>GUATEMALA</th>
-                                                              <th>SUMATRA</th>
-                                                              <th>ROBUSTA</th>
-                                                              <th>BENGUET</th>
-                                                              <th>COLOMBIA</th>
-                                                              <th>BARAKO</th>
-                                                            </tr>
-                                                          </thead>
-                                                          <tbody>
-                                                            <tr>
-                                                                <td>60</td>
-                                                                <td>40</td>
-                                                                <td> </td>
-                                                                <td>60</td>
-                                                                <td> </td>
-                                                                <td>40</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td> </td>
-                                                                <td>10</td>
-                                                                <td>25</td>
-                                                                <td> </td>
-                                                                <td>15.5</td>
-                                                                <td>60</td>
-                                                            </tr>
-                                                          </tbody>
-                                                        </table>
+                                                    <a class="btn btn-warning" data-toggle="modal" data-target="#blend1">Details</a>
+                                                    <div class="modal fade" id="blend1" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
+                                                        <div class="modal-dialog modal-lg">
+                                                            <div class="panel panel-primary">
+                                                                <form action="#" method="post" accept-charset="utf-8">
+                                                                    <div class="modal-body" style="padding: 5px;">
+                                                                        <div id="page-wrapper">
+                                                                            <div class="table-responsive">
+                                                                                <center><b>Tazabelle</b>
+                                                                                    <br>
+                                                                                    <b>1/30/18</b></center>
+                                                                                <table class="table table-striped" id="table-mutasi">
+                                                                                    <thead>
+                                                                                        <tr>
+                                                                                            <th>GUATEMALA</th>
+                                                                                            <th>SUMATRA</th>
+                                                                                            <th>ROBUSTA</th>
+                                                                                            <th>BENGUET</th>
+                                                                                            <th>COLOMBIA</th>
+                                                                                            <th>BARAKO</th>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td>60</td>
+                                                                                            <td>40</td>
+                                                                                            <td> </td>
+                                                                                            <td>60</td>
+                                                                                            <td> </td>
+                                                                                            <td>40</td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td> </td>
+                                                                                            <td>10</td>
+                                                                                            <td>25</td>
+                                                                                            <td> </td>
+                                                                                            <td>15.5</td>
+                                                                                            <td>60</td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="panel-footer" align="center" style="margin-bottom:-14px;">
+                                                                        <button type="button" class="btn btn-default btn-close" data-dismiss="modal">CLOSE</button>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    </div>
-													</div>  
-													<div class="panel-footer" align="center" style="margin-bottom:-14px;">
-														<button type="button" class="btn btn-default btn-close" data-dismiss="modal">OKAY</button>
-													</div>
-												</form>
-											</div>
-										</div>
-									</div></td>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>2</td>
@@ -313,56 +284,58 @@
                                                 <td>26</td>
                                                 <td>B</td>
                                                 <td>
-									<a class="btn btn-warning" data-toggle="modal" data-target="#blend2">Details</a>
-									<div class="modal fade" id="blend2" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
-										<div class="modal-dialog modal-lg">
-											<div class="panel panel-primary">
-												<form action="#" method="post" accept-charset="utf-8">
-												<div class="modal-body" style="padding: 5px;">
-                                                    <div id="page-wrapper">
-                                                    <div class="table-responsive">
-                                                        <center><b>Cafe Lupe</b><br>
-                                                        <b>1/28/18</b></center>
-                                                        <table class="table table-striped" id="table-mutasi">
-                                                          <thead>
-                                                            <tr>
-                                                              <th>GUATEMALA</th>
-                                                              <th>SUMATRA</th>
-                                                              <th>ROBUSTA</th>
-                                                              <th>BENGUET</th>
-                                                              <th>COLOMBIA</th>
-                                                              <th>BARAKO</th>
-                                                            </tr>
-                                                          </thead>
-                                                          <tbody>
-                                                            <tr>
-                                                                <td>20</td>
-                                                                <td>40</td>
-                                                                <td>20</td>
-                                                                <td>60</td>
-                                                                <td> </td>
-                                                                <td> </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td> </td>
-                                                                <td>10</td>
-                                                                <td> </td>
-                                                                <td> </td>
-                                                                <td>65.5</td>
-                                                                <td>55</td>
-                                                            </tr>
-                                                          </tbody>
-                                                        </table>
+                                                    <a class="btn btn-warning" data-toggle="modal" data-target="#blend2">Details</a>
+                                                    <div class="modal fade" id="blend2" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
+                                                        <div class="modal-dialog modal-lg">
+                                                            <div class="panel panel-primary">
+                                                                <form action="#" method="post" accept-charset="utf-8">
+                                                                    <div class="modal-body" style="padding: 5px;">
+                                                                        <div id="page-wrapper">
+                                                                            <div class="table-responsive">
+                                                                                <center><b>Cafe Lupe</b>
+                                                                                    <br>
+                                                                                    <b>1/28/18</b></center>
+                                                                                <table class="table table-striped" id="table-mutasi">
+                                                                                    <thead>
+                                                                                        <tr>
+                                                                                            <th>GUATEMALA</th>
+                                                                                            <th>SUMATRA</th>
+                                                                                            <th>ROBUSTA</th>
+                                                                                            <th>BENGUET</th>
+                                                                                            <th>COLOMBIA</th>
+                                                                                            <th>BARAKO</th>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td>20</td>
+                                                                                            <td>40</td>
+                                                                                            <td>20</td>
+                                                                                            <td>60</td>
+                                                                                            <td> </td>
+                                                                                            <td> </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td> </td>
+                                                                                            <td>10</td>
+                                                                                            <td> </td>
+                                                                                            <td> </td>
+                                                                                            <td>65.5</td>
+                                                                                            <td>55</td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="panel-footer" align="center" style="margin-bottom:-14px;">
+                                                                        <button type="button" class="btn btn-default btn-close" data-dismiss="modal">CLOSE</button>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    </div>
-													</div>  
-													<div class="panel-footer" align="center" style="margin-bottom:-14px;">
-														<button type="button" class="btn btn-default btn-close" data-dismiss="modal">OKAY</button>
-													</div>
-												</form>
-											</div>
-										</div>
-									</div></td>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>3</td>
@@ -373,56 +346,58 @@
                                                 <td>30</td>
                                                 <td>B</td>
                                                 <td>
-									<a class="btn btn-warning" data-toggle="modal" data-target="#blend3">Details</a>
-									<div class="modal fade" id="blend3" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
-										<div class="modal-dialog modal-lg">
-											<div class="panel panel-primary">
-												<form action="#" method="post" accept-charset="utf-8">
-												<div class="modal-body" style="padding: 5px;">
-                                                    <div id="page-wrapper">
-                                                    <div class="table-responsive">
-                                                        <center><b>The Merry Cooks, Inc.</b><br>
-                                                        <b>1/15/18</b></center>
-                                                        <table class="table table-striped" id="table-mutasi">
-                                                          <thead>
-                                                            <tr>
-                                                              <th>GUATEMALA</th>
-                                                              <th>SUMATRA</th>
-                                                              <th>ROBUSTA</th>
-                                                              <th>BENGUET</th>
-                                                              <th>COLOMBIA</th>
-                                                              <th>BARAKO</th>
-                                                            </tr>
-                                                          </thead>
-                                                          <tbody>
-                                                            <tr>
-                                                                <td>60</td>
-                                                                <td> </td>
-                                                                <td>40</td>
-                                                                <td>60</td>
-                                                                <td>20</td>
-                                                                <td>10</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>60</td>
-                                                                <td> </td>
-                                                                <td>25</td>
-                                                                <td>10</td>
-                                                                <td>13.5</td>
-                                                                <td> </td>
-                                                            </tr>
-                                                          </tbody>
-                                                        </table>
+                                                    <a class="btn btn-warning" data-toggle="modal" data-target="#blend3">Details</a>
+                                                    <div class="modal fade" id="blend3" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
+                                                        <div class="modal-dialog modal-lg">
+                                                            <div class="panel panel-primary">
+                                                                <form action="#" method="post" accept-charset="utf-8">
+                                                                    <div class="modal-body" style="padding: 5px;">
+                                                                        <div id="page-wrapper">
+                                                                            <div class="table-responsive">
+                                                                                <center><b>The Merry Cooks, Inc.</b>
+                                                                                    <br>
+                                                                                    <b>1/15/18</b></center>
+                                                                                <table class="table table-striped" id="table-mutasi">
+                                                                                    <thead>
+                                                                                        <tr>
+                                                                                            <th>GUATEMALA</th>
+                                                                                            <th>SUMATRA</th>
+                                                                                            <th>ROBUSTA</th>
+                                                                                            <th>BENGUET</th>
+                                                                                            <th>COLOMBIA</th>
+                                                                                            <th>BARAKO</th>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td>60</td>
+                                                                                            <td> </td>
+                                                                                            <td>40</td>
+                                                                                            <td>60</td>
+                                                                                            <td>20</td>
+                                                                                            <td>10</td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>60</td>
+                                                                                            <td> </td>
+                                                                                            <td>25</td>
+                                                                                            <td>10</td>
+                                                                                            <td>13.5</td>
+                                                                                            <td> </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="panel-footer" align="center" style="margin-bottom:-14px;">
+                                                                        <button type="button" class="btn btn-default btn-close" data-dismiss="modal">OKAY</button>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    </div>
-													</div>  
-													<div class="panel-footer" align="center" style="margin-bottom:-14px;">
-														<button type="button" class="btn btn-default btn-close" data-dismiss="modal">OKAY</button>
-													</div>
-												</form>
-											</div>
-										</div>
-									</div></td>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>4</td>
@@ -433,56 +408,58 @@
                                                 <td>25</td>
                                                 <td>B</td>
                                                 <td>
-									<a class="btn btn-warning" data-toggle="modal" data-target="#blend4">Details</a>
-									<div class="modal fade" id="blend4" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
-										<div class="modal-dialog modal-lg">
-											<div class="panel panel-primary">
-												<form action="#" method="post" accept-charset="utf-8">
-												<div class="modal-body" style="padding: 5px;">
-                                                    <div id="page-wrapper">
-                                                    <div class="table-responsive">
-                                                        <center><b>The Patch cafe</b><br>
-                                                        <b>1/12/18</b></center>
-                                                        <table class="table table-striped" id="table-mutasi">
-                                                          <thead>
-                                                            <tr>
-                                                              <th>GUATEMALA</th>
-                                                              <th>SUMATRA</th>
-                                                              <th>ROBUSTA</th>
-                                                              <th>BENGUET</th>
-                                                              <th>COLOMBIA</th>
-                                                              <th>BARAKO</th>
-                                                            </tr>
-                                                          </thead>
-                                                          <tbody>
-                                                            <tr>
-                                                                <td>20</td>
-                                                                <td>20</td>
-                                                                <td>20</td>
-                                                                <td>60</td>
-                                                                <td> </td>
-                                                                <td> </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>10</td>
-                                                                <td>10</td>
-                                                                <td>25</td>
-                                                                <td> </td>
-                                                                <td> </td>
-                                                                <td>45</td>
-                                                            </tr>
-                                                          </tbody>
-                                                        </table>
+                                                    <a class="btn btn-warning" data-toggle="modal" data-target="#blend4">Details</a>
+                                                    <div class="modal fade" id="blend4" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
+                                                        <div class="modal-dialog modal-lg">
+                                                            <div class="panel panel-primary">
+                                                                <form action="#" method="post" accept-charset="utf-8">
+                                                                    <div class="modal-body" style="padding: 5px;">
+                                                                        <div id="page-wrapper">
+                                                                            <div class="table-responsive">
+                                                                                <center><b>The Patch cafe</b>
+                                                                                    <br>
+                                                                                    <b>1/12/18</b></center>
+                                                                                <table class="table table-striped" id="table-mutasi">
+                                                                                    <thead>
+                                                                                        <tr>
+                                                                                            <th>GUATEMALA</th>
+                                                                                            <th>SUMATRA</th>
+                                                                                            <th>ROBUSTA</th>
+                                                                                            <th>BENGUET</th>
+                                                                                            <th>COLOMBIA</th>
+                                                                                            <th>BARAKO</th>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td>20</td>
+                                                                                            <td>20</td>
+                                                                                            <td>20</td>
+                                                                                            <td>60</td>
+                                                                                            <td> </td>
+                                                                                            <td> </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>10</td>
+                                                                                            <td>10</td>
+                                                                                            <td>25</td>
+                                                                                            <td> </td>
+                                                                                            <td> </td>
+                                                                                            <td>45</td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="panel-footer" align="center" style="margin-bottom:-14px;">
+                                                                        <button type="button" class="btn btn-default btn-close" data-dismiss="modal">CLOSE</button>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    </div>
-													</div>  
-													<div class="panel-footer" align="center" style="margin-bottom:-14px;">
-														<button type="button" class="btn btn-default btn-close" data-dismiss="modal">OKAY</button>
-													</div>
-												</form>
-											</div>
-										</div>
-									</div></td>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>5</td>
@@ -493,56 +470,58 @@
                                                 <td>12</td>
                                                 <td>B</td>
                                                 <td>
-									<a class="btn btn-warning" data-toggle="modal" data-target="#blend5">Details</a>
-									<div class="modal fade" id="blend5" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
-										<div class="modal-dialog modal-lg">
-											<div class="panel panel-primary">
-												<form action="#" method="post" accept-charset="utf-8">
-												<div class="modal-body" style="padding: 5px;">
-                                                    <div id="page-wrapper">
-                                                    <div class="table-responsive">
-                                                        <center><b>Connie's Kitchen</b><br>
-                                                        <b>1/09/18</b></center>
-                                                        <table class="table table-striped" id="table-mutasi">
-                                                          <thead>
-                                                            <tr>
-                                                              <th>GUATEMALA</th>
-                                                              <th>SUMATRA</th>
-                                                              <th>ROBUSTA</th>
-                                                              <th>BENGUET</th>
-                                                              <th>COLOMBIA</th>
-                                                              <th>BARAKO</th>
-                                                            </tr>
-                                                          </thead>
-                                                          <tbody>
-                                                            <tr>
-                                                                <td>40</td>
-                                                                <td>60</td>
-                                                                <td> </td>
-                                                                <td>55</td>
-                                                                <td> </td>
-                                                                <td>35</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td> </td>
-                                                                <td>15</td>
-                                                                <td>20</td>
-                                                                <td> </td>
-                                                                <td>15</td>
-                                                                <td>60.5</td>
-                                                            </tr>
-                                                          </tbody>
-                                                        </table>
+                                                    <a class="btn btn-warning" data-toggle="modal" data-target="#blend5">Details</a>
+                                                    <div class="modal fade" id="blend5" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
+                                                        <div class="modal-dialog modal-lg">
+                                                            <div class="panel panel-primary">
+                                                                <form action="#" method="post" accept-charset="utf-8">
+                                                                    <div class="modal-body" style="padding: 5px;">
+                                                                        <div id="page-wrapper">
+                                                                            <div class="table-responsive">
+                                                                                <center><b>Connie's Kitchen</b>
+                                                                                    <br>
+                                                                                    <b>1/09/18</b></center>
+                                                                                <table class="table table-striped" id="table-mutasi">
+                                                                                    <thead>
+                                                                                        <tr>
+                                                                                            <th>GUATEMALA</th>
+                                                                                            <th>SUMATRA</th>
+                                                                                            <th>ROBUSTA</th>
+                                                                                            <th>BENGUET</th>
+                                                                                            <th>COLOMBIA</th>
+                                                                                            <th>BARAKO</th>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td>40</td>
+                                                                                            <td>60</td>
+                                                                                            <td> </td>
+                                                                                            <td>55</td>
+                                                                                            <td> </td>
+                                                                                            <td>35</td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td> </td>
+                                                                                            <td>15</td>
+                                                                                            <td>20</td>
+                                                                                            <td> </td>
+                                                                                            <td>15</td>
+                                                                                            <td>60.5</td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="panel-footer" align="center" style="margin-bottom:-14px;">
+                                                                        <button type="button" class="btn btn-default btn-close" data-dismiss="modal">CLOSE</button>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    </div>
-													</div>  
-													<div class="panel-footer" align="center" style="margin-bottom:-14px;">
-														<button type="button" class="btn btn-default btn-close" data-dismiss="modal">OKAY</button>
-													</div>
-												</form>
-											</div>
-										</div>
-									</div></td>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>6</td>
@@ -553,56 +532,58 @@
                                                 <td>48</td>
                                                 <td>B</td>
                                                 <td>
-									<a class="btn btn-warning" data-toggle="modal" data-target="#blend6">Details</a>
-									<div class="modal fade" id="blend6" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
-										<div class="modal-dialog modal-lg">
-											<div class="panel panel-primary">
-												<form action="#" method="post" accept-charset="utf-8">
-												<div class="modal-body" style="padding: 5px;">
-                                                    <div id="page-wrapper">
-                                                    <div class="table-responsive">
-                                                        <center><b>The Manor Hotel</b><br>
-                                                        <b>1/05/18</b></center>
-                                                        <table class="table table-striped" id="table-mutasi">
-                                                          <thead>
-                                                            <tr>
-                                                              <th>GUATEMALA</th>
-                                                              <th>SUMATRA</th>
-                                                              <th>ROBUSTA</th>
-                                                              <th>BENGUET</th>
-                                                              <th>COLOMBIA</th>
-                                                              <th>BARAKO</th>
-                                                            </tr>
-                                                          </thead>
-                                                          <tbody>
-                                                            <tr>
-                                                                <td>120</td>
-                                                                <td>100</td>
-                                                                <td>150</td>
-                                                                <td>60</td>
-                                                                <td>25</td>
-                                                                <td>160</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td> </td>
-                                                                <td>110</td>
-                                                                <td>125</td>
-                                                                <td> </td>
-                                                                <td>115.5</td>
-                                                                <td>160</td>
-                                                            </tr>
-                                                          </tbody>
-                                                        </table>
+                                                    <a class="btn btn-warning" data-toggle="modal" data-target="#blend6">Details</a>
+                                                    <div class="modal fade" id="blend6" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
+                                                        <div class="modal-dialog modal-lg">
+                                                            <div class="panel panel-primary">
+                                                                <form action="#" method="post" accept-charset="utf-8">
+                                                                    <div class="modal-body" style="padding: 5px;">
+                                                                        <div id="page-wrapper">
+                                                                            <div class="table-responsive">
+                                                                                <center><b>The Manor Hotel</b>
+                                                                                    <br>
+                                                                                    <b>1/05/18</b></center>
+                                                                                <table class="table table-striped" id="table-mutasi">
+                                                                                    <thead>
+                                                                                        <tr>
+                                                                                            <th>GUATEMALA</th>
+                                                                                            <th>SUMATRA</th>
+                                                                                            <th>ROBUSTA</th>
+                                                                                            <th>BENGUET</th>
+                                                                                            <th>COLOMBIA</th>
+                                                                                            <th>BARAKO</th>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td>120</td>
+                                                                                            <td>100</td>
+                                                                                            <td>150</td>
+                                                                                            <td>60</td>
+                                                                                            <td>25</td>
+                                                                                            <td>160</td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td> </td>
+                                                                                            <td>110</td>
+                                                                                            <td>125</td>
+                                                                                            <td> </td>
+                                                                                            <td>115.5</td>
+                                                                                            <td>160</td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="panel-footer" align="center" style="margin-bottom:-14px;">
+                                                                        <button type="button" class="btn btn-default btn-close" data-dismiss="modal">OKAY</button>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    </div>
-													</div>  
-													<div class="panel-footer" align="center" style="margin-bottom:-14px;">
-														<button type="button" class="btn btn-default btn-close" data-dismiss="modal">OKAY</button>
-													</div>
-												</form>
-											</div>
-										</div>
-									</div></td>
+                                                </td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -641,7 +622,7 @@
                     <p class="copyright pull-right">
                         &copy;
                         <script>
-                            document.write(new Date().getFullYear())
+                        document.write(new Date().getFullYear())
                         </script>
                         <a href="http://www.creative-tim.com">Creative Tim</a>, made with love for a better web
                     </p>
@@ -650,14 +631,10 @@
         </div>
     </div>
 </body>
-    
-    
-<!--   Core JS Files   -->  
-
+<!--   Core JS Files   -->
 <script src="../assets/js/jquery-3.2.1.min.js" type="text/javascript"></script>
-		<script src="../assets/js/jquery.dataTables.min.js" type="text/javascript"></script>
-	<script src="../assets/js/dataTables.bootstrap.min.js" type="text/javascript"></script>
-	
+<script src="../assets/js/jquery.dataTables.min.js" type="text/javascript"></script>
+<script src="../assets/js/dataTables.bootstrap.min.js" type="text/javascript"></script>
 <script src="../assets/js/bootstrap.min.js" type="text/javascript"></script>
 <script src="../assets/js/material.min.js" type="text/javascript"></script>
 <!--  Charts Plugin -->
@@ -674,19 +651,15 @@
 <script src="../assets/js/material-dashboard.js?v=1.2.0"></script>
 <!-- Material Dashboard DEMO methods, don't include it in your project! -->
 <script src="../assets/js/demo.js"></script>
-	
-    
-	<script type="text/javascript">
-			$(document).ready(function() {
-    var table = $('#example').DataTable( {
+<script type="text/javascript">
+$(document).ready(function() {
+    var table = $('#example').DataTable({
         select: {
             style: 'single'
         }
-    } );
+    });
 
-} );
-	
-	</script>
-
+});
+</script>
 
 </html>
