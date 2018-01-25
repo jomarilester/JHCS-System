@@ -22,7 +22,60 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons' rel='stylesheet' type='text/css'>
 	 <link rel="shortcut icon" href="favicon.ico">
 </head>
+<style type="text/css">
+    .table thead, thead th {
+            text-align: center;
+            font-size: 120%;
+        }
+        /* Custom Style */
+        .onoffswitch {
+            position: relative; width: 110px;
+            -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+        }
+        .onoffswitch-checkbox {
+            display: none;
+        }
+        .onoffswitch-label {
+            display: block; overflow: hidden; cursor: pointer;
+            border: 2px solid #999999; border-radius: 20px;
+        }
+        .onoffswitch-inner {
+            display: block; width: 200%; margin-left: -100%;
+            -moz-transition: margin 0.3s ease-in 0s; -webkit-transition: margin 0.3s ease-in 0s;
+            -o-transition: margin 0.3s ease-in 0s; transition: margin 0.3s ease-in 0s;
+        }
+        .onoffswitch-inner:before, .onoffswitch-inner:after {
+            display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+            font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+            -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+        }
+        .onoffswitch-inner:before {
+            content: " Enabled";
+            padding-left: 10px;
+            background-color: #2FCCFF; color: #FFFFFF;
+        }
+        .onoffswitch-inner:after {
+            content: "Disabled";
+            padding-right: 10px;
+            background-color: #EEEEEE; color: #999999;
+            text-align: right;
+        }
+        .onoffswitch-switch {
+            display: block; width: 18px; margin: 7px;
+            background: #FFFFFF;
+            border: 2px solid #999999; border-radius: 20px;
+            position: absolute; top: 0; bottom: 0; right: 70px;
+            -moz-transition: all 0.3s ease-in 0s; -webkit-transition: all 0.3s ease-in 0s;
+            -o-transition: all 0.3s ease-in 0s; transition: all 0.3s ease-in 0s; 
+        }
+        .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+            margin-left: 0;
+        }
+        .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+            right: 0px; 
+        }
 
+</style>
 <body>
     <div class="wrapper">
         <div class="sidebar" data-color="blue" data-image="../assets/img/sidebar-0.jpg">
@@ -36,7 +89,7 @@
             </div>
             <div class="sidebar-wrapper">
                 <ul class="nav">
-                    <li class="active">
+                    <li>
                         <a href="dashboard.html">
                             <i class="material-icons">dashboard</i>
                             <p>Dashboard</p>
@@ -72,7 +125,7 @@
                     <li>
                         <b>Lists</b>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="./categorylist.html">
                             <i class="material-icons">list</i>
                             <p>Category List</p>
@@ -172,21 +225,21 @@
                                         <div class="nav-tabs-wrapper">
                                             <span class="nav-tabs-title"> </span>
                                             <ul class="nav nav-tabs" data-tabs="tabs">
-                                                <li class="">
-                                                    <a href="./categorylist.html" >
+                                                <li>
+                                                    <a href="./categorylist.html">
+                                                        <i class="material-icons">local_shipping</i> Supplier
+                                                        <div class="ripple-container"></div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./List.html">
                                                         <i class="material-icons">bubble_chart</i> Type
                                                         <div class="ripple-container"></div>
                                                     </a>
                                                 </li>
-                                                <li class="active">
+                                                <li  class="active">
                                                     <a href="./category.html">
                                                         <i class="material-icons">category</i> Category
-                                                        <div class="ripple-container"></div>
-                                                    </a>
-                                                </li>
-                                                <li class="">
-                                                    <a href="./supplier.html">
-                                                        <i class="material-icons">local_shipping</i> Supplier
                                                         <div class="ripple-container"></div>
                                                     </a>
                                                 </li>
@@ -202,34 +255,107 @@
 								<table id="example" class="table hover order-column" cellspacing="0" width="100%">
 									<thead>
                                             <th><b class="pull-left">Category</b></th>
+                                            <th><b class="pull-left">Activation</b></th>
 									</thead>
 									<tbody>
 										<tr>
 											<td>Light Roast</td>
+                                            <td><div class="onoffswitch">
+                                                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+                                                                        <label class="onoffswitch-label" for="myonoffswitch">
+                                                                            <span class="onoffswitch-inner"></span>
+                                                                            <span class="onoffswitch-switch"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </td>
 										</tr>
 										<tr>
                                             <td>Medium Roast</td>
+                                            <td><div class="onoffswitch">
+                                                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+                                                                        <label class="onoffswitch-label" for="myonoffswitch">
+                                                                            <span class="onoffswitch-inner"></span>
+                                                                            <span class="onoffswitch-switch"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </td>
 										</tr>
 										<tr>
                                             <td>City Roast</td>
+                                            <td><div class="onoffswitch">
+                                                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+                                                                        <label class="onoffswitch-label" for="myonoffswitch">
+                                                                            <span class="onoffswitch-inner"></span>
+                                                                            <span class="onoffswitch-switch"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </td>
 										</tr>
 										<tr>
                                             <td>Existing Blend</td>
+                                            <td><div class="onoffswitch">
+                                                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+                                                                        <label class="onoffswitch-label" for="myonoffswitch">
+                                                                            <span class="onoffswitch-inner"></span>
+                                                                            <span class="onoffswitch-switch"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </td>
 										</tr>
 										<tr>
                                             <td>Company Blend</td>
+                                            <td><div class="onoffswitch">
+                                                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+                                                                        <label class="onoffswitch-label" for="myonoffswitch">
+                                                                            <span class="onoffswitch-inner"></span>
+                                                                            <span class="onoffswitch-switch"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </td>
 										</tr>
 										<tr>
                                             <td>Brown Bag</td>
+                                            <td><div class="onoffswitch">
+                                                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+                                                                        <label class="onoffswitch-label" for="myonoffswitch">
+                                                                            <span class="onoffswitch-inner"></span>
+                                                                            <span class="onoffswitch-switch"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </td>
 										</tr>
 										<tr>
                                             <td>Clear Bag</td>
+                                            <td><div class="onoffswitch">
+                                                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+                                                                        <label class="onoffswitch-label" for="myonoffswitch">
+                                                                            <span class="onoffswitch-inner"></span>
+                                                                            <span class="onoffswitch-switch"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </td>
 										</tr>
 										<tr>
                                             <td>Machine A</td>
+                                            <td><div class="onoffswitch">
+                                                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+                                                                        <label class="onoffswitch-label" for="myonoffswitch">
+                                                                            <span class="onoffswitch-inner"></span>
+                                                                            <span class="onoffswitch-switch"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </td>
 										</tr>
 										<tr>
                                             <td>Sticker</td>
+                                            <td><div class="onoffswitch">
+                                                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+                                                                        <label class="onoffswitch-label" for="myonoffswitch">
+                                                                            <span class="onoffswitch-inner"></span>
+                                                                            <span class="onoffswitch-switch"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </td>
 										</tr>
 									</tbody>
 								</table>
