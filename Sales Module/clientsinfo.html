@@ -287,11 +287,7 @@
 											<td>BPI-OPEX</td>
 											<td>BPI-OPEX</td>
 											<td>BPI-OPEX</td>
-											<td><center><div class=" btn btn-primary btn-xs" data-background-color="red" data-toggle="modal" data-target="#deliverymodal" data-original-title >
-                                   pending
-                                </div></center> </td>
-										
-
+											<td><center><div class=" btn btn-primary btn-xs" data-background-color="red" data-toggle="modal" data-target="#deliverymodal" data-original-title >pending</div></center> </td>
 										</tr>
 									</tbody>
 								</table>
@@ -307,7 +303,10 @@
                                             <th><b class="pull-left">Size</b></th>
                                             <th><b class="pull-left">Quantity</b></th>
                                             <th><b class="pull-left">Selling Price</b></th>
-										<th><b class="pull-left">Total Amount</b></th>
+										    <th><b class="pull-left">Total Amount</b></th>
+                                            <th><b class="pull-left">Generate</b></th>
+                                            <th>Remarks</th>
+                                            <th></th>
 									</thead>
 									<tbody>
 										<tr>
@@ -320,7 +319,9 @@
                                             <td>175</td>
                                             <td>160</td>
 											<td>160</td>
-
+                                            <td><center><div class=" btn btn-primary btn-xs">SI</div><div class=" btn btn-primary btn-xs">DR</div></center> </td>
+                                            <td><center><button type="button" class="btn btn-warning btn-xs" data-toggle="modal" data-target="#drbalance">Unpaid</button> </center> </td>
+                                            <td><center><div class=" btn btn-danger btn-xs">remove</div></center> </td>
 										</tr>
 									</tbody>
 								</table>
@@ -554,6 +555,83 @@
 											</div>
 										</div>
 									</div>
+
+<!-- modal of unpaid -->
+                                    <div class="modal fade" id="drbalance" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="panel panel-primary">
+                                                <div class="modal-body" style="padding: 5px;">
+                                                    
+                                                  <div class="card-block">
+                                                    <form action="#" method="post" accept-charset="utf-8">
+                                                            <div class="modal-body" style="padding: 5px;">
+                                                                <div class="row">
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12" style="padding-bottom: 20px;">
+                                                                    <div class="form-group label-floating">
+                                                                        <div class="form-group">
+                                                                            <div class="row">
+                                                                                <div class="col-md-8">
+                                                                                    <div class="form-group label-floating">
+                                                                                      <label for="email">Date of Payment:</label>
+                                                                                      <input class="form-control" type="date" name="">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-4">
+                                                                                    <div class="form-group label-floating">
+                                                                                      <label for="email">CR No.:</label>
+                                                                                      <input class="form-control" type="text" name="">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="row">
+                                                                                <div class="col-md-12">
+                                                                                    <div class="form-group label-floating">
+                                                                                      <label>Amount:</label>
+                                                                                      <input class="form-control" type="number" name="">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="row">
+                                                                                <div class="col-md-12">
+                                                                                    <div class="form-group label-floating">
+                                                                                      <label>Remarks:</label>
+                                                                                      <input class="form-control" type="text" name="">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="row">
+                                                                                <div class="col-md-6">
+                                                                                    <div class="form-group label-floating">
+                                                                                      <label>Bank:</label>
+                                                                                      <input class="form-control" type="text" name="">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-6">
+                                                                                    <div class="form-group label-floating">
+                                                                                      <label>MOD:</label>
+                                                                                        <select class="form-control">
+                                                                                            <option>cash</option>
+                                                                                            <option>cheque</option>
+                                                                                        </select>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>    
+                                                                        </div>
+
+                                                                </div>  
+                                                                <center>
+                                                                    <input type="submit" class="btn btn-success" value="Add"/>
+                                                                    <input type="reset" class="btn btn-danger" value="Cancel" />
+                                                                        </center>
+                                                                </div></div>
+                                                            </form>
+                                                  </div>
+
+                                                    </div>  
+                                                    
+                                            </div>
+                                        </div>
+                                    </div>
 
                 </div>
             </div>
