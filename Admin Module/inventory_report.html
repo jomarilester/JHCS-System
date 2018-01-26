@@ -43,7 +43,7 @@
 
 <body>
     <div class="wrapper">
-        <div class="sidebar" data-color="green" data-image="../assets/img/sidebar-1.jpg">
+        <div class="sidebar" data-color="purple" data-image="../assets/img/sidebar-1.jpg">
             <!--
         Tip 1: You can change the color of the sidebar using: data-color="green | blue | green | orange | red"
 
@@ -132,6 +132,7 @@
                     </div>
                 </div>
             </nav>
+            <br><br> <br><br> <br><br>
             <div class="content" style="margin-top: -200px;">
                 <div class="container-fluid" >
                     <div class="card">
@@ -160,7 +161,7 @@
                                         <div class="clearfix"></div>
                                     </form>
                                 </div>
-                        <div class="card-header" data-background-color="green">
+                        <div class="card-header" data-background-color="purple">
                                     <ul class="nav-tabs-navigation">
                                         <div class="nav-tabs-wrapper">
                                            <ul class="nav nav-tabs" data-tabs="tabs">
@@ -210,51 +211,210 @@
 									</ul>
                                 </div>
                         <div class="card-content">
-                                    <table id="example" class="display  hover order-column" cellspacing="0" width="100%">
-									<thead>
-										<tr>
-										<th><b>OR No.</b></th>
-										<th><b>Date of Client Payment</b></th>
-										<th><b>Client</b></th>
-											<th><b>DR No.</b></th>
-											<th><b>Amount</b></th>
-											<th><b>Remarks</b></th>
-											<th><b>Bank</b></th>
+                                    <table id="example" class="table hover order-column" cellspacing="0" width="100%">
+                                        <thead class="text-info">
+                                            <th><b>Date In</b></th>
+										    <th><b></b></th>
+										    <th><b>Coffee A</b></th>
+											<th><b>Coffee B</b></th>
+											<th><b>Coffee C</b></th>
+											<th><b>Coffee D</b></th>
+											<th><b>Coffee E</b></th>
+											<th><b>Coffee F</b></th>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+											<td>Sept 30, 2017</td>
+											<td>Beginning Inventory</td>
+											<td>3000 g</td>
+											<td>8000 g</td>
+											<td>4000 g</td>
+											<td>5000 g</td>
+											<td>3000 g</td>
+                                            <td>7000 g</td>
 											
 										</tr>
-									</thead>
-									<tbody>
 										<tr>
-											<td>2415</td>
-											<td>3747</td>
-											<td>Oct 1, 2017</td>
-											<td>Lazada</td>
-											<td>Fiesta Blend Ground</td>
-											<td>brown</td>
-											<td>250 g</td>
-											
-										</tr>
-										<tr>
-											<td>2943</td>
-											<td>3747</td>
 											<td>Oct 2, 2017</td>
-											<td>Bloomfield Hotel/Patch Cafe</td>
-											<td>Bloomfield Beans</td>
-											<td>clear</td>
-											<td>500 g</td>
+											<td>Gourmet Farms</td>
+											<td>2000 g</td>
+											<td>6000 g</td>
+											<td>-</td>
+											<td>3000 g</td>
+											<td>-</td>
+                                            <td>-</td>
+										</tr>
+										<tr>
+											<td>Oct 2, 2017</td>
+											<td>Gourmet Farms</td>
+											<td>2000 g</td>
+											<td>-</td>
+											<td>4000 g</td>
+											<td>-</td>
+											<td>3000 g</td>
+                                            <td>-</td>
+										</tr>
+										<tr>
+											<td>Oct 2, 2017</td>
+											<td>Gourmet Farms</td>
+											<td>-</td>
+											<td>-</td>
+											<td>2000 g</td>
+											<td>-</td>
+											<td>3000 g</td>
+                                            <td>8000 g</td>
 										</tr>
                                         <tr>
-											<td>2415</td>
-											<td>3747</td>
-											<td>Oct 1, 2017</td>
-											<td>Lazada</td>
-											<td>Fiesta Blend Ground</td>
-											<td>brown</td>
-											<td>250 g</td>
-											
+                                            <td><b>Total</b></td>
+                                            <td></td>
+                                            <td>7000 g</td>
+                                            <td>14000 g</td>
+                                            <td>10000 g</td>
+                                            <td>8000 g</td>
+                                            <td>9000 g</td>
+                                            <td>15000 g</td>
+                                        </tr>
+                                        </tbody>
+                                    </table><br><br>
+                                    <table class="table table-hover" id="out">
+                                        <thead class="text-info">
+                                            <th><b>Date Out</b></th>
+										    <th><b>Client</b></th>
+										    <th><b>Grams</b></th>
+										    <th><b>Qty/Bag</b></th>
+										    <th><b>Total</b></th>
+										    <th><b>Coffee A</b></th>
+											<th><b>Coffee B</b></th>
+											<th><b>Coffee C</b></th>
+											<th><b>Coffee D</b></th>
+											<th><b>Coffee E</b></th>
+											<th><b>Coffee F</b></th>
+										    <th><b>Packaging</b></th>
+										    <th><b>Type of Service</b></th>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                            <td>Oct 2, 2017</td>
+                                            <td>Client 1</td>
+                                            <td>500</td>
+                                            <td>50</td>
+                                            <td>-25000</td>
+                                            <td>-</td>
+                                            <td>-10000</td>
+                                            <td>-2500</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-12500</td>
+                                            <td>Clear Bag</td>
+                                            <td>Retail</td>
 										</tr>
-									</tbody>
-								</table>
+										<tr>
+                                            <td>Oct 2, 2017</td>
+                                            <td>Client 2</td>
+                                            <td>500</td>
+                                            <td>1</td>
+                                            <td>-500</td>
+                                            <td>-51</td>
+                                            <td>-376</td>
+                                            <td>-</td>
+                                            <td>-73</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>Clear Bag</td>
+                                            <td>-</td>
+										</tr>
+										<tr>
+                                            <td>Oct 3, 2017</td>
+                                            <td>Client 3</td>
+                                            <td>500</td>
+                                            <td>2</td>
+                                            <td>-1000</td>
+                                            <td>-</td>
+                                            <td>-700</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-300</td>
+                                            <td>Clear</td>
+                                            <td>Coffee Service</td>
+										</tr>
+										<tr>
+                                            <td>Oct 3, 2017</td>
+                                            <td>Client 4</td>
+                                            <td>250</td>
+                                            <td>6</td>
+                                            <td>-1500</td>
+                                            <td>-300</td>
+                                            <td>-1200</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>Brown Bag</td>
+                                            <td>Retail</td>
+										</tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Total</b></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>-351</td>
+                                            <td>-12276</td>
+                                            <td>-2500</td>
+                                            <td>-73</td>
+                                            <td>-</td>
+                                            <td>-12800</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Ending Inventory</b></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>6649</td>
+                                            <td>1724</td>
+                                            <td>7500</td>
+                                            <td>7927</td>
+                                            <td>9000</td>
+                                            <td>2200</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
 									
                             </div>
                     </div>
