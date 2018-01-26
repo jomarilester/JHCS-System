@@ -5,23 +5,15 @@
     <meta charset="utf-8" />
     <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png" />
     <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
-    <link rel="shortcut icon" type="image/png" href="../assets/img/favicon.ico">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>Inventory Report</title>
-    <!--   Style   -->
-    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/fresh-datatables.css">
-    <!--   Fonts   -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
-    <meta name="viewport" content="initial-scale=1.0, maximum-scale=2.0">
     <!-- Bootstrap core CSS     -->
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="../assets/css/dataTables.bootstrap.min.css" rel="stylesheet" />
     <link href="../assets/css/jquery.dataTable.min.css" rel="stylesheet" />
-    <link href="../assets/FileExport/buttons.dataTables.min.css" rel="stylesheet" />
-    <link href="../assets/FileExport/jquery.dataTables.min.css" rel="stylesheet" />
+    <link href="../assets/css/bootstrap-datepicker3.min.css" rel="stylesheet">
     <!--  Material Dashboard CSS    -->
     <link href="../assets/css/material-dashboard.css?v=1.2.0" rel="stylesheet" />
     <!--  CSS for Demo Purpose, don't include it in your project     -->
@@ -29,11 +21,6 @@
     <!--     Fonts and icons     -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons' rel='stylesheet' type='text/css'>
-    <!--   Style   -->
-    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/fresh-datatables.css">
-    <!--   Fonts   -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
 </head>
 
 <style type="text/css">
@@ -77,12 +64,6 @@ label {
                         <a href="inventoryreport.html">
                             <i class="material-icons">content_paste</i>
                             <p>Inventory Report</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="user.html">
-                            <i class="material-icons">account_circle</i>
-                            <p>User Profile</p>
                         </a>
                     </li>
                     <li>
@@ -213,10 +194,6 @@ label {
                                                         <input type="date" name="">
                                                         <button type="Submit">Submit</button>
                                                     </form>
-                                                    <li>
-                                                        <h3 class="title">Inventory Report :    </h3>
-                                                        <div class="ripple-container"> </div>
-                                                    </li>
                                                     <span></span>
                                                     <li>
                                                         <a href="./inventoryreport.html">
@@ -225,7 +202,7 @@ label {
                                                         </a>
                                                     </li>
                                                     <span></span>
-                                                    <li>
+                                                    <li class="active">
                                                         <a href="./inventoryreport2.html">
                                                             Date Out
                                                             <div class="ripple-container"></div>
