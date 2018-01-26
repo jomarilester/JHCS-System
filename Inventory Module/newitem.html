@@ -262,13 +262,14 @@
                                 <div class="content">
                                     <h6 class="category text-gray">John Hay Coffee Service</h6>
                                     <h4 class="card-title">Create:</h4>
-                                    <a class="btn btn-info btn-lg" data-toggle="modal" data-target="#type">
-                                    Type
-                                    </a>
-                                    <br><a class="btn btn-info btn-lg" data-toggle="modal" data-target="#category">
+                                    <a class="btn btn-info btn-md" data-toggle="modal" data-target="#category">
                                     Category
                                     </a>
-                                    <br><a class="btn btn-info btn-lg" data-toggle="modal" data-target="#supplier">
+                                    <br>
+                                    <a class="btn btn-info btn-md" data-toggle="modal" data-target="#type">
+                                    Type
+                                    </a>
+                                    <br><a class="btn btn-info btn-lmd" data-toggle="modal" data-target="#supplier">
                                     Supplier
                                     </a>
                                     <br>
@@ -282,6 +283,19 @@
                                             </div>
                                             <form action="#" method="post" accept-charset="utf-8">
                                                 <div class="modal-body" style="padding-left: 100px;">
+                                                    <div class="row">
+                                                        <div class="col-lg-10 col-md-6 col-sm-6" style="padding-bottom: 15px;">
+                                                            <label class="pull-left">Under the Category of: </label>
+                                                             <select class="form-control" name="Type" placeholder="Type" type="text" required>
+                                                                <option>Raw Coffee</option>
+                                                                <option>Blended Coffee</option>
+                                                                <option>Packaging</option>
+                                                                <option>Coffee Machine</option>
+                                                                <option>Coffee Filter</option>
+                                                                <option>Sticker</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
                                                     <div class="row">
                                                         <div class="col-lg-10 col-md-6 col-sm-6" style="padding-bottom: 15px;">
                                                             <input class="form-control" name="type" placeholder="Type" type="text" required autofocus />
@@ -336,27 +350,32 @@
                                                 <div class="modal-body" style="padding-left: 100px;">
                                                     <div class="row">
                                                         <div class="col-lg-10 col-md-6 col-sm-6" style="padding-bottom: 15px;">
-                                                            <input class="form-control" name="supplier" placeholder="Company Name" type="text" required autofocus />
+                                                            <input class="form-control" name="supplier" placeholder="Supplier's Name" type="text" required autofocus />
                                                         </div>
                                                     </div>
                                                     <div class="row">
                                                         <div class="col-lg-10 col-md-6 col-sm-6" style="padding-bottom: 15px;">
-                                                            <input class="form-control" name="Personel" placeholder="Contact Personel" type="text" required autofocus />
+                                                            <input class="form-control" name="supplier" placeholder="Supplier's Address" type="email" required autofocus />
                                                         </div>
                                                     </div>
                                                     <div class="row">
                                                         <div class="col-lg-10 col-md-6 col-sm-6" style="padding-bottom: 15px;">
-                                                            <input class="form-control" name="supplier" placeholder="Personel Position" type="text" required autofocus />
+                                                            <input class="form-control" name="Personel" placeholder="Supplier's Contact Personel" type="text" required autofocus />
                                                         </div>
                                                     </div>
                                                     <div class="row">
                                                         <div class="col-lg-10 col-md-6 col-sm-6" style="padding-bottom: 15px;">
-                                                            <input class="form-control" name="supplier" placeholder="Contact No" type="text" required autofocus />
+                                                            <input class="form-control" name="supplier" placeholder="Personel's Position" type="text" required autofocus />
                                                         </div>
                                                     </div>
                                                     <div class="row">
                                                         <div class="col-lg-10 col-md-6 col-sm-6" style="padding-bottom: 15px;">
-                                                            <input class="form-control" name="supplier" placeholder="email Addres" type="email" required autofocus />
+                                                            <input class="form-control" name="supplier" placeholder="Personel's Contact No" type="text" required autofocus />
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-lg-10 col-md-6 col-sm-6" style="padding-bottom: 15px;">
+                                                            <input class="form-control" name="supplier" placeholder="email Address" type="email" required autofocus />
                                                         </div>
                                                     </div>
                                                     <div class="row">
