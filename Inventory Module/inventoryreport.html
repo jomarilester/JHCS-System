@@ -36,7 +36,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
 </head>
 <style type="text/css">
-label {
+label,
+input {
     color: black;
 }
 </style>
@@ -188,13 +189,6 @@ label {
                     </div>
                 </div>
             </nav>
-            <form class="pull-right">
-                <label>Set Date from </label>
-                <input type="date" name="">
-                <label> to </label>
-                <input type="date" name="">
-                <button type="Submit">Submit</button>
-            </form>
             <div class="content" style="margin-top: 0px; ">
                 <div class="container-fluid">
                     <div class="row">
@@ -206,19 +200,26 @@ label {
                                             <div class="nav-tabs-wrapper">
                                                 <span class="nav-tabs-title"> </span>
                                                 <ul class="nav nav-tabs" data-tabs="tabs">
+                                                    <form class="pull-right">
+                                                        <label>Set Date from </label>
+                                                        <input type="date" name="">
+                                                        <label> to </label>
+                                                        <input type="date" name="">
+                                                        <button type="Submit">Submit</button>
+                                                    </form>
                                                     <li>
                                                         <h3 class="title">Inventory Report :    </h3>
                                                         <div class="ripple-container"> </div>
                                                     </li>
                                                     <span></span>
-                                                    <li class="active">
+                                                    <li>
                                                         <a href="./inventoryreport.html">
                                                             Date In
                                                             <div class="ripple-container"></div>
                                                         </a>
                                                     </li>
                                                     <span></span>
-                                                    <li>
+                                                    <li class="">
                                                         <a href="./inventoryreport2.html">
                                                             Date Out
                                                             <div class="ripple-container"></div>
@@ -229,7 +230,7 @@ label {
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card-content">
+                                <div class="card-content table-responsive">
                                     <table id="example" class="display  hover order-column table table-responsive" cellspacing="0" width="100%">
                                         <thead>
                                             <tr>
