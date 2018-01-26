@@ -189,6 +189,57 @@
                         </div>
                     </div>
                     </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="card">
+                                
+                                <div class="card-header" data-background-color="orange">
+                                    <h4 class="title">Client Statistics</h4>
+                                    <p class="category">Year 2017</p>
+                                </div>
+                                <div class="card-content table-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+                                        <tr>
+                                            <th><b>Name of Client</b></th>
+                                            <th><b>Percentage</b></th>
+                                            <th><b>Amount</b></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Le Chef</td>
+                                            <td>50%</td>
+                                            <td>250000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Manila Sales</td>
+                                            <td>28%</td>
+                                            <td>140000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>The Manor Hotel</td>
+                                            <td>22%</td>
+                                            <td>110000</td>
+                                        </tr>
+                                    </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="card">
+                                
+                                <div class="card-header" data-background-color="orange">
+                                    <h4 class="title">Pie Graph</h4>
+                                    <p class="category">Chart Representation</p>
+                                </div>
+                                <div class="card-content table-responsive">
+                                    <div id="chartContainer" style="height: 220px; width: 100%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     
                     <div class="row">
                        
@@ -294,6 +345,7 @@
 <script src="../assets/js/material.min.js" type="text/javascript"></script>
 <!--  Charts Plugin -->
 <script src="../assets/js/chartist.min.js"></script>
+<script src="../assets/js/canvasjs.min.js"></script>
 <!--  Dynamic Elements plugin -->
 <script src="../assets/js/arrive.min.js"></script>
 <!--  PerfectScrollbar Library -->
@@ -313,6 +365,27 @@
         demo.initDashboardPageCharts();
 
     });
+</script>
+<script>
+window.onload = function() {
+
+var chart = new CanvasJS.Chart("chartContainer", {
+    animationEnabled: true,
+    data: [{
+        type: "pie",
+        startAngle: 60,
+        yValueFormatString: "##0\"%\"",
+        indexLabel: "{label} {y}",
+        dataPoints: [
+            {y: 50, label: "Le Chef"},
+            {y: 28, label: "Manila Sales"},
+            {y: 22, label: "The Manor"}
+        ]
+    }]
+});
+chart.render();
+
+}
 </script>
 
 </html>
