@@ -6,16 +6,14 @@
     <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png" />
     <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-
     <title>List of Samples</title>
-
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
     <!-- Bootstrap core CSS     -->
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
-	<link href="../assets/css/dataTables.bootstrap.min.css" rel="stylesheet" />
-		<link href="../assets/css/jquery.dataTable.min.css" rel="stylesheet" />
-	<link href="../assets/css/bootstrap-datepicker3.min.css" rel="stylesheet">
+    <link href="../assets/css/dataTables.bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/css/jquery.dataTable.min.css" rel="stylesheet" />
+    <link href="../assets/css/bootstrap-datepicker3.min.css" rel="stylesheet">
     <!--  Material Dashboard CSS    -->
     <link href="../assets/css/material-dashboard.css?v=1.2.0" rel="stylesheet" />
     <!--  CSS for Demo Purpose, don't include it in your project     -->
@@ -24,6 +22,11 @@
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons' rel='stylesheet' type='text/css'>
 </head>
+<style>
+.title {
+    font-size: large;
+}
+</style>
 
 <body>
     <div class="wrapper">
@@ -101,12 +104,6 @@
                         </a>
                     </li>
                     <li>
-                        <a href="./coffeeinventory.html">
-                            <i class="material-icons text-gray">local_shipping</i>
-                            <p>Coffee Inventory</p>
-                        </a>
-                    </li>
-                    <li>
                         <a href="./machineinventory.html">
                             <i class="material-icons text-gray">local_shipping</i>
                             <p>Machine Inventory</p>
@@ -146,6 +143,12 @@
                                 <ul class="dropdown-menu">
                                     <li>
                                         <a href="./user.html">User Profile</a>
+                                    </li>
+                                    <li>
+                                        <a href="./changepassword.html">Change Password</a>
+                                    </li>
+                                    <li>
+                                        <a href="./activitylogs.html">Activity Logs</a>
                                     </li>
                                     <li>
                                         <a href="#">Logout</a>
@@ -590,79 +593,79 @@
                                         </div>
                                     </div>
                                 </div>
-                                            <div class="card-header" data-background-color="blue">
-                                                <h4>List of Samples</h4>
-                                            </div>
-                                            <div class="card-content">
-                                            <a class="btn btn-success" data-toggle="modal" data-target="#contact" data-original-title style="float: right;">Add Samples</a>
-                                            <div class="card-content table-responsive">
-                                                <div class="col-md-12 col-md-offset-0">
-                                                    <div class="fresh-datatables">
-                                                        <!--  Available colors for the full background: full-color-blue, full-color-azure, full-color-green, full-color-red, full-color-orange, full-color-purple, full-color-gray
+                                <div class="card-header" data-background-color="blue">
+                                    <h4>List of Samples</h4>
+                                </div>
+                                <div class="card-content">
+                                    <a class="btn btn-success" data-toggle="modal" data-target="#contact" data-original-title style="float: right;">Add Samples</a>
+                                    <div class="card-content table-responsive">
+                                        <div class="col-md-12 col-md-offset-0">
+                                            <div class="fresh-datatables">
+                                                <!--  Available colors for the full background: full-color-blue, full-color-azure, full-color-green, full-color-red, full-color-orange, full-color-purple, full-color-gray
                                     Available colors only for the toolbar: toolbar-color-blue, toolbar-color-azure, toolbar-color-green, toolbar-color-red, toolbar-color-orange, toolbar-color-purple, toolbar-color-gray -->
-                                                        <table id="fresh-datatables" class="table table-striped table-no-bordered table-hover" cellspacing="0" width="100%" style="width:100%">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th>#</th>
-                                                                    <th>Date</th>
-                                                                    <th>Remarks</th>
-                                                                    <th>Actions</th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td>1</td>
-                                                                    <td>01/31/18</td>
-                                                                    <td>Sample for Leon Araneta</td>
-                                                                    <td>
-                                                                        <a class="btn btn-info btn-sm" style="margin-top: 0px" data-toggle="modal" data-target="#details1">Details</a>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>2</td>
-                                                                    <td>01/26/18</td>
-                                                                    <td>Coffee for Guards at Gate 4</td>
-                                                                    <td>
-                                                                        <a class="btn btn-info btn-sm" style="margin-top: 0px" data-toggle="modal" data-target="#details2">Details</a>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>3</td>
-                                                                    <td>01/23/18</td>
-                                                                    <td>Sample for CSE Sumatra night</td>
-                                                                    <td>
-                                                                        <a class="btn btn-info btn-sm" style="margin-top: 0px" data-toggle="modal" data-target="#details3">Details</a>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>4</td>
-                                                                    <td>01/14/18</td>
-                                                                    <td>Free taste in Session Road</td>
-                                                                    <td>
-                                                                        <a class="btn btn-info btn-sm" style="margin-top: 0px" data-toggle="modal" data-target="#details4">Details</a>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>5</td>
-                                                                    <td>01/11/18</td>
-                                                                    <td>Freebies for Manor Hotel</td>
-                                                                    <td>
-                                                                        <a class="btn btn-info btn-sm" style="margin-top: 0px" data-toggle="modal" data-target="#details5">Details</a>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>6</td>
-                                                                    <td>01/04/18</td>
-                                                                    <td>Sample for Tazabelle</td>
-                                                                    <td>
-                                                                        <a class="btn btn-info btn-sm" style="margin-top: 0px" data-toggle="modal" data-target="#details6">Details</a>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </div>
+                                                <table id="fresh-datatables" class="table table-striped table-no-bordered table-hover" cellspacing="0" width="100%" style="width:100%">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>#</th>
+                                                            <th>Date</th>
+                                                            <th>Remarks</th>
+                                                            <th>Actions</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>01/31/18</td>
+                                                            <td>Sample for Leon Araneta</td>
+                                                            <td>
+                                                                <a class="btn btn-info btn-sm" style="margin-top: 0px" data-toggle="modal" data-target="#details1">Details</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td>01/26/18</td>
+                                                            <td>Coffee for Guards at Gate 4</td>
+                                                            <td>
+                                                                <a class="btn btn-info btn-sm" style="margin-top: 0px" data-toggle="modal" data-target="#details2">Details</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>3</td>
+                                                            <td>01/23/18</td>
+                                                            <td>Sample for CSE Sumatra night</td>
+                                                            <td>
+                                                                <a class="btn btn-info btn-sm" style="margin-top: 0px" data-toggle="modal" data-target="#details3">Details</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>4</td>
+                                                            <td>01/14/18</td>
+                                                            <td>Free taste in Session Road</td>
+                                                            <td>
+                                                                <a class="btn btn-info btn-sm" style="margin-top: 0px" data-toggle="modal" data-target="#details4">Details</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>5</td>
+                                                            <td>01/11/18</td>
+                                                            <td>Freebies for Manor Hotel</td>
+                                                            <td>
+                                                                <a class="btn btn-info btn-sm" style="margin-top: 0px" data-toggle="modal" data-target="#details5">Details</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>6</td>
+                                                            <td>01/04/18</td>
+                                                            <td>Sample for Tazabelle</td>
+                                                            <td>
+                                                                <a class="btn btn-info btn-sm" style="margin-top: 0px" data-toggle="modal" data-target="#details6">Details</a>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
                                             </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
