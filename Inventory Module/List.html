@@ -23,59 +23,107 @@
     <link rel="shortcut icon" href="favicon.ico">
 </head>
 <style type="text/css">
-    .table thead, thead th {
-            text-align: center;
-            font-size: 120%;
-        }
-        /* Custom Style */
-        .onoffswitch {
-            position: relative; width: 110px;
-            -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
-        }
-        .onoffswitch-checkbox {
-            display: none;
-        }
-        .onoffswitch-label {
-            display: block; overflow: hidden; cursor: pointer;
-            border: 2px solid #999999; border-radius: 20px;
-        }
-        .onoffswitch-inner {
-            display: block; width: 200%; margin-left: -100%;
-            -moz-transition: margin 0.3s ease-in 0s; -webkit-transition: margin 0.3s ease-in 0s;
-            -o-transition: margin 0.3s ease-in 0s; transition: margin 0.3s ease-in 0s;
-        }
-        .onoffswitch-inner:before, .onoffswitch-inner:after {
-            display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
-            font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
-            -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
-        }
-        .onoffswitch-inner:before {
-            content: " Enabled";
-            padding-left: 10px;
-            background-color: #2FCCFF; color: #FFFFFF;
-        }
-        .onoffswitch-inner:after {
-            content: "Disabled";
-            padding-right: 10px;
-            background-color: #EEEEEE; color: #999999;
-            text-align: right;
-        }
-        .onoffswitch-switch {
-            display: block; width: 18px; margin: 7px;
-            background: #FFFFFF;
-            border: 2px solid #999999; border-radius: 20px;
-            position: absolute; top: 0; bottom: 0; right: 70px;
-            -moz-transition: all 0.3s ease-in 0s; -webkit-transition: all 0.3s ease-in 0s;
-            -o-transition: all 0.3s ease-in 0s; transition: all 0.3s ease-in 0s; 
-        }
-        .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
-            margin-left: 0;
-        }
-        .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
-            right: 0px; 
-        }
+.title {
+    font-size: large;
+}
 
+.table thead,
+thead th {
+    text-align: center;
+    font-size: 120%;
+}
+
+
+/* Custom Style */
+
+.onoffswitch {
+    position: relative;
+    width: 110px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.onoffswitch-checkbox {
+    display: none;
+}
+
+.onoffswitch-label {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid #999999;
+    border-radius: 20px;
+}
+
+.onoffswitch-inner {
+    display: block;
+    width: 200%;
+    margin-left: -100%;
+    -moz-transition: margin 0.3s ease-in 0s;
+    -webkit-transition: margin 0.3s ease-in 0s;
+    -o-transition: margin 0.3s ease-in 0s;
+    transition: margin 0.3s ease-in 0s;
+}
+
+.onoffswitch-inner:before,
+.onoffswitch-inner:after {
+    display: block;
+    float: left;
+    width: 50%;
+    height: 30px;
+    padding: 0;
+    line-height: 30px;
+    font-size: 14px;
+    color: white;
+    font-family: Trebuchet, Arial, sans-serif;
+    font-weight: bold;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.onoffswitch-inner:before {
+    content: " Enabled";
+    padding-left: 10px;
+    background-color: #2FCCFF;
+    color: #FFFFFF;
+}
+
+.onoffswitch-inner:after {
+    content: "Disabled";
+    padding-right: 10px;
+    background-color: #EEEEEE;
+    color: #999999;
+    text-align: right;
+}
+
+.onoffswitch-switch {
+    display: block;
+    width: 18px;
+    margin: 7px;
+    background: #FFFFFF;
+    border: 2px solid #999999;
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 70px;
+    -moz-transition: all 0.3s ease-in 0s;
+    -webkit-transition: all 0.3s ease-in 0s;
+    -o-transition: all 0.3s ease-in 0s;
+    transition: all 0.3s ease-in 0s;
+}
+
+.onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+
+.onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-switch {
+    right: 0px;
+}
 </style>
+
 <body>
     <div class="wrapper">
         <div class="sidebar" data-color="blue" data-image="../assets/img/sidebar-0.jpg">
@@ -158,12 +206,6 @@
                         </a>
                     </li>
                     <li>
-                        <a href="./coffeeinventory.html">
-                            <i class="material-icons text-gray">local_shipping</i>
-                            <p>Monthly Coffee Inventory</p>
-                        </a>
-                    </li>
-                    <li>
                         <a href="./machineinventory.html">
                             <i class="material-icons text-gray">local_shipping</i>
                             <p>Machine Inventory</p>
@@ -205,6 +247,12 @@
                                         <a href="./user.html">User Profile</a>
                                     </li>
                                     <li>
+                                        <a href="./changepassword.html">Change Password</a>
+                                    </li>
+                                    <li>
+                                        <a href="./activitylogs.html">Activity Logs</a>
+                                    </li>
+                                    <li>
                                         <a href="#">Logout</a>
                                     </li>
                                 </ul>
@@ -239,212 +287,224 @@
                                         </div>
                                     </div>
                                 </div>
-                                 <div class="card-content">
+                                <div class="card-content">
                                     <div class="tab-content">
                                         <div class="tab-pane active" id="type">
                                             <div class="row">
-                                            <div class="col-sm-6">
-                                                <div class="card-content">
-                                                    <table id="" class="table hover order-column" cellspacing="0" width="100%">
-                                                        <thead>
-                                                            <th><b>Category</b></th>
-                                                            <th><b>Activation</b></th>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Raw Coffee</td>
-                                                                <td><div class="onoffswitch pull-right">
-                                                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
-                                                                        <label class="onoffswitch-label" for="myonoffswitch">
-                                                                            <span class="onoffswitch-inner"></span>
-                                                                            <span class="onoffswitch-switch"></span>
-                                                                        </label>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Blended Coffee</td>
-                                                                <td><div class="onoffswitch pull-right">
-                                                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
-                                                                        <label class="onoffswitch-label" for="myonoffswitch">
-                                                                            <span class="onoffswitch-inner"></span>
-                                                                            <span class="onoffswitch-switch"></span>
-                                                                        </label>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Coffee Machine</td>
-                                                                <td><div class="onoffswitch pull-right">
-                                                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
-                                                                        <label class="onoffswitch-label" for="myonoffswitch">
-                                                                            <span class="onoffswitch-inner"></span>
-                                                                            <span class="onoffswitch-switch"></span>
-                                                                        </label>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Coffee Filter</td>
-                                                                <td><div class="onoffswitch pull-right">
-                                                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
-                                                                        <label class="onoffswitch-label" for="myonoffswitch">
-                                                                            <span class="onoffswitch-inner"></span>
-                                                                            <span class="onoffswitch-switch"></span>
-                                                                        </label>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Packaging</td>
-                                                                <td><div class="onoffswitch pull-right">
-                                                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
-                                                                        <label class="onoffswitch-label" for="myonoffswitch">
-                                                                            <span class="onoffswitch-inner"></span>
-                                                                            <span class="onoffswitch-switch"></span>
-                                                                        </label>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Sticker</td>
-                                                                <td><div class="onoffswitch pull-right">
-                                                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
-                                                                        <label class="onoffswitch-label" for="myonoffswitch">
-                                                                            <span class="onoffswitch-inner"></span>
-                                                                            <span class="onoffswitch-switch"></span>
-                                                                        </label>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
+                                                <div class="col-sm-6">
+                                                    <div class="card-content">
+                                                        <table id="" class="table hover order-column" cellspacing="0" width="100%">
+                                                            <thead>
+                                                                <th><b>Category</b></th>
+                                                                <th><b>Activation</b></th>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Raw Coffee</td>
+                                                                    <td>
+                                                                        <div class="onoffswitch pull-right">
+                                                                            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+                                                                            <label class="onoffswitch-label" for="myonoffswitch">
+                                                                                <span class="onoffswitch-inner"></span>
+                                                                                <span class="onoffswitch-switch"></span>
+                                                                            </label>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Blended Coffee</td>
+                                                                    <td>
+                                                                        <div class="onoffswitch pull-right">
+                                                                            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+                                                                            <label class="onoffswitch-label" for="myonoffswitch">
+                                                                                <span class="onoffswitch-inner"></span>
+                                                                                <span class="onoffswitch-switch"></span>
+                                                                            </label>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Coffee Machine</td>
+                                                                    <td>
+                                                                        <div class="onoffswitch pull-right">
+                                                                            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+                                                                            <label class="onoffswitch-label" for="myonoffswitch">
+                                                                                <span class="onoffswitch-inner"></span>
+                                                                                <span class="onoffswitch-switch"></span>
+                                                                            </label>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Coffee Filter</td>
+                                                                    <td>
+                                                                        <div class="onoffswitch pull-right">
+                                                                            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+                                                                            <label class="onoffswitch-label" for="myonoffswitch">
+                                                                                <span class="onoffswitch-inner"></span>
+                                                                                <span class="onoffswitch-switch"></span>
+                                                                            </label>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Packaging</td>
+                                                                    <td>
+                                                                        <div class="onoffswitch pull-right">
+                                                                            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+                                                                            <label class="onoffswitch-label" for="myonoffswitch">
+                                                                                <span class="onoffswitch-inner"></span>
+                                                                                <span class="onoffswitch-switch"></span>
+                                                                            </label>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Sticker</td>
+                                                                    <td>
+                                                                        <div class="onoffswitch pull-right">
+                                                                            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+                                                                            <label class="onoffswitch-label" for="myonoffswitch">
+                                                                                <span class="onoffswitch-inner"></span>
+                                                                                <span class="onoffswitch-switch"></span>
+                                                                            </label>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                                
-                                                
-                                <div class="col-sm-6">            
-								<div class="card-content">
-								<table id="" class="table hover order-column" cellspacing="0" width="100%">
-									<thead>
-                                            <th><b class="pull-left">Category</b></th>
-                                            <th><b class="pull-left">Type</b></th>
-                                            <th><b class="pull-left">Activation</b></th>
-									</thead>
-									<tbody>
-										<tr>
-                                            <td>Raw Coffee</td>
-											<td>Light Roast</td>
-                                            <td><div class="onoffswitch pull-right">
-                                                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
-                                                    <label class="onoffswitch-label" for="myonoffswitch">
-                                                        <span class="onoffswitch-inner"></span>
-                                                        <span class="onoffswitch-switch"></span>
-                                                    </label>
+                                                <div class="col-sm-6">
+                                                    <div class="card-content">
+                                                        <table id="" class="table hover order-column" cellspacing="0" width="100%">
+                                                            <thead>
+                                                                <th><b class="pull-left">Category</b></th>
+                                                                <th><b class="pull-left">Type</b></th>
+                                                                <th><b class="pull-left">Activation</b></th>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Raw Coffee</td>
+                                                                    <td>Light Roast</td>
+                                                                    <td>
+                                                                        <div class="onoffswitch pull-right">
+                                                                            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+                                                                            <label class="onoffswitch-label" for="myonoffswitch">
+                                                                                <span class="onoffswitch-inner"></span>
+                                                                                <span class="onoffswitch-switch"></span>
+                                                                            </label>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Raw Coffee</td>
+                                                                    <td>Medium Roast</td>
+                                                                    <td>
+                                                                        <div class="onoffswitch pull-right">
+                                                                            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+                                                                            <label class="onoffswitch-label" for="myonoffswitch">
+                                                                                <span class="onoffswitch-inner"></span>
+                                                                                <span class="onoffswitch-switch"></span>
+                                                                            </label>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Raw Coffee</td>
+                                                                    <td>City Roast</td>
+                                                                    <td>
+                                                                        <div class="onoffswitch pull-right">
+                                                                            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+                                                                            <label class="onoffswitch-label" for="myonoffswitch">
+                                                                                <span class="onoffswitch-inner"></span>
+                                                                                <span class="onoffswitch-switch"></span>
+                                                                            </label>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Blended Coffee</td>
+                                                                    <td>Existing Blend</td>
+                                                                    <td>
+                                                                        <div class="onoffswitch pull-right">
+                                                                            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+                                                                            <label class="onoffswitch-label" for="myonoffswitch">
+                                                                                <span class="onoffswitch-inner"></span>
+                                                                                <span class="onoffswitch-switch"></span>
+                                                                            </label>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Blended Coffee</td>
+                                                                    <td>Company Blend</td>
+                                                                    <td>
+                                                                        <div class="onoffswitch pull-right">
+                                                                            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+                                                                            <label class="onoffswitch-label" for="myonoffswitch">
+                                                                                <span class="onoffswitch-inner"></span>
+                                                                                <span class="onoffswitch-switch"></span>
+                                                                            </label>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Packaging</td>
+                                                                    <td>Brown Bag</td>
+                                                                    <td>
+                                                                        <div class="onoffswitch pull-right">
+                                                                            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+                                                                            <label class="onoffswitch-label" for="myonoffswitch">
+                                                                                <span class="onoffswitch-inner"></span>
+                                                                                <span class="onoffswitch-switch"></span>
+                                                                            </label>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Packaging</td>
+                                                                    <td>Clear Bag</td>
+                                                                    <td>
+                                                                        <div class="onoffswitch pull-right">
+                                                                            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+                                                                            <label class="onoffswitch-label" for="myonoffswitch">
+                                                                                <span class="onoffswitch-inner"></span>
+                                                                                <span class="onoffswitch-switch"></span>
+                                                                            </label>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Coffee Machine</td>
+                                                                    <td>Machine A</td>
+                                                                    <td>
+                                                                        <div class="onoffswitch pull-right">
+                                                                            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+                                                                            <label class="onoffswitch-label" for="myonoffswitch">
+                                                                                <span class="onoffswitch-inner"></span>
+                                                                                <span class="onoffswitch-switch"></span>
+                                                                            </label>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Sticker</td>
+                                                                    <td>Sticker A</td>
+                                                                    <td>
+                                                                        <div class="onoffswitch pull-right">
+                                                                            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+                                                                            <label class="onoffswitch-label" for="myonoffswitch">
+                                                                                <span class="onoffswitch-inner"></span>
+                                                                                <span class="onoffswitch-switch"></span>
+                                                                            </label>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
                                                 </div>
-                                            </td>
-										</tr>
-										<tr>
-                                            <td>Raw Coffee</td>
-                                            <td>Medium Roast</td>
-                                            <td><div class="onoffswitch pull-right">
-                                                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
-                                                    <label class="onoffswitch-label" for="myonoffswitch">
-                                                        <span class="onoffswitch-inner"></span>
-                                                        <span class="onoffswitch-switch"></span>
-                                                    </label>
-                                                </div>
-                                            </td>
-										</tr>
-										<tr>
-                                            <td>Raw Coffee</td>
-                                            <td>City Roast</td>
-                                            <td><div class="onoffswitch pull-right">
-                                                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
-                                                    <label class="onoffswitch-label" for="myonoffswitch">
-                                                        <span class="onoffswitch-inner"></span>
-                                                        <span class="onoffswitch-switch"></span>
-                                                    </label>
-                                                </div>
-                                            </td>
-										</tr>
-										<tr>
-                                            <td>Blended Coffee</td>
-                                            <td>Existing Blend</td>
-                                            <td><div class="onoffswitch pull-right">
-                                                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
-                                                    <label class="onoffswitch-label" for="myonoffswitch">
-                                                        <span class="onoffswitch-inner"></span>
-                                                        <span class="onoffswitch-switch"></span>
-                                                    </label>
-                                                </div>
-                                            </td>
-										</tr>
-										<tr>
-                                            <td>Blended Coffee</td>
-                                            <td>Company Blend</td>
-                                            <td><div class="onoffswitch pull-right">
-                                                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
-                                                    <label class="onoffswitch-label" for="myonoffswitch">
-                                                        <span class="onoffswitch-inner"></span>
-                                                        <span class="onoffswitch-switch"></span>
-                                                    </label>
-                                                </div>
-                                            </td>
-										</tr>
-										<tr>
-                                            <td>Packaging</td>
-                                            <td>Brown Bag</td>
-                                            <td><div class="onoffswitch pull-right">
-                                                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
-                                                    <label class="onoffswitch-label" for="myonoffswitch">
-                                                        <span class="onoffswitch-inner"></span>
-                                                        <span class="onoffswitch-switch"></span>
-                                                    </label>
-                                                </div>
-                                            </td>
-										</tr>
-										<tr>
-                                            <td>Packaging</td>
-                                            <td>Clear Bag</td>
-                                            <td><div class="onoffswitch pull-right">
-                                                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
-                                                    <label class="onoffswitch-label" for="myonoffswitch">
-                                                        <span class="onoffswitch-inner"></span>
-                                                        <span class="onoffswitch-switch"></span>
-                                                    </label>
-                                                </div>
-                                            </td>
-										</tr>
-										<tr>
-                                            <td>Coffee Machine</td>
-                                            <td>Machine A</td>
-                                            <td><div class="onoffswitch pull-right">
-                                                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
-                                                    <label class="onoffswitch-label" for="myonoffswitch">
-                                                        <span class="onoffswitch-inner"></span>
-                                                        <span class="onoffswitch-switch"></span>
-                                                    </label>
-                                                </div>
-                                            </td>
-										</tr>
-										<tr>
-                                            <td>Sticker</td>
-                                            <td>Sticker A</td>
-                                            <td><div class="onoffswitch pull-right">
-                                                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
-                                                    <label class="onoffswitch-label" for="myonoffswitch">
-                                                        <span class="onoffswitch-inner"></span>
-                                                        <span class="onoffswitch-switch"></span>
-                                                    </label>
-                                                </div>
-                                            </td>
-										</tr>
-									</tbody>
-								</table>
-                                </div>    
-							    </div>
-                                                
                                             </div>
                                         </div>
                                     </div>
@@ -486,7 +546,7 @@
 <script type="text/javascript">
 $(document).ready(function() {
     $('table.table').DataTable();
-} );
+});
 </script>
 
 </html>
