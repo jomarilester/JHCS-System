@@ -36,6 +36,71 @@
 	<!--   Fonts   -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
 
+    <style>
+	
+/*
+		td.highlight {
+			background-color: whitesmoke !important;
+		}
+*/
+		.table thead, thead th {
+			text-align: center;
+			font-size: 120%;
+		}
+		/* Custom Style */
+		.onoffswitch {
+			position: relative; width: 110px;
+			-webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+		}
+		.onoffswitch-checkbox {
+			display: none;
+		}
+		.onoffswitch-label {
+			display: block; overflow: hidden; cursor: pointer;
+			border: 2px solid #999999; border-radius: 20px;
+		}
+		.onoffswitch-inner {
+			display: block; width: 200%; margin-left: -100%;
+			-moz-transition: margin 0.3s ease-in 0s; -webkit-transition: margin 0.3s ease-in 0s;
+			-o-transition: margin 0.3s ease-in 0s; transition: margin 0.3s ease-in 0s;
+		}
+		.onoffswitch-inner:before, .onoffswitch-inner:after {
+			display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+			font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+			-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+		}
+		.onoffswitch-inner:before {
+			content: " Enabled";
+			padding-left: 10px;
+			background-color: #2FCCFF; color: #FFFFFF;
+		}
+		.onoffswitch-inner:after {
+			content: "Disabled";
+			padding-right: 10px;
+			background-color: #EEEEEE; color: #999999;
+			text-align: right;
+		}
+		.onoffswitch-switch {
+			display: block; width: 18px; margin: 7px;
+			background: #FFFFFF;
+			border: 2px solid #999999; border-radius: 20px;
+			position: absolute; top: 0; bottom: 0; right: 70px;
+			-moz-transition: all 0.3s ease-in 0s; -webkit-transition: all 0.3s ease-in 0s;
+			-o-transition: all 0.3s ease-in 0s; transition: all 0.3s ease-in 0s; 
+		}
+		.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+			margin-left: 0;
+		}
+		.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+			right: 0px; 
+		}
+		.navbar{
+			background-color: chartreuse;
+		}
+
+	</style>
+    
+    
 </head>
 
 <body>
@@ -234,13 +299,14 @@
 					<table id="fresh-datatables" class="table table-striped table-no-bordered table-hover" cellspacing="0" width="100%" style="width:100%">
 						<thead>
 							<tr>
-								<th>Family Name</th>
-                                <th>First Name</th>
-                                <th>Position</th>
-                                <th>Address</th>
-                                <th>Email</th>
-                                <th>CP Number</th>
-								<th class="disabled-sorting">Actions</th>
+                                <th><b>Family Name</b></th>
+                                <th><b>First Name</b></th>
+                                <th><b>Position</b></th>
+                                <th><b>Address</b></th>
+                                <th><b>Email</b></th>
+                                <th><b>CP Number</b></th>
+                                <th><b class="pull-left">Activation</b></th>
+								<th> <b class="disabled-sorting">Actions</b></th>
 							</tr>
 						</thead>
 						<tbody>
@@ -251,6 +317,14 @@
 								<td>Liwanag Loakan</td>
 								<td>2153118@slu.edu.ph</td>
                                 <td>09174131225</td>
+                                 <td><div class="onoffswitch">
+												<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+												<label class="onoffswitch-label" for="myonoffswitch">
+													<span class="onoffswitch-inner"></span>
+													<span class="onoffswitch-switch"></span>
+												</label>
+											</div>
+        				        </td>
 								<td>
 									<a href="#" class="like"><i class="fa fa-heart"></i></a>
 									<a href="#" class="edit"><i class="fa fa-edit"></i></a>
@@ -264,6 +338,14 @@
 								<td>Quirino Hill</td>
 								<td>2152578@slu.edu.ph</td>
                                 <td>09174131225</td>
+                                 <td><div class="onoffswitch">
+												<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+												<label class="onoffswitch-label" for="myonoffswitch">
+													<span class="onoffswitch-inner"></span>
+													<span class="onoffswitch-switch"></span>
+												</label>
+											</div>
+        				        </td>
 								<td>
 									<a href="#" class="like"><i class="fa fa-heart"></i></a>
 									<a href="#" class="edit"><i class="fa fa-edit"></i></a>
@@ -277,6 +359,14 @@
 								<td>Ambiong</td>
 								<td>2155296@slu.edu.ph</td>
                                 <td>09174131225</td>
+                                 <td><div class="onoffswitch">
+												<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+												<label class="onoffswitch-label" for="myonoffswitch">
+													<span class="onoffswitch-inner"></span>
+													<span class="onoffswitch-switch"></span>
+												</label>
+											</div>
+        				        </td>
 								<td>
 									<a href="#" class="like"><i class="fa fa-heart"></i></a>
 									<a href="#" class="edit"><i class="fa fa-edit"></i></a>
@@ -290,6 +380,14 @@
 								<td>Green Valley</td>
 								<td>2152498@slu.edu.ph</td>
                                 <td>09174131225</td>
+                                 <td><div class="onoffswitch">
+												<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+												<label class="onoffswitch-label" for="myonoffswitch">
+													<span class="onoffswitch-inner"></span>
+													<span class="onoffswitch-switch"></span>
+												</label>
+											</div>
+        				        </td>
 								<td>
 									<a href="#" class="like"><i class="fa fa-heart"></i></a>
 									<a href="#" class="edit"><i class="fa fa-edit"></i></a>
@@ -303,6 +401,14 @@
 								<td>Liwanag Loakan</td>
 								<td>2152579@slu.edu.ph</td>
                                 <td>09174131225</td>
+                                 <td><div class="onoffswitch">
+												<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+												<label class="onoffswitch-label" for="myonoffswitch">
+													<span class="onoffswitch-inner"></span>
+													<span class="onoffswitch-switch"></span>
+												</label>
+											</div>
+        				        </td>
 								<td>
 									<a href="#" class="like"><i class="fa fa-heart"></i></a>
 									<a href="#" class="edit"><i class="fa fa-edit"></i></a>
@@ -377,6 +483,9 @@
 
 <script src="../assets/js/jquery.js"></script>
 <script src="../assets/js/jquery.datatables.js"></script>
+
+ 
+    
 <script >
 
 $(document).ready(function() {
@@ -416,5 +525,15 @@ $(document).ready(function() {
 });
 
 </script>
+    
+    
+<script>
+  $(function() {
+    $('#toggle-two').bootstrapToggle({
+      on: 'Enabled',
+      off: 'Disabled'
+    });
+  })
+</script>   
 
 </html>

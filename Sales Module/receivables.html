@@ -190,11 +190,6 @@
 											<td>15,340.00</td>
 										</tr>
 										<tr>
-											<td>Femi</td>
-											<td></td>
-											<td>0.00</td>
-										</tr>
-										<tr>
 											<td>Le Chef Deli</td>
 											<td>15,750.00</td>
 											<td>15,750.00</td>
@@ -202,24 +197,27 @@
 									</tbody>
 								</table>
 									<div class="modal fade" id="myModal">
-									  <div class="modal-dialog">
+									  <div class="modal-dialog modal-lg">
 										<div class="modal-content">
 										  <div class="modal-header">
 											<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-											<h4 class="modal-title">FEMI</h4>
+											<h4 class="modal-title">Bloomfield</h4>
 										  </div>
 										  <div class="modal-body">
-											  <p>Date Receivable Started: </p>
-											  <p>Due Date: </p>
-											  <br>
 											<table class="table">
 											  	<thead>
 													<tr>
 														<th>Total Amount</th>
-														<th>Current Month (november)</th>
-														<th>October</th>
-														<th>September</th>
-														<th>August</th>
+														<th>Current Month (November)</th>
+														<th>Oct</th>
+														<th>Sept</th>
+                                                        <th>Aug</th>
+                                                        <th>Jul</th>
+                                                        <th>Jun</th>
+                                                        <th>April</th>
+                                                        <th>March</th>
+                                                        <th>Feb</th>
+														<th>Jan</th>
 													</tr>
 												</thead>
 												<tbody>
@@ -228,6 +226,12 @@
 													<td>0.00</td>
 													<td>0.00</td>
 													<td>0.00</td>
+                                                    <td>0.00</td>
+                                                    <td>0.00</td>
+                                                    <td>0.00</td>
+                                                    <td>0.00</td>
+                                                    <td>0.00</td>
+                                                    <td>0.00</td>
 												</tbody>
 											  </table>
 											  <hr><br></div>
@@ -369,7 +373,18 @@
 		
 	
 	</script>
-
+    <script type="text/javascript">
+        $(document).ready(function() {
+        $('table.display').DataTable( {
+            dom: 'Bfrtip',
+            buttons: [
+                'excel', 'pdf', 'print'
+            ]
+        } );
+    } );
+            
+        
+    </script>
 
 
 </html>
