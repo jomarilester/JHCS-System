@@ -185,11 +185,12 @@
                                                         </div>
                                                         <div class="col-md-6 form-group">
                                                             <div class="form-group label-floating">
-                                                                <label for="email">Supplier</label>
-                                                              <select class="form-control" name="supplier" required>
-                                                                  <option value="">Supplier 1</option>
-                                                                  <option value="">Supplier 2</option>
-                                                                  <option value="">Supplier 3</option>
+                                                                 <label for="email">Coffee</label>
+                                                              <select class="form-control" name="coffee">
+                                                                  <option value="">Guatemala Rainforest</option>
+                                                                  <option value="">Cordillera Sunrise</option>
+                                                                  <option value="">Sumatra Night</option>
+                                                                  <option value="">Espresso</option>
                                                               </select>
                                                             </div>
                                                         </div>
@@ -197,42 +198,35 @@
                                                     <div class="row">
                                                         <div class="col-md-6 form-group">
                                                             <div class="form-group label-floating">
-                                                              <label for="email">Coffee A</label>
-                                                              <input class="form-control" type="number" name="" placeholder="grams"/>
+                                                              <label for="email">Client</label>
+                                                              <input class="form-control" type="text" name="" required/>
                                                             </div>
                                                         </div>
                                                         <div class="col-md-6 form-group">
                                                             <div class="form-group label-floating">
-                                                              <label for="email">Coffee B</label>
-                                                              <input class="form-control" type="number" name="" placeholder="grams"/>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col-md-6 form-group">
-                                                            <div class="form-group label-floating">
-                                                              <label for="email">Coffee C</label>
-                                                              <input class="form-control" type="number" name="" placeholder="grams"/>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6 form-group">
-                                                            <div class="form-group label-floating">
-                                                              <label for="email">Coffee D</label>
-                                                              <input class="form-control" type="number" name="" placeholder="grams"/>
+                                                                 <label for="email">Coffee Bag</label>
+                                                              <select class="form-control" name="coffee">
+                                                                  <option value="clear">Clear</option>
+                                                                  <option value="brown">Brown</option>
+                                                              </select> 
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="row">
                                                         <div class="col-md-6 form-group">
                                                             <div class="form-group label-floating">
-                                                              <label for="email">Coffee E</label>
-                                                              <input class="form-control" type="number" name="" placeholder="grams"/>
+                                                                 <label for="email">Grams</label>
+                                                              <select class="form-control" name="coffee">
+                                                                  <option value="clear">250g</option>
+                                                                  <option value="brown">500g</option>
+                                                                  <option value="brown">1000g</option>
+                                                              </select> 
                                                             </div>
                                                         </div>
                                                         <div class="col-md-6 form-group">
                                                             <div class="form-group label-floating">
-                                                              <label for="email">Coffee F</label>
-                                                              <input class="form-control" type="number" name="" placeholder="grams"/>
+                                                            <label for="email">Quantity</label>
+                                                              <input class="form-control" name="coffeeType" type="number" required />
                                                             </div>
                                                         </div>
                                                     </div>
@@ -265,13 +259,13 @@
                                                         <div class="ripple-container">         </div>
                                                 </li>
                                                 <span> </span>
-                                                <li class="active">
+                                                <li>
                                                     <a href="./returnslist.html">
                                                         <i class="material-icons">home</i> Company Returns
                                                         <div class="ripple-container"></div>
                                                     </a>
                                                 </li>
-                                                <li>
+                                                <li class="active">
                                                     <a href="./clientreturn.html">
                                                         <i class="material-icons">group</i> Client Returns
                                                         <div class="ripple-container"></div>
@@ -294,52 +288,40 @@
                                                             <thead>
                                                                 <tr>
                                                                     <th><b>Date</b></th>
-                                                                    <th><b>Supplier</b></th>
-                                                                    <th><b>Total</b></th>
-                                                                    <th><b>Coffee A</b></th>
-                                                                    <th><b>Coffee B</b></th>
-                                                                    <th><b>Coffee C</b></th>
-                                                                    <th><b>Coffee D</b></th>
-                                                                    <th><b>Coffee E</b></th>
-                                                                    <th><b>Coffee F</b></th>
+                                                                    <th><b>Client</b></th>
+                                                                    <th><b>Coffee</b></th>
+                                                                    <th><b>Coffee Bag</b></th>
+                                                                    <th><b>Grams</b></th>
+                                                                    <th><b>Quantity</b></th>
                                                                     <th><b>Remarks</b></th>
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
                                                                 <tr>
                                                                     <td>Oct 1, 2017</td>
-                                                                    <td>Supplier 1</td>
-                                                                    <td>300 g</td>
-                                                                    <td>100</td>
-                                                                    <td>-</td>
-                                                                    <td>-</td>
-                                                                    <td>-</td>
-                                                                    <td>200</td>
-                                                                    <td>-</td>
+                                                                    <td>Client 1</td>
+                                                                    <td>Sumatra Night</td>
+                                                                    <td>Clear Bag</td>
+                                                                    <td>250 g</td>
+                                                                    <td>3</td>
                                                                     <td>Incorrect Blend</td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>Oct 3, 2017</td>
-                                                                    <td>Supplier 2</td>
+                                                                    <td>Client 2</td>
+                                                                    <td>Guatemala Rainforest</td>
+                                                                    <td>Brown Bag</td>
                                                                     <td>500 g</td>
-                                                                    <td>-</td>
-                                                                    <td>300</td>
-                                                                    <td>-</td>
-                                                                    <td>100</td>
-                                                                    <td>-</td>
-                                                                    <td>100</td>
-                                                                    <td>Spoiled</td>
+                                                                    <td>2</td>
+                                                                    <td>Incorrect Blend</td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>Oct 5, 2017</td>
-                                                                    <td>Supplier 3</td>
-                                                                    <td>600 g</td>
-                                                                    <td>-</td>
-                                                                    <td>-</td>
-                                                                    <td>400</td>
-                                                                    <td>-</td>
-                                                                    <td>200</td>
-                                                                    <td>-</td>
+                                                                    <td>Client 3</td>
+                                                                    <td>Cordillera Sunrise</td>
+                                                                    <td>Clear Bag</td>
+                                                                    <td>1000 g</td>
+                                                                    <td>1</td>
                                                                     <td>Incorrect Blend</td>
                                                                 </tr>
                                                             </tbody>
@@ -403,25 +385,7 @@ $(document).ready(function() {
 
     var table = $('#fresh-datatables').DataTable();
 
-    // Edit record
-    table.on('click', '.edit', function() {
-        $tr = $(this).closest('tr');
 
-        var data = table.row($tr).data();
-        alert('You press on Row: ' + data[0] + ' ' + data[1] + ' ' + data[2] + '\'s row.');
-    });
-
-    // Delete a record
-    table.on('click', '.remove', function(e) {
-        $tr = $(this).closest('tr');
-        table.row($tr).remove().draw();
-        e.preventDefault();
-    });
-
-    //Like record
-    table.on('click', '.like', function() {
-        alert('You clicked on Like button');
-    });
 });
 </script>
 
