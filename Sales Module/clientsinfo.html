@@ -558,6 +558,41 @@
 													<p>for the month of November</p>
 													<p style="font-size:150%;"><span style="display:inline-block; width: 5%;"></span>Total Balance: <b>P20,000</b><br>  </p>
 													<p><center><br>
+														<div class="card-content table-responsive">
+															<table id="mytable" class="table table-bordred table-striped">
+																<thead class="text-primary">
+																	<th><b class="pull-left">DR No.</b></th>
+																	<th><b class="pull-left">Item</b></th>
+																	<th><b class="pull-left">Date Delivered</b></th>
+																	<th><b class="pull-left">Amount</b></th>
+																	 <th><input type="checkbox" id="checkall" /></th>
+																</thead>
+																<tbody>
+																	<tr>
+																		<td>2222</td>
+																		<td>Sumatra</td>
+																		<td>Oct. 2,2017</td>
+																		<td class="text-primary">$36,738</td>
+																		<td><input type="checkbox" class="checkthis" /></td>
+																	</tr>
+																	<tr>
+																		<td>3475</td>
+																		<td>Guatemala</td>
+																		<td>Nov. 6,2017</td>
+																		<td class="text-primary">$23,789</td>
+																		<td><input type="checkbox" class="checkthis" /></td>
+																	</tr>
+																	<tr>
+																		<td>2356</td>
+																		<td>Sumatra</td>
+																		<td>Dec. 2,2017</td>
+																		<td class="text-primary">$56,142</td>
+																		<td><input type="checkbox" class="checkthis" /></td>
+																	</tr>
+																	
+																</tbody>
+															</table>
+														</div>
 											  <a class="btn btn-primary" data-toggle="collapse" href="#collapsePayment" aria-expanded="false" aria-controls="collapseExample" data-background-color="red">
 												Add Payment
 											  </a></center>
@@ -589,15 +624,24 @@
 																	<div class="col-lg-5 col-md-5 col-sm-5" style="padding-bottom: 20px;">
 																		<input class="form-control" name="coffeeType" placeholder="OR No." type="text" required />
 																	</div>
-																				<div class="col-lg-7 col-md-7 col-sm-7" style="padding-bottom: 20px;">
+																	<div class="col-lg-5 col-md-5 col-sm-5" style="padding-bottom: 20px;">
 																		<input class="form-control" name="coffeeType" placeholder="Bank" type="text" required />
 																	</div>
 																	
-																</div><br>
+																			</div>
 																		
 																<div class="row">
-																	
-																</div>
+																	<div class="col-lg-4 col-md-4 col-sm-4" style="padding-bottom: 10px;">
+																		<div class="form-group label-floating">
+																		  <select class="form-control" name="coffee" placeholder="Payment Type" type="text">
+																			  
+																			  <option value="">Cash</option>
+																			  <option value="">Cheque</option>
+
+																		  </select>
+																		</div>
+																	</div>
+																</div><br>
 
 																<div class="row">
 																	<div class="col-lg-7 col-md-7 col-sm-7" style="padding-bottom: 20px;">
@@ -779,7 +823,26 @@
             // Revalidate the date field
             $('#eventForm').formValidation('revalidateField', 'date');
         });
+		
+	</script>
+	<script type="text/javascript">
+		
+		$(document).ready(function(){
+$("#mytable #checkall").click(function () {
+        if ($("#mytable #checkall").is(':checked')) {
+            $("#mytable input[type=checkbox]").each(function () {
+                $(this).prop("checked", true);
+            });
 
+        } else {
+            $("#mytable input[type=checkbox]").each(function () {
+                $(this).prop("checked", false);
+            });
+        }
+    });
+    
+    $("[data-toggle=tooltip]").tooltip();
+});
 	
 	</script>
 
