@@ -14,7 +14,7 @@
     <!-- Bootstrap core CSS     -->
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
 	<link href="../assets/css/dataTables.bootstrap.min.css" rel="stylesheet" />
-		<link href="../assets/css/jquery.dataTable.min.css" rel="stylesheet" />
+	<link href="../assets/css/jquery.dataTable.min.css" rel="stylesheet" />
 	<link href="../assets/css/bootstrap-datepicker3.min.css" rel="stylesheet">
     <!--  Material Dashboard CSS    -->
     <link href="../assets/css/material-dashboard.css?v=1.2.0" rel="stylesheet" />
@@ -25,13 +25,6 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons' rel='stylesheet' type='text/css'>
 	
 	<style>
-	
-
-/*
-		td.highlight {
-			background-color: whitesmoke !important;
-		}
-*/
 
 		.table thead, thead th {
 			text-align: center;
@@ -46,11 +39,6 @@
 <body>
     <div class="wrapper">
         <div class="sidebar" data-color="purple" data-image="../assets/img/sidebar-1.jpg">
-            <!--
-        Tip 1: You can change the color of the sidebar using: data-color="purple | blue | green | orange | red"
-
-        Tip 2: you can also add an image using data-image tag
-    -->
             <div class="logo">
                 <img src="../assets/img/logo.png" alt="image1" width="250px" height="150px">
             </div>
@@ -336,13 +324,9 @@
 	
 	
 	<script type="text/javascript">
-			$(document).ready(function() {
-
-				$('#example').DataTable();
-
-
-
-			} );
+		$(document).ready(function() {
+			$('#example').DataTable();
+		} );
 		
 		$('table tbody tr  td').on('click',function(){
 		$("#myModal").modal("show");
@@ -358,34 +342,34 @@
             $('#eventForm').formValidation('revalidateField', 'date');
         });
 
-    $('#eventForm').formValidation({
-        framework: 'bootstrap',
-        icon: {
-            valid: 'glyphicon glyphicon-ok',
-            invalid: 'glyphicon glyphicon-remove',
-            validating: 'glyphicon glyphicon-refresh'
-        },
-        fields: {
-            name: {
-                validators: {
-                    notEmpty: {
-                        message: 'The name is required'
-                    }
-                }
-            },
-            date: {
-                validators: {
-                    notEmpty: {
-                        message: 'The date is required'
-                    },
-                    date: {
-                        format: 'MM/DD/YYYY',
-                        message: 'The date is not a valid'
-                    }
-                }
-            }
-        }
-    });
+		$('#eventForm').formValidation({
+			framework: 'bootstrap',
+			icon: {
+				valid: 'glyphicon glyphicon-ok',
+				invalid: 'glyphicon glyphicon-remove',
+				validating: 'glyphicon glyphicon-refresh'
+			},
+			fields: {
+				name: {
+					validators: {
+						notEmpty: {
+							message: 'The name is required'
+						}
+					}
+				},
+				date: {
+					validators: {
+						notEmpty: {
+							message: 'The date is required'
+						},
+						date: {
+							format: 'MM/DD/YYYY',
+							message: 'The date is not a valid'
+						}
+					}
+				}
+			}
+		});
 		
 	
 	</script>
