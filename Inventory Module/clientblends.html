@@ -177,12 +177,79 @@
                                                     <th>Raw Coffee D</th>
                                                     <th>Raw Coffee E</th>
                                                     <th>Raw Coffee f</th>
+                                                    <th>Unit Price</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
                                                     <td>
                                                         <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="number" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="number" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="number" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="number" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="number" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="number" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="number" class="form-control">
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-footer" align="center" style="margin-bottom:-14px;">
+                                <button type="button" class="btn btn-default btn-close" data-dismiss="modal">CLOSE</button>
+                                <button type="submit" class="btn btn-success accept">Save</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="panel panel-primary">
+                        <form action="#" method="post" accept-charset="utf-8">
+                            <div class="modal-body" style="padding: 5px;">
+                                <div id="page-wrapper">
+                                    <div class="table-responsive">
+                                        <center><b>Supplier 2</b>
+                                            <br>
+                                            <b>1/31/18</b></center>
+                                        <table class="table table-striped" id="table-mutasi">
+                                            <thead>
+                                                <tr>
+                                                    <th>Type of Blend</th>
+                                                    <th>Raw Coffee A</th>
+                                                    <th>Raw Coffee B</th>
+                                                    <th>Raw Coffee C</th>
+                                                    <th>Raw Coffee D</th>
+                                                    <th>Raw Coffee E</th>
+                                                    <th>Raw Coffee f</th>
+                                                    <th>Unit Price</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="number" class="form-control">
                                                     </td>
                                                     <td>
                                                         <input type="number" class="form-control">
@@ -233,14 +300,14 @@
                                                     </a>
                                                 </li>
                                                 <span></span>
-                                                <li class="active">
+                                                <li>
                                                     <a href="./blends.html">
                                                         Existing Blends
                                                         <div class="ripple-container"></div>
                                                     </a>
                                                 </li>
                                                 <span></span>
-                                                <li class="">
+                                                <li class="active">
                                                     <a href="./clientblends.html">
                                                         Client Blends
                                                         <div class="ripple-container"></div>
@@ -285,79 +352,113 @@
                                             <th><b class="pull-left">Raw Coffee D</b></th>
                                             <th><b class="pull-left">Raw Coffee E</b></th>
                                             <th><b class="pull-left">Raw Coffee F</b></th>
+                                            <th><b class="pull-left">Unit Price</b></th>
+                                            <th><b class="pull-left">Edit Info</b></th>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>Blend A</td>
+                                                <td>Client A Blend</td>
                                                 <td></td>
                                                 <td>30%</td>
                                                 <td>50%</td>
                                                 <td>20%</td>
                                                 <td></td>
                                                 <td></td>
+                                                <td>199</td>
+                                                <td>
+                                                    <a class="btn btn-warning btn-sm" style="margin-top: 0px" data-toggle="modal" data-target="#edit">Edit</a>
+                                                </td>
                                             </tr>
                                             <tr>
-                                                <td>Blend B</td>
+                                                <td>Client B Blend</td>
                                                 <td></td>
                                                 <td>10%</td>
                                                 <td>10%</td>
                                                 <td>50%</td>
                                                 <td>10%</td>
                                                 <td>20%</td>
+                                                <td>250</td>
+                                                <td>
+                                                    <a class="btn btn-warning btn-sm" style="margin-top: 0px" data-toggle="modal" data-target="#edit">Edit</a>
+                                                </td>
                                             </tr>
                                             <tr>
-                                                <td>Blend C</td>
+                                                <td>Client C Blend</td>
                                                 <td>10%</td>
                                                 <td></td>
                                                 <td></td>
                                                 <td>50%</td>
                                                 <td></td>
                                                 <td>40%</td>
+                                                <td>300</td>
+                                                <td>
+                                                                <a class="btn btn-warning btn-sm" style="margin-top: 0px" data-toggle="modal" data-target="#edit">Edit</a>
+                                                            </td>
                                             </tr>
                                             <tr>
-                                                <td>Blend D</td>
+                                                <td>Client D Blend</td>
                                                 <td>30%</td>
                                                 <td></td>
                                                 <td>40%</td>
                                                 <td>20%</td>
                                                 <td>10%</td>
                                                 <td></td>
+                                                <td>350</td>
+                                                <td>
+                                                                <a class="btn btn-warning btn-sm" style="margin-top: 0px" data-toggle="modal" data-target="#edit">Edit</a>
+                                                            </td>
                                             </tr>
                                             <tr>
-                                                <td>Blend E</td>
+                                                <td>Client E Blend</td>
                                                 <td>30%</td>
                                                 <td>20%</td>
                                                 <td>20%</td>
                                                 <td></td>
                                                 <td>20%</td>
                                                 <td>10%</td>
+                                                <td>199</td>
+                                                <td>
+                                                                <a class="btn btn-warning btn-sm" style="margin-top: 0px" data-toggle="modal" data-target="#edit">Edit</a>
+                                                            </td>
                                             </tr>
                                             <tr>
-                                                <td>Blend F</td>
+                                                <td>Client F Blend</td>
                                                 <td></td>
                                                 <td>50%</td>
                                                 <td>20%</td>
                                                 <td></td>
                                                 <td>30%</td>
                                                 <td></td>
+                                                <td>250</td>
+                                                <td>
+                                                                <a class="btn btn-warning btn-sm" style="margin-top: 0px" data-toggle="modal" data-target="#edit">Edit</a>
+                                                            </td>
                                             </tr>
                                             <tr>
-                                                <td>Blend G</td>
+                                                <td>Client G Blend</td>
                                                 <td>40%</td>
                                                 <td>10%</td>
                                                 <td>20%</td>
                                                 <td>30%</td>
                                                 <td></td>
                                                 <td></td>
+                                                <td>199</td>
+                                                <td>
+                                                                <a class="btn btn-warning btn-sm" style="margin-top: 0px" data-toggle="modal" data-target="#edit">Edit</a>
+                                                            </td>
                                             </tr>
                                             <tr>
-                                                <td>Blend H</td>
+                                                <td>Client H Blend</td>
                                                 <td></td>
                                                 <td>30%</td>
                                                 <td>20%</td>
                                                 <td>30%</td>
                                                 <td>20%</td>
                                                 <td></td>
+                                                <td>199</td>
+                                                <td>
+                                                                <a class="btn btn-warning btn-sm" style="margin-top: 0px" data-toggle="modal" data-target="#edit">Edit</a>
+                                                            </td>
                                             </tr>
                                         </tbody>
                                     </table>
