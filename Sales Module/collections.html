@@ -6,7 +6,7 @@
     <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png" />
     <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>Sales Summary</title>
+    <title>Collections</title>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
     <!-- Bootstrap core CSS     -->
@@ -136,10 +136,10 @@
                                 </div>
                                 <div class="card-content"><br><br>
 									<div class="tab-content">
-										<div class="tab-pane active" id="collection"><br><br>
-										<div class="card-header btn btn-primary btn-lg" data-background-color="red" data-toggle="modal" data-target="#deposit" data-original-title style="float:right;" >
-                                   Add Deposit
-                                </div>
+										<div class="tab-pane active" id="collection">
+                                        <h4>Mode of Payment: Cash</h4>
+
+										<div class="card-header btn btn-primary btn-lg" data-background-color="green" data-toggle="modal" data-target="#deposit" data-original-title style="float:right;" >Deposit</div>
                                     <label>Set Date from </label>
                                     <input type="date" name="">
                                     <label> to </label>
@@ -152,7 +152,7 @@
                                     <table id="" class="display  hover order-column" cellspacing="0" width="100%">
 									<thead>
 										<tr>
-    										<th><b>OR No.</b></th>
+    										<th><b>CR No.</b></th>
     										<th><b>Date of Client Payment</b></th>
 											<th><b>Date Deposited</b></th>
     										<th><b>Client</b></th>
@@ -169,7 +169,7 @@
 										<tr>
 											<td>2415</td>
 											<td>Oct 1, 2017</td>
-											<td>Oct 30,2017</td>
+											<td>Not yet deposited</td>
 											<td>Bloomfield</td>
 											<td>1234</td>
 											<td>10,000</td>
@@ -192,46 +192,63 @@
                                         </tr>
 									</tbody>
 								</table>
-										</div>
-										<div class="tab-pane" id="PDC">
-											<h4>Total Post Dated Check (December 2017) : <b>1,500.00 </b> </h4>
-											<div class="card-header btn btn-primary btn-lg" data-background-color="red" data-toggle="modal" data-target="#addpdc" data-original-title style="float:right;" >
-                                   Add PDC
+								</div>
+								<div class="tab-pane" id="PDC">
+									<h4>Mode of Payment: Cheque</h4>
+
+                                    <div class="card-header btn btn-primary btn-lg" data-background-color="green" data-toggle="modal" data-target="#deposit" data-original-title style="float:right;" >Deposit</div>
+                                    <label>Set Date from </label>
+                                    <input type="date" name="">
+                                    <label> to </label>
+                                    <input type="date" name="">
+                                    <button>Submit</button>
+                                    <h4>Total Collections (December 2017) : <b>25,000 </b> </h4>
+                                    <hr>
+                                    <h4>Generate Collection Report</h4>
+                                    <table id="" class="display  hover order-column" cellspacing="0" width="100%">
+                                        <thead>
+                                            <tr>
+                                                <th><b>CR No.</b></th>
+                                                <th><b>Date of Client Payment</b></th>
+                                                <th><b>Date Deposited</b></th>
+                                                <th><b>Client</b></th>
+                                                <th><b>DR No.</b></th>
+                                                <th><b>Amount</b></th>
+                                                <th><b>Remarks</b></th>
+                                                <th><b>Bank</b></th>
+                                                <th><b>Gross</b></th>
+                                                <th><b>Withheld</b></th>
+                                                
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>2415</td>
+                                                <td>Oct 1, 2017</td>
+                                                <td>Not yet deposited</td>
+                                                <td>Bloomfield</td>
+                                                <td>1234</td>
+                                                <td>10,000</td>
+                                                <td></td>
+                                                <td>BPI-OPEX</td>
+                                                <td>6240.00</td>
+                                                <td>0.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5678</td>
+                                                <td>Oct 6, 2017</td>
+                                                <td>Oct 30, 2017</td>
+                                                <td>Boracay</td>
+                                                <td>2907</td>
+                                                <td>43,666.61</td>
+                                                <td>Tax Withheld</td>
+                                                <td>BPI_OPEX</td>
+                                                <td>44060.00</td>
+                                                <td>393.39</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
-                                            <table id="" class="display hover order-column" cellspacing="0" width="100%">
-									<thead>
-                                            <th><b>OR No.</b></th>
-    										<th><b>Client</b></th>
-											<th><b>DR No.</b></th>
-
-											<th><b>Remarks</b></th>
-											<th><b>Bank</b></th>
-											<th><b>Gross</b></th>
-									</thead>
-									<tbody>
-										<tr>
-                                            <td>1946</td>
-                                            <td>Farmers Ground</td>
-                                            <td>Brown</td>
-
-                                            <td>175</td>
-                                            <td>BPI-OPEX</td>
-											<td>160</td>
-
-										</tr>
-										<tr>
-                                            <td>1536</td>
-                                            <td>Le Chef</td>
-                                            <td>Brown</td>
-
-                                            <td>175</td>
-                                            <td>BPI-OPEX</td>
-											<td>1340</td>
-
-										</tr>
-									</tbody>
-								</table>
-                                        </div>
 									
                             </div>
 								</div>	
@@ -249,18 +266,59 @@
 													<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
 													<h4 class="panel-title" id="contactLabel"><center>Deposit</center></h4>
 												</div>
+
+                                                <div class="card-content table-responsive">
+                                                            <table id="mytable" class="table table-bordred table-striped">
+                                                                <thead class="text-primary">
+                                                                    <th><b class="pull-left">CR No.</b></th>
+                                                                    <th><b class="pull-left">Client</b></th>
+                                                                    <th><b class="pull-left">Date of Payment</b></th>
+                                                                    <th><b class="pull-left">Amount</b></th>
+                                                                    <th><input type="checkbox" id="checkall" /></th>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>C1022</td>
+                                                                        <td>Mario's</td>
+                                                                        <td>Oct. 2,2017</td>
+                                                                        <td class="text-primary">36,738</td>
+                                                                        <td><input type="checkbox" class="checkthis" /></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>C3475</td>
+                                                                        <td>Boracay</td>
+                                                                        <td>Nov. 6,2017</td>
+                                                                        <td class="text-primary">23,789</td>
+                                                                        <td><input type="checkbox" class="checkthis" /></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>C2356</td>
+                                                                        <td>Bloomfield</td>
+                                                                        <td>Dec. 2,2017</td>
+                                                                        <td class="text-primary">56,142</td>
+                                                                        <td><input type="checkbox" class="checkthis" /></td>
+                                                                    </tr>
+                                                                    
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+
 												<form action="#" method="post" accept-charset="utf-8">
 												<div class="modal-body" style="padding: 5px;">
-													
-													  <div class="row">
-															<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-																<input class="form-control" name="firstname" placeholder="Date of Deposit" type="date" required autofocus />
-															</div>
-															<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-																<input class="form-control" name="lastname" placeholder="Total Amount Deposited" type="text" required />
-															</div>
-														</div>
-														
+
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group label-floating">
+                                                          <label for="email">Date Deposited:</label>
+                                                          <input class="form-control" type="date" name="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group label-floating">
+                                                            <h3>Total Amount Deposited:0.00</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
 													</div>  
 													<div class="panel-footer" align="center">
 														<input type="submit" class="btn btn-success" value="Add"/>
