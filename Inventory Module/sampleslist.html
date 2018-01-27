@@ -159,440 +159,168 @@
                     </div>
                 </div>
             </nav>
+            <div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="panel panel-primary">
+                        <form action="#" method="post" accept-charset="utf-8">
+                            <div class="modal-body" style="padding: 5px;">
+                                <div id="page-wrapper">
+                                    <div class="table-responsive">
+                                        <center><b>Add New Samples</b>
+                                            <br>
+                                            <b>1/31/18</b></center>
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-md-3 form-group">
+                                                    <div class="form-group label-floating">
+                                                        <label>Sample For</label>
+                                                        <select class="form-control" name="supplier" required>
+                                                            <option>Walk in</option>
+                                                            <option>Client A</option>
+                                                            <option>Client B</option>
+                                                            <option>Client C</option>
+                                                            <option>Client D</option>
+                                                            <option>Client E</option>
+                                                            <option>Client F</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 form-group">
+                                                    <div class="form-group label-floating">
+                                                        <label>Type</label>
+                                                        <select class="form-control" name="supplier" required>
+                                                            <option>Light Roast</option>
+                                                            <option>Medium Roast</option>
+                                                            <option>City Roast</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 form-group">
+                                                    <div class="form-group label-floating">
+                                                        <label>Packaging</label>
+                                                        <select class="form-control" name="supplier" required>
+                                                            <option>Clear Bag</option>
+                                                            <option>Brown Bag</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 form-group">
+                                                    <div class="form-group label-floating">
+                                                        <label>Date Released</label>
+                                                        <input class="form-control" type="date" name=""/>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        <table class="table table-striped" id="table-mutasi">
+                                            <thead>
+                                                <tr>
+                                                    <th>GUATEMALA</th>
+                                                    <th>SUMATRA</th>
+                                                    <th>ROBUSTA</th>
+                                                    <th>BENGUET</th>
+                                                    <th>COLOMBIA</th>
+                                                    <th>BARAKO</th>
+                                                    <th><b>Quantity</b></th>
+                                                    <th><b>Unit Price</b></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <input type="number" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="number" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="number" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="number" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="number" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="number" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="number" class="form-control">
+                                                    </td>
+                                                    <td>
+                                                        <input type="number" class="form-control">
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-footer" align="center" style="margin-bottom:-14px;">
+                                <button type="button" class="btn btn-default btn-close" data-dismiss="modal">CLOSE</button>
+                                <button type="submit" class="btn btn-success accept">Save</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="details" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="panel panel-primary">
+                        <form action="#" method="post" accept-charset="utf-8">
+                            <div class="modal-body" style="padding: 5px;">
+                                <div id="page-wrapper">
+                                    <div class="table-responsive">
+                                        <center><b>(Client Blend Name)</b>
+                                            <br>
+                                            <b>1/31/18</b></center>
+                                        <table class="table table-striped" id="table-mutasi">
+                                            <thead>
+                                                <tr>
+                                                    <th>Blend Name</th>
+                                                    <th>GUATEMALA</th>
+                                                    <th>SUMATRA</th>
+                                                    <th>ROBUSTA</th>
+                                                    <th>BENGUET</th>
+                                                    <th>COLOMBIA</th>
+                                                    <th>BARAKO</th>
+                                                    <th>Quantity</th>
+                                                    <th>Unit Price</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        Mario's Blend
+                                                    </td>
+                                                    <td>600</td>
+                                                    <td>400</td>
+                                                    <td>0</td>
+                                                    <td>600</td>
+                                                    <td>0</td>
+                                                    <td>400</td>
+                                                    <td>3</td>
+                                                    <td>199</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-footer" align="center" style="margin-bottom:-14px;">
+                                <button type="button" class="btn btn-default btn-close" data-dismiss="modal">CLOSE</button>
+                                <button type="submit" class="btn btn-success accept">Save</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
             <div class="content">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-12">
                             <div class="card">
-                                <div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="panel panel-primary">
-                                            <div class="panel-heading">
-                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                                                <h4 class="panel-title" id="contactLabel"><span class="glyphicon glyphicon-info-sign"></span> Add New Sample</h4>
-                                            </div>
-                                            <form action="#" method="post" accept-charset="utf-8">
-                                                <div class="modal-body" style="padding: 5px;">
-                                                    <div class="row">
-                                                        <div class="col-md-6">
-                                                            <div class="form-group label-floating">
-                                                                <label for="type">Coffee Bean</label>
-                                                                <select class="form-control" id="type" name="coffeebean">
-                                                                    <option> </option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-                                                            <input class="form-control" name="blend" placeholder="Blend" type="text" required />
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-                                                            <input class="form-control" name="ground" placeholder="Ground" type="text" required />
-                                                        </div>
-                                                        <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-                                                            <input class="form-control" name="weight" placeholder="Weight in grams" type="text" required />
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-                                                            <input class="form-control" name="qty" placeholder="Qty/Bag" type="text" required />
-                                                        </div>
-                                                        <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-                                                            <input class="form-control" name="date" placeholder="Date" type="text" rows="8" required />
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col-lg-12 col-md-12 col-sm-12">
-                                                            <textarea style="resize:vertical;" class="form-control" placeholder="Remarks" rows="3" name="remarks" required></textarea>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                    </div>
-                                                </div>
-                                                <div class="panel-footer" style="margin-bottom:-14px;">
-                                                    <input type="submit" class="btn btn-success" value="Add" />
-                                                    <!--<span class="glyphicon glyphicon-ok"></span>-->
-                                                    <input type="reset" class="btn btn-danger" value="Clear" />
-                                                    <!--<span class="glyphicon glyphicon-remove"></span>-->
-                                                    <button style="float: right;" type="button" class="btn btn-default btn-close" data-dismiss="modal">Close</button>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="modal fade" id="details1" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-lg">
-                                        <div class="panel panel-primary">
-                                            <form action="#" method="post" accept-charset="utf-8">
-                                                <div class="modal-body" style="padding: 5px;">
-                                                    <div id="page-wrapper">
-                                                        <div class="table-responsive">
-                                                            <center><b>1/31/18</b></center>
-                                                            <table class="table table-striped" id="table-mutasi">
-                                                                <thead>
-                                                                    <tr>
-                                                                        <th>GUATEMALA</th>
-                                                                        <th>SUMATRA</th>
-                                                                        <th>ROBUSTA</th>
-                                                                        <th>BENGUET</th>
-                                                                        <th>COLOMBIA</th>
-                                                                        <th>BARAKO</th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td>600</td>
-                                                                        <td>400</td>
-                                                                        <td>0</td>
-                                                                        <td>600</td>
-                                                                        <td>0</td>
-                                                                        <td>400</td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                            <table class="table table-striped" id="table-mutasi">
-                                                                <thead>
-                                                                    <tr>
-                                                                        <th> </th>
-                                                                        <th> </th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td>Blend: </td>
-                                                                        <td>Weight in grams:</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Bean: </td>
-                                                                        <td>Quantity:</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Ground: </td>
-                                                                        <td> </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="panel-footer" align="center" style="margin-bottom:-14px;">
-                                                    <button type="button" class="btn btn-default btn-close" data-dismiss="modal">CLOSE</button>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="modal fade" id="details2" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-lg">
-                                        <div class="panel panel-primary">
-                                            <form action="#" method="post" accept-charset="utf-8">
-                                                <div class="modal-body" style="padding: 5px;">
-                                                    <div id="page-wrapper">
-                                                        <div class="table-responsive">
-                                                            <center><b>1/26/18</b></center>
-                                                            <table class="table table-striped" id="table-mutasi">
-                                                                <thead>
-                                                                    <tr>
-                                                                        <th>GUATEMALA</th>
-                                                                        <th>SUMATRA</th>
-                                                                        <th>ROBUSTA</th>
-                                                                        <th>BENGUET</th>
-                                                                        <th>COLOMBIA</th>
-                                                                        <th>BARAKO</th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td>700</td>
-                                                                        <td>300</td>
-                                                                        <td>500</td>
-                                                                        <td>1000</td>
-                                                                        <td>500</td>
-                                                                        <td>3000</td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                            <table class="table table-striped" id="table-mutasi">
-                                                                <thead>
-                                                                    <tr>
-                                                                        <th> </th>
-                                                                        <th> </th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td>Blend: </td>
-                                                                        <td>Weight in grams:</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Bean: </td>
-                                                                        <td>Quantity:</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Ground: </td>
-                                                                        <td> </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="panel-footer" align="center" style="margin-bottom:-14px;">
-                                                    <button type="button" class="btn btn-default btn-close" data-dismiss="modal">CLOSE</button>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="modal fade" id="details3" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-lg">
-                                        <div class="panel panel-primary">
-                                            <form action="#" method="post" accept-charset="utf-8">
-                                                <div class="modal-body" style="padding: 5px;">
-                                                    <div id="page-wrapper">
-                                                        <div class="table-responsive">
-                                                            <center><b>1/23/18</b></center>
-                                                            <table class="table table-striped" id="table-mutasi">
-                                                                <thead>
-                                                                    <tr>
-                                                                        <th>GUATEMALA</th>
-                                                                        <th>SUMATRA</th>
-                                                                        <th>ROBUSTA</th>
-                                                                        <th>BENGUET</th>
-                                                                        <th>COLOMBIA</th>
-                                                                        <th>BARAKO</th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td>1500</td>
-                                                                        <td>0</td>
-                                                                        <td>0</td>
-                                                                        <td>3000</td>
-                                                                        <td>1500</td>
-                                                                        <td>3000</td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                            <table class="table table-striped" id="table-mutasi">
-                                                                <thead>
-                                                                    <tr>
-                                                                        <th> </th>
-                                                                        <th> </th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td>Blend: </td>
-                                                                        <td>Weight in grams:</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Bean: </td>
-                                                                        <td>Quantity:</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Ground: </td>
-                                                                        <td> </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="panel-footer" align="center" style="margin-bottom:-14px;">
-                                                    <button type="button" class="btn btn-default btn-close" data-dismiss="modal">CLOSE</button>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="modal fade" id="details4" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-lg">
-                                        <div class="panel panel-primary">
-                                            <form action="#" method="post" accept-charset="utf-8">
-                                                <div class="modal-body" style="padding: 5px;">
-                                                    <div id="page-wrapper">
-                                                        <div class="table-responsive">
-                                                            <center><b>1/14/18</b></center>
-                                                            <table class="table table-striped" id="table-mutasi">
-                                                                <thead>
-                                                                    <tr>
-                                                                        <th>GUATEMALA</th>
-                                                                        <th>SUMATRA</th>
-                                                                        <th>ROBUSTA</th>
-                                                                        <th>BENGUET</th>
-                                                                        <th>COLOMBIA</th>
-                                                                        <th>BARAKO</th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td>3000</td>
-                                                                        <td>3000</td>
-                                                                        <td>1000</td>
-                                                                        <td>500</td>
-                                                                        <td>0</td>
-                                                                        <td>0</td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                            <table class="table table-striped" id="table-mutasi">
-                                                                <thead>
-                                                                    <tr>
-                                                                        <th> </th>
-                                                                        <th> </th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td>Blend: </td>
-                                                                        <td>Weight in grams:</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Bean: </td>
-                                                                        <td>Quantity:</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Ground: </td>
-                                                                        <td> </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="panel-footer" align="center" style="margin-bottom:-14px;">
-                                                    <button type="button" class="btn btn-default btn-close" data-dismiss="modal">CLOSE</button>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="modal fade" id="details5" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-lg">
-                                        <div class="panel panel-primary">
-                                            <form action="#" method="post" accept-charset="utf-8">
-                                                <div class="modal-body" style="padding: 5px;">
-                                                    <div id="page-wrapper">
-                                                        <div class="table-responsive">
-                                                            <center><b>1/11/18</b></center>
-                                                            <table class="table table-striped" id="table-mutasi">
-                                                                <thead>
-                                                                    <tr>
-                                                                        <th>GUATEMALA</th>
-                                                                        <th>SUMATRA</th>
-                                                                        <th>ROBUSTA</th>
-                                                                        <th>BENGUET</th>
-                                                                        <th>COLOMBIA</th>
-                                                                        <th>BARAKO</th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td>0</td>
-                                                                        <td>0</td>
-                                                                        <td>0</td>
-                                                                        <td>500</td>
-                                                                        <td>0</td>
-                                                                        <td>4000</td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                            <table class="table table-striped" id="table-mutasi">
-                                                                <thead>
-                                                                    <tr>
-                                                                        <th> </th>
-                                                                        <th> </th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td>Blend: </td>
-                                                                        <td>Weight in grams:</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Bean: </td>
-                                                                        <td>Quantity:</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Ground: </td>
-                                                                        <td> </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="panel-footer" align="center" style="margin-bottom:-14px;">
-                                                    <button type="button" class="btn btn-default btn-close" data-dismiss="modal">CLOSE</button>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="modal fade" id="details6" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-lg">
-                                        <div class="panel panel-primary">
-                                            <form action="#" method="post" accept-charset="utf-8">
-                                                <div class="modal-body" style="padding: 5px;">
-                                                    <div id="page-wrapper">
-                                                        <div class="table-responsive">
-                                                            <center><b>1/04/18</b></center>
-                                                            <table class="table table-striped" id="table-mutasi">
-                                                                <thead>
-                                                                    <tr>
-                                                                        <th>GUATEMALA</th>
-                                                                        <th>SUMATRA</th>
-                                                                        <th>ROBUSTA</th>
-                                                                        <th>BENGUET</th>
-                                                                        <th>COLOMBIA</th>
-                                                                        <th>BARAKO</th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td>1000</td>
-                                                                        <td>0</td>
-                                                                        <td>1000</td>
-                                                                        <td>4000</td>
-                                                                        <td>0</td>
-                                                                        <td>6000</td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                            <table class="table table-striped" id="table-mutasi">
-                                                                <thead>
-                                                                    <tr>
-                                                                        <th> </th>
-                                                                        <th> </th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td>Blend: </td>
-                                                                        <td>Weight in grams:</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Bean: </td>
-                                                                        <td>Quantity:</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Ground: </td>
-                                                                        <td> </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="panel-footer" align="center" style="margin-bottom:-14px;">
-                                                    <button type="button" class="btn btn-default btn-close" data-dismiss="modal">CLOSE</button>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
                                 <div class="card-header" data-background-color="blue">
                                     <h4>List of Samples</h4>
                                 </div>
@@ -607,8 +335,10 @@
                                                     <thead>
                                                         <tr>
                                                             <th>#</th>
-                                                            <th>Date</th>
-                                                            <th>Remarks</th>
+                                                            <th>Date Released</th>
+                                                            <th>Sample Name</th>
+                                                            <th>Packaging</th>
+                                                            <th>Stickers</th>
                                                             <th>Actions</th>
                                                         </tr>
                                                     </thead>
@@ -617,48 +347,60 @@
                                                             <td>1</td>
                                                             <td>01/31/18</td>
                                                             <td>Sample for Leon Araneta</td>
+                                                            <td>Brown Bag</td>
+                                                            <td>Blend A Sticker</td>
                                                             <td>
-                                                                <a class="btn btn-info btn-sm" style="margin-top: 0px" data-toggle="modal" data-target="#details1">Details</a>
+                                                                <a class="btn btn-info btn-sm" style="margin-top: 0px" data-toggle="modal" data-target="#details">Details</a>
                                                             </td>
                                                         </tr>
                                                         <tr>
                                                             <td>2</td>
                                                             <td>01/26/18</td>
                                                             <td>Coffee for Guards at Gate 4</td>
+                                                            <td>Brown Bag</td>
+                                                            <td>Blend A Sticker</td>
                                                             <td>
-                                                                <a class="btn btn-info btn-sm" style="margin-top: 0px" data-toggle="modal" data-target="#details2">Details</a>
+                                                                <a class="btn btn-info btn-sm" style="margin-top: 0px" data-toggle="modal" data-target="#details">Details</a>
                                                             </td>
                                                         </tr>
                                                         <tr>
                                                             <td>3</td>
                                                             <td>01/23/18</td>
                                                             <td>Sample for CSE Sumatra night</td>
+                                                            <td>Brown Bag</td>
+                                                            <td>Blend A Sticker</td>
                                                             <td>
-                                                                <a class="btn btn-info btn-sm" style="margin-top: 0px" data-toggle="modal" data-target="#details3">Details</a>
+                                                                <a class="btn btn-info btn-sm" style="margin-top: 0px" data-toggle="modal" data-target="#details">Details</a>
                                                             </td>
                                                         </tr>
                                                         <tr>
                                                             <td>4</td>
                                                             <td>01/14/18</td>
                                                             <td>Free taste in Session Road</td>
+                                                            <td>Brown Bag</td>
+                                                            <td>Blend A Sticker</td>
                                                             <td>
-                                                                <a class="btn btn-info btn-sm" style="margin-top: 0px" data-toggle="modal" data-target="#details4">Details</a>
+                                                                <a class="btn btn-info btn-sm" style="margin-top: 0px" data-toggle="modal" data-target="#details">Details</a>
                                                             </td>
                                                         </tr>
                                                         <tr>
                                                             <td>5</td>
                                                             <td>01/11/18</td>
                                                             <td>Freebies for Manor Hotel</td>
+                                                            <td>Brown Bag</td>
+                                                            <td>Blend A Sticker</td>
                                                             <td>
-                                                                <a class="btn btn-info btn-sm" style="margin-top: 0px" data-toggle="modal" data-target="#details5">Details</a>
+                                                                <a class="btn btn-info btn-sm" style="margin-top: 0px" data-toggle="modal" data-target="#details">Details</a>
                                                             </td>
                                                         </tr>
                                                         <tr>
                                                             <td>6</td>
                                                             <td>01/04/18</td>
                                                             <td>Sample for Tazabelle</td>
+                                                            <td>Brown Bag</td>
+                                                            <td>Blend A Sticker</td>
                                                             <td>
-                                                                <a class="btn btn-info btn-sm" style="margin-top: 0px" data-toggle="modal" data-target="#details6">Details</a>
+                                                                <a class="btn btn-info btn-sm" style="margin-top: 0px" data-toggle="modal" data-target="#details">Details</a>
                                                             </td>
                                                         </tr>
                                                     </tbody>
