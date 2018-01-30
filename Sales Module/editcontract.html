@@ -33,6 +33,9 @@
 		.table tbody, tbody td {
 			text-align: right;
 		}
+		.select-pane {
+			display:none;
+		}
 	</style>
 </head>
 
@@ -183,7 +186,7 @@
                                           </select>   
                                         </div>
                                     </div>
-                                    <div class="col-md-3">
+                                    <div class="col-md-2">
                                         <div class="form-group label-floating">
                                           <label>Type of Bag</label>
                                           <select class="form-control" name="coffee">
@@ -192,7 +195,7 @@
                                           </select> 
                                         </div>
                                     </div>
-                                    <div class="col-md-3">
+                                    <div class="col-md-2">
                                         <div class="form-group label-floating">
                                           <label>Size</label>
                                             <select class="form-control" name="coffee">
@@ -208,8 +211,74 @@
                                             <input class="form-control" name="coffeeType" type="number" required /> 
                                         </div>
                                     </div>
+									<div class="col-md-2">
+                                        <div class=" btn btn-primary btn-sm" data-background-color="red" data-toggle="modal" data-target="#addnew" data-original-title >
+                                   Add Blend
                                 </div>
-                                    
+                                    </div>
+								</div>
+								
+								<!----modal for add new coffee blend ---->
+								<div class="modal fade" id="addnew" tabindex="-1" role="dialog" aria-labelledby="addnew" aria-hidden="true">
+									<div class="modal-dialog">
+										<div class="panel panel-primary">
+											<div class="panel-heading">
+												<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+												<h4 class="panel-title" id="contactLabel"><center>Add Existing Blend</center></h4>
+											</div>
+											<div class="modal-body" style="padding: 5px;">
+												<div class="row">
+													<input type="hidden" name="count" value="1" />
+													<div class="control-group " id="fields">
+														<div class="controls" id="profs"> 
+															<form class="input-append label-floating">
+																<div id="field">
+																	<div class="input" id="field1">
+																		<div class="col-md-4">
+																			<label for="email">Coffee Blend:</label>
+																			<select class="form-control" name="coffee">
+																				<option value="">Guatemala Rainforest</option>
+																				<option value="">Cordillera Sunrise</option>
+																				<option value="">Sumatra Night</option>
+																				<option value="">Espresso</option>
+																			</select></div>
+																		<div class="col-md-2">
+																			<label>Type of Bag</label>
+																			<select class="form-control" name="coffee">
+																		  		<option value="clear">Clear</option>
+																		  		<option value="brown">Brown</option>
+																			</select> 
+																		</div>
+																		<div class="col-md-2">
+																			<label>Size</label>
+																			<select class="form-control" name="coffee">
+																				  <option value="clear">250g</option>
+																				  <option value="brown">500g</option>
+																				  <option value="brown">1000g</option>
+																			</select> 
+																		</div>
+															
+																		<div class="col-md-2"><label>Quantity</label><input class="form-control" name="coffeeType" type="number" required /> </div>
+																		<label>Add Another</label>
+																	</div>
+																	<div class="col-md-2">
+																	<button id="b1" class="btn btn-success add-more " type="button">+</button>
+																	</div>
+															</div>
+														</form>									
+													</div>
+												</div>
+											</div>												
+										</div>  
+										<div class="panel-footer" align="center">
+											<input type="submit" class="btn btn-success" value="Add Blend"/>
+											<input type="reset" class="btn btn-warning" value="Clear" />													
+										</div>
+											
+										</div>
+									</div>
+								</div>
+									
                                  
                                 <div class="form-group">
                                     <h4>Machine Specifications:</h4>
@@ -400,6 +469,37 @@
     });
 		
 	
+	</script>
+	
+	<script type="text/javascript">
+		$(document).ready(function(){
+    var next = 1;
+    $(".add-more").click(function(e){
+        e.preventDefault();
+        var addto = "#field" + next;
+        var addRemove = "#field" + (next);
+        next = next + 1;
+        var newIn = '<div class="input" id="field' + next + '"><div class="col-md-4"><select class="form-control" name="coffee"><option value="">Guatemala Rainforest</option><option value="">Cordillera Sunrise</option><option value="">Sumatra Night</option><option value="">Espresso</option></select></div><div class="col-md-2"><select class="form-control" name="coffee"><option value="clear">Clear</option><option value="brown">Brown</option></select> </div><div class="col-md-2"><select class="form-control" name="coffee"><option value="clear">250g</option><option value="brown">500g</option> <option value="brown">1000g</option></select> </div><div class="col-md-2"><input class="form-control" name="coffeeType" type="number" required /> </div></div>';
+        var newInput = $(newIn);
+        var removeBtn = ' <button id="remove' + (next - 1) + '" class="btn btn-danger remove-me" >-</button></div><div id="field">';
+        var removeButton = $(removeBtn);
+        $(addto).after(newInput);
+        $(addRemove).after(removeButton);
+        $("#field" + next).attr('data-source',$(addto).attr('data-source'));
+        $("#count").val(next);  
+        
+            $('.remove-me').click(function(e){
+                e.preventDefault();
+                var fieldNum = this.id.charAt(this.id.length-1);
+                var fieldID = "#field" + fieldNum;
+                $(this).remove();
+                $(fieldID).remove();
+            });
+    });
+    
+
+    
+});
 	</script>
 
 </html>
