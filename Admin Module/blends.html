@@ -31,28 +31,34 @@
 
 <body>
     <div class="wrapper">
-        <div class="sidebar" data-color="green" data-image="../assets/img/sidebar-0.jpg">
+         <div class="sidebar" data-color="green" data-image="../assets/img/sidebar-1.jpg">
             <!--
-        Tip 1: You can change the color of the sidebar using: data-color="green | blue | green | orange | red"
-
+        Tip 1: You can change the color of the sidebar using: data-color="purple | blue | green | orange | red"
         Tip 2: you can also add an image using data-image tag
     -->
-            <div class="logo">
+            <div class="logo ">
                 <img src="../assets/img/logo.png" alt="image1" width="250px" height="150px">
             </div>
             <div class="sidebar-wrapper">
                  <ul class="nav">
-                    <li >
+                    <li>
                         <a href="dashboard.html">
                             <i class="material-icons">dashboard</i>
                             
                             <p>Dashboard</p>
                         </a>
                     </li>
+                     
                     <li>
-                        <a href="./sales.html">
-                            <i class="material-icons">shopping_cart</i>
-                            <p>Sales</p>
+                        <a href="./itemlist.html">
+                            <i class="material-icons">list</i>
+                            <p>Item</p>
+                        </a>
+                    </li>
+                     <li class="active">
+                        <a href="./product_inventory.html">
+                            <i class="material-icons">assessment</i>
+                            <p>Inventory</p>
                         </a>
                     </li>
                     <li>
@@ -77,12 +83,6 @@
                         <a href="./supplier.html">
                             <i class="material-icons">person</i>
                             <p>Suppliers</p>
-                        </a>
-                    </li>
-                     <li class="active">
-                        <a href="./product_inventory.html">
-                            <i class="material-icons">assessment</i>
-                            <p>Inventory</p>
                         </a>
                     </li>
                     <li>
@@ -130,49 +130,6 @@
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="card">
-                                <div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="panel panel-primary">
-                                            <div class="panel-heading" >
-                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                                                <h4 class="panel-title" id="contactLabel"><span class="glyphicon glyphicon-info-sign"></span> Change Price of Current Blend</h4>
-                                            </div>
-                                            <form action="#" method="post" accept-charset="utf-8">
-                                                <div class="modal-body" style="padding: 5px;">
-                                                    <div class="row">
-                                                        <div class="col-md-6 form-group">
-                                                            <div class="form-group label-floating">
-                                                                
-                                                                <label for="email">Old Price (Peso)</label>
-                                                                <input class="form-control" type="number" name="" placeholder=""/>
-                  
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6 form-group">
-                                                            <div class="form-group label-floating">
-                                                                
-                                                                <label for="email">New Price (Peso)</label>
-                                                                <input class="form-control" type="number" name="" placeholder=""/>
-                  
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    
-                                                    
-                                                    <div class="row">
-                                                    </div>
-                                                </div>
-                                                <div class="panel-footer" style="margin-bottom:-14px;">
-                                                    <input type="submit" class="btn btn-success" value="Change Price" />
-                                                    <!--<span class="glyphicon glyphicon-ok"></span>-->
-                                                    
-                                                    <!--<span class="glyphicon glyphicon-remove"></span>-->
-                                                    <button style="float: right;" type="button" class="btn btn-default btn-close" data-dismiss="modal">Close</button>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
                                 <div class="card-header" data-background-color="green">
                                     <div class="nav-tabs-navigation">
                                         <div class="nav-tabs-wrapper">
@@ -229,10 +186,8 @@
                                             <th><b class="pull-left">Raw Coffee B</b></th>
                                             <th><b class="pull-left">Raw Coffee C</b></th>
                                             <th><b class="pull-left">Raw Coffee D</b></th>
-                                            <th><b class="pull-left">Raw Coffee E</b></th>
+                                            <th><b class="pull-left">Raw Coffee A</b></th>
                                             <th><b class="pull-left">Raw Coffee F</b></th>
-                                            <th><b class="pull-left">Price Per Unit (grams)</b></th>
-                                            <th><b class="pull-left">Action</b></th>
                                         </thead>
                                         <tbody>
                                             <tr>
@@ -243,8 +198,6 @@
                                                 <td>20%</td>
                                                 <td></td>
                                                 <td></td>
-                                                <td>25</td>
-                                                <td> <a class="btn btn-success" data-toggle="modal" data-target="#contact" data-original-title >Change Price</a></td>
                                             </tr>
                                             <tr>
                                                 <td>Blend B</td>
@@ -254,8 +207,6 @@
                                                 <td>50%</td>
                                                 <td>10%</td>
                                                 <td>20%</td>
-                                                <td>30</td>
-                                                <td> <a class="btn btn-success" data-toggle="modal" data-target="#contact" data-original-title >Change Price</a></td>
                                             </tr>
                                             <tr>
                                                 <td>Blend C</td>
@@ -265,8 +216,6 @@
                                                 <td>50%</td>
                                                 <td></td>
                                                 <td>40%</td>
-                                                <td>50</td>
-                                                <td> <a class="btn btn-success" data-toggle="modal" data-target="#contact" data-original-title >Change Price</a></td>
                                             </tr>
                                             <tr>
                                                 <td>Blend D</td>
@@ -276,8 +225,6 @@
                                                 <td>20%</td>
                                                 <td>10%</td>
                                                 <td></td>
-                                                <td>45</td>
-                                                <td> <a class="btn btn-success" data-toggle="modal" data-target="#contact" data-original-title >Change Price</a></td>
                                             </tr>
                                             <tr>
                                                 <td>Blend E</td>
@@ -287,8 +234,6 @@
                                                 <td></td>
                                                 <td>20%</td>
                                                 <td>10%</td>
-                                                <td>30</td>
-                                                <td> <a class="btn btn-success" data-toggle="modal" data-target="#contact" data-original-title >Change Price</a></td>
                                             </tr>
                                             <tr>
                                                 <td>Blend F</td>
@@ -298,8 +243,6 @@
                                                 <td></td>
                                                 <td>30%</td>
                                                 <td></td>
-                                                <td>40</td>
-                                                <td> <a class="btn btn-success" data-toggle="modal" data-target="#contact" data-original-title >Change Price</a></td>
                                             </tr>
                                             <tr>
                                                 <td>Blend G</td>
@@ -309,8 +252,6 @@
                                                 <td>30%</td>
                                                 <td></td>
                                                 <td></td>
-                                                <td>20</td>
-                                                <td> <a class="btn btn-success" data-toggle="modal" data-target="#contact" data-original-title >Change Price</a></td>
                                             </tr>
                                             <tr>
                                                 <td>Blend H</td>
@@ -320,8 +261,6 @@
                                                 <td>30%</td>
                                                 <td>20%</td>
                                                 <td></td>
-                                                <td>25</td>
-                                                <td> <a class="btn btn-success" data-toggle="modal" data-target="#contact" data-original-title >Change Price</a></td>
                                             </tr>
                                         </tbody>
                                     </table>
