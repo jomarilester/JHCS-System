@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png" />
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="../assets/img/favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Suppliers</title>
+    
+    <!--   Style   -->
+	<link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/fresh-datatables.css">
+
+	<!--   Fonts   -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=2.0">
+    <!-- Bootstrap core CSS     -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <!--  Material Dashboard CSS    -->
+    <link href="../assets/css/material-dashboard.css?v=1.2.0" rel="stylesheet" />
+    <!--  CSS for Demo Purpose, don't include it in your project     -->
+    <link href="../assets/css/demo.css" rel="stylesheet" />
+    <!--     Fonts and icons     -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons' rel='stylesheet' type='text/css'>
+    
+    <!--   Style   -->
+	<link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/fresh-datatables.css">
+
+	<!--   Fonts   -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+
+</head>
+    
+    <style>
+	
+/*
+		td.highlight {
+			background-color: whitesmoke !important;
+		}
+*/
+		.table thead, thead th {
+			text-align: center;
+			font-size: 120%;
+		}
+		/* Custom Style */
+		.onoffswitch {
+			position: relative; width: 110px;
+			-webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+		}
+		.onoffswitch-checkbox {
+			display: none;
+		}
+		.onoffswitch-label {
+			display: block; overflow: hidden; cursor: pointer;
+			border: 2px solid #999999; border-radius: 20px;
+		}
+		.onoffswitch-inner {
+			display: block; width: 200%; margin-left: -100%;
+			-moz-transition: margin 0.3s ease-in 0s; -webkit-transition: margin 0.3s ease-in 0s;
+			-o-transition: margin 0.3s ease-in 0s; transition: margin 0.3s ease-in 0s;
+		}
+		.onoffswitch-inner:before, .onoffswitch-inner:after {
+			display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+			font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+			-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+		}
+		.onoffswitch-inner:before {
+			content: " Enabled";
+			padding-left: 10px;
+			background-color: #2FCCFF; color: #FFFFFF;
+		}
+		.onoffswitch-inner:after {
+			content: "Disabled";
+			padding-right: 10px;
+			background-color: #EEEEEE; color: #999999;
+			text-align: right;
+		}
+		.onoffswitch-switch {
+			display: block; width: 18px; margin: 7px;
+			background: #FFFFFF;
+			border: 2px solid #999999; border-radius: 20px;
+			position: absolute; top: 0; bottom: 0; right: 70px;
+			-moz-transition: all 0.3s ease-in 0s; -webkit-transition: all 0.3s ease-in 0s;
+			-o-transition: all 0.3s ease-in 0s; transition: all 0.3s ease-in 0s; 
+		}
+		.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+			margin-left: 0;
+		}
+		.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+			right: 0px; 
+		}
+		.navbar{
+			background-color: chartreuse;
+		}
+
+	</style>    
+
+<body>
+    <div class="wrapper">
+        <div class="sidebar" data-color="green" data-image="../assets/img/sidebar-1.jpg">
+            <!--
+        Tip 1: You can change the color of the sidebar using: data-color="purple | blue | purple | orange | red"
+
+        Tip 2: you can also add an image using data-image tag
+    -->
+            
+            <div class="logo ">
+                <img src="../assets/img/logo.png" alt="image1" width="250px" height="150px">
+            </div>
+             <div class="sidebar-wrapper">
+                 <ul class="nav">
+                    <li>
+                        <a href="dashboard.html">
+                            <i class="material-icons">dashboard</i>
+                            
+                            <p>Dashboard</p>
+                        </a>
+                    </li>
+                     
+                    <li>
+                        <a href="./itemlist.html">
+                            <i class="material-icons">list</i>
+                            <p>Item</p>
+                        </a>
+                    </li>
+                     <li>
+                        <a href="./product_inventory.html">
+                            <i class="material-icons">assessment</i>
+                            <p>Inventory</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./purchaseOrder.html">
+                            <i class="material-icons">motorcycle</i>
+                            <p>Purchase Orders</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./accounts.html">
+                            <i class="material-icons">account_circle</i>
+                            <p>User Accounts</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./clients.html">
+                            <i class="material-icons">person</i>
+                            <p>Clients</p>
+                        </a>
+                    </li>
+                      <li class="active">
+                        <a href="./supplier.html">
+                            <i class="material-icons">person</i>
+                            <p>Suppliers</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./sales_report.html">
+                            <i class="material-icons">library_books</i>
+                            <p>Reports</p>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="main-panel">
+            <nav class="navbar navbar-transparent navbar-absolute">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#"></a>
+                    </div>
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="#" class="dropdown-toggle">
+                                    <p>Hi, Player!</p>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="clients.html">
+                                    <i class="material-icons">exit_to_app</i>
+                                    <p class="hidden-lg hidden-md">Profile</p>                                    
+                                </a>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </nav>
+            <div class="content" style="margin-top: 0px;">
+                <div class="container-fluid" >
+                    <div class="card">
+                        <div class="card-header" data-background-color="green">
+                                    <h4 class="title">List of Suppliers</h4>
+                            
+                                </div>
+                        <div class="card-content table-responsive">
+			                 <div class="col-md-12 col-md-offset-0">
+                				<div class="fresh-datatables">
+                                            
+                					<!--  Available colors for the full background: full-color-blue, full-color-azure, full-color-purple, full-color-red, full-color-orange, full-color-purple, full-color-gray
+                					Available colors only for the toolbar: toolbar-color-blue, toolbar-color-azure, toolbar-color-purple, toolbar-color-red, toolbar-color-orange, toolbar-color-purple, toolbar-color-gray -->
+
+                					<table id="fresh-datatables" class="table table-striped table-no-bordered table-hover" cellspacing="0" width="100%" style="width:100%">
+                						<thead>
+                							<tr>
+                                                <th>Supplier's Name</th>
+                                                <th>Supplier's Address</th>
+                                                <th>Product</th>
+                                                <th>Supplier's Contact Personnel</th>
+                                                <th>Personnel's Position</th>
+                                                <th>Personnel's Contact Number</th>
+                                                <th>Email</th>
+                                                <th><b class="pull-left">Activation</b></th>
+                							</tr>
+                						</thead>
+                						<tbody>
+                							<tr>
+                								<th>La Festive Trading, Inc</th>
+                                                <th>Clear Bags</th>
+                                                <th>Aeneid Adversalo</th>
+                                                <th>Manager</th>
+                                                <th>Legarda</th>
+                                                <th>lafestive@gmail.com</th>
+                                                <th>09053215885</th>
+                                                <td><div class="onoffswitch">
+												<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+												<label class="onoffswitch-label" for="myonoffswitch">
+													<span class="onoffswitch-inner"></span>
+													<span class="onoffswitch-switch"></span>
+												</label>
+											</div>
+        				        </td>
+                							</tr>
+                							<tr>
+                								<th>Lila Enterprise</th>
+                                                <th>Stickers</th>
+                                                <th>Jeanne Dullao</th>
+                                                <th>Manager</th>
+                                                <th>Loakan Proper</th>
+                                                <th>lila1022@gmail.com</th>
+                                                <th>0952875158</th>
+                                                <td><div class="onoffswitch">
+												<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+												<label class="onoffswitch-label" for="myonoffswitch">
+													<span class="onoffswitch-inner"></span>
+													<span class="onoffswitch-switch"></span>
+												</label>
+											</div>
+        				        </td>
+                                            </tr>
+                                            <tr>
+                								<th>Lanz Trading, Inc</th>
+                                                <th>Machines</th>
+                                                <th>Tinz Caguioa</th>
+                                                <th>Manager</th>
+                                                <th>Labsan</th>
+                                                <th>lanz_01@gmail.com</th>
+                                                <th>0925685485</th>
+                                                <td><div class="onoffswitch">
+												<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+												<label class="onoffswitch-label" for="myonoffswitch">
+													<span class="onoffswitch-inner"></span>
+													<span class="onoffswitch-switch"></span>
+												</label>
+											</div>
+        				        </td>
+                                            </tr>
+                                            <tr>
+                								<th>Tinz Enterprise</th>
+                                                <th>Raw Coffee Beans</th>
+                                                <th>Leo Malicdem</th>
+                                                <th>Manager</th>
+                                                <th>Quirino Hill</th>
+                                                <th>tinzenterprise@gmail.com</th>
+                                                <th>09215865871</th>
+                                                <td><div class="onoffswitch">
+												<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+												<label class="onoffswitch-label" for="myonoffswitch">
+													<span class="onoffswitch-inner"></span>
+													<span class="onoffswitch-switch"></span>
+												</label>
+											</div>
+        				        </td>
+                                            </tr>
+                                            <tr>
+                								<th>Keir Supplies</th>
+                                                <th>Clear Bags</th>
+                                                <th>Rommel Arciosa</th>
+                                                <th>Manager</th>
+                                                <th>New Lucban</th>
+                                                <th>keircalp@gmail.com</th>
+                                                <th>0912456987</th>
+                                                <td><div class="onoffswitch">
+												<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+												<label class="onoffswitch-label" for="myonoffswitch">
+													<span class="onoffswitch-inner"></span>
+													<span class="onoffswitch-switch"></span>
+												</label>
+											</div>
+        				        </td>
+                                            </tr>
+                						</tbody>
+                					</table>
+                				</div>
+                			</div>
+                		</div>
+                    </div>
+			     </div>
+		    </div>
+              <footer class="footer">
+                <div class="container-fluid">
+                    <nav class="pull-left">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Company
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Portfolio
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Blog
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <p class="copyright pull-right">
+                        &copy;
+                        <script>
+                            document.write(new Date().getFullYear())
+                        </script>
+                        <a href="http://www.creative-tim.com">Creative Tim</a>, made with love for a better web
+                    </p>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+<!--   Core JS Files   -->
+<script src="../assets/js/jquery-3.2.1.min.js" type="text/javascript"></script>
+<script src="../assets/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="../assets/js/material.min.js" type="text/javascript"></script>
+<!--  Charts Plugin -->
+<script src="../assets/js/chartist.min.js"></script>
+<!--  Dynamic Elements plugin -->
+<script src="../assets/js/arrive.min.js"></script>
+<!--  PerfectScrollbar Library -->
+<script src="../assets/js/perfect-scrollbar.jquery.min.js"></script>
+<!--  Notifications Plugin    -->
+<script src="../assets/js/bootstrap-notify.js"></script>
+<!--  Google Maps Plugin    -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+<!-- Material Dashboard javascript methods -->
+<script src="../assets/js/material-dashboard.js?v=1.2.0"></script>
+<!-- Material Dashboard DEMO methods, don't include it in your project! -->
+<script src="../assets/js/demo.js"></script>
+
+<script src="../assets/js/jquery.js"></script>
+<script src="../assets/js/jquery.datatables.js"></script>
+<script >
+
+$(document).ready(function() {
+	$('#fresh-datatables').DataTable({
+		"pagingType": "full_numbers",
+		"lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
+		responsive: true,
+		language: {
+		search: "_INPUT_",
+		searchPlaceholder: "Search records",
+		}
+
+	});
+
+
+	var table = $('#fresh-datatables').DataTable();
+
+    // Edit record
+    table.on( 'click', '.edit', function () {
+		$tr = $(this).closest('tr');
+
+		var data = table.row($tr).data();
+		alert( 'You press on Row: ' + data[0] + ' ' + data[1] + ' ' + data[2] + '\'s row.' );
+    } );
+
+    // Delete a record
+    table.on( 'click', '.remove', function (e) {
+		$tr = $(this).closest('tr');
+		table.row($tr).remove().draw();
+		e.preventDefault();
+    } );
+
+	//Like record
+	table.on( 'click', '.like', function () {
+		alert('You clicked on Like button');
+    } );
+});
+
+</script>
+    
+    <script>
+  $(function() {
+    $('#toggle-two').bootstrapToggle({
+      on: 'Enabled',
+      off: 'Disabled'
+    });
+  })
+</script>  
+
+</html>
