@@ -25,13 +25,12 @@
 
 	<style>
 
-		.table thead, thead th {
-			text-align: center;
-			font-size: 140%;
-		}
+		
 		.select-pane {
 			display:none;
 		}
+		
+
 	</style>
 </head>
 
@@ -247,30 +246,32 @@
                                             <div class="card-header btn btn-primary btn-lg" data-background-color="green" data-toggle="modal" data-target="#contact" data-original-title style="float:right;" >
                                    Add Purchase Order
                                 </div><br><br>
-								<table id="" class="display hover order-column" cellspacing="0" width="100%">
+								<table id="" class="display hover order-column cell-border" cellspacing="0" width="100%">
 									<thead>
-                                            <th><b class="pull-left">Date</b></th>    
-                                            <th><b class="pull-left">Item</b></th>
-                                            <th><b class="pull-left">Qty</b></th>
+											<th><b class="pull-left">PO No.</b></th>
+											<th><b class="pull-left">Item Code</b></th>
+                                            <th><b class="pull-left">Date of Purchase</b></th>    
                                             <th><b class="pull-left">Unit</b></th>
-                                            <th><b class="pull-left">Item Code</b></th>
-                                            <th><b class="pull-left">Description</b></th>
+                                            <th><b class="pull-left">Coffee Blend</b></th>
+											<th><b class="pull-left">Size</b></th>
+											<th><b class="pull-left">Qty</b></th>
                                             <th><b class="pull-left">Unit Price</b></th>
                                             <th><b class="pull-left">Total Price</b></th>
-										<th><b class="pull-left">Delivery Stat</b></th>
+										<th><b class="pull-left">Delivery Status</b></th>
 									
 									</thead>
 									<tbody>
 										<tr>
-											<td style="background-color: #c4c4c4;">11/02/2017</td>
 
-                                            <td>Blend A</td>
-                                            <td>200</td>
-                                            <td></td>
-                                            <td>455xv</td>
-											<td></td>
-											<td>200</td>
-											<td>40,000</td>
+                                            <td>2563</td>
+                                            <td>F11489</td>
+                                            <td>November 24, 2017</td>
+											<td>Pack</td>
+											<td>Farmer's Blend Ground Coffee</td>
+											<td>500 g</td>
+											<td>80</td>
+											<td>320</td>
+											<td>25,600</td>
 											<td><center><div class=" btn btn-primary btn-xs" data-background-color="red" data-toggle="modal" data-target="#deliverymodal" data-original-title >
                                    pending
                                 </div></center> </td>
@@ -398,7 +399,7 @@
 					
 <!--modal for add purchase-->
 					<div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
-						<div class="modal-dialog">
+						<div class="modal-dialog modal-md">
 							<div class="panel panel-primary">
 								<div class="panel-heading">
 									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
@@ -407,35 +408,175 @@
 								<form action="#" method="post" accept-charset="utf-8">
 									<div class="modal-body" style="padding: 5px;">
 										<div class="row">
-											<div class="col-lg-12 col-md-12 col-sm-12" style="padding-bottom: 10px;">
-												<center><h3><b>The Legend Villas</b></h3></center>
+											<div class="col-lg-12 col-md-12 col-sm-12 text-center" style="padding-bottom: 10px;">
+												<h3><b>The Legend Villas</b></h3>
 											</div>
 										</div>
-										<div class="row">
-											<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-												<input class="form-control" name="coffeeType" placeholder="Date" type="date" required />
-											</div>
-											<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-												<input class="form-control" name="coffeeType" placeholder="Unit" type="text" required />
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-												<input class="form-control" name="position" placeholder="Item" type="text" required />
-											</div>
-											<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-												<input class="form-control" name="email" placeholder="Quantity" type="text" required />
+										<div class="row">	<hr>								   
+											<div class="col-lg-7 col-md-7 col-offset-7">
+												<div class="form-group">
+												  <label class="col-md-5 control" >Item Code :</label>
+												  <div class="col-md-4">
+													<select class="form-control" data-style="btn-primary">
+													  <option>F11489</option>
+													  <option>F65231</option>
+													  <option>F65421</option>
+												  </select>
+												  </div>
+												</div>
 											</div>
 										</div>
-										<div class="row">
+										<div class="row">									   
+											<div class="col-lg-7 col-md-7 col-offset-7">
+												<div class="form-group">
+												  <label class="col-md-5 control" >Coffee Blend :</label>
+												  <div class="col-md-7">
+													<p><b>Farmer's Blend Coffee</b></p>
+												  </div>
+												</div>
+												<div class="form-group">
+													  <label class="col-md-5 control" >Size :</label>
+													  <div class="col-md-5">
+														<p><b>500g</b></p>
+													  </div>
+												</div>
+
+											</div>
+											<div class="row">
+												<div class="col-lg-5 col-m5d-5 col-sm-5">
+
+													<div class="form-group">
+													  <label class="col-md-6 control" >Unit Price :</label>
+													  <div class="col-md-6">
+														<p><b>Php 320.00</b></p>
+													  </div>
+													</div>
+
+													<div class="form-group">
+													  <label class="col-md-7 control" >Total Amount :</label>
+													  <div class="col-md-8">
+														<p></p>
+													  </div>
+													</div>
+
+												</div>
+											</div>
+										</div>
+										<hr>
 										
-											<div class="col-lg-3 col-lg-offset-3" style="padding-bottom: 10px;">
-												<input class="form-control" name="position" placeholder="Item Code" type="text" required />
+										<div class="row">
+											<div class="col-lg-2 col-md-2 col-sm-2"></div>
+											<div class="col-lg-8 col-md-8 col-sm-8 ">	
+												<div class="form-group">
+												  <label class="col-md-4 control" >PO No :</label>
+												  <div class="col-md-5">
+													<input id="" name="name" type="text" class="form-control">
+												  </div>
+												</div>
 											</div>
-											<div class="col-lg-3 col-md-3 col-sm-3" style="padding-bottom: 10px;">
-												<input class="form-control" name="email" placeholder="Unit Price" type="text" required />
+										</div>
+										<div class="row">
+											<div class="col-lg-2 col-md-2 col-sm-2"></div>
+											<div class="col-lg-8 col-md-8 col-sm-8 ">	
+												<div class="form-group">
+												  <label class="col-md-4 control" >Date of Purchase :</label>
+												  <div class="col-md-5">
+													<input id="" name="name" type="text"  class="form-control">
+												  </div>
+												</div>
 											</div>
-											
+										</div>
+										<div class="row">
+											<div class="col-lg-2 col-md-2 col-sm-2"></div>
+											<div class="col-lg-8 col-md-8 col-sm-8 ">
+												<div class="form-group">
+												  <label class="col-md-4 control" >Quantity :</label>
+												  <div class="col-md-3">
+													<input type="text" placeholder="80" class="form-control">
+												  </div>
+												</div>
+												
+											</div>
+										</div>
+										
+										<div class="col-md-">
+                                        <p><center><a class="btn btn-primary" data-toggle="collapse" href="#collapsePayment" aria-expanded="false" aria-controls="collapseExample">Add New Blend</a></center></p>
+							
+											<div class="collapse" id="collapsePayment">
+												<div class="card-block">
+													<form action="#" method="post" accept-charset="utf-8">
+														<div class="modal-body" style="padding: 5px;">
+															<div class="row">
+													<div class="form-conttrol label-floating">
+													<div class="col-md-4">
+														<label> Coffee Blend:</label>
+													</div>
+														<div class="col-md-2">
+														<label>Type of Bag:</label>
+													</div>
+														<div class="col-md-2">
+														<label>Size:</label>
+													</div>
+														<div class="col-md-2">
+														<label>Qty:</label>
+													</div>
+														<div class="col-md-2">
+														<label>Add Another:</label>
+													</div>
+												</div>
+													
+												</div>
+												<div class="row">
+													<input type="hidden" name="count" value="1" />
+													<div class="control-group " id="fields">
+														<div class="controls" id="profs"> 
+															<form class="input-append label-floating">
+																<div id="field">
+																	<div class="input" id="field1">
+																		<div class="col-md-4">
+																			
+																			<select class="form-control" name="coffee">
+																				<option value="">Guatemala Rainforest</option>
+																				<option value="">Cordillera Sunrise</option>
+																				<option value="">Sumatra Night</option>
+																				<option value="">Espresso</option>
+																			</select></div>
+																		<div class="col-md-2">
+																			
+																			<select class="form-control" name="coffee">
+																		  		<option value="clear">Clear</option>
+																		  		<option value="brown">Brown</option>
+																			</select> 
+																		</div>
+																		<div class="col-md-2">
+																		
+																			<select class="form-control" name="coffee">
+																				  <option value="clear">250g</option>
+																				  <option value="brown">500g</option>
+																				  <option value="brown">1000g</option>
+																			</select> 
+																		</div>
+																		<div class="col-md-2">
+																		<input class="form-control" /> 
+																		</div>
+															
+																	</div>
+																	<div class="col-md-2">
+																	<button id="b1" class="btn btn-success add-more " type="button">+</button>
+																	</div>
+															</div>
+														</form>									
+													</div>
+												</div>
+											</div>
+														</div>															
+													</form>
+												 </div>
+											</div></div>
+		
+										
+										
+										<div class="row">
 										</div>
 										
 									</div>  
@@ -458,45 +599,125 @@
 												</div>
 												<form action="#" method="post" accept-charset="utf-8">
 												<div class="modal-body" style="padding: 5px;">
-
-													  <div class="row">
-															<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-																<input class="form-control" name="firstname" placeholder="DR No." type="text" required autofocus />
-															</div>
-															<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-																<input class="form-control" name="lastname" placeholder="SI No." type="text" required />
-															</div>
-														</div>
-														 <div class="row">
-														  <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-														  <input class="form-control" name="coffeeType" placeholder="Date" type="date" required />
-														  </div>
-														</div>
-													 <div class="row">
-														  <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-														  <input class="form-control" name="coffeeType" placeholder="Type of Coffee" type="text" required />
-														  </div>
-														  <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-														  <input class="form-control" name="coffeeType" placeholder="Type of Bag" type="text" required />
-														  </div>
-														</div>
-													<div class="row">
-														  <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-														  <input class="form-control" name="coffeeType" placeholder="Size" type="text" required />
-														  </div>
-														  <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-														  <input class="form-control" name="coffeeType" placeholder="Quantity" type="text" required />
-														  </div>
-														</div>
-													<div class="row">
-														  <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-														  <input class="form-control" name="coffeeType" placeholder="Selling Price" type="text" required />
-														  </div>
-														  <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-														  <input class="form-control" name="coffeeType" placeholder="Total Amount" type="text" required />
-														  </div>
-														</div>
 													
+													<div class="row">									   
+														<div class="col-lg-7 col-md-7 col-offset-7">
+															<div class="form-group">
+															  <label class="col-md-5 control" >Coffee Blend :</label>
+															  <div class="col-md-7">
+																<p><b>Farmer's Blend Coffee</b></p>
+															  </div>
+															</div>
+														<div class="form-group">
+															  <label class="col-md-5 control" >Size :</label>
+															  <div class="col-md-5">
+																<p><b>500g</b></p>
+															  </div>
+															</div>
+
+														</div>
+														
+														<div class="row">
+															<div class="col-lg-5 col-m5d-5 col-sm-5">
+																<div class="form-group">
+																  <label class="col-md-6 control" >Quantity :</label>
+																  <div class="col-md-6">
+																	<p><b>80</b></p>
+																  </div>
+																</div>
+																<div class="form-group">
+																  <label class="col-md-6 control" >Unit Price :</label>
+																  <div class="col-md-6">
+																	<p><b>Php 320.00</b></p>
+																  </div>
+																</div>
+																<div class="form-group">
+																  <label class="col-md-7 control" >Total Amount :</label>
+																  <div class="col-md-8">
+																	<p><b>Php 25,600.00</b></p>
+																  </div>
+																</div>
+
+															</div>
+														</div>
+														</div>
+													<hr>
+
+													<div class="row">
+														<div class="col-lg-2 col-md-2 col-sm-2"></div>
+														<div class="col-lg-8 col-md-8 col-sm-8 ">	
+															<div class="form-group">
+															  <label class="col-md-6 control" >Delivery Receipt No :</label>
+															  <div class="col-md-5">
+																<input id="" name="name" type="text" class="form-control">
+															  </div>
+															</div>
+														</div>
+													</div>
+													<div class="row">
+														<div class="col-lg-2 col-md-2 col-sm-2"></div>
+														<div class="col-lg-8 col-md-8 col-sm-8 ">	
+															<div class="form-group">
+															  <label class="col-md-6 control" >Sales Invoice No. :</label>
+															  <div class="col-md-5">
+																<input id="" name="name" type="text"  class="form-control">
+															  </div>
+															</div>
+														</div>
+													</div>
+													<div class="row">
+														<div class="col-lg-2 col-md-2 col-sm-2"></div>
+														<div class="col-lg-8 col-md-8 col-sm-8 ">
+															<div class="form-group">
+															  <label class="col-md-6 control" >Date of Delivery :</label>
+															  <div class="col-md-5">
+																<input class="form-control" name="coffeeType" placeholder="Date" type="date" required />
+															  </div>
+															</div>
+
+														</div>
+													</div>	
+													<div class="row">
+                                                         <div class="col-lg-2 col-md-2 col-sm-2"></div>
+															<div class="col-lg-8 col-md-8 col-sm-8 ">
+																<div class="form-group">
+																	<label class="col-md-6 control">Delivery status:</label>
+																		<div class="col-md-5">
+																		<select class="form-control nav">
+																			<option value="" >Full Deivery</option>
+																			<option value="delivery">Partial Delivery</option>
+																		</select>
+																	</div>
+																</div>
+															</div>
+													</div>
+													<div class="row">															
+														<div class="col-lg-2 col-md-2 col-sm-2"></div>
+														<div class="col-lg-8 col-md-8 col-sm-8 ">
+																<div class="select-pane " id="delivery">
+																	<div class="form-group">
+                                                                         <label class="col-md-6 control">Quantity Delivered:</label>
+																		<div class="col-md-5">
+																			<input class="form-control" type="text" name="" placeholder="50">
+																		</div>
+																	</div>
+																</div>																			
+														</div>
+													</div>
+													<div class="row">
+														
+														<div class="col-lg-2 col-md-2 col-sm-2"></div>
+														<div class="col-lg-8 col-md-8 col-sm-8 ">
+																<div class="select-pane" id="delivery">
+																	<div class="form-group">
+																			<label class="col-md-6 control">Remaining Quantity: </label>
+																		<div class="col-md-5">
+																			<p><b>30</b></p>
+																		</div>
+																	</div>
+																</div>																				
+														</div>
+													</div> 
 
 
 													</div>  
@@ -789,10 +1010,14 @@
 	
 	<script type="text/javascript">
 		$(document).ready(function() {
-    		$('table.display').DataTable();
+    		$('table.display').DataTable({
+				"ordering": false
+				
 				
 		} );
-		$('#datePicker')
+			
+		
+			$('#datePicker')
         .datepicker({
             format: 'mm/dd/yyyy'
         })
@@ -800,7 +1025,7 @@
             // Revalidate the date field
             $('#eventForm').formValidation('revalidateField', 'date');
         });
-		
+		});
 	</script>
 	<script type="text/javascript">
 		
@@ -836,6 +1061,36 @@
 
 		})
 	
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+    var next = 1;
+    $(".add-more").click(function(e){
+        e.preventDefault();
+        var addto = "#field" + next;
+        var addRemove = "#field" + (next);
+        next = next + 1;
+        var newIn = '<div class="input" id="field' + next + '"><div class="col-md-4"><select class="form-control" name="coffee"><option value="">Guatemala Rainforest</option><option value="">Cordillera Sunrise</option><option value="">Sumatra Night</option><option value="">Espresso</option></select></div><div class="col-md-2"><select class="form-control" name="coffee"><option value="clear">Clear</option><option value="brown">Brown</option></select> </div><div class="col-md-2"><select class="form-control" name="coffee"><option value="clear">250g</option><option value="brown">500g</option> <option value="brown">1000g</option></select> </div><div class="col-md-2"><input class="form-control" name="coffeeType" type="number" required /> </div></div>';
+        var newInput = $(newIn);
+        var removeBtn = ' <button id="remove' + (next - 1) + '" class="btn btn-danger remove-me" >-</button></div><div id="field">';
+        var removeButton = $(removeBtn);
+        $(addto).after(newInput);
+        $(addRemove).after(removeButton);
+        $("#field" + next).attr('data-source',$(addto).attr('data-source'));
+        $("#count").val(next);  
+        
+            $('.remove-me').click(function(e){
+                e.preventDefault();
+                var fieldNum = this.id.charAt(this.id.length-1);
+                var fieldID = "#field" + fieldNum;
+                $(this).remove();
+                $(fieldID).remove();
+            });
+    });
+    
+
+    
+});
 	</script>
 
 
