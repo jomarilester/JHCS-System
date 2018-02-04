@@ -280,7 +280,7 @@
                                 </table>
                                         </div>
                                         <div class="tab-pane" id="deliveries">
-                                            <table id="" class="display hover order-column" cellspacing="0" width="100%">
+                                            <table id="" class="display hover order-column cell-border" cellspacing="0" width="100%">
                                     <thead>
                                             <th><b class="pull-left">Delivery Receipt No.</b></th>    
                                             <th><b class="pull-left">Sales Invoice No.</b></th>
@@ -316,21 +316,21 @@
                                         <div class="tab-pane" id="payment">
                                                                                 <br>
 
-                                <table id="" class="display hover order-column" cellspacing="0" width="100%">
+                                <table id="" class="display hover order-column cell-border" cellspacing="0" width="100%">
                                     <thead>
                                             <th><b class="pull-left">Date Paid</b></th>    
                                             <th><b class="pull-left">Collection No.</b></th>
                                             <th><b class="pull-left">Amount</b></th>
-                                            <th><b class="pull-left">Remarks</b></th>
+										 	<th><b class="pull-left">Bank</b></th>
+										    <th><b class="pull-left">Remarks</b></th>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td style="background-color: #c4c4c4;">11/02/2017</td>
+                                            <td>11/02/2017</td>
                                             <td>CR0502</td>
                                             <td>48,000</td>
+											<td>BPI-OPEX</td>
                                             <td>Tax Withheld</td>
-                                            <td>BPI-OPEX</td>
-
                                         </tr>
                                     </tbody>
                                 </table>
@@ -499,9 +499,9 @@
 										</div>
 										
 										<div class="col-md-">
-                                        <p><center><a class="btn btn-primary" data-toggle="collapse" href="#collapsePayment" aria-expanded="false" aria-controls="collapseExample">Add New Blend</a></center></p>
+                                        <p><center><a class="btn btn-primary" data-toggle="collapse" href="#collapseBlend" aria-expanded="false" aria-controls="collapseExample">Add New Blend</a></center></p>
 							
-											<div class="collapse" id="collapsePayment">
+											<div class="collapse" id="collapseBlend">
 												<div class="card-block">
 													<form action="#" method="post" accept-charset="utf-8">
 														<div class="modal-body" style="padding: 5px;">
@@ -716,58 +716,7 @@
 																	</div>
 																</div>																				
 														</div>
-													</div> 
-
-                    <div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="panel panel-primary">
-                                <div class="panel-heading">
-                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                                    <h4 class="panel-title" id="contactLabel"><span class="glyphicon glyphicon-info-sign"></span> Add New Purchase Order</h4>
-                                </div>
-                                <form action="#" method="post" accept-charset="utf-8">
-                                    <div class="modal-body" style="padding: 5px;">
-                                        <div class="row">
-                                            <div class="col-lg-12 col-md-12 col-sm-12" style="padding-bottom: 10px;">
-                                                <center><h3><b>The Legend Villas</b></h3></center>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-                                                <input class="form-control" name="coffeeType" placeholder="Date" type="date" required />
-                                            </div>
-                                            <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-                                                <input class="form-control" name="coffeeType" placeholder="Unit" type="text" required />
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-                                                <input class="form-control" name="position" placeholder="Item" type="text" required />
-                                            </div>
-                                            <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-                                                <input class="form-control" name="email" placeholder="Quantity" type="text" required />
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                        
-                                            <div class="col-lg-3 col-lg-offset-3" style="padding-bottom: 10px;">
-                                                <input class="form-control" name="position" placeholder="Item Code" type="text" required />
-                                            </div>
-                                            <div class="col-lg-3 col-md-3 col-sm-3" style="padding-bottom: 10px;">
-                                                <input class="form-control" name="email" placeholder="Unit Price" type="text" required />
-                                            </div>
-                                            
-                                        </div>
-                                        
-                                    </div>  
-                                    <div class="panel-footer" align="center">
-                                        <input type="submit" class="btn btn-success" value="Add PO"/>
-                                        <input type="reset" class="btn btn-warning" value="Clear" />                                    
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
+													</div>
 
 
                                                     </div>  
@@ -880,6 +829,24 @@
                                                                                 </div>
                                                                             </div>
                                                                         </div>
+																		<div class="row">
+																			<div class="col-md-4">
+																				<div class="select-pane " id="cheque">
+																					<div class="form-group">
+																						 <label>Date Of Payment:</label>
+																						<input class="form-control" type="text" name="" placeholder="50">
+																					</div>
+																				</div>
+																			</div>	
+																			<div class="col-md-4">
+																				<div class="select-pane " id="cheque">
+																					<div class="form-group">
+																						 <label>Change * :</label>
+																						<input class="form-control" type="text" name="" placeholder="50">
+																					</div>
+																				</div>
+																			</div>
+																		</div>
                                                                     </div>         
                                                                 </div>
                                                             </div>  
@@ -949,13 +916,33 @@
                                                                                 <div class="col-md-6">
                                                                                     <div class="form-group label-floating">
                                                                                       <label>MOD:</label>
-                                                                                        <select class="form-control">
+                                                                                        <select class="form-control nav">
                                                                                             <option>cash</option>
-                                                                                            <option>cheque</option>
+																							<option>bank deposit</option>
+                                                                                            <option value="cheque1">cheque</option>
                                                                                         </select>
                                                                                     </div>
                                                                                 </div>
-                                                                            </div>    
+                                                                            </div> 
+																		  <div class="row">
+																			<div class="col-md-4">
+																				<div class="select-pane " id="cheque1">
+																					<div class="form-group">
+																						 <label>Date Of Payment:</label>
+																						<input class="form-control" type="text" name="" placeholder="50">
+																					</div>
+																				</div>
+																			</div>	
+																			<div class="col-md-4">
+																				<div class="select-pane " id="cheque1">
+																					<div class="form-group">
+																						 <label>Change * :</label>
+																						<input class="form-control" type="text" name="" placeholder="50">
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																		  
                                                                       </div>
                                                                 </div>  
                                                                 <center>
