@@ -149,105 +149,107 @@
 																</div>
 															</div>
 														</div>
-
 														<div class="row">
-															<div class="col-md-12">
+															<div class="col-md-4">
 																<div class="form-group label-floating">
-																  <select class="form-control" name="coffee">
-																	  <option value="" selected disabled>Type of Coffee</option>
-																	  <option value="">Guatemala Rainforest</option>
-																	  <option value="">Cordillera Sunrise</option>
-																	  <option value="">Sumatra Night</option>
-																	  <option value="">Espresso</option>
-																  </select>
+																  <label for="email">Total Amount:</label>
 																</div>
 															</div>
-														</div>
-														<div class="row">
-															<div class="col-md-12">
-																<div class="form-group label-floating">
-																  <select class="form-control" name="coffee">
-																	  <option value="" selected disabled>Type of Coffee Bag</option>
-																	  <option value="clear">Clear</option>
-																	  <option value="brown">Brown</option>
-																  </select> 
+															<div class="col-md-6">
+																 <div class="form-group label-floating">
+																	 <label><b>Php 750.00</b></label>
 																</div>
 															</div>
 														</div>
 
-														<div class="row">
-															<div class="col-md-6">
-																<div class="form-group label-floating">
-																  <select class="form-control" name="coffee">
-																	  <option value="" selected disabled>Size</option>
-																	  <option value="clear">250g</option>
-																	  <option value="brown">500g</option>
-																	  <option value="brown">1000g</option>
-																  </select> 
-																</div>
-															</div>
-															<div class="col-md-6">
-																<div class="form-group label-floating">
-																  <input class="form-control" name="coffeeType" placeholder="Quantity" type="number" required />
-																</div>
-															</div>
-														</div>
 
 													</div>
 													</div>  
-                                                <div class="panel-footer" style="margin-bottom:-14px;" align="center">
-                                                    <input type="submit" class="btn btn-success" value="Add"/>
-                                                </div>
+                                             
                                     		</form>
+											<div class="text-center">
+                                                  <button class="btn btn-success">Add Sales</button>
+                                               </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card">
                                         <div class="card-content table-responsive">
-                                            <table class="table">
-                                                <thead>
-                                                    <th>Coffee</th>
-                                                    <th>Coffee Bag</th>
-                                                    <th>Size</th>
-                                                    <th>Quantity</th>
-                                                    <th>Price/ unit</th>
-                                                    <th>Amount</th>
-                                                    <th></th>
-                                                    <th></th>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Guatemala Rainforest</td>
-                                                        <td>Clear</td>
-                                                        <td>250g</td>
-                                                        <td>2</td>
-                                                        <td>300</td>
-                                                        <td>600</td>
-                                                        <td><button class="btn btn-danger btn-sm">Remove</button></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Espresso</td>
-                                                        <td>Brown</td>
-                                                        <td>500g</td>
-                                                        <td>1</td>
-                                                        <td>550</td>
-                                                        <td>550</td>
-                                                        <td><button class="btn btn-danger btn-sm">Remove</button></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td><b>Total Amount</b></td>
-                                                        <td><b>1,150.00</b></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                            <div class="panel-footer" style="margin-bottom:-14px;" align="right">
-                                                    <input type="submit" class="btn btn-warning" value="Save"/>
-                                            </div>
+                                         
+													<div class="modal-body" style="padding: 5px;">
+															<div class="row">
+													<div class="form-conttrol label-floating">
+													<div class="col-md-4">
+														<label> Coffee Blend:</label>
+													</div>
+														<div class="col-md-2">
+														<label>Type of Bag:</label>
+													</div>
+														<div class="col-md-1">
+														<label>Size:</label>
+													</div>
+														<div class="col-md-1">
+														<label>Qty:</label>
+													</div>
+														<div class="col-md-2">
+														<label>Unit Price:</label>
+														</div>
+														<div class="col-md-2">
+														<label>Add Another:</label>
+													</div>
+												</div>
+													
+												</div>
+												<div class="row">
+													<input type="hidden" name="count" value="1" />
+													<div class="control-group " id="fields">
+														<div class="controls" id="profs"> 
+															<form class="input-append label-floating">
+																<div id="field">
+																	<div class="input" id="field1">
+																		<div class="col-md-4">
+																			
+																			<select class="form-control" name="coffee">
+																				<option value="">Guatemala Rainforest</option>
+																				<option value="">Cordillera Sunrise</option>
+																				<option value="">Sumatra Night</option>
+																				<option value="">Espresso</option>
+																			</select>
+																		</div>
+																		<div class="col-md-2">
+																			
+																			<select class="form-control" name="coffee">
+																		  		<option value="clear">Clear</option>
+																		  		<option value="brown">Brown</option>
+																			</select> 
+																		</div>
+																		<div class="col-md-1">
+																		
+																			<select class="form-control" name="coffee">
+																				  <option value="clear">250g</option>
+																				  <option value="brown">500g</option>
+																				  <option value="brown">1000g</option>
+																			</select> 
+																		</div>
+																		<div class="col-md-1">
+																		<input class="form-control" placeholder="3"/> 
+																		</div>
+																		<div class="col-md-2"><br>
+																		<p>Php 250.00</p>
+																		</div>
+															
+																	</div>
+																	<div class="col-md-2">
+																	<button id="b1" class="btn btn-success add-more " type="button">+</button>
+																	</div>
+															</div>
+														</form>									
+													</div>
+												</div>
+											</div>
+											
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -371,6 +373,36 @@
     });
 		
 	
+	</script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+			var next = 1;
+			$(".add-more").click(function(e){
+				e.preventDefault();
+				var addto = "#field" + next;
+				var addRemove = "#field" + (next);
+				next = next + 1;
+				var newIn = '<div class="input" id="field' + next + '"><div class="col-md-4"><select class="form-control" name="coffee"><option value="">Guatemala Rainforest</option><option value="">Cordillera Sunrise</option><option value="">Sumatra Night</option><option value="">Espresso</option></select></div><div class="col-md-2"><select class="form-control" name="coffee"><option value="clear">Clear</option><option value="brown">Brown</option></select></div><div class="col-md-1"><select class="form-control" name="coffee"><option value="clear">250g</option><option value="brown">500g</option> <option value="brown">1000g</option></select></div><div class="col-md-1"><input class="form-control" placeholder="3"/> </div><div class="col-md-2"><br><p>Php 250.00</p></div></div>';
+				var newInput = $(newIn);
+				var removeBtn = ' <button id="remove' + (next - 1) + '" class="btn btn-danger remove-me" >-</button></div><div id="field">';
+				var removeButton = $(removeBtn);
+				$(addto).after(newInput);
+				$(addRemove).after(removeButton);
+				$("#field" + next).attr('data-source',$(addto).attr('data-source'));
+				$("#count").val(next);  
+
+					$('.remove-me').click(function(e){
+						e.preventDefault();
+						var fieldNum = this.id.charAt(this.id.length-1);
+						var fieldID = "#field" + fieldNum;
+						$(this).remove();
+						$(fieldID).remove();
+					});
+			});
+
+
+
+		});
 	</script>
 
 </html>
