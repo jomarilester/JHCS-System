@@ -29,7 +29,6 @@
 			display:none;
 		}
 		
-
 	</style>
 </head>
 
@@ -242,6 +241,7 @@
                                     </table>
                                         </div>
                                         <div class="tab-pane" id="deliveries">
+<<<<<<< HEAD
                                             <table id="" class="display hover order-column" cellspacing="0" width="100%">
                                                 <thead>
                                                         <th><b class="pull-left">Delivery Receipt No.</b></th>    
@@ -274,11 +274,48 @@
                                             </table>
                                                     </div>
                                                     <div class="tab-pane" id="payment">
+=======
+                                            <table id="" class="display hover order-column cell-border" cellspacing="0" width="100%">
+                                    <thead>
+                                            <th><b class="pull-left">Delivery Receipt No.</b></th>    
+                                            <th><b class="pull-left">Sales Invoice No.</b></th>
+                                            <th><b class="pull-left">Date Delivered</b></th>
+                                            <th><b class="pull-left">Type of Coffee</b></th>
+                                            <th><b class="pull-left">Type of Coffee Bag</b></th>
+                                            <th><b class="pull-left">Size</b></th>
+                                            <th><b class="pull-left">Quantity</b></th>
+                                            <th><b class="pull-left">Selling Price</b></th>
+                                            <th><b class="pull-left">Total Amount</b></th>
+                                            <th><b class="pull-left">Generate</b></th>
+                                            <th>Remarks</th>
+                                            <th></th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1946</td>
+                                            <td>3246</td>
+                                            <td>03-Nov-16</td>
+                                            <td>Farmers Ground</td>
+                                            <td>Brown</td>
+                                            <td>250g</td>
+                                            <td>175</td>
+                                            <td>160</td>
+                                            <td>160</td>
+                                            <td><center><div class=" btn btn-primary btn-xs">Sales Invoice</div><div class=" btn btn-primary btn-xs">Delivery Receipt</div></center> </td>
+                                            <td><center><button type="button" class="btn btn-warning btn-xs" data-toggle="modal" data-target="#drbalance">Unpaid</button> </center> </td>
+                                            <td><center><div class=" btn btn-danger btn-xs">remove</div></center> </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                        </div>
+                                        <div class="tab-pane" id="payment">
+>>>>>>> 555857a159b74097da905cc802c98b67f2d04cfb
                                                                                 <br>
 
-                                <table id="" class="display hover order-column" cellspacing="0" width="100%">
+                                <table id="" class="display hover order-column cell-border" cellspacing="0" width="100%">
                                     <thead>
                                             <th><b class="pull-left">Collection No.</b></th>
+<<<<<<< HEAD
                                             <th><b class="pull-left">Delivery Receipt No.</b></th>
                                             <th><b class="pull-left">Mode of Payment</b></th>
                                             <th><b class="pull-left">Date Paid</b></th>   
@@ -296,6 +333,18 @@
                                             <td>48,000.00</td>
                                             <td>50,000.00</td>
                                             <td>2,000.00</td>
+=======
+                                            <th><b class="pull-left">Amount</b></th>
+										 	<th><b class="pull-left">Bank</b></th>
+										    <th><b class="pull-left">Remarks</b></th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>11/02/2017</td>
+                                            <td>CR0502</td>
+                                            <td>48,000</td>
+											<td>BPI-OPEX</td>
+>>>>>>> 555857a159b74097da905cc802c98b67f2d04cfb
                                             <td>Tax Withheld</td>
                                         </tr>
                                     </tbody>
@@ -310,7 +359,7 @@
 <!--modal for edit client's info-->
                     <div class="modal fade" id="editinfo" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
                         <div class="modal-dialog">
-                            <div class="panel panel-primary">
+                            <div class="modal-content panel panel-primary">
                                 <div class="panel-heading">
                                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                                     <h4 class="panel-title" id="contactLabel"><center>Edit Clients Info</center></h4>
@@ -364,8 +413,13 @@
 <!--modal for add purchase-->
 
 					<div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
+<<<<<<< HEAD
 						<div class="modal-dialog modal-lg">
 							<div class="panel panel-primary">
+=======
+						<div class="modal-dialog modal-md">
+							<div class="modal-content panel panel-primary">
+>>>>>>> 555857a159b74097da905cc802c98b67f2d04cfb
 								<div class="panel-heading">
 									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
 									<h4 class="panel-title" id="contactLabel"><span class="glyphicon glyphicon-info-sign"></span> Add New Purchase Order</h4>
@@ -645,7 +699,13 @@
 																	</div>
 																</div>																				
 														</div>
+<<<<<<< HEAD
 													</div> 
+=======
+													</div>
+
+
+>>>>>>> 555857a159b74097da905cc802c98b67f2d04cfb
                                                     </div>  
                                                     <div class="panel-footer" align="center">
                                                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -756,6 +816,24 @@
                                                                                 </div>
                                                                             </div>
                                                                         </div>
+																		<div class="row">
+																			<div class="col-md-4">
+																				<div class="select-pane " id="cheque">
+																					<div class="form-group">
+																						 <label>Date Of Payment:</label>
+																						<input class="form-control" type="text" name="" placeholder="50">
+																					</div>
+																				</div>
+																			</div>	
+																			<div class="col-md-4">
+																				<div class="select-pane " id="cheque">
+																					<div class="form-group">
+																						 <label>Change * :</label>
+																						<input class="form-control" type="text" name="" placeholder="50">
+																					</div>
+																				</div>
+																			</div>
+																		</div>
                                                                     </div>         
                                                                 </div>
                                                             </div>  
@@ -821,14 +899,40 @@
                                                                                 <div class="col-md-6">
                                                                                     <div class="form-group label-floating">
                                                                                       <label>MOD:</label>
+<<<<<<< HEAD
                                                                                         <select class="form-control">
                                                                                             <option>Cash on hand</option>
                                                                                             <option>Bank deposit</option>
                                                                                             <option>Cheque</option>
+=======
+                                                                                        <select class="form-control nav">
+                                                                                            <option>cash</option>
+																							<option>bank deposit</option>
+                                                                                            <option value="cheque1">cheque</option>
+>>>>>>> 555857a159b74097da905cc802c98b67f2d04cfb
                                                                                         </select>
                                                                                     </div>
                                                                                 </div>
-                                                                            </div>    
+                                                                            </div> 
+																		  <div class="row">
+																			<div class="col-md-4">
+																				<div class="select-pane " id="cheque1">
+																					<div class="form-group">
+																						 <label>Date Of Payment:</label>
+																						<input class="form-control" type="text" name="" placeholder="50">
+																					</div>
+																				</div>
+																			</div>	
+																			<div class="col-md-4">
+																				<div class="select-pane " id="cheque1">
+																					<div class="form-group">
+																						 <label>Change * :</label>
+																						<input class="form-control" type="text" name="" placeholder="50">
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																		  
                                                                       </div>
                                                                 </div>  
                                                                 <center>
