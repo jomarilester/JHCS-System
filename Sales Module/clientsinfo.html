@@ -149,63 +149,6 @@
                                         </div>
                                     </div>
                                 </div>
-
-                        <!--modal for Purchase Order-->                       
-                                <div class="modal fade" id="corder" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="panel panel-primary">
-                                            <div class="panel-heading">
-                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                                                <h4 class="panel-title" id="contactLabel"><span class="glyphicon glyphicon-info-sign"></span>Purchase Order</h4>
-                                            </div>
-                                            <form action="#" method="post" accept-charset="utf-8">
-                                            <div class="modal-body" style="padding: 5px;">
-                                                <div class="row">
-                                                    <div class="col-lg-12 col-md-12 col-sm-12" style="padding-bottom: 10px;">
-                                                    <input class="form-control" name="coffeeType" placeholder="Type of Coffee" type="text" required />
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-                                                        <select class="form-control" name="coffeeBag">
-                                                            <option value="" selected disabled>Type of Coffee Bag</option>
-                                                              <option value="clear">Clear</option>
-                                                              <option value="brown">Brown</option>
-                                                        </select>  
-                                                    </div>
-                                                    <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-                                                        <select class="form-control" name="size">
-                                                            <option value="" selected disabled>Size</option>
-                                                              <option value="two">250g</option>
-                                                              <option value="five">500g</option>
-                                                              <option value="onek">1000g</option>
-                                                        </select>  
-                                                    </div>
-                                                </div>
-                                                    <div class="row">
-                                                        <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-                                                            <input class="form-control" name="qty" placeholder="Quantity" type="number" required />
-                                                        </div>
-                                                        <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-                                                            <input class="form-control" name="price" placeholder="Selling Price" type="number" required />
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-                                                            <input class="form-control" name="amount" placeholder="Total Amount" type="number" required />
-                                                        </div>
-                                                    </div>
-                                
-                                                </div>  
-                                                <div class="panel-footer" style="margin-bottom:-14px;">
-                                                    <input type="submit" class="btn btn-success" value="Save"/>
-                                                    <input type="reset" class="btn btn-warning" value="Clear" />
-                                                    <button style="float: right;" type="button" class="btn btn-danger btn-close" data-dismiss="modal">Close</button>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -245,92 +188,115 @@
                                             <div class="card-header btn btn-primary btn-lg" data-background-color="green" data-toggle="modal" data-target="#contact" data-original-title style="float:right;" >
                                    Add Purchase Order
                                 </div><br><br>
-								<table id="" class="display hover order-column cell-border" cellspacing="0" width="100%">
-									<thead>
-											<th><b class="pull-left">PO No.</b></th>
-											<th><b class="pull-left">Item Code</b></th>
-                                            <th><b class="pull-left">Date of Purchase</b></th>    
-                                            <th><b class="pull-left">Unit</b></th>
+    								<table id="" class="display hover order-column cell-border" cellspacing="0" width="100%">
+    									<thead>
+    										<th><b class="pull-left">Purchase Order No.</b></th>
+    										<th><b class="pull-left">Item Code</b></th>
                                             <th><b class="pull-left">Coffee Blend</b></th>
-											<th><b class="pull-left">Size</b></th>
-											<th><b class="pull-left">Qty</b></th>
+                                            <th><b class="pull-left">Bag</b></th>
+    										<th><b class="pull-left">Size</b></th>
+    										<th><b class="pull-left">Quantity</b></th>
                                             <th><b class="pull-left">Unit Price</b></th>
-                                            <th><b class="pull-left">Total Price</b></th>
-										<th><b class="pull-left">Delivery Status</b></th>
-									
-									</thead>
-									<tbody>
-										<tr>
-
-                                            <td>2563</td>
-                                            <td>F11489</td>
-                                            <td>November 24, 2017</td>
-											<td>Pack</td>
-											<td>Farmer's Blend Ground Coffee</td>
-											<td>500 g</td>
-											<td>80</td>
-											<td>320</td>
-											<td>25,600</td>
-											<td><center><div class=" btn btn-primary btn-xs" data-background-color="red" data-toggle="modal" data-target="#deliverymodal" data-original-title >
-                                   pending
-                                </div></center> </td>
-
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                            <th><b class="pull-left">Total Amount</b></th>
+                                            <th><b class="pull-left">Date of Purchase</b></th>    
+    									    <th><b class="pull-left">Delivery Status</b></th>
+    									</thead>
+    									<tbody>
+    										<tr>
+                                                <td>PO2563</td>
+                                                <td>F11489</td>
+                                                <td>Farmer's Blend Ground Coffee</td>
+    											<td>Clear</td>
+    											<td>500 g</td>
+    											<td>80</td>
+    											<td>320.00</td>
+    											<td>25,600.00</td>
+                                                <td>November 24, 2017</td>
+    											<td><center><div class=" btn btn-primary btn-xs" data-background-color="red" data-toggle="modal" data-target="#pending" data-original-title >pending</div></center> </td>
+                                            </tr>
+                                            <tr>
+                                                <td>PO2564</td>
+                                                <td>F11489</td>
+                                                <td>Farmer's Blend Ground Coffee</td>
+                                                <td>Clear</td>
+                                                <td>500 g</td>
+                                                <td>80</td>
+                                                <td>320.00</td>
+                                                <td>25,600.00</td>
+                                                <td>November 24, 2017</td>
+                                                <td><center><div class=" btn btn-warning btn-xs" data-background-color="yellow" data-toggle="modal" data-target="#pending" data-original-title >partial</div></center> </td>
+                                            </tr>
+                                            <tr>
+                                                <td>PO2565</td>
+                                                <td>F11489</td>
+                                                <td>Farmer's Blend Ground Coffee</td>
+                                                <td>Clear</td>
+                                                <td>500 g</td>
+                                                <td>80</td>
+                                                <td>320.00</td>
+                                                <td>25,600.00</td>
+                                                <td>November 24, 2017</td>
+                                                <td><center>Delivered</center></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                         </div>
                                         <div class="tab-pane" id="deliveries">
                                             <table id="" class="display hover order-column" cellspacing="0" width="100%">
-                                    <thead>
-                                            <th><b class="pull-left">Delivery Receipt No.</b></th>    
-                                            <th><b class="pull-left">Sales Invoice No.</b></th>
-                                            <th><b class="pull-left">Date Delivered</b></th>
-                                            <th><b class="pull-left">Type of Coffee</b></th>
-                                            <th><b class="pull-left">Type of Coffee Bag</b></th>
-                                            <th><b class="pull-left">Size</b></th>
-                                            <th><b class="pull-left">Quantity</b></th>
-                                            <th><b class="pull-left">Selling Price</b></th>
-                                            <th><b class="pull-left">Total Amount</b></th>
-                                            <th><b class="pull-left">Generate</b></th>
-                                            <th>Remarks</th>
-                                            <th></th>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1946</td>
-                                            <td>3246</td>
-                                            <td>03-Nov-16</td>
-                                            <td>Farmers Ground</td>
-                                            <td>Brown</td>
-                                            <td>250g</td>
-                                            <td>175</td>
-                                            <td>160</td>
-                                            <td>160</td>
-                                            <td><center><div class=" btn btn-primary btn-xs">Sales Invoice</div><div class=" btn btn-primary btn-xs">Delivery Receipt</div></center> </td>
-                                            <td><center><button type="button" class="btn btn-warning btn-xs" data-toggle="modal" data-target="#drbalance">Unpaid</button> </center> </td>
-                                            <td><center><div class=" btn btn-danger btn-xs">remove</div></center> </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                        </div>
-                                        <div class="tab-pane" id="payment">
+                                                <thead>
+                                                        <th><b class="pull-left">Delivery Receipt No.</b></th>    
+                                                        <th><b class="pull-left">Sales Invoice No.</b></th>
+                                                        <th><b class="pull-left">Purchase Order No.</b></th>
+                                                        <th><b class="pull-left">Date Delivered</b></th>
+                                                        <th><b class="pull-left">Coffee Blend</b></th>
+                                                        <th><b class="pull-left">Bag</b></th>
+                                                        <th><b class="pull-left">Size</b></th>
+                                                        <th><b class="pull-left">Quantity</b></th>
+                                                        <th><b class="pull-left">Unit Price</b></th>
+                                                        <th><b class="pull-left">Total Amount</b></th>
+                                                        <th>Remarks</th>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1946</td>
+                                                        <td>3246</td>
+                                                        <td>PO2562</td>
+                                                        <td>03-Nov-16</td>
+                                                        <td>Farmers Ground</td>
+                                                        <td>Brown</td>
+                                                        <td>250g</td>
+                                                        <td>175</td>
+                                                        <td>160</td>
+                                                        <td>160</td>
+                                                        <td><center><button type="button" class="btn btn-warning btn-xs" data-toggle="modal" data-target="#drbalance">Unpaid</button> </center> </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                                    </div>
+                                                    <div class="tab-pane" id="payment">
                                                                                 <br>
 
                                 <table id="" class="display hover order-column" cellspacing="0" width="100%">
                                     <thead>
-                                            <th><b class="pull-left">Date Paid</b></th>    
                                             <th><b class="pull-left">Collection No.</b></th>
-                                            <th><b class="pull-left">Amount</b></th>
+                                            <th><b class="pull-left">Delivery Receipt No.</b></th>
+                                            <th><b class="pull-left">Mode of Payment</b></th>
+                                            <th><b class="pull-left">Date Paid</b></th>   
+                                            <th><b class="pull-left">Amount Paid</b></th>
+                                            <th><b class="pull-left">Gross Amount</b></th>
+                                            <th><b class="pull-left">Withheld</b></th>
                                             <th><b class="pull-left">Remarks</b></th>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td style="background-color: #c4c4c4;">11/02/2017</td>
                                             <td>CR0502</td>
-                                            <td>48,000</td>
+                                            <td>DR0502</td>
+                                            <td>Bank Deposit</td>
+                                            <td>11/02/2017</td>
+                                            <td>48,000.00</td>
+                                            <td>50,000.00</td>
+                                            <td>2,000.00</td>
                                             <td>Tax Withheld</td>
-                                            <td>BPI-OPEX</td>
-
                                         </tr>
                                     </tbody>
                                 </table>
@@ -398,7 +364,7 @@
 <!--modal for add purchase-->
 
 					<div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
-						<div class="modal-dialog modal-md">
+						<div class="modal-dialog modal-lg">
 							<div class="panel panel-primary">
 								<div class="panel-heading">
 									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
@@ -410,98 +376,71 @@
 											<div class="col-lg-12 col-md-12 col-sm-12 text-center" style="padding-bottom: 10px;">
 												<h3><b>The Legend Villas</b></h3>
 											</div>
-										</div>
-										<div class="row">	<hr>								   
-											<div class="col-lg-7 col-md-7 col-offset-7">
+										</div><hr>
+										<div class="row">	
+                                            <div class="col-lg-6 col-md-6 col-offset-6">
+                                                <div class="form-group">
+                                                  <label class="col-md-4 control" >Item Code :</label>
+                                                  <div class="col-md-4">
+                                                    <p><b>I0001</b></p>
+                                                  </div>
+                                                </div>
 												<div class="form-group">
-												  <label class="col-md-5 control" >Item Code :</label>
-												  <div class="col-md-4">
-													<select class="form-control" data-style="btn-primary">
-													  <option>F11489</option>
-													  <option>F65231</option>
-													  <option>F65421</option>
-												  </select>
-												  </div>
-												</div>
-											</div>
-										</div>
-										<div class="row">									   
-											<div class="col-lg-7 col-md-7 col-offset-7">
-												<div class="form-group">
-												  <label class="col-md-5 control" >Coffee Blend :</label>
+												  <label class="col-md-4 control" >Coffee Blend :</label>
 												  <div class="col-md-7">
 													<p><b>Farmer's Blend Coffee</b></p>
 												  </div>
 												</div>
-												<div class="form-group">
-													  <label class="col-md-5 control" >Size :</label>
-													  <div class="col-md-5">
-														<p><b>500g</b></p>
-													  </div>
-												</div>
-
+                                                <div class="form-group">
+                                                      <label class="col-md-4 control" >Bag :</label>
+                                                      <div class="col-md-5">
+                                                        <p><b>Clear</b></p>
+                                                      </div>
+                                                </div>
+                                                <div class="form-group">
+                                                      <label class="col-md-4 control" >Size :</label>
+                                                      <div class="col-md-5">
+                                                        <p><b>500g</b></p>
+                                                      </div>
+                                                </div>
+                                                <div class="form-group">
+                                                      <label class="col-md-4 control" >Unit Price :</label>
+                                                      <div class="col-md-6">
+                                                        <p><b>Php 320.00</b></p>
+                                                      </div>
+                                                </div>
 											</div>
 											<div class="row">
-												<div class="col-lg-5 col-m5d-5 col-sm-5">
-
-													<div class="form-group">
-													  <label class="col-md-6 control" >Unit Price :</label>
-													  <div class="col-md-6">
-														<p><b>Php 320.00</b></p>
-													  </div>
-													</div>
-
-													<div class="form-group">
-													  <label class="col-md-7 control" >Total Amount :</label>
-													  <div class="col-md-8">
-														<p></p>
-													  </div>
-													</div>
+												<div class="col-lg-6 col-md-6 col-sm-6">
+													
+                                                    <div class="form-group">
+                                                      <label class="col-md-6 control" >Purchase Order no. :</label>
+                                                      <div class="col-md-4">
+                                                        <input id="" name="name" type="text" class="form-control">
+                                                      </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                      <label class="col-md-6 control" >Date of Purchase :</label>
+                                                      <div class="col-md-4">
+                                                        <input id="" name="name" type="date"  class="form-control">
+                                                      </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                      <label class="col-md-6 control" >Quantity :</label>
+                                                      <div class="col-md-4">
+                                                        <input type="number" placeholder="80" class="form-control">
+                                                      </div>
+                                                    </div>
 
 												</div>
 											</div>
 										</div>
 										<hr>
 										
-										<div class="row">
-											<div class="col-lg-2 col-md-2 col-sm-2"></div>
-											<div class="col-lg-8 col-md-8 col-sm-8 ">	
-												<div class="form-group">
-												  <label class="col-md-4 control" >PO No :</label>
-												  <div class="col-md-5">
-													<input id="" name="name" type="text" class="form-control">
-												  </div>
-												</div>
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-lg-2 col-md-2 col-sm-2"></div>
-											<div class="col-lg-8 col-md-8 col-sm-8 ">	
-												<div class="form-group">
-												  <label class="col-md-4 control" >Date of Purchase :</label>
-												  <div class="col-md-5">
-													<input id="" name="name" type="text"  class="form-control">
-												  </div>
-												</div>
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-lg-2 col-md-2 col-sm-2"></div>
-											<div class="col-lg-8 col-md-8 col-sm-8 ">
-												<div class="form-group">
-												  <label class="col-md-4 control" >Quantity :</label>
-												  <div class="col-md-3">
-													<input type="text" placeholder="80" class="form-control">
-												  </div>
-												</div>
-												
-											</div>
-										</div>
-										
 										<div class="col-md-">
-                                        <p><center><a class="btn btn-primary" data-toggle="collapse" href="#collapsePayment" aria-expanded="false" aria-controls="collapseExample">Add New Blend</a></center></p>
+                                        <p><center><a class="btn btn-primary" data-toggle="collapse" href="#collapseBlend" aria-expanded="false" aria-controls="collapseExample">Add New Blend</a></center></p>
 							
-											<div class="collapse" id="collapsePayment">
+											<div class="collapse" id="collapseBlend">
 												<div class="card-block">
 													<form action="#" method="post" accept-charset="utf-8">
 														<div class="modal-body" style="padding: 5px;">
@@ -520,7 +459,7 @@
 														<label>Qty:</label>
 													</div>
 														<div class="col-md-2">
-														<label>Add Another:</label>
+														<label>Add More:</label>
 													</div>
 												</div>
 													
@@ -556,15 +495,15 @@
 																			</select> 
 																		</div>
 																		<div class="col-md-2">
-																		<input class="form-control" /> 
+																		<input class="form-control" type="number" /> 
 																		</div>
 															
 																	</div>
 																	<div class="col-md-2">
 																	<button id="b1" class="btn btn-success add-more " type="button">+</button>
 																	</div>
-															</div>
-														</form>									
+    															</div>
+    														</form>									
 													</div>
 												</div>
 											</div>
@@ -579,17 +518,17 @@
 										</div>
 										
 									</div>  
-									<div class="panel-footer" align="center">
-										<input type="submit" class="btn btn-success" value="Add PO"/>
-										<input type="reset" class="btn btn-warning" value="Clear" />									
+									<div class="panel-footer" align="right">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-success">Save Purchase Order</button>
 									</div>
 								</form>
 							</div>
 						</div>
 					</div>
 					
-<!--modal for deliveries-->
-					<div class="modal fade" id="deliverymodal" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
+<!--modal for pending delivery-->
+					<div class="modal fade" id="pending" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
 										<div class="modal-dialog">
 											<div class="panel panel-primary">
 												<div class="panel-heading">
@@ -600,96 +539,86 @@
 												<div class="modal-body" style="padding: 5px;">
 													
 													<div class="row">									   
-														<div class="col-lg-7 col-md-7 col-offset-7">
+														<div class="col-lg-7">
 															<div class="form-group">
 															  <label class="col-md-5 control" >Coffee Blend :</label>
 															  <div class="col-md-7">
 																<p><b>Farmer's Blend Coffee</b></p>
 															  </div>
 															</div>
-														<div class="form-group">
+    														<div class="form-group">
 															  <label class="col-md-5 control" >Size :</label>
 															  <div class="col-md-5">
 																<p><b>500g</b></p>
 															  </div>
-															</div>
-
+    														</div>
+                                                            <div class="form-group">
+                                                              <label class="col-md-5 control" >Quantity :</label>
+                                                              <div class="col-md-6">
+                                                                <p><b>80</b></p>
+                                                              </div>
+                                                            </div>
 														</div>
 														
 														<div class="row">
-															<div class="col-lg-5 col-m5d-5 col-sm-5">
-																<div class="form-group">
-																  <label class="col-md-6 control" >Quantity :</label>
-																  <div class="col-md-6">
-																	<p><b>80</b></p>
-																  </div>
-																</div>
-																<div class="form-group">
-																  <label class="col-md-6 control" >Unit Price :</label>
-																  <div class="col-md-6">
-																	<p><b>Php 320.00</b></p>
-																  </div>
-																</div>
-																<div class="form-group">
-																  <label class="col-md-7 control" >Total Amount :</label>
-																  <div class="col-md-8">
-																	<p><b>Php 25,600.00</b></p>
-																  </div>
-																</div>
-
+															<div class="col-lg-5">
+                                                                <div class="form-group">
+                                                                  <label class="col-md-5 control" >Unit Price :</label>
+                                                                  <div class="col-md-7">
+                                                                    <p><b>320.00</b></p>
+                                                                  </div>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                  <label class="col-md-5 control" >Total Amount :</label>
+                                                                  <div class="col-md-5">
+                                                                    <p><b>25,600.00</b></p>
+                                                                  </div>
+                                                                </div>
 															</div>
 														</div>
-														</div>
+													</div>
 													<hr>
 
 													<div class="row">
-														<div class="col-lg-2 col-md-2 col-sm-2"></div>
-														<div class="col-lg-8 col-md-8 col-sm-8 ">	
+														<div class="col-lg-5">	
 															<div class="form-group">
 															  <label class="col-md-6 control" >Delivery Receipt No :</label>
 															  <div class="col-md-5">
 																<input id="" name="name" type="text" class="form-control">
 															  </div>
 															</div>
-														</div>
+                                                        </div>
+                                                        <div class="col-lg-7">
+                                                            <div class="form-group">
+                                                              <label class="col-md-6 control" >Date of Delivery :</label>
+                                                              <div class="col-md-6">
+                                                                <input class="form-control" name="coffeeType" placeholder="Date" type="date" required />
+                                                              </div>
+                                                            </div>
+                                                        </div>
 													</div>
+													
 													<div class="row">
-														<div class="col-lg-2 col-md-2 col-sm-2"></div>
-														<div class="col-lg-8 col-md-8 col-sm-8 ">	
+                                                        <div class="col-lg-5">  
+                                                            <div class="form-group">
+                                                              <label class="col-md-6 control" >Sales Invoice No. :</label>
+                                                              <div class="col-md-5">
+                                                                <input id="" name="name" type="text"  class="form-control">
+                                                              </div>
+                                                            </div>
+                                                        </div>
+														<div class="col-lg-7">
 															<div class="form-group">
-															  <label class="col-md-6 control" >Sales Invoice No. :</label>
-															  <div class="col-md-5">
-																<input id="" name="name" type="text"  class="form-control">
-															  </div>
-															</div>
-														</div>
-													</div>
-													<div class="row">
-														<div class="col-lg-2 col-md-2 col-sm-2"></div>
-														<div class="col-lg-8 col-md-8 col-sm-8 ">
-															<div class="form-group">
-															  <label class="col-md-6 control" >Date of Delivery :</label>
-															  <div class="col-md-5">
-																<input class="form-control" name="coffeeType" placeholder="Date" type="date" required />
-															  </div>
-															</div>
-
-														</div>
-													</div>	
-													<div class="row">
-                                                         <div class="col-lg-2 col-md-2 col-sm-2"></div>
-															<div class="col-lg-8 col-md-8 col-sm-8 ">
-																<div class="form-group">
-																	<label class="col-md-6 control">Delivery status:</label>
-																		<div class="col-md-5">
-																		<select class="form-control nav">
-																			<option value="" >Full Deivery</option>
-																			<option value="delivery">Partial Delivery</option>
-																		</select>
-																	</div>
+																<label class="col-md-6 control">Delivery status:</label>
+																	<div class="col-md-6">
+																	<select class="form-control nav">
+																		<option value="" >Full Deivery</option>
+																		<option value="delivery">Partial Delivery</option>
+																	</select>
 																</div>
 															</div>
-													</div>
+														</div>
+													   </div>
 													<div class="row">															
 														<div class="col-lg-2 col-md-2 col-sm-2"></div>
 														<div class="col-lg-8 col-md-8 col-sm-8 ">
@@ -717,70 +646,17 @@
 																</div>																				
 														</div>
 													</div> 
-
-                    <div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="panel panel-primary">
-                                <div class="panel-heading">
-                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                                    <h4 class="panel-title" id="contactLabel"><span class="glyphicon glyphicon-info-sign"></span> Add New Purchase Order</h4>
-                                </div>
-                                <form action="#" method="post" accept-charset="utf-8">
-                                    <div class="modal-body" style="padding: 5px;">
-                                        <div class="row">
-                                            <div class="col-lg-12 col-md-12 col-sm-12" style="padding-bottom: 10px;">
-                                                <center><h3><b>The Legend Villas</b></h3></center>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-                                                <input class="form-control" name="coffeeType" placeholder="Date" type="date" required />
-                                            </div>
-                                            <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-                                                <input class="form-control" name="coffeeType" placeholder="Unit" type="text" required />
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-                                                <input class="form-control" name="position" placeholder="Item" type="text" required />
-                                            </div>
-                                            <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-                                                <input class="form-control" name="email" placeholder="Quantity" type="text" required />
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                        
-                                            <div class="col-lg-3 col-lg-offset-3" style="padding-bottom: 10px;">
-                                                <input class="form-control" name="position" placeholder="Item Code" type="text" required />
-                                            </div>
-                                            <div class="col-lg-3 col-md-3 col-sm-3" style="padding-bottom: 10px;">
-                                                <input class="form-control" name="email" placeholder="Unit Price" type="text" required />
-                                            </div>
-                                            
-                                        </div>
-                                        
-                                    </div>  
-                                    <div class="panel-footer" align="center">
-                                        <input type="submit" class="btn btn-success" value="Add PO"/>
-                                        <input type="reset" class="btn btn-warning" value="Clear" />                                    
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-
-
                                                     </div>  
                                                     <div class="panel-footer" align="center">
-                                                        <input type="submit" class="btn btn-success" value="Add Delivery"/>
-                                                            <!--<span class="glyphicon glyphicon-ok"></span>-->
-                                                        <input type="reset" class="btn btn-warning" value="Cancel" />
-                                                            
+                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                        <button type="submit" class="btn btn-success">Save</button>
                                                     </div>
                                                 </form>
                                             </div>
                                         </div>
                                     </div>
+
+
 <!--modal for checkbalance-->
                     <div class="modal fade" id="balance" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
                         <div class="modal-dialog">
@@ -884,6 +760,7 @@
                                                                 </div>
                                                             </div>  
                                                             <center>
+                                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                                                                 <button type="submit" class="btn btn-success">Save</button>
                                                             </center>
                                                        </div>
@@ -901,6 +778,9 @@
                        <div class="modal fade" id="drbalance" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
                             <div class="modal-dialog">
                                   <div class="panel panel-primary">
+                                    <div class="panel-heading">
+                                    <h4 class="panel-title" id="contactLabel"><center>Payment</center> </h4>
+                                    </div>
                                        <div class="modal-body" style="padding: 5px;">                                        
                                               <div class="card-block">
                                                   <form action="#" method="post" accept-charset="utf-8">
@@ -912,7 +792,7 @@
                                                                          <div class="row">
                                                                             <div class="col-md-8">
                                                                                 <div class="form-group label-floating">
-                                                                                      <label for="email">Date of Payment:</label>
+                                                                                      <label for="email">Date Paid:</label>
                                                                                       <input class="form-control" type="date" name="">
                                                                                  </div>
                                                                               </div>
@@ -924,15 +804,13 @@
                                                                               </div>
                                                                             </div>
                                                                             <div class="row">
-                                                                                <div class="col-md-12">
+                                                                                <div class="col-md-5">
                                                                                     <div class="form-group label-floating">
                                                                                       <label>Amount:</label>
                                                                                       <input class="form-control" type="number" name="">
                                                                                     </div>
                                                                                 </div>
-                                                                            </div>
-                                                                            <div class="row">
-                                                                                <div class="col-md-12">
+                                                                                <div class="col-md-7">
                                                                                     <div class="form-group label-floating">
                                                                                       <label>Remarks:</label>
                                                                                       <input class="form-control" type="text" name="">
@@ -942,16 +820,11 @@
                                                                             <div class="row">
                                                                                 <div class="col-md-6">
                                                                                     <div class="form-group label-floating">
-                                                                                      <label>Bank:</label>
-                                                                                      <input class="form-control" type="text" name="">
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="col-md-6">
-                                                                                    <div class="form-group label-floating">
                                                                                       <label>MOD:</label>
                                                                                         <select class="form-control">
-                                                                                            <option>cash</option>
-                                                                                            <option>cheque</option>
+                                                                                            <option>Cash on hand</option>
+                                                                                            <option>Bank deposit</option>
+                                                                                            <option>Cheque</option>
                                                                                         </select>
                                                                                     </div>
                                                                                 </div>
@@ -959,8 +832,8 @@
                                                                       </div>
                                                                 </div>  
                                                                 <center>
-                                                                    <input type="submit" class="btn btn-success" value="Add"/>
-                                                                    <input type="reset" class="btn btn-danger" value="Cancel" />
+                                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                                    <button type="submit" class="btn btn-success">Save</button>
                                                                 </center>
                                                             </div>
                                                         </div>
