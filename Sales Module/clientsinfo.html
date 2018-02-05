@@ -11,8 +11,8 @@
     <meta name="viewport" content="width=device-width" />
     <!-- Bootstrap core CSS     -->
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
-	<link href="../assets/css/dataTables.bootstrap.min.css" rel="stylesheet" />
-	<link href="../assets/css/jquery.dataTable.min.css" rel="stylesheet" />
+    <link href="../assets/css/dataTables.bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/css/jquery.dataTable.min.css" rel="stylesheet" />
 
     <!--  Material Dashboard CSS    -->
     <link href="../assets/css/material-dashboard.css?v=1.2.0" rel="stylesheet" />
@@ -21,18 +21,16 @@
     <!--     Fonts and icons     -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons' rel='stylesheet' type='text/css'>
-	<link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico">
 
-	<style>
+    <style>
+        
+        .select-pane {
+            display:none;
+        }
+        
 
-		.table thead, thead th {
-			text-align: center;
-			font-size: 140%;
-		}
-		.select-pane {
-			display:none;
-		}
-	</style>
+    </style>
 </head>
 
 <body>
@@ -49,7 +47,7 @@
                             <p>Dashboard</p>
                         </a>
                     </li>
-					<li>
+                    <li>
                         <a href="./walkin.html">
                             <i class="material-icons">account_circle</i>
                             <p>Walk-In</p>
@@ -92,7 +90,7 @@
                                     <p class="navbar-header">Hi, User 1</p>
 
                             </li>
-							<li class="dropdown">
+                            <li class="dropdown">
                                   <a href="#pablo" class="dropdown-toggle" data-toggle="dropdown">
                                     <i class="material-icons">person</i>
                                     <p class="hidden-lg hidden-md">Profile</p>
@@ -102,7 +100,7 @@
                                     <li>
                                         <a href="./user.html">User Profile</a>
                                     </li>
-									<hr>
+                                    <hr>
                                     <li>
                                         <a href="#">Logout</a>
                                     </li>
@@ -115,19 +113,19 @@
             </nav>
 
             <div class="content">
-				<a href="clients.html" class="btn btn-primary navbar-btn pull-left">
-        			<span class="glyphicon glyphicon-chevron-left"></span>
-      			</a> 
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="card card-profile">
-                            	<div class="col-xs-12">
+                                <div class="col-xs-12">
                                     <div class="card card-profile">
                                         <div class="content">
+                                            <a href="clients.html" class="btn btn-primary navbar-btn pull-left">
+                                                <span class="glyphicon glyphicon-chevron-left"></span>
+                                            </a> 
                                             <h3 class="card-title">The Legend Villas</h3>
                                             <h6 class="category text-gray">Jesselyn Amagan - General Manager</h6>
-                                            <table class="card-content" cellspacing="0" width="50%" align="center">
+                                            <table align="center">
                                                 <tbody>
                                                     <tr>
                                                         <td ><b>Address:</b></td>
@@ -143,75 +141,18 @@
                                                     </tr>
                                                 </tbody>
                                             </table>
+                                            
                                             <br>
                                             <br>   
-                                        	<div class="btn btn-primary btn-round" data-toggle="modal" data-target="#editinfo" data-original-title>Edit Client's Info</div>
-                                        	<a href="./contract.html" class="btn btn-warning btn-round">View Contract</a>
-                                         	<button type="button" class="btn btn-success btn-round" data-toggle="modal" data-target="#balance">Check Balance</button>  
-                                        </div>
-                                    </div>
-                                </div>
-
- 						<!--modal for Purchase Order-->                       
-                                <div class="modal fade" id="corder" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="panel panel-primary">
-                                            <div class="panel-heading">
-                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                                                <h4 class="panel-title" id="contactLabel"><span class="glyphicon glyphicon-info-sign"></span>Purchase Order</h4>
-                                            </div>
-                                            <form action="#" method="post" accept-charset="utf-8">
-                                            <div class="modal-body" style="padding: 5px;">
-                                                <div class="row">
-                                                    <div class="col-lg-12 col-md-12 col-sm-12" style="padding-bottom: 10px;">
-                                                    <input class="form-control" name="coffeeType" placeholder="Type of Coffee" type="text" required />
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-                                                        <select class="form-control" name="coffeeBag">
-                                                            <option value="" selected disabled>Type of Coffee Bag</option>
-                                                              <option value="clear">Clear</option>
-                                                              <option value="brown">Brown</option>
-                                                        </select>  
-                                                    </div>
-                                                    <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-                                                        <select class="form-control" name="size">
-                                                            <option value="" selected disabled>Size</option>
-                                                              <option value="two">250g</option>
-                                                              <option value="five">500g</option>
-                                                              <option value="onek">1000g</option>
-                                                        </select>  
-                                                    </div>
-                                                </div>
-                                                    <div class="row">
-                                                        <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-                                                            <input class="form-control" name="qty" placeholder="Quantity" type="number" required />
-                                                        </div>
-                                                        <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-                                                            <input class="form-control" name="price" placeholder="Selling Price" type="number" required />
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-                                                            <input class="form-control" name="amount" placeholder="Total Amount" type="number" required />
-                                                        </div>
-                                                    </div>
-                                
-                                                </div>  
-                                                <div class="panel-footer" style="margin-bottom:-14px;">
-                                                    <input type="submit" class="btn btn-success" value="Save"/>
-                                                    <input type="reset" class="btn btn-warning" value="Clear" />
-                                                    <button style="float: right;" type="button" class="btn btn-danger btn-close" data-dismiss="modal">Close</button>
-                                                </div>
-                                            </form>
+                                            <a href="./contract.html" class="btn btn-warning btn-round">View Contract</a>
+                                            <button type="button" class="btn btn-success btn-round" data-toggle="modal" data-target="#balance">Check Balance</button>  
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-					<div class="row">
+                    <div class="row">
                         <div class="col-sm-12">
                             <div class="card card-nav-tabs">
                                 <div class="card-header" data-background-color="purple">
@@ -247,324 +188,529 @@
                                             <div class="card-header btn btn-primary btn-lg" data-background-color="green" data-toggle="modal" data-target="#contact" data-original-title style="float:right;" >
                                    Add Purchase Order
                                 </div><br><br>
-								<table id="" class="display hover order-column" cellspacing="0" width="100%">
-									<thead>
-                                            <th><b class="pull-left">Date</b></th>    
-                                            <th><b class="pull-left">Item</b></th>
-                                            <th><b class="pull-left">Qty</b></th>
-                                            <th><b class="pull-left">Unit</b></th>
+                                    <table id="" class="display hover order-column cell-border" cellspacing="0" width="100%">
+                                        <thead>
+                                            <th><b class="pull-left">Purchase Order No.</b></th>
                                             <th><b class="pull-left">Item Code</b></th>
-                                            <th><b class="pull-left">Description</b></th>
+                                            <th><b class="pull-left">Coffee Blend</b></th>
+                                            <th><b class="pull-left">Bag</b></th>
+                                            <th><b class="pull-left">Size</b></th>
+                                            <th><b class="pull-left">Quantity</b></th>
                                             <th><b class="pull-left">Unit Price</b></th>
-                                            <th><b class="pull-left">Total Price</b></th>
-										<th><b class="pull-left">Delivery Stat</b></th>
-									
-									</thead>
-									<tbody>
-										<tr>
-											<td style="background-color: #c4c4c4;">11/02/2017</td>
-
-                                            <td>Blend A</td>
-                                            <td>200</td>
-                                            <td></td>
-                                            <td>455xv</td>
-											<td></td>
-											<td>200</td>
-											<td>40,000</td>
-											<td><center><div class=" btn btn-primary btn-xs" data-background-color="red" data-toggle="modal" data-target="#deliverymodal" data-original-title >
-                                   pending
-                                </div></center> </td>
-
-										</tr>
-									</tbody>
-								</table>
+                                            <th><b class="pull-left">Total Amount</b></th>
+                                            <th><b class="pull-left">Date of Purchase</b></th>    
+                                            <th><b class="pull-left">Delivery Status</b></th>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>PO2563</td>
+                                                <td>F11489</td>
+                                                <td>Farmer's Blend Ground Coffee</td>
+                                                <td>Clear</td>
+                                                <td>500 g</td>
+                                                <td>80</td>
+                                                <td>320.00</td>
+                                                <td>25,600.00</td>
+                                                <td>November 24, 2017</td>
+                                                <td><center><div class=" btn btn-primary btn-xs" data-background-color="red" data-toggle="modal" data-target="#pending" data-original-title >pending</div></center> </td>
+                                            </tr>
+                                            <tr>
+                                                <td>PO2564</td>
+                                                <td>F11489</td>
+                                                <td>Farmer's Blend Ground Coffee</td>
+                                                <td>Clear</td>
+                                                <td>500 g</td>
+                                                <td>80</td>
+                                                <td>320.00</td>
+                                                <td>25,600.00</td>
+                                                <td>November 24, 2017</td>
+                                                <td><center><div class=" btn btn-warning btn-xs" data-background-color="yellow" data-toggle="modal" data-target="#pending" data-original-title >partial</div></center> </td>
+                                            </tr>
+                                            <tr>
+                                                <td>PO2565</td>
+                                                <td>F11489</td>
+                                                <td>Farmer's Blend Ground Coffee</td>
+                                                <td>Clear</td>
+                                                <td>500 g</td>
+                                                <td>80</td>
+                                                <td>320.00</td>
+                                                <td>25,600.00</td>
+                                                <td>November 24, 2017</td>
+                                                <td><center>Delivered</center></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                         </div>
                                         <div class="tab-pane" id="deliveries">
                                             <table id="" class="display hover order-column" cellspacing="0" width="100%">
-									<thead>
-                                            <th><b class="pull-left">DR No.</b></th>    
-                                            <th><b class="pull-left">SI No.</b></th>
-                                            <th><b class="pull-left">Date Delivered</b></th>
-                                            <th><b class="pull-left">Type of Coffee</b></th>
-                                            <th><b class="pull-left">Type of Coffee Bag</b></th>
-                                            <th><b class="pull-left">Size</b></th>
-                                            <th><b class="pull-left">Quantity</b></th>
-                                            <th><b class="pull-left">Selling Price</b></th>
-										    <th><b class="pull-left">Total Amount</b></th>
-                                            <th><b class="pull-left">Generate</b></th>
-                                            <th>Remarks</th>
-                                            <th></th>
-									</thead>
-									<tbody>
-										<tr>
-                                            <td>1946</td>
-                                            <td>3246</td>
-                                            <td>03-Nov-16</td>
-                                            <td>Farmers Ground</td>
-                                            <td>Brown</td>
-                                            <td>250g</td>
-                                            <td>175</td>
-                                            <td>160</td>
-											<td>160</td>
-                                            <td><center><div class=" btn btn-primary btn-xs">SI</div><div class=" btn btn-primary btn-xs">DR</div></center> </td>
-                                            <td><center><button type="button" class="btn btn-warning btn-xs" data-toggle="modal" data-target="#drbalance">Unpaid</button> </center> </td>
-                                            <td><center><div class=" btn btn-danger btn-xs">remove</div></center> </td>
-										</tr>
-									</tbody>
-								</table>
-                                        </div>
-                                        <div class="tab-pane" id="payment">
-                                            									<br>
+                                                <thead>
+                                                        <th><b class="pull-left">Delivery Receipt No.</b></th>    
+                                                        <th><b class="pull-left">Sales Invoice No.</b></th>
+                                                        <th><b class="pull-left">Purchase Order No.</b></th>
+                                                        <th><b class="pull-left">Date Delivered</b></th>
+                                                        <th><b class="pull-left">Coffee Blend</b></th>
+                                                        <th><b class="pull-left">Bag</b></th>
+                                                        <th><b class="pull-left">Size</b></th>
+                                                        <th><b class="pull-left">Quantity</b></th>
+                                                        <th><b class="pull-left">Unit Price</b></th>
+                                                        <th><b class="pull-left">Total Amount</b></th>
+                                                        <th>Remarks</th>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1946</td>
+                                                        <td>3246</td>
+                                                        <td>PO2562</td>
+                                                        <td>03-Nov-16</td>
+                                                        <td>Farmers Ground</td>
+                                                        <td>Brown</td>
+                                                        <td>250g</td>
+                                                        <td>175</td>
+                                                        <td>160</td>
+                                                        <td>160</td>
+                                                        <td><center><button type="button" class="btn btn-warning btn-xs" data-toggle="modal" data-target="#drbalance">Unpaid</button> </center> </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                                    </div>
+                                                    <div class="tab-pane" id="payment">
+                                                                                <br>
 
-								<table id="" class="display hover order-column" cellspacing="0" width="100%">
-									<thead>
-                                            <th><b class="pull-left">Date of Payment</b></th>    
-                                            <th><b class="pull-left">OR No.</b></th>
-                                            <th><b class="pull-left">Amount</b></th>
+                                <table id="" class="display hover order-column" cellspacing="0" width="100%">
+                                    <thead>
+                                            <th><b class="pull-left">Collection No.</b></th>
+                                            <th><b class="pull-left">Delivery Receipt No.</b></th>
+                                            <th><b class="pull-left">Mode of Payment</b></th>
+                                            <th><b class="pull-left">Date Paid</b></th>   
+                                            <th><b class="pull-left">Amount Paid</b></th>
+                                            <th><b class="pull-left">Gross Amount</b></th>
+                                            <th><b class="pull-left">Withheld</b></th>
                                             <th><b class="pull-left">Remarks</b></th>
-                                            <th><b class="pull-left">Bank</b></th>
-									</thead>
-									<tbody>
-										<tr>
-											<td style="background-color: #c4c4c4;">11/02/2017</td>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
                                             <td>CR0502</td>
-                                            <td>48,000</td>
+                                            <td>DR0502</td>
+                                            <td>Bank Deposit</td>
+                                            <td>11/02/2017</td>
+                                            <td>48,000.00</td>
+                                            <td>50,000.00</td>
+                                            <td>2,000.00</td>
                                             <td>Tax Withheld</td>
-                                            <td>BPI-OPEX</td>
-
-										</tr>
-									</tbody>
-								</table>
+                                        </tr>
+                                    </tbody>
+                                </table>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-					</div>
-					
+                    </div>
+                    
 <!--modal for edit client's info-->
-					<div class="modal fade" id="editinfo" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
-						<div class="modal-dialog">
-							<div class="panel panel-primary">
-								<div class="panel-heading">
-									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-									<h4 class="panel-title" id="contactLabel"><center>Edit Clients Info</center></h4>
-								</div>
-								<form action="#" method="post" accept-charset="utf-8">
-									<div class="modal-body" style="padding: 5px;">
-										<div class="row">
-											<div class="col-lg-12 col-md-12 col-sm-12" style="padding-bottom: 10px;">
-												<input class="form-control" name="client" placeholder="Company Name" type="text" required />
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-												<input class="form-control" name="firstname" placeholder="Firstname" type="text" required autofocus />
-											</div>
-											<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-												<input class="form-control" name="lastname" placeholder="Lastname" type="text" required />
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-												<input class="form-control" name="position" placeholder="Position" type="text" required />
-											</div>
-											<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-												<input class="form-control" name="email" placeholder="E-mail" type="text" required />
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-												<input class="form-control" name="TelNo" placeholder="Tel. No." type="text" required />
-											</div>
-											<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-												<input class="form-control" name="type" placeholder="Client Type" type="text" required />
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-lg-12 col-md-12 col-sm-12">
-												<textarea style="resize:vertical;" class="form-control" placeholder="Address" rows="3" name="address" required></textarea>
-											</div>
-										</div>													
-									</div>  
-									<div class="panel-footer" align="center">
-										<input type="submit" class="btn btn-success" value="Add"/>
-										<input type="reset" class="btn btn-warning" value="Clear" />													
-									</div>
-								</form>
-							</div>
-						</div>
-					</div>
-					
+                    <div class="modal fade" id="editinfo" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="panel panel-primary">
+                                <div class="panel-heading">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                    <h4 class="panel-title" id="contactLabel"><center>Edit Clients Info</center></h4>
+                                </div>
+                                <form action="#" method="post" accept-charset="utf-8">
+                                    <div class="modal-body" style="padding: 5px;">
+                                        <div class="row">
+                                            <div class="col-lg-12 col-md-12 col-sm-12" style="padding-bottom: 10px;">
+                                                <input class="form-control" name="client" placeholder="Company Name" type="text" required />
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+                                                <input class="form-control" name="firstname" placeholder="Firstname" type="text" required autofocus />
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+                                                <input class="form-control" name="lastname" placeholder="Lastname" type="text" required />
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+                                                <input class="form-control" name="position" placeholder="Position" type="text" required />
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+                                                <input class="form-control" name="email" placeholder="E-mail" type="text" required />
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+                                                <input class="form-control" name="TelNo" placeholder="Tel. No." type="text" required />
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+                                                <input class="form-control" name="type" placeholder="Client Type" type="text" required />
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                <textarea style="resize:vertical;" class="form-control" placeholder="Address" rows="3" name="address" required></textarea>
+                                            </div>
+                                        </div>                                                  
+                                    </div>  
+                                    <div class="panel-footer" align="center">
+                                        <input type="submit" class="btn btn-success" value="Add"/>
+                                        <input type="reset" class="btn btn-warning" value="Clear" />                                                    
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    
 <!--modal for add purchase-->
-					<div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
-						<div class="modal-dialog">
-							<div class="panel panel-primary">
-								<div class="panel-heading">
-									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-									<h4 class="panel-title" id="contactLabel"><span class="glyphicon glyphicon-info-sign"></span> Add New Purchase Order</h4>
-								</div>
-								<form action="#" method="post" accept-charset="utf-8">
-									<div class="modal-body" style="padding: 5px;">
-										<div class="row">
-											<div class="col-lg-12 col-md-12 col-sm-12" style="padding-bottom: 10px;">
-												<center><h3><b>The Legend Villas</b></h3></center>
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-												<input class="form-control" name="coffeeType" placeholder="Date" type="date" required />
-											</div>
-											<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-												<input class="form-control" name="coffeeType" placeholder="Unit" type="text" required />
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-												<input class="form-control" name="position" placeholder="Item" type="text" required />
-											</div>
-											<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-												<input class="form-control" name="email" placeholder="Quantity" type="text" required />
-											</div>
-										</div>
-										<div class="row">
-										
-											<div class="col-lg-3 col-lg-offset-3" style="padding-bottom: 10px;">
-												<input class="form-control" name="position" placeholder="Item Code" type="text" required />
-											</div>
-											<div class="col-lg-3 col-md-3 col-sm-3" style="padding-bottom: 10px;">
-												<input class="form-control" name="email" placeholder="Unit Price" type="text" required />
-											</div>
-											
-										</div>
-										
-									</div>  
-									<div class="panel-footer" align="center">
-										<input type="submit" class="btn btn-success" value="Add PO"/>
-										<input type="reset" class="btn btn-warning" value="Clear" />									
-									</div>
-								</form>
-							</div>
-						</div>
-					</div>
-					
-<!--modal for deliveries-->
-					<div class="modal fade" id="deliverymodal" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
-										<div class="modal-dialog">
-											<div class="panel panel-primary">
-												<div class="panel-heading">
-													<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-													<h4 class="panel-title" id="contactLabel"><center>Delivery</center></h4>
-												</div>
-												<form action="#" method="post" accept-charset="utf-8">
-												<div class="modal-body" style="padding: 5px;">
 
-													  <div class="row">
-															<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-																<input class="form-control" name="firstname" placeholder="DR No." type="text" required autofocus />
-															</div>
-															<div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-																<input class="form-control" name="lastname" placeholder="SI No." type="text" required />
-															</div>
-														</div>
-														 <div class="row">
-														  <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-														  <input class="form-control" name="coffeeType" placeholder="Date" type="date" required />
-														  </div>
-														</div>
-													 <div class="row">
-														  <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-														  <input class="form-control" name="coffeeType" placeholder="Type of Coffee" type="text" required />
-														  </div>
-														  <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-														  <input class="form-control" name="coffeeType" placeholder="Type of Bag" type="text" required />
-														  </div>
-														</div>
-													<div class="row">
-														  <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-														  <input class="form-control" name="coffeeType" placeholder="Size" type="text" required />
-														  </div>
-														  <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-														  <input class="form-control" name="coffeeType" placeholder="Quantity" type="text" required />
-														  </div>
-														</div>
-													<div class="row">
-														  <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-														  <input class="form-control" name="coffeeType" placeholder="Selling Price" type="text" required />
-														  </div>
-														  <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-														  <input class="form-control" name="coffeeType" placeholder="Total Amount" type="text" required />
-														  </div>
-														</div>
-													
+                    <div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="panel panel-primary">
+                                <div class="panel-heading">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                    <h4 class="panel-title" id="contactLabel"><span class="glyphicon glyphicon-info-sign"></span> Add New Purchase Order</h4>
+                                </div>
+                                <form action="#" method="post" accept-charset="utf-8">
+                                    <div class="modal-body" style="padding: 5px;">
+                                        <div class="row">
+                                            <div class="col-lg-12 col-md-12 col-sm-12 text-center" style="padding-bottom: 10px;">
+                                                <h3><b>The Legend Villas</b></h3>
+                                            </div>
+                                        </div><hr>
+                                        <div class="row">   
+                                            <div class="col-lg-6 col-md-6 col-offset-6">
+                                                <div class="form-group">
+                                                  <label class="col-md-4 control" >Item Code :</label>
+                                                  <div class="col-md-4">
+                                                    <p><b>I0001</b></p>
+                                                  </div>
+                                                </div>
+                                                <div class="form-group">
+                                                  <label class="col-md-4 control" >Coffee Blend :</label>
+                                                  <div class="col-md-7">
+                                                    <p><b>Farmer's Blend Coffee</b></p>
+                                                  </div>
+                                                </div>
+                                                <div class="form-group">
+                                                      <label class="col-md-4 control" >Bag :</label>
+                                                      <div class="col-md-5">
+                                                        <p><b>Clear</b></p>
+                                                      </div>
+                                                </div>
+                                                <div class="form-group">
+                                                      <label class="col-md-4 control" >Size :</label>
+                                                      <div class="col-md-5">
+                                                        <p><b>500g</b></p>
+                                                      </div>
+                                                </div>
+                                                <div class="form-group">
+                                                      <label class="col-md-4 control" >Unit Price :</label>
+                                                      <div class="col-md-6">
+                                                        <p><b>Php 320.00</b></p>
+                                                      </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                                    
+                                                    <div class="form-group">
+                                                      <label class="col-md-6 control" >Purchase Order no. :</label>
+                                                      <div class="col-md-4">
+                                                        <input id="" name="name" type="text" class="form-control">
+                                                      </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                      <label class="col-md-6 control" >Date of Purchase :</label>
+                                                      <div class="col-md-4">
+                                                        <input id="" name="name" type="date"  class="form-control">
+                                                      </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                      <label class="col-md-6 control" >Quantity :</label>
+                                                      <div class="col-md-4">
+                                                        <input type="number" placeholder="80" class="form-control">
+                                                      </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        
+                                        <div class="col-md-">
+                                        <p><center><a class="btn btn-primary" data-toggle="collapse" href="#collapseBlend" aria-expanded="false" aria-controls="collapseExample">Add New Blend</a></center></p>
+                            
+                                            <div class="collapse" id="collapseBlend">
+                                                <div class="card-block">
+                                                    <form action="#" method="post" accept-charset="utf-8">
+                                                        <div class="modal-body" style="padding: 5px;">
+                                                            <div class="row">
+                                                    <div class="form-conttrol label-floating">
+                                                    <div class="col-md-4">
+                                                        <label> Coffee Blend:</label>
+                                                    </div>
+                                                        <div class="col-md-2">
+                                                        <label>Type of Bag:</label>
+                                                    </div>
+                                                        <div class="col-md-2">
+                                                        <label>Size:</label>
+                                                    </div>
+                                                        <div class="col-md-2">
+                                                        <label>Qty:</label>
+                                                    </div>
+                                                        <div class="col-md-2">
+                                                        <label>Add More:</label>
+                                                    </div>
+                                                </div>
+                                                    
+                                                </div>
+                                                <div class="row">
+                                                    <input type="hidden" name="count" value="1" />
+                                                    <div class="control-group " id="fields">
+                                                        <div class="controls" id="profs"> 
+                                                            <form class="input-append label-floating">
+                                                                <div id="field">
+                                                                    <div class="input" id="field1">
+                                                                        <div class="col-md-4">
+                                                                            
+                                                                            <select class="form-control" name="coffee">
+                                                                                <option value="">Guatemala Rainforest</option>
+                                                                                <option value="">Cordillera Sunrise</option>
+                                                                                <option value="">Sumatra Night</option>
+                                                                                <option value="">Espresso</option>
+                                                                            </select></div>
+                                                                        <div class="col-md-2">
+                                                                            
+                                                                            <select class="form-control" name="coffee">
+                                                                                <option value="clear">Clear</option>
+                                                                                <option value="brown">Brown</option>
+                                                                            </select> 
+                                                                        </div>
+                                                                        <div class="col-md-2">
+                                                                        
+                                                                            <select class="form-control" name="coffee">
+                                                                                  <option value="clear">250g</option>
+                                                                                  <option value="brown">500g</option>
+                                                                                  <option value="brown">1000g</option>
+                                                                            </select> 
+                                                                        </div>
+                                                                        <div class="col-md-2">
+                                                                        <input class="form-control" type="number" /> 
+                                                                        </div>
+                                                            
+                                                                    </div>
+                                                                    <div class="col-md-2">
+                                                                    <button id="b1" class="btn btn-success add-more " type="button">+</button>
+                                                                    </div>
+                                                                </div>
+                                                            </form>                                 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                        </div>                                                          
+                                                    </form>
+                                                 </div>
+                                            </div></div>
+        
+                                        
+                                        
+                                        <div class="row">
+                                        </div>
+                                        
+                                    </div>  
+                                    <div class="panel-footer" align="right">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-success">Save Purchase Order</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    
+<!--modal for pending delivery-->
+                    <div class="modal fade" id="pending" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="panel panel-primary">
+                                                <div class="panel-heading">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                                    <h4 class="panel-title" id="contactLabel"><center>Delivery</center></h4>
+                                                </div>
+                                                <form action="#" method="post" accept-charset="utf-8">
+                                                <div class="modal-body" style="padding: 5px;">
+                                                    
+                                                    <div class="row">                                      
+                                                        <div class="col-lg-7">
+                                                            <div class="form-group">
+                                                              <label class="col-md-5 control" >Coffee Blend :</label>
+                                                              <div class="col-md-7">
+                                                                <p><b>Farmer's Blend Coffee</b></p>
+                                                              </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                              <label class="col-md-5 control" >Size :</label>
+                                                              <div class="col-md-5">
+                                                                <p><b>500g</b></p>
+                                                              </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                              <label class="col-md-5 control" >Quantity :</label>
+                                                              <div class="col-md-6">
+                                                                <p><b>80</b></p>
+                                                              </div>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        <div class="row">
+                                                            <div class="col-lg-5">
+                                                                <div class="form-group">
+                                                                  <label class="col-md-5 control" >Unit Price :</label>
+                                                                  <div class="col-md-7">
+                                                                    <p><b>320.00</b></p>
+                                                                  </div>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                  <label class="col-md-5 control" >Total Amount :</label>
+                                                                  <div class="col-md-5">
+                                                                    <p><b>25,600.00</b></p>
+                                                                  </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <hr>
+
+                                                    <div class="row">
+                                                        <div class="col-lg-5">  
+                                                            <div class="form-group">
+                                                              <label class="col-md-6 control" >Delivery Receipt No :</label>
+                                                              <div class="col-md-5">
+                                                                <input id="" name="name" type="text" class="form-control">
+                                                              </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-7">
+                                                            <div class="form-group">
+                                                              <label class="col-md-6 control" >Date of Delivery :</label>
+                                                              <div class="col-md-6">
+                                                                <input class="form-control" name="coffeeType" placeholder="Date" type="date" required />
+                                                              </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="row">
+                                                        <div class="col-lg-5">  
+                                                            <div class="form-group">
+                                                              <label class="col-md-6 control" >Sales Invoice No. :</label>
+                                                              <div class="col-md-5">
+                                                                <input id="" name="name" type="text"  class="form-control">
+                                                              </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-7">
+                                                            <div class="form-group">
+                                                                <label class="col-md-6 control">Delivery status:</label>
+                                                                    <div class="col-md-6">
+                                                                    <select class="form-control nav">
+                                                                        <option value="" >Full Deivery</option>
+                                                                        <option value="delivery">Partial Delivery</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                       </div>
+                                                    <div class="row">                                                           
+                                                        <div class="col-lg-2 col-md-2 col-sm-2"></div>
+                                                        <div class="col-lg-8 col-md-8 col-sm-8 ">
+                                                                <div class="select-pane " id="delivery">
+                                                                    <div class="form-group">
+                                                                         <label class="col-md-6 control">Quantity Delivered:</label>
+                                                                        <div class="col-md-5">
+                                                                            <input class="form-control" type="text" name="" placeholder="50">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>                                                                          
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        
+                                                        <div class="col-lg-2 col-md-2 col-sm-2"></div>
+                                                        <div class="col-lg-8 col-md-8 col-sm-8 ">
+                                                                <div class="select-pane" id="delivery">
+                                                                    <div class="form-group">
+                                                                            <label class="col-md-6 control">Remaining Quantity: </label>
+                                                                        <div class="col-md-5">
+                                                                            <p><b>30</b></p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>                                                                              
+                                                        </div>
+                                                    </div> 
+                                                    </div>  
+                                                    <div class="panel-footer" align="center">
+                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                        <button type="submit" class="btn btn-success">Save</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
 
 
-													</div>  
-													<div class="panel-footer" align="center">
-														<input type="submit" class="btn btn-success" value="Add Delivery"/>
-															<!--<span class="glyphicon glyphicon-ok"></span>-->
-														<input type="reset" class="btn btn-warning" value="Cancel" />
-															
-													</div>
-												</form>
-											</div>
-										</div>
-									</div>
 <!--modal for checkbalance-->
-					<div class="modal fade" id="balance" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
-						<div class="modal-dialog">
-							<div class="panel panel-primary">
-								<div class="panel-heading">
-									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-									<h4 class="panel-title" id="contactLabel"><center>Balance</center> </h4>
-								</div><br><br>
-												
-								<form action="#" method="post" accept-charset="utf-8">
-								<div class="modal-body" style="padding: 5px;">
-										<p>Current Month: November</p>
-										<p style="font-size:150%;"><span style="display:inline-block; width: 5%;"></span>Total Balance: <b>P20,000</b><br>  </p>
-										<p>
-											<center><br>
-												<div class="card-content table-responsive">
-													<table id="mytable" class="table table-bordred table-striped">
-														<thead class="text-primary">
-															<th><b class="pull-left">DR No.</b></th>
-															<th><b class="pull-left">Item</b></th>
-															<th><b class="pull-left">Date Delivered</b></th>
-															<th><b class="pull-left">Amount</b></th>
-															<th><input type="checkbox" id="checkall" /></th>
-														</thead>
-														<tbody>
-															<tr>
-																<td>2222</td>
-																<td>Sumatra</td>
-																<td>Oct. 2,2017</td>
-																<td class="text-primary">$36,738</td>
-																<td><input type="checkbox" class="checkthis" /></td>
-															</tr>
-															<tr>
-																<td>3475</td>
-																<td>Guatemala</td>
-																<td>Nov. 6,2017</td>
-																<td class="text-primary">$23,789</td>
-																<td><input type="checkbox" class="checkthis" /></td>
-															</tr>
-															<tr>
-																<td>2356</td>
-																<td>Sumatra</td>
-																<td>Dec. 2,2017</td>
-																<td class="text-primary">$56,142</td>
-																<td><input type="checkbox" class="checkthis" /></td>
-															</tr>
+                    <div class="modal fade" id="balance" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="panel panel-primary">
+                                <div class="panel-heading">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                    <h4 class="panel-title" id="contactLabel"><center>Balance</center> </h4>
+                                </div><br><br>
+                                                
+                                <form action="#" method="post" accept-charset="utf-8">
+                                <div class="modal-body" style="padding: 5px;">
+                                        <p style="font-size:150%;"><span style="display:inline-block; width: 5%;"></span>Total Balance: <b>P50,000</b><br>  </p>
+                                        <p>
+                                            <center><br>
+                                                <div class="card-content table-responsive">
+                                                    <table id="mytable" class="table table-bordred table-striped">
+                                                        <thead class="text-primary">
+                                                            <th><b class="pull-left">Delivery Receipt No.</b></th>
+                                                            <th><b class="pull-left">Item Code</b></th>
+                                                            <th><b class="pull-left">Date Delivered</b></th>
+                                                            <th><b class="pull-left">Amount</b></th>
+                                                            <th><input type="checkbox" id="checkall" /></th>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>2222</td>
+                                                                <td>I0001</td>
+                                                                <td>Oct. 2,2017</td>
+                                                                <td class="text-primary">10,000.00</td>
+                                                                <td><input type="checkbox" class="checkthis" /></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>3475</td>
+                                                                <td>I0002</td>
+                                                                <td>Nov. 6,2017</td>
+                                                                <td class="text-primary">30,000.00</td>
+                                                                <td><input type="checkbox" class="checkthis" /></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>2356</td>
+                                                                <td>I0003</td>
+                                                                <td>Dec. 2,2017</td>
+                                                                <td class="text-primary">10,000.00</td>
+                                                                <td><input type="checkbox" class="checkthis" /></td>
+                                                            </tr>
 
-														</tbody>
-													</table>
-												</div>
-												<a class="btn btn-primary" data-toggle="collapse" href="#collapsePayment" aria-expanded="false" aria-controls="collapseExample" data-background-color="red">Add Payment</a>
-											</center>
-										</p>
-										<div class="collapse" id="collapsePayment">
-											<div class="card-block">
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <a class="btn btn-primary" data-toggle="collapse" href="#collapsePayment" aria-expanded="false" aria-controls="collapseExample" data-background-color="red">Add Payment</a>
+                                        </center>
+                                        </p>
+                                        <div class="collapse" id="collapsePayment">
+                                            <div class="card-block">
                                                  <form action="#" method="post" accept-charset="utf-8">
                                                      <div class="modal-body" style="padding: 5px;">
                                                         <div class="row">
@@ -574,13 +720,13 @@
                                                                         <div class="row">
                                                                             <div class="col-md-4">
                                                                                 <div class="form-group label-floating">
-                                                                                  <label for="email">Date of Payment:</label>
+                                                                                  <label for="email">Payment Date:</label>
                                                                                   <input class="form-control" type="date" name="">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="col-md-4">
                                                                                 <div class="form-group label-floating">
-                                                                                  <label for="email">CR No.:</label>
+                                                                                  <label for="email">Collection Receipt No.:</label>
                                                                                   <input class="form-control" type="text" name="">
                                                                                 </div>
                                                                             </div>
@@ -598,64 +744,43 @@
                                                                                   <input class="form-control" type="text" name="">
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="col-md-4">
+                                                                            <div class="col-md-4 ">
+                                                                                
                                                                                 <div class="form-group label-floating">
-                                                                                  <label>Bank:</label>
-                                                                                  <input class="form-control" type="text" name="">
+                                                                                    <label>MOD</label>
+                                                                                    <select class="form-control nav">
+                                                                                        <option value="" >Cash on Hand</option>
+                                                                                        <option value="" >Bank Deposit</option>
+                                                                                        <option value="cheque">Cheque</option>
+                                                                                    </select>
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="col-md-4 ">
-																				
-																				<div class="form-group label-floating">
-																					<label>MOD</label>
-																					<select class="form-control nav">
-																						<option value="" >Cash</option>
-																					
-																						<option value="cheque">Cheque</option>
-																					</select>
-																				</div>
-																			</div>
-																		</div>
-																		<div class="row">															
-																			<div class="col-sm-4">
-																				<div class="select-pane " id="cheque">
-																					<div class="form-group label-floating">
-                                                                                  		<label>Cheque Date:</label>
-																					 	<input class="form-control" type="date" name="">
-																					</div>
-																				</div>																			
-																			 </div>
-																			<div class="col-sm-4">
-																				 <div class="select-pane" id="cheque">
-																					 <div class="form-group label-floating">
-                                                                                  		<label>Payment Date: </label>
-																					 	<input class="form-control" type="date" name="">
-																					 </div>
-																				</div>																				
-																			 </div>
-																		</div>  
+                                                                        </div>
                                                                     </div>         
                                                                 </div>
                                                             </div>  
                                                             <center>
-                                                                <input type="submit" class="btn btn-success" value="Add"/>
-                                                                <input type="reset" class="btn btn-danger" value="Cancel" />
+                                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                                <button type="submit" class="btn btn-success">Save</button>
                                                             </center>
                                                        </div>
-													 </div>
-                                                </form>	
-											</div>
-										</div>
-									</div>  					
-								</form>
-							</div>
-						</div>
-					</div>
+                                                     </div>
+                                                </form> 
+                                            </div>
+                                        </div>
+                                    </div>                      
+                                </form>
+                            </div>
+                        </div>
+                    </div>
 
 <!-- modal of unpaid -->
                        <div class="modal fade" id="drbalance" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
                             <div class="modal-dialog">
                                   <div class="panel panel-primary">
+                                    <div class="panel-heading">
+                                    <h4 class="panel-title" id="contactLabel"><center>Payment</center> </h4>
+                                    </div>
                                        <div class="modal-body" style="padding: 5px;">                                        
                                               <div class="card-block">
                                                   <form action="#" method="post" accept-charset="utf-8">
@@ -667,27 +792,25 @@
                                                                          <div class="row">
                                                                             <div class="col-md-8">
                                                                                 <div class="form-group label-floating">
-                                                                                      <label for="email">Date of Payment:</label>
+                                                                                      <label for="email">Date Paid:</label>
                                                                                       <input class="form-control" type="date" name="">
                                                                                  </div>
                                                                               </div>
                                                                               <div class="col-md-4">
                                                                                  <div class="form-group label-floating">
-                                                                                      <label for="email">CR No.:</label>
+                                                                                      <label for="email">Collection Receipt No.:</label>
                                                                                       <input class="form-control" type="text" name="">
                                                                                   </div>
                                                                               </div>
                                                                             </div>
                                                                             <div class="row">
-                                                                                <div class="col-md-12">
+                                                                                <div class="col-md-5">
                                                                                     <div class="form-group label-floating">
                                                                                       <label>Amount:</label>
                                                                                       <input class="form-control" type="number" name="">
                                                                                     </div>
                                                                                 </div>
-                                                                            </div>
-                                                                            <div class="row">
-                                                                                <div class="col-md-12">
+                                                                                <div class="col-md-7">
                                                                                     <div class="form-group label-floating">
                                                                                       <label>Remarks:</label>
                                                                                       <input class="form-control" type="text" name="">
@@ -697,16 +820,11 @@
                                                                             <div class="row">
                                                                                 <div class="col-md-6">
                                                                                     <div class="form-group label-floating">
-                                                                                      <label>Bank:</label>
-                                                                                      <input class="form-control" type="text" name="">
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="col-md-6">
-                                                                                    <div class="form-group label-floating">
                                                                                       <label>MOD:</label>
                                                                                         <select class="form-control">
-                                                                                            <option>cash</option>
-                                                                                            <option>cheque</option>
+                                                                                            <option>Cash on hand</option>
+                                                                                            <option>Bank deposit</option>
+                                                                                            <option>Cheque</option>
                                                                                         </select>
                                                                                     </div>
                                                                                 </div>
@@ -714,12 +832,12 @@
                                                                       </div>
                                                                 </div>  
                                                                 <center>
-                                                                    <input type="submit" class="btn btn-success" value="Add"/>
-                                                                    <input type="reset" class="btn btn-danger" value="Cancel" />
+                                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                                    <button type="submit" class="btn btn-success">Save</button>
                                                                 </center>
-															</div>
-														</div>
-													</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                               </form>
                                          </div>
                                     </div>                                                    
@@ -767,9 +885,9 @@
     </div>
 </body>
 <script src="../assets/js/jquery-3.2.1.min.js" type="text/javascript"></script>
-		<script src="../assets/js/jquery.dataTables.min.js" type="text/javascript"></script>
-	<script src="../assets/js/dataTables.bootstrap.min.js" type="text/javascript"></script>
-	
+        <script src="../assets/js/jquery.dataTables.min.js" type="text/javascript"></script>
+    <script src="../assets/js/dataTables.bootstrap.min.js" type="text/javascript"></script>
+    
 <script src="../assets/js/bootstrap.min.js" type="text/javascript"></script>
 <script src="../assets/js/material.min.js" type="text/javascript"></script>
 <!--  Charts Plugin -->
@@ -786,13 +904,19 @@
 <script src="../assets/js/material-dashboard.js?v=1.2.0"></script>
 <!-- Material Dashboard DEMO methods, don't include it in your project! -->
 <script src="../assets/js/demo.js"></script>
-	
-	<script type="text/javascript">
-		$(document).ready(function() {
-    		$('table.display').DataTable();
-				
-		} );
-		$('#datePicker')
+
+    
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('table.display').DataTable({
+                "ordering": false
+                
+                
+        } );
+            
+        
+            $('#datePicker')
+
         .datepicker({
             format: 'mm/dd/yyyy'
         })
@@ -800,43 +924,80 @@
             // Revalidate the date field
             $('#eventForm').formValidation('revalidateField', 'date');
         });
-		
-	</script>
-	<script type="text/javascript">
-		
-		$(document).ready(function(){
-		$("#mytable #checkall").click(function () {
-				if ($("#mytable #checkall").is(':checked')) {
-					$("#mytable input[type=checkbox]").each(function () {
-						$(this).prop("checked", true);
-					});
 
-				} else {
-					$("#mytable input[type=checkbox]").each(function () {
-						$(this).prop("checked", false);
-					});
-				}
-			});
+        });
+    </script>
+    <script type="text/javascript">
+        
+        $(document).ready(function(){
+        $("#mytable #checkall").click(function () {
+                if ($("#mytable #checkall").is(':checked')) {
+                    $("#mytable input[type=checkbox]").each(function () {
+                        $(this).prop("checked", true);
+                    });
 
-			$("[data-toggle=tooltip]").tooltip();
-		});
-			</script>
-			<script type="text/javascript">
-					$(document).on('change','select.nav',function(){
-			var $this = this;
-			var target = $this.value;
-			$('div.select-pane').hide();
-			$('div[id="'+target+'"]').show();
-		})
 
-		$(document).on('click','.series-select',function(){
-		  var $this = this;
-		  var txt = $this.text+'<span class="caret"></span>';
-		  $($this).closest('li.dropdown').find('a.dropdown-toggle').html(txt);
+                } else {
+                    $("#mytable input[type=checkbox]").each(function () {
+                        $(this).prop("checked", false);
+                    });
+                }
+            });
 
-		})
-	
-	</script>
+            $("[data-toggle=tooltip]").tooltip();
+        });
+            </script>
+             <script type="text/javascript">
+                    $(document).on('change','select.nav',function(){
+            var $this = this;
+            var target = $this.value;
+            $('div.select-pane').hide();
+            $('div[id="'+target+'"]').show();
+        })
+
+        $(document).on('click','.series-select',function(){
+          var $this = this;
+          var txt = $this.text+'<span class="caret"></span>';
+          $($this).closest('li.dropdown').find('a.dropdown-toggle').html(txt);
+
+
+        })
+    
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var next = 1;
+            $(".add-more").click(function(e){
+                e.preventDefault();
+                var addto = "#field" + next;
+                var addRemove = "#field" + (next);
+                next = next + 1;
+                var newIn = '<div class="input" id="field' + next + '"><div class="col-md-4"><select class="form-control" name="coffee"><option value="">Guatemala Rainforest</option><option value="">Cordillera Sunrise</option><option value="">Sumatra Night</option><option value="">Espresso</option></select></div><div class="col-md-2"><select class="form-control" name="coffee"><option value="clear">Clear</option><option value="brown">Brown</option></select> </div><div class="col-md-2"><select class="form-control" name="coffee"><option value="clear">250g</option><option value="brown">500g</option> <option value="brown">1000g</option></select> </div><div class="col-md-2"><input class="form-control" name="coffeeType" type="number" required /> </div></div>';
+                var newInput = $(newIn);
+                var removeBtn = ' <button id="remove' + (next - 1) + '" class="btn btn-danger remove-me" >-</button></div><div id="field">';
+                var removeButton = $(removeBtn);
+                $(addto).after(newInput);
+                $(addRemove).after(removeButton);
+                $("#field" + next).attr('data-source',$(addto).attr('data-source'));
+                $("#count").val(next);  
+
+                    $('.remove-me').click(function(e){
+                        e.preventDefault();
+                        var fieldNum = this.id.charAt(this.id.length-1);
+                        var fieldID = "#field" + fieldNum;
+                        $(this).remove();
+                        $(fieldID).remove();
+                    });
+            });
+
+
+
+        });
+    </script>
+
+
+
+
 
 
 </html>

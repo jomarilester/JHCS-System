@@ -37,6 +37,70 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
 
 </head>
+    
+    <style>
+	
+/*
+		td.highlight {
+			background-color: whitesmoke !important;
+		}
+*/
+		.table thead, thead th {
+			text-align: center;
+			font-size: 120%;
+		}
+		/* Custom Style */
+		.onoffswitch {
+			position: relative; width: 110px;
+			-webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+		}
+		.onoffswitch-checkbox {
+			display: none;
+		}
+		.onoffswitch-label {
+			display: block; overflow: hidden; cursor: pointer;
+			border: 2px solid #999999; border-radius: 20px;
+		}
+		.onoffswitch-inner {
+			display: block; width: 200%; margin-left: -100%;
+			-moz-transition: margin 0.3s ease-in 0s; -webkit-transition: margin 0.3s ease-in 0s;
+			-o-transition: margin 0.3s ease-in 0s; transition: margin 0.3s ease-in 0s;
+		}
+		.onoffswitch-inner:before, .onoffswitch-inner:after {
+			display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+			font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+			-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+		}
+		.onoffswitch-inner:before {
+			content: " Enabled";
+			padding-left: 10px;
+			background-color: #2FCCFF; color: #FFFFFF;
+		}
+		.onoffswitch-inner:after {
+			content: "Disabled";
+			padding-right: 10px;
+			background-color: #EEEEEE; color: #999999;
+			text-align: right;
+		}
+		.onoffswitch-switch {
+			display: block; width: 18px; margin: 7px;
+			background: #FFFFFF;
+			border: 2px solid #999999; border-radius: 20px;
+			position: absolute; top: 0; bottom: 0; right: 70px;
+			-moz-transition: all 0.3s ease-in 0s; -webkit-transition: all 0.3s ease-in 0s;
+			-o-transition: all 0.3s ease-in 0s; transition: all 0.3s ease-in 0s; 
+		}
+		.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+			margin-left: 0;
+		}
+		.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+			right: 0px; 
+		}
+		.navbar{
+			background-color: chartreuse;
+		}
+
+	</style>    
 
 <body>
     <div class="wrapper">
@@ -51,7 +115,7 @@
                 <img src="../assets/img/logo.png" alt="image1" width="250px" height="150px">
             </div>
              <div class="sidebar-wrapper">
-                <ul class="nav">
+                 <ul class="nav">
                     <li>
                         <a href="dashboard.html">
                             <i class="material-icons">dashboard</i>
@@ -59,10 +123,17 @@
                             <p>Dashboard</p>
                         </a>
                     </li>
+                     
                     <li>
-                        <a href="./sales.html">
-                            <i class="material-icons">shopping_cart</i>
-                            <p>Sales</p>
+                        <a href="./itemlist.html">
+                            <i class="material-icons">list</i>
+                            <p>Item</p>
+                        </a>
+                    </li>
+                     <li>
+                        <a href="./product_inventory.html">
+                            <i class="material-icons">assessment</i>
+                            <p>Inventory</p>
                         </a>
                     </li>
                     <li>
@@ -87,12 +158,6 @@
                         <a href="./supplier.html">
                             <i class="material-icons">person</i>
                             <p>Suppliers</p>
-                        </a>
-                    </li>
-                     <li>
-                        <a href="./product_inventory.html">
-                            <i class="material-icons">assessment</i>
-                            <p>Inventory</p>
                         </a>
                     </li>
                     <li>
@@ -153,13 +218,14 @@
                 					<table id="fresh-datatables" class="table table-striped table-no-bordered table-hover" cellspacing="0" width="100%" style="width:100%">
                 						<thead>
                 							<tr>
-                                                <th>Company Name</th>
-                                                <th>Products</th>
-                                                <th>Contact Personnel</th>
-                                                <th>Position</th>
-                                                <th>Address</th>
+                                                <th>Supplier's Name</th>
+                                                <th>Supplier's Address</th>
+                                                <th>Product</th>
+                                                <th>Supplier's Contact Personnel</th>
+                                                <th>Personnel's Position</th>
+                                                <th>Personnel's Contact Number</th>
                                                 <th>Email</th>
-                                                <th>Contact Number</th>
+                                                <th><b class="pull-left">Activation</b></th>
                 							</tr>
                 						</thead>
                 						<tbody>
@@ -171,6 +237,14 @@
                                                 <th>Legarda</th>
                                                 <th>lafestive@gmail.com</th>
                                                 <th>09053215885</th>
+                                                <td><div class="onoffswitch">
+												<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+												<label class="onoffswitch-label" for="myonoffswitch">
+													<span class="onoffswitch-inner"></span>
+													<span class="onoffswitch-switch"></span>
+												</label>
+											</div>
+        				        </td>
                 							</tr>
                 							<tr>
                 								<th>Lila Enterprise</th>
@@ -180,6 +254,14 @@
                                                 <th>Loakan Proper</th>
                                                 <th>lila1022@gmail.com</th>
                                                 <th>0952875158</th>
+                                                <td><div class="onoffswitch">
+												<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+												<label class="onoffswitch-label" for="myonoffswitch">
+													<span class="onoffswitch-inner"></span>
+													<span class="onoffswitch-switch"></span>
+												</label>
+											</div>
+        				        </td>
                                             </tr>
                                             <tr>
                 								<th>Lanz Trading, Inc</th>
@@ -189,6 +271,14 @@
                                                 <th>Labsan</th>
                                                 <th>lanz_01@gmail.com</th>
                                                 <th>0925685485</th>
+                                                <td><div class="onoffswitch">
+												<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+												<label class="onoffswitch-label" for="myonoffswitch">
+													<span class="onoffswitch-inner"></span>
+													<span class="onoffswitch-switch"></span>
+												</label>
+											</div>
+        				        </td>
                                             </tr>
                                             <tr>
                 								<th>Tinz Enterprise</th>
@@ -198,6 +288,14 @@
                                                 <th>Quirino Hill</th>
                                                 <th>tinzenterprise@gmail.com</th>
                                                 <th>09215865871</th>
+                                                <td><div class="onoffswitch">
+												<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+												<label class="onoffswitch-label" for="myonoffswitch">
+													<span class="onoffswitch-inner"></span>
+													<span class="onoffswitch-switch"></span>
+												</label>
+											</div>
+        				        </td>
                                             </tr>
                                             <tr>
                 								<th>Keir Supplies</th>
@@ -207,6 +305,14 @@
                                                 <th>New Lucban</th>
                                                 <th>keircalp@gmail.com</th>
                                                 <th>0912456987</th>
+                                                <td><div class="onoffswitch">
+												<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+												<label class="onoffswitch-label" for="myonoffswitch">
+													<span class="onoffswitch-inner"></span>
+													<span class="onoffswitch-switch"></span>
+												</label>
+											</div>
+        				        </td>
                                             </tr>
                 						</tbody>
                 					</table>
@@ -314,5 +420,14 @@ $(document).ready(function() {
 });
 
 </script>
+    
+    <script>
+  $(function() {
+    $('#toggle-two').bootstrapToggle({
+      on: 'Enabled',
+      off: 'Disabled'
+    });
+  })
+</script>  
 
 </html>

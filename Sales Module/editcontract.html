@@ -220,13 +220,33 @@
 								
 								<!----modal for add new coffee blend ---->
 								<div class="modal fade" id="addnew" tabindex="-1" role="dialog" aria-labelledby="addnew" aria-hidden="true">
-									<div class="modal-dialog">
+									<div class="modal-dialog modal-md">
 										<div class="panel panel-primary">
 											<div class="panel-heading">
 												<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
 												<h4 class="panel-title" id="contactLabel"><center>Add Existing Blend</center></h4>
 											</div>
 											<div class="modal-body" style="padding: 5px;">
+												<div class="row">
+													<div class="form-conttrol label-floating">
+													<div class="col-md-4">
+														<label> Coffee Blend:</label>
+													</div>
+														<div class="col-md-2">
+														<label>Type of Bag:</label>
+													</div>
+														<div class="col-md-2">
+														<label>Size:</label>
+													</div>
+														<div class="col-md-2">
+														<label>Qty:</label>
+													</div>
+														<div class="col-md-2">
+														<label>Add Another:</label>
+													</div>
+												</div>
+													
+												</div>
 												<div class="row">
 													<input type="hidden" name="count" value="1" />
 													<div class="control-group " id="fields">
@@ -235,7 +255,7 @@
 																<div id="field">
 																	<div class="input" id="field1">
 																		<div class="col-md-4">
-																			<label for="email">Coffee Blend:</label>
+																			
 																			<select class="form-control" name="coffee">
 																				<option value="">Guatemala Rainforest</option>
 																				<option value="">Cordillera Sunrise</option>
@@ -243,23 +263,24 @@
 																				<option value="">Espresso</option>
 																			</select></div>
 																		<div class="col-md-2">
-																			<label>Type of Bag</label>
+																			
 																			<select class="form-control" name="coffee">
 																		  		<option value="clear">Clear</option>
 																		  		<option value="brown">Brown</option>
 																			</select> 
 																		</div>
 																		<div class="col-md-2">
-																			<label>Size</label>
+																		
 																			<select class="form-control" name="coffee">
 																				  <option value="clear">250g</option>
 																				  <option value="brown">500g</option>
 																				  <option value="brown">1000g</option>
 																			</select> 
 																		</div>
+																		<div class="col-md-2">
+																		<input class="form-control" /> 
+																		</div>
 															
-																		<div class="col-md-2"><label>Quantity</label><input class="form-control" name="coffeeType" type="number" required /> </div>
-																		<label>Add Another</label>
 																	</div>
 																	<div class="col-md-2">
 																	<button id="b1" class="btn btn-success add-more " type="button">+</button>
