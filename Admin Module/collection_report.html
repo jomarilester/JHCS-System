@@ -217,46 +217,147 @@
                                         </div>
                                     </div>
                                 </div>
+                                
+                                  <div class="modal fade" id="edit" tabindex="1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="panel panel-primary">
+                                            <div class="panel-heading">
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                                <h4 class="panel-title" id="contactLabel"><span class="glyphicon glyphicon-info-sign" ></span> Edit Item Information</h4>
+                                            </div>
+                                            <form action="#" method="post" accept-charset="utf-8">
+                                                <div class="modal-body" style="padding-left: 100px;">
+                                                    <div class="form-group row">
+                                                        <div for="example-number-input" class="col-2 col-form-label">
+                                                            <label for="type">Client</label>
+                                                            <input class="form-control" type="textarea" value="Mario's" id="example-number-input">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <div for="example-number-input" class="col-2 col-form-label">
+                                                            <label for="type">Date Paid</label>
+                                                            <input class="form-control" type="textarea" value="October 02, 2017" id="example-number-input">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <div class="col-md-6">
+                                                            <label class="control-label">Mode of Payment</label>
+                                                            <select class="form-control" name="Type" placeholder="Type" type="text" required>
+                                                                <option>Cash on Hand</option>
+                                                                <option>Bank Deposit</option>
+                                                                <option>Cheque</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                         <div class="col-md-6">
+                                                            <label for="example-number-input" class="col-2 col-form-label">Amount</label>
+                                                            <div class="col-10">
+                                                                <input class="form-control" type="number" value="25,000.00" id="example-number-input">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label for="example-number-input" class="col-2 col-form-label">Gross Amount</label>
+                                                            <div class="col-10">
+                                                                <input class="form-control" type="number" value="30,000.00" id="example-number-input">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label for="example-number-input" class="col-2 col-form-label">Withheld</label>
+                                                            <div class="col-10">
+                                                                <input class="form-control" type="number" value="5.000.00" id="example-number-input">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label for="example-number-input" class="col-2 col-form-label">Remarks</label>
+                                                            <div class="col-10">
+                                                                <input class="form-control" type="textarea" value="Tax Withheld" id="example-number-input">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="panel-footer" style="margin-bottom:-14px;">
+                                                            <input type="submit" class="btn btn-success" value="Add" style="float: right;" />
+                                                            <!--<span class="glyphicon glyphicon-ok"></span>-->
+                                                            <button style="float: right;" type="button" class="btn btn-default btn-close" data-dismiss="modal">Close</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                
                                 <div class="card-content">
-                                    <table id="example" class="display  hover order-column" cellspacing="0" width="100%">
+                                   <table id="example" class="display  hover order-column" cellspacing="0" width="100%">
                                         <thead>
-                                            <tr>
-                                                <th><b>OR No.</b></th>
-                                                <th><b>Date of Payment</b></th>
-                                                <th><b>Client</b></th>
-                                                <th><b>DR No.</b></th>
-                                                <th><b>Amount</b></th>
-                                                <th><b>Remarks</b></th>
-                                                <th><b>Bank</b></th>
-                                            </tr>
+                                            <th><b class="pull-left">Collection Receipt No.</b></th>
+                                            <th><b class="pull-left">Delivery Receipt No.</b></th>
+                                            <th><b class="pull-left">Client</b></th>
+                                            <th><b class="pull-left">Mode of Payment</b></th>
+                                            <th><b class="pull-left">Date Paid</b></th>
+                                            <th><b class="pull-left">Amount</b></th>
+                                            <th><b class="pull-left">Gross Amount</b></th>
+                                            <th><b class="pull-left">Withheld</b></th>
+                                            <th><b class="pull-left">Remarks</b></th>
+                                            <th class="disabled-sorting">Edit</th>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>CR1457</td>
-                                                <td>4-Dec-17</td>
-                                                <td>Mario's Rest. QC</td>
-                                                <td>2964</td>
-                                                <td>11,000.00</td>
-                                                <td></td>
-                                                <td>BPI-REV</td>
-                                            </tr>
-                                            <tr>
-                                                <td>CR1459</td>
-                                                <td>4-Dec-17</td>
-                                                <td>Pizza Volante</td>
-                                                <td>2965</td>
-                                                <td>8,126.30</td>
+                                                <td>C1022</td>
+                                                <td>C1022</td>
+                                                <td>Mario's</td>
+                                                <td>Cash on Hand</td>
+                                                <td>Oct. 2,2017</td>
+                                                <td>25,000.00</td>
+                                                <td>30,000.00</td>
+                                                <td>5,000.00</td>
                                                 <td>Tax Withheld</td>
-                                                <td>BPI-REV</td>
+                                                <td>
+                                                                <a class="btn btn-warning btn-sm" style="margin-top: 0px" data-toggle="modal" data-target="#edit">Edit</a>
+                                                </td>
                                             </tr>
                                             <tr>
-                                                <td>CR1465</td>
-                                                <td>4-Dec-17</td>
-                                                <td>Whiterock Beach Resort</td>
-                                                <td>2960</td>
-                                                <td>45,000.00</td>
+                                                <td>C1023</td>
+                                                <td>C1023</td>
+                                                <td>Boracay</td>
+                                                <td>Bank Deposit</td>
+                                                <td>Oct. 2,2017</td>
+                                                <td>25,000.00</td>
+                                                <td>25,000.00</td>
                                                 <td></td>
-                                                <td>BPI-REV</td>
+                                                <td></td>
+                                                <td>
+                                                                <a class="btn btn-warning btn-sm" style="margin-top: 0px" data-toggle="modal" data-target="#edit">Edit</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>C1024</td>
+                                                <td>C1024</td>
+                                                <td>Bloom Field</td>
+                                                <td>Cheque</td>
+                                                <td>pending</td>
+                                                <td>25,000.00</td>
+                                                <td>35,000.00</td>
+                                                <td>10,000.00</td>
+                                                <td>Tax Withheld</td>
+                                                <td>
+                                                                <a class="btn btn-warning btn-sm" style="margin-top: 0px" data-toggle="modal" data-target="#edit">Edit</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>C1025</td>
+                                                <td>C1025</td>
+                                                <td>Volante</td>
+                                                <td>Cheque</td>
+                                                <td>Oct. 9,2017</td>
+                                                <td>25,000.00</td>
+                                                <td>40,000.00</td>
+                                                <td>15,000.00</td>
+                                                <td>Tax Withheld</td>
+                                                <td>
+                                                                <a class="btn btn-warning btn-sm" style="margin-top: 0px" data-toggle="modal" data-target="#edit">Edit</a>
+                                                </td>
                                             </tr>
                                         </tbody>
                                     </table>
