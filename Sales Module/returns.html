@@ -28,16 +28,18 @@
 		}
 */
 
-    .table thead,
-    thead th {
-        text-align: center;
-        font-size: 140%;
-    }
+		.table thead,
+		thead th {
+			text-align: center;
+			font-size: 120%;
+		}
+		.table tbody, tbody td{
+			text-align: center;
+		}
+		.select-pane {
+			display: none;
+		}
 
-    .table tbody,
-    tbody td {
-        text-align: right;
-    }
     </style>
 </head>
 
@@ -77,7 +79,7 @@
 					<li >
                         <a href="./pendelivery.html">
                             <i class="material-icons">local_shipping</i>
-                            <p>Pending Deliveries</p>
+                            <p>Deliveries</p>
                         </a>
                     </li>
                     <li>
@@ -135,87 +137,337 @@
             </nav>
             <div class="content">
                 <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <div class="card">
-                                <div class="card-header" data-background-color="purple">
-                                    <h2 class="title"><center>Returns</center></h2>
-                                </div>
                                 <div class="card-content table-responsive">
-                                    <a href="./walkinsale.html" class="btn btn-success btn-md pull-right">Add Returns</a>
-                                    
-                                </div>
-                            </div>
+                                    <div class="row">
+										<div class="col-sm-12">
+											<div class="card card-nav-tabs">
+												<div class="card-header" data-background-color="purple">
+													<div class="nav-tabs-navigation">
+														<div class="nav-tabs-wrapper">
+															<ul class="nav nav-tabs" data-tabs="tabs">
+																<li class="active">
+																	<a href="#purchaseorder" data-toggle="tab">
+																		<i class="material-icons">assignment_return</i> Returns
+																		<div class="ripple-container"></div>
+																	</a>
+																</li>
+																<li class="">
+																	<a href="#deliveries" data-toggle="tab">
+																		<i class="material-icons">assignment_turned_in</i> Resolved
+																		<div class="ripple-container"></div>
+																	</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<div class="card-content">
+													<div class="tab-content">
+														<div class="tab-pane active" id="purchaseorder">
+															<br>
+															<br>
+															<div class="card-header btn btn-primary btn-lg" data-background-color="green" data-toggle="modal" data-target="#addreturn" data-original-title style="float:right;">
+																Add Return
+															</div>
+															<br>
+															<br>
+															 <table id="fresh-datatables" class="display table-striped table-hover cell-border" cellspacing="0" width="100%" style="width:100%">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th><b>Client Return No.</b></th>
+                                                                    <th><b>Date of Return</b></th>
+                                                                    <th><b>Quantity Returned</b></th>
+                                                                    <th><b>Client</b></th>
+                                                                    <th><b>Coffee</b></th>
+                                                                    <th><b>Bag</b></th>
+                                                                    <th><b>Grams</b></th>
+                                                                    <th><b>Remarks</b></th>
+                                                                    <th><b>Actions</b></th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>00001</td>
+                                                                    <td>October 1, 2017</td>
+																	<td>3</td>
+                                                                    <td>Client 1</td>
+                                                                    <td>Sumatra Night</td>
+                                                                    <td>Clear Bag</td>
+                                                                    <td>250 g</td>
+                                                                    
+                                                                    <td>Incorrect Blend</td>
+                                                                    <td>
+                                                                        <button class="btn btn-danger btn-sm" style="margin-top: 0px" data-toggle="modal" data-target="#resolve">Resolve</button>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>00002</td>
+                                                                    <td>October 3, 2017</td>
+																	<td>2</td>
+                                                                    <td>Client 2</td>
+                                                                    <td>Guatemala Rainforest</td>
+                                                                    <td>Brown Bag</td>
+                                                                    <td>500 g</td>
+                                                                    
+                                                                    <td>Incorrect Blend</td>
+                                                                    <td>
+                                                                        <button class="btn btn-danger btn-sm" style="margin-top: 0px" data-toggle="modal" data-target="#resolve">Resolve</button>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>00003</td>
+                                                                    <td>October 5, 2017</td>
+																	<td>1</td>
+                                                                    <td>Client 3</td>
+                                                                    <td>Cordillera Sunrise</td>
+                                                                    <td>Clear Bag</td>
+                                                                    <td>1000 g</td>
+                                                                    
+                                                                    <td>Incorrect Blend</td>
+                                                                    <td>
+                                                                        <button class="btn btn-danger  btn-sm" style="margin-top: 0px" data-toggle="modal" data-target="#resolve">Resolve</button>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+														</div>
+														<div class="tab-pane" id="deliveries">
+															<table id="" class="display hover order-column cell-border" cellspacing="0" width="100%">
+																<thead>
+																	<th><b>Client Return No.</b></th>
+																	<th><b class="pull-left">Delivery Receipt No.</b></th>
+																	<th><b class="pull-left">Date Delivered</b></th>
+																	<th><b class="pull-left">Coffee</b></th>
+																	<th><b class="pull-left">Bag</b></th>
+																	<th><b class="pull-left">Size</b></th>
+																	<th><b class="pull-left">Quantity Delivered</b></th>
+																	<th><b class="pull-left">Unit Price</b></th>
+																	<th><b class="pull-left">Total Amount</b></th>
+																	<th><b>Received By</b></th>
+																	<th>Remarks</th>
+																</thead>
+																<tbody>
+																	<tr>
+																		<td>1946</td>
+																		<td>3246</td>
+																		<td>September 31, 2017</td>
+																		<td>Farmers Ground</td>
+																		<td>Brown</td>
+																		<td>250g</td>
+																		<td>175</td>
+																		<td>160</td>
+																		<td>Php 28,000.00</td>
+																		<td>Robin Hod</td>
+																		<th></th>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!--modal body-->
-            <div class="modal fade" id="myModal">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title">FEMI</h4>
-                        </div>
-                        <div class="modal-body">
-                            <p>Date Receivable Started: </p>
-                            <p>Due Date: </p>
-                            <br>
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th>Total Amount</th>
-                                        <th>Current Month (november)</th>
-                                        <th>October</th>
-                                        <th>September</th>
-                                        <th>August</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <td>0.00</td>
-                                    <td>0.00</td>
-                                    <td>0.00</td>
-                                    <td>0.00</td>
-                                    <td>0.00</td>
-                                </tbody>
-                            </table>
-                            <hr>
-                            <br>
-                            <p>
-                                <center><a class="btn btn-primary" data-toggle="collapse" href="#collapsePayment" aria-expanded="false" aria-controls="collapseExample">blah ...</a></center>
-                            </p>
-                            <div class="collapse" id="collapsePayment">
-                                <div class="card-block">
-                                    <form action="#" method="post" accept-charset="utf-8">
-                                        <div class="modal-body" style="padding: 5px;">
-                                            <div class="row">
-                                                <div class="col-lg-12 col-md-12 col-sm-12" style="padding-bottom: 20px;">
-                                                    <div class="form-group">
-                                                        <div class="col-xs-5 date">
-                                                            <div class="input-group input-append date" id="datePicker">
-                                                                <input type="text" class="form-control" name="date" />
-                                                                <span class="input-group-addon add-on"><span class="glyphicon glyphicon-calendar"></span></span>
-                                                            </div>
-                                                        </div>
+			 <div class="modal fade" id="resolve" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
+							<div class="modal-dialog modal-md">
+								<div class="panel panel-primary">
+									<div class="panel-heading">
+										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+										<h4 class="panel-title" id="contactLabel"><center>Returns</center></h4>
+									</div>
+									<form action="#" method="post" accept-charset="utf-8">
+										<div class="modal-body" style="padding: 5px;">
+                                        <div class="row">
+                                            <div class="col-lg-7">
+												<div class="row">
+													<div class="form-group">
+														<label class="col-md-5 control">Coffee Blend :</label>
+														<div class="col-md-7">
+															<p><b>SUMATRA NIGHT</b></p>
+														</div>
+													</div>
+													<div class="form-group">
+														<label class="col-md-5 control">Size :</label>
+														<div class="col-md-5">
+															<p><b>500g</b></p>
+														</div>
+													</div>
+												</div>
+												<div class="row">
+													<div class="form-group">
+														<label class="col-md-5 control">Bag :</label>
+														<div class="col-md-6">
+															<p><b>Clear</b></p>
+														</div>
+													</div>
+													<div class="form-group">
+														<label class="col-md-5 control">Quantity :</label>
+														<div class="col-md-6">
+															<p><b>3</b></p>
+														</div>
+													</div>
+												</div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label class="col-md-6 control">Delivery Receipt No :</label>
+                                                    <div class="col-md-6">
+                                                        <input id="" name="name" type="text" class="form-control">
                                                     </div>
-                                                    <div class="row">
-                                                        <div class="col-lg-12 col-md-12 col-sm-12" style="padding-bottom: 20px;">
-                                                            <input class="form-control" name="coffeeType" placeholder="Amount" type="text" required />
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label class="col-md-6 control">Date of Delivery :</label>
+                                                    <div class="col-md-6">
+                                                        <input class="form-control" name="coffeeType" placeholder="Date" type="date" required />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+										<div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label class="col-md-5 control">Received by :</label>
+                                                    <div class="col-md-7">
+                                                        <input id="" name="name" type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label class="col-md-6 control">Delivery status:</label>
+                                                    <div class="col-md-6">
+                                                        <select class="form-control nav">
+                                                            <option value="">Full Deivery</option>
+                                                            <option value="delivery">Partial Delivery</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+										</div>
+                                        <div class="row">
+                                            <div class="col-lg-2 col-md-2 col-sm-2"></div>
+                                            <div class="col-lg-8 col-md-8 col-sm-8 ">
+                                                <div class="select-pane " id="delivery">
+                                                    <div class="form-group">
+                                                        <label class="col-md-6 control">Quantity Delivered:</label>
+                                                        <div class="col-md-5">
+                                                            <input class="form-control" type="text" name="" placeholder="2">
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <input type="submit" class="btn btn-success" value="Save" />
-                                                <input type="reset" class="btn btn-warning" value="Cancel" />
+                                            </div>
+                                            <div class="col-lg-2 col-md-2 col-sm-2"></div>
+                                            <div class="col-lg-8 col-md-8 col-sm-8 ">
+                                                <div class="select-pane" id="delivery">
+                                                    <div class="form-group">
+                                                        <label class="col-md-6 control">Remaining Quantity: </label>
+                                                        <div class="col-md-5">
+                                                            <p><b>1</b></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                                    </div>
+										<div class="panel-footer" align="center">
+											<input type="submit" class="btn btn-success" value="Add" />
+											<input type="reset" class="btn btn-warning" value="Clear" />
+										</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="modal fade" id="addreturn" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
+									<div class="modal-dialog modal-md">
+										<div class="panel panel-primary">
+											<div class="panel-heading">
+												<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+												<h4 class="panel-title" id="contactLabel"><center>Returns</center></h4>
+											</div>
+											<form action="#" method="post" accept-charset="utf-8">
+												<div class="modal-body" style="padding: 5px;">
+												<div class="row">
+													<div class="col-lg-6">
+														<div class="form-group">
+															<label class="col-md-6 control">Date of Return :</label>
+															<div class="col-md-6">
+																<input class="form-control" name="coffeeType" placeholder="Date" type="date" required />
+															</div>
+														</div>
+													</div>
+													<div class="col-lg-6">
+														<div class="form-group">
+															<label class="col-md-6 control">Quantity Returned :</label>
+															<div class="col-md-6">
+																<input class="form-control" name="coffeeType" placeholder="Date" type="date" required />
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-lg-6">
+														<div class="form-group">
+															<label class="col-md-4 control">Client Name :</label>
+															<div class="col-md-7">
+																<input class="form-control" name="coffeeType" type="text" required />
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-lg-6">
+														<div class="form-group">
+															<label class="col-md-4 control">Coffee :</label>
+															<div class="col-md-7">
+																<input id="" name="name" type="text" class="form-control" required />
+															</div>
+														</div>
+													</div>
+													<div class="col-lg-6">
+														<div class="form-group">
+															<label class="col-md-3 control">Bag :</label>
+															<div class="col-md-6">
+																<input id="" name="name" type="text" class="form-control">
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-lg-6">
+															<div class="form-group">
+																<label class="col-md-4 control">Size:</label>
+																<div class="col-md-6">
+																	<input class="form-control" type="text" name="">
+																</div>
+															</div>
+													</div>
+													<div class="col-lg-6">
+															<div class="form-group">
+																<label class="col-md-6 control">Remarks: </label>
+																<div class="col-md-12">
+																	<input class="form-control" type="text" name="">
+																</div>
+															</div>
+													</div>
+												</div>
+											</div>
+												<div class="panel-footer" align="center">
+													<input type="submit" class="btn btn-success" value="Add" />
+													<input type="reset" class="btn btn-warning" value="Clear" />
+												</div>
+									</form>
+								</div>
+							</div>
+						</div>
+
             <footer class="footer">
                 <div class="container-fluid">
                     <nav class="pull-left">
@@ -277,50 +529,41 @@
 <script src="../assets/js/demo.js"></script>
 <script type="text/javascript">
 $(document).ready(function() {
-    $('#example').DataTable();
+    $('table.display').DataTable({
+			"ordering": false
+		});
+
+	$('table tbody tr  td').on('click', function() {
+		$("#myModal").modal("show");
+		$("#txtfname").val($(this).closest('tr').children()[0].textContent);
+		$("#txtlname").val($(this).closest('tr').children()[1].textContent);
+	});
+	$('#datePicker')
+		.datepicker({
+			format: 'mm/dd/yyyy'
+		})
+		.on('changeDate', function(e) {
+			$('#eventForm').formValidation('revalidateField', 'date');
+		});
 });
 
-$('table tbody tr  td').on('click', function() {
-    $("#myModal").modal("show");
-    $("#txtfname").val($(this).closest('tr').children()[0].textContent);
-    $("#txtlname").val($(this).closest('tr').children()[1].textContent);
-});
-$('#datePicker')
-    .datepicker({
-        format: 'mm/dd/yyyy'
-    })
-    .on('changeDate', function(e) {
-        $('#eventForm').formValidation('revalidateField', 'date');
-    });
 
-$('#eventForm').formValidation({
-    framework: 'bootstrap',
-    icon: {
-        valid: 'glyphicon glyphicon-ok',
-        invalid: 'glyphicon glyphicon-remove',
-        validating: 'glyphicon glyphicon-refresh'
-    },
-    fields: {
-        name: {
-            validators: {
-                notEmpty: {
-                    message: 'The name is required'
-                }
-            }
-        },
-        date: {
-            validators: {
-                notEmpty: {
-                    message: 'The date is required'
-                },
-                date: {
-                    format: 'MM/DD/YYYY',
-                    message: 'The date is not a valid'
-                }
-            }
-        }
-    }
-});
+</script>
+<script type="text/javascript">
+$(document).on('change', 'select.nav', function() {
+    var $this = this;
+    var target = $this.value;
+    $('div.select-pane').hide();
+    $('div[id="' + target + '"]').show();
+})
+
+$(document).on('click', '.series-select', function() {
+    var $this = this;
+    var txt = $this.text + '<span class="caret"></span>';
+    $($this).closest('li.dropdown').find('a.dropdown-toggle').html(txt);
+
+
+})
 </script>
 
 </html>
