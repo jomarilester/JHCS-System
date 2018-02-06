@@ -172,12 +172,6 @@ thead th {
                         </a>
                     </li>
                     <li>
-                        <a href="./purchaseOrder.html">
-                            <i class="material-icons">motorcycle</i>
-                            <p>Purchase Orders</p>
-                        </a>
-                    </li>
-                    <li>
                         <a href="./accounts.html">
                             <i class="material-icons">account_circle</i>
                             <p>User Accounts</p>
@@ -245,6 +239,70 @@ thead th {
                     </div>
                 </div>
             </nav>
+        
+        <div class="modal fade" id="contact" tabindex="1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h4 class="panel-title" id="contactLabel"><span class="glyphicon glyphicon-info-sign" ></span> Create New Account</h4>
+                        </div>
+                        <form action="#" method="post" accept-charset="utf-8">
+                            <div class="modal-body" style="padding-left: 100px;">
+                                <h6> Personal Information </h6>
+                                <div class="row">
+                                    <div class="col-lg-10 col-md-6 col-sm-6" style="padding-bottom: 15px;">
+                                        <input class="form-control" name="client" placeholder="Client" type="text" required autofocus />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-10 col-md-6 col-sm-6" style="padding-bottom: 15px;">
+                                        <input class="form-control" name="contactpersonnel" placeholder="Contact Personnel" type="text" required />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div>
+                                        <div class="col-lg-10 col-md-6 col-sm-6" style="padding-bottom: 15px;">
+                                            <input class="form-control" name="position " placeholder="Position" type="text" required />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-10 col-md-6 col-sm-6" style="padding-bottom: 15px;">
+                                        <input class="form-control" name="email" placeholder="Email" type="text" required />
+                                    </div>
+                                </div>
+                                 <div class="row">
+                                    <div class="col-lg-10 col-md-6 col-sm-6" style="padding-bottom: 15px;">
+                                        <input class="form-control" name="tel number" placeholder="Telephone Number" type="text" required />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-10 col-md-12 col-sm-12">
+                                        <textarea style="resize:vertical;" class="form-control" placeholder="Address" rows="2" name="address" required></textarea>
+                                    </div>
+                                </div>
+                                <h6> Product </h6>
+                                <div class="row">
+                                    <div class="col-lg-10 col-md-6 col-sm-6" style="padding-bottom: 15px;">
+                                        <select class="form-control" name="position" placeholder="Client Type" type="text" required>
+                                            <option>Wholesale</option>
+                                            <option>Retail</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-footer" style="margin-bottom:-14px;">
+                                <input type="submit" class="btn btn-success" value="Add" />
+                                <!--<span class="glyphicon glyphicon-ok"></span>-->
+                                <input type="reset" class="btn btn-danger" value="Clear" />
+                                <!--<span class="glyphicon glyphicon-remove"></span>-->
+                                <button style="float: right;" type="button" class="btn btn-default btn-close" data-dismiss="modal">Close</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         
          <div class="modal fade" id="edit" tabindex="1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
                                     <div class="modal-dialog">
@@ -320,9 +378,12 @@ thead th {
             <div class="content" style="margin-top: 0px;">
                 <div class="container-fluid">
                     <div class="card">
-                        <div class="card-header" data-background-color="green">
-                            <h4 class="title">List of Clients</h4>
-                        </div>
+                         <div class="card-header " data-background-color="green">
+                                <h4 class="title">List of Clients
+                                     <a class="btn btn-info btn-lg" data-toggle="modal" data-target="#contact" data-original-title style="float: right; margin-right: 30px; margin-top: -12px; ">
+                                    Create New Account
+                                    </a></h4>
+                            </div>
                         <div class="card-content table-responsive">
                             <div class="col-md-12 col-md-offset-0">
                                 <div class="fresh-datatables">
@@ -331,14 +392,14 @@ thead th {
                                     <table id="fresh-datatables" class="table table-striped table-no-bordered table-hover" cellspacing="0" width="100%" style="width:100%">
                                         <thead>
                                             <tr>
-                                                <th><b>Client Number</b></th>
+                                                <th><b>Client No.</b></th>
                                                 <th><b>Client</b></th>
                                                 <th><b>Client Type</b></th>
                                                 <th><b>Contact Personnel</b></th>
                                                 <th><b>Position</b></th>
                                                 <th><b>Address</b></th>
                                                 <th><b>Email</b></th>
-                                                <th><b>Telephone Number</b></th>
+                                                <th><b>Telephone No.</b></th>
                                                 <th><b class="pull-left">Activation</b></th>
                                                 <th><b class="pull-left">Contract</b></th>
                                                 <th class="disabled-sorting"><b>Edit</b></th>
@@ -364,7 +425,7 @@ thead th {
                                                         </label>
                                                     </div>
                                                 </td>
-                                                <td><a href="./contract.html" class="btn btn-sm btn-round" size="25">View Contract</a></td>
+                                                <td><a href="./contract.html" class="btn btn-sm btn-round" size="25">View<br> Contract</a></td>
                                                  <td>
                                                                 <a class="btn btn-warning btn-sm" style="margin-top: 0px" data-toggle="modal" data-target="#edit">Edit</a>
                                                 </td>
@@ -387,7 +448,7 @@ thead th {
                                                         </label>
                                                     </div>
                                                 </td>
-                                                <td><a href="./contract.html" class="btn btn-sm btn-round" size="25">View Contract</a></td>
+                                                <td><a href="./contract.html" class="btn btn-sm btn-round" size="25">View<br> Contract</a></td>
                                                  <td>
                                                                 <a class="btn btn-warning btn-sm" style="margin-top: 0px" data-toggle="modal" data-target="#edit">Edit</a>
                                                 </td>
@@ -410,7 +471,7 @@ thead th {
                                                         </label>
                                                     </div>
                                                 </td>
-                                                <td><a href="./contract.html" class="btn btn-sm btn-round" size="25">View Contract</a></td>
+                                                <td><a href="./contract.html" class="btn btn-sm btn-round" size="25">View<br> Contract</a></td>
                                                  <td>
                                                                 <a class="btn btn-warning btn-sm" style="margin-top: 0px" data-toggle="modal" data-target="#edit">Edit</a>
                                                 </td>
@@ -433,7 +494,7 @@ thead th {
                                                         </label>
                                                     </div>
                                                 </td>
-                                                <td><a href="./contract.html" class="btn btn-sm btn-round" size="25">View Contract</a></td>
+                                                <td><a href="./contract.html" class="btn btn-sm btn-round" size="25">View<br> Contract</a></td>
                                                  <td>
                                                                 <a class="btn btn-warning btn-sm" style="margin-top: 0px" data-toggle="modal" data-target="#edit">Edit</a>
                                                 </td>
