@@ -63,7 +63,7 @@
 					<li >
                         <a href="./pendelivery.html">
                             <i class="material-icons">local_shipping</i>
-                            <p>Pending Deliveries</p>
+                            <p>Deliveries</p>
                         </a>
                     </li>
                     <li>
@@ -222,11 +222,7 @@
                                                         <td>320.00</td>
                                                         <td>25,600.00</td>
                                                         <td>November 24, 2017</td>
-                                                        <td>
-                                                            <center>
-                                                                <div class=" btn btn-primary btn-xs" data-background-color="red" data-toggle="modal" data-target="#pending" data-original-title>pending</div>
-                                                            </center>
-                                                        </td>
+                                                        <td>pending</td>
                                                     </tr>
                                                     <tr>
                                                         <td>PO2564</td>
@@ -238,11 +234,7 @@
                                                         <td>320.00</td>
                                                         <td>25,600.00</td>
                                                         <td>November 24, 2017</td>
-                                                        <td>
-                                                            <center>
-                                                                <div class=" btn btn-warning btn-xs" data-background-color="yellow" data-toggle="modal" data-target="#pending" data-original-title>partial</div>
-                                                            </center>
-                                                        </td>
+                                                        <td>partial</td>
                                                     </tr>
                                                     <tr>
                                                         <td>PO2565</td>
@@ -254,9 +246,7 @@
                                                         <td>320.00</td>
                                                         <td>25,600.00</td>
                                                         <td>November 24, 2017</td>
-                                                        <td>
-                                                            <center>Delivered</center>
-                                                        </td>
+                                                        <td>Delivered</td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -290,11 +280,7 @@
                                                         <td>160</td>
                                                         <td>Php 28,000.00</td>
                                                         <td>Robin Hod</td>
-                                                        <td>
-                                                            <center>
-                                                                <button type="button" class="btn btn-warning btn-xs" data-toggle="modal" data-target="#drbalance">Unpaid</button>
-                                                            </center>
-                                                        </td>
+                                                        <td>Unpaid</td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -327,9 +313,7 @@
                                                         <td>CR0503</td>
                                                         <td>DR0503</td>
                                                         <td>Cheque</td>
-                                                        <td>
-                                                            <button type="button" class="btn btn-warning btn-xs" data-toggle="modal" data-target="#pendingcheque">Pending</button>
-                                                        </td>
+                                                        <td>Pending</td>
                                                         <td>50,000.00</td>
                                                         <td>50,000.00</td>
                                                         <td></td>
@@ -552,137 +536,6 @@
                             </div>
                         </div>
                     </div>
-                    <!--modal for pending delivery-->
-                    <div class="modal fade" id="pending" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="panel panel-primary">
-                                <div class="panel-heading">
-                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                                    <h4 class="panel-title" id="contactLabel"><center>Delivery</center></h4>
-                                </div>
-                                <form action="#" method="post" accept-charset="utf-8">
-                                    <div class="modal-body" style="padding: 5px;">
-                                        <div class="row">
-                                            <div class="col-lg-7">
-                                                <div class="form-group">
-                                                    <label class="col-md-5 control">Coffee Blend :</label>
-                                                    <div class="col-md-7">
-                                                        <p><b>Farmer's Blend Coffee</b></p>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label class="col-md-5 control">Size :</label>
-                                                    <div class="col-md-5">
-                                                        <p><b>500g</b></p>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label class="col-md-5 control">Quantity :</label>
-                                                    <div class="col-md-6">
-                                                        <p><b>80</b></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-lg-5">
-                                                    <div class="form-group">
-                                                        <label class="col-md-5 control">Unit Price :</label>
-                                                        <div class="col-md-7">
-                                                            <p><b>320.00</b></p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label class="col-md-5 control">Total Amount :</label>
-                                                        <div class="col-md-5">
-                                                            <p><b>25,600.00</b></p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <hr>
-                                        <div class="row">
-                                            <div class="col-lg-5">
-                                                <div class="form-group">
-                                                    <label class="col-md-6 control">Delivery Receipt No :</label>
-                                                    <div class="col-md-5">
-                                                        <input id="" name="name" type="text" class="form-control">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-7">
-                                                <div class="form-group">
-                                                    <label class="col-md-6 control">Date of Delivery :</label>
-                                                    <div class="col-md-6">
-                                                        <input class="form-control" name="coffeeType" placeholder="Date" type="date" required />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-lg-5">
-                                                <div class="form-group">
-                                                    <label class="col-md-6 control">Sales Invoice No. :</label>
-                                                    <div class="col-md-5">
-                                                        <input id="" name="name" type="text" class="form-control">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-7">
-                                                <div class="form-group">
-                                                    <label class="col-md-5 control">Received by :</label>
-                                                    <div class="col-md-7">
-                                                        <input id="" name="name" type="text" class="form-control">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-7">
-                                                <div class="form-group">
-                                                    <label class="col-md-6 control">Delivery status:</label>
-                                                    <div class="col-md-6">
-                                                        <select class="form-control nav">
-                                                            <option value="">Full Deivery</option>
-                                                            <option value="delivery">Partial Delivery</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-lg-2 col-md-2 col-sm-2"></div>
-                                            <div class="col-lg-8 col-md-8 col-sm-8 ">
-                                                <div class="select-pane " id="delivery">
-                                                    <div class="form-group">
-                                                        <label class="col-md-6 control">Quantity Delivered:</label>
-                                                        <div class="col-md-5">
-                                                            <input class="form-control" type="text" name="" placeholder="50">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-lg-2 col-md-2 col-sm-2"></div>
-                                            <div class="col-lg-8 col-md-8 col-sm-8 ">
-                                                <div class="select-pane" id="delivery">
-                                                    <div class="form-group">
-                                                        <label class="col-md-6 control">Remaining Quantity: </label>
-                                                        <div class="col-md-5">
-                                                            <p><b>30</b></p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="panel-footer" align="center">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                        <button type="submit" class="btn btn-success">Save</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
                     <!--modal for checkbalance-->
                     <div class="modal fade" id="balance" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
                         <div class="modal-dialog">
@@ -808,116 +661,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- modal of pending cheque -->
-                    <div class="modal fade" id="pendingcheque" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="panel panel-primary">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title" id="contactLabel"><center>Clear Cheque</center> </h4>
-                                </div>
-                                <div class="modal-body" style="padding: 5px;">
-                                    <div class="card-block">
-                                        <form action="#" method="post" accept-charset="utf-8">
-                                            <div class="modal-body" style="padding: 5px;">
-                                                <div class="row">
-                                                    <div class="col-lg-12 col-md-12 col-sm-12" style="padding-bottom: 20px;">
-                                                        <div class="form-group label-floating">
-                                                            <div class="form-group">
-                                                                <div class="row">
-                                                                    <div class="col-md-6 col-sm-6 offset-3">
-                                                                        <div class="form-group label-floating">
-                                                                            <label for="email">Date Paid:</label>
-                                                                            <input class="form-control" type="date" name="">
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <center>
-                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                            <button type="submit" class="btn btn-success">Save</button>
-                                                        </center>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- modal of unpaid -->
-                    <div class="modal fade" id="drbalance" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="panel panel-primary">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title" id="contactLabel"><center>Payment</center> </h4>
-                                </div>
-                                <div class="modal-body" style="padding: 5px;">
-                                    <div class="card-block">
-                                        <form action="#" method="post" accept-charset="utf-8">
-                                            <div class="modal-body" style="padding: 5px;">
-                                                <div class="row">
-                                                    <div class="col-lg-12 col-md-12 col-sm-12" style="padding-bottom: 20px;">
-                                                        <div class="form-group label-floating">
-                                                            <div class="form-group">
-                                                                <div class="row">
-                                                                    <div class="col-md-8">
-                                                                        <div class="form-group label-floating">
-                                                                            <label for="email">Date Paid:</label>
-                                                                            <input class="form-control" type="date" name="">
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-md-4">
-                                                                        <div class="form-group label-floating">
-                                                                            <label for="email">Collection Receipt No.:</label>
-                                                                            <input class="form-control" type="text" name="">
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="row">
-                                                                    <div class="col-md-5">
-                                                                        <div class="form-group label-floating">
-                                                                            <label>Amount:</label>
-                                                                            <input class="form-control" type="number" name="">
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-md-7">
-                                                                        <div class="form-group label-floating">
-                                                                            <label>Remarks:</label>
-                                                                            <input class="form-control" type="text" name="">
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="row">
-                                                                    <div class="col-md-6">
-                                                                        <div class="form-group label-floating">
-                                                                            <label>MOD:</label>
-                                                                            <select class="form-control">
-                                                                                <option>Cash on hand</option>
-                                                                                <option>Bank deposit</option>
-                                                                                <option>Cheque</option>
-                                                                            </select>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <center>
-                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                            <button type="submit" class="btn btn-success">Save</button>
-                                                        </center>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+ 
             <footer class="footer">
                 <div class="container-fluid">
                     <nav class="pull-left">
