@@ -976,25 +976,23 @@
 <!-- Material Dashboard DEMO methods, don't include it in your project! -->
 <script src="../assets/js/demo.js"></script>
 <script type="text/javascript">
-$(document).ready(function() {
-    $('table.display').DataTable({
-        "ordering": false
+	$(document).ready(function() {
+		$('table.display').DataTable({
+			"ordering": false
+		});
 
 
-    });
+		$('#datePicker')
 
+			.datepicker({
+				format: 'mm/dd/yyyy'
+			})
+			.on('changeDate', function(e) {
+				// Revalidate the date field
+				$('#eventForm').formValidation('revalidateField', 'date');
+			});
 
-    $('#datePicker')
-
-        .datepicker({
-            format: 'mm/dd/yyyy'
-        })
-        .on('changeDate', function(e) {
-            // Revalidate the date field
-            $('#eventForm').formValidation('revalidateField', 'date');
-        });
-
-});
+	});
 </script>
 <script type="text/javascript">
 $(document).ready(function() {
