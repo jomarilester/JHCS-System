@@ -129,6 +129,135 @@
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="card">
+                                <div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="panel panel-primary">
+                                            <div class="panel-heading" >
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                                <h4 class="panel-title" id="contactLabel"><span class="glyphicon glyphicon-info-sign"></span> Change Price of Current Blend</h4>
+                                            </div>
+                                            <form action="#" method="post" accept-charset="utf-8">
+                                                <div class="modal-body" style="padding: 5px;">
+                                                    <div class="row">
+                                                        <div class="col-md-6 form-group">
+                                                            <div class="form-group label-floating">
+                                                                
+                                                                <label for="email">Old Price (Peso)</label>
+                                                                <input class="form-control" type="number" name="" placeholder=""/>
+                  
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 form-group">
+                                                            <div class="form-group label-floating">
+                                                                
+                                                                <label for="email">New Price (Peso)</label>
+                                                                <input class="form-control" type="number" name="" placeholder=""/>
+                  
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    
+                                                    <div class="row">
+                                                    </div>
+                                                </div>
+                                                <div class="panel-footer" style="margin-bottom:-14px;">
+                                                    <input type="submit" class="btn btn-success" value="Change Price" />
+                                                    <!--<span class="glyphicon glyphicon-ok"></span>-->
+                                                    
+                                                    <!--<span class="glyphicon glyphicon-remove"></span>-->
+                                                    <button style="float: right;" type="button" class="btn btn-default btn-close" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal fade" id="newblend" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="panel panel-primary">
+                                            <div class="panel-heading" >
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                                <h4 class="panel-title" id="contactLabel"><span class="glyphicon glyphicon-info-sign"></span> Add New Blend </h4>
+                                            </div>
+                                            <form action="#" method="post" accept-charset="utf-8">
+                                                <div class="modal-body" style="padding: 5px;">
+                                                    <div class="row">
+                                                        <div class="col-md-6 form-group">
+                                                            <div class="form-group label-floating">
+                                                                <label for="email">Blend Name</label>
+                                                                <input class="form-control" type="text" name="" placeholder="" />
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    
+                                                        
+                                                        <div class="col-lg-6 form-group">
+                                                            <div class="form-group label-floating">
+                                                                <label for="email">Price Per Unit</label>
+                                                                <input class="form-control" type="number" name="" placeholder="" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <hr>
+                                                    <h3><b><center>Proportions</center></b><h3>
+                                                     <div class="row">
+                                                        <div class="col-md-6 form-group">
+                                                            <div class="form-group label-floating">
+                                                                <label for="email">Coffee A</label>
+                                                                <input class="form-control" type="number" name="" placeholder="grams" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 form-group">
+                                                            <div class="form-group label-floating">
+                                                                <label for="email">Coffee B</label>
+                                                                <input class="form-control" type="number" name="" placeholder="grams" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6 form-group">
+                                                            <div class="form-group label-floating">
+                                                                <label for="email">Coffee C</label>
+                                                                <input class="form-control" type="number" name="" placeholder="grams" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 form-group">
+                                                            <div class="form-group label-floating">
+                                                                <label for="email">Coffee D</label>
+                                                                <input class="form-control" type="number" name="" placeholder="grams" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6 form-group">
+                                                            <div class="form-group label-floating">
+                                                                <label for="email">Coffee E</label>
+                                                                <input class="form-control" type="number" name="" placeholder="grams" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 form-group">
+                                                            <div class="form-group label-floating">
+                                                                <label for="email">Coffee F</label>
+                                                                <input class="form-control" type="number" name="" placeholder="grams" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    
+                                                    <div class="row">
+                                                    </div>
+                                                </div>
+                                                <div class="panel-footer" style="margin-bottom:-14px;">
+                                                    <input type="submit" class="btn btn-success" value="Add" />
+                                                    <!--<span class="glyphicon glyphicon-ok"></span>-->
+                                                    <input type="reset" class="btn btn-danger" value="Clear" />
+                                                    <!--<span class="glyphicon glyphicon-remove"></span>-->
+                                                    <button style="float: right;" type="button" class="btn btn-default btn-close" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="card-header" data-background-color="green">
                                     <div class="nav-tabs-navigation">
                                         <div class="nav-tabs-wrapper">
@@ -178,6 +307,7 @@
                                     </div>
                                 </div>
                                 <div class="card-content">
+                                    <a class="btn btn-success" data-toggle="modal" data-target="#newblend" data-original-title style="float: right">Add New Blend</a>
                                     <table id="example" class="table hover order-column" cellspacing="0" width="100%">
                                         <thead>
                                             <th><b class="pull-left">Type of Blend</b></th>
@@ -185,8 +315,9 @@
                                             <th><b class="pull-left">Raw Coffee B</b></th>
                                             <th><b class="pull-left">Raw Coffee C</b></th>
                                             <th><b class="pull-left">Raw Coffee D</b></th>
-                                            <th><b class="pull-left">Raw Coffee A</b></th>
+                                            <th><b class="pull-left">Raw Coffee E</b></th>
                                             <th><b class="pull-left">Raw Coffee F</b></th>
+                                            <th><b class="pull-left">Action</b></th>
                                         </thead>
                                         <tbody>
                                             <tr>
@@ -197,6 +328,7 @@
                                                 <td>20%</td>
                                                 <td></td>
                                                 <td></td>
+                                                <td> <a class="btn btn-success" data-toggle="modal" data-target="#contact" data-original-title >Change Price</a></td>
                                             </tr>
                                             <tr>
                                                 <td>Blend B</td>
@@ -206,6 +338,7 @@
                                                 <td>50%</td>
                                                 <td>10%</td>
                                                 <td>20%</td>
+                                                <td> <a class="btn btn-success" data-toggle="modal" data-target="#contact" data-original-title >Change Price</a></td>
                                             </tr>
                                             <tr>
                                                 <td>Blend C</td>
@@ -215,6 +348,7 @@
                                                 <td>50%</td>
                                                 <td></td>
                                                 <td>40%</td>
+                                                <td> <a class="btn btn-success" data-toggle="modal" data-target="#contact" data-original-title >Change Price</a></td>
                                             </tr>
                                             <tr>
                                                 <td>Blend D</td>
@@ -224,6 +358,7 @@
                                                 <td>20%</td>
                                                 <td>10%</td>
                                                 <td></td>
+                                                <td> <a class="btn btn-success" data-toggle="modal" data-target="#contact" data-original-title >Change Price</a></td>
                                             </tr>
                                             <tr>
                                                 <td>Blend E</td>
@@ -233,6 +368,7 @@
                                                 <td></td>
                                                 <td>20%</td>
                                                 <td>10%</td>
+                                                <td> <a class="btn btn-success" data-toggle="modal" data-target="#contact" data-original-title >Change Price</a></td>
                                             </tr>
                                             <tr>
                                                 <td>Blend F</td>
@@ -242,6 +378,7 @@
                                                 <td></td>
                                                 <td>30%</td>
                                                 <td></td>
+                                                <td> <a class="btn btn-success" data-toggle="modal" data-target="#contact" data-original-title >Change Price</a></td>
                                             </tr>
                                             <tr>
                                                 <td>Blend G</td>
@@ -251,6 +388,7 @@
                                                 <td>30%</td>
                                                 <td></td>
                                                 <td></td>
+                                                <td> <a class="btn btn-success" data-toggle="modal" data-target="#contact" data-original-title >Change Price</a></td>
                                             </tr>
                                             <tr>
                                                 <td>Blend H</td>
@@ -260,6 +398,7 @@
                                                 <td>30%</td>
                                                 <td>20%</td>
                                                 <td></td>
+                                                <td> <a class="btn btn-success" data-toggle="modal" data-target="#contact" data-original-title >Change Price</a></td>
                                             </tr>
                                         </tbody>
                                     </table>
