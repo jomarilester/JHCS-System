@@ -182,57 +182,67 @@ thead th {
       
         
         
-            <div class="modal fade" id="blend1" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
+            <div class="modal fade" id="full" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg">
                     <div class="panel panel-primary">
                         <form action="#" method="post" accept-charset="utf-8">
                             <div class="modal-body" style="padding: 5px;">
                                 <div id="page-wrapper">
                                     <div class="table-responsive">
-                                        <center><b>Supplier 2</b>
+                                        <center><b>Record Full Delivery</b>
                                             <br>
-                                            <b>1/31/18</b></center>
-                                        <table class="table table-striped" id="table-mutasi">
-                                            <thead>
-                                                <tr>
-                                                    <th>Item Name</th>
-                                                    <th>Type</th>
-                                                    <th>Original Weight(g)</th>
-                                                    <th>Yield Weight(g)</th>
-                                                    <th>Yield(g)</th>
-                                                    <th>Date Received</th>
-                                                    <th>Received By</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>coffee A</td>
-                                                    <td>City Roast</td>
-                                                    <td>200000</td>
-                                                    <td>
-                                                        <input type="text" class="form-control">
-                                                    </td>
-                                                    <td>00.00</td>
-                                                    <td>
-                                                        <input type="date" class="form-control">
-                                                    </td>
-                                                    <td>Ms. A</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Packaging C</td>
-                                                    <td>500g</td>
-                                                    <td>200</td>
-                                                    <td>
-                                                        <input type="text" class="form-control">
-                                                    </td>
-                                                    <td>00.00</td>
-                                                    <td>
-                                                        <input type="date" class="form-control">
-                                                    </td>
-                                                    <td>Ms. B</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                            <b>Current Date: 1/31/18</b></center>
+                                         <form>
+                                            <div class="row">
+                                                <div class="col-md-6 form-group">
+                                                    <div class="form-group label-floating">
+                                                        <label>Date Received:</label>
+                                                         <input type="date" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 form-group">
+                                                    <div class="form-group label-floating">
+                                                        <label>Received By: </label>
+                                                        <select class="form-control" name="supplier" required>
+                                                            <option>Ms. A</option>
+                                                            <option>Mr. B</option>
+                                                            <option>Mr. C</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <table class="table table-striped" id="table-mutasi">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Item Name</th>
+                                                        <th>Type</th>
+                                                        <th>Original Weight(g)</th>
+                                                        <th>Yield Weight(g)</th>
+                                                        <th>Yield(g)</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>coffee A</td>
+                                                        <td>City Roast</td>
+                                                        <td>200000</td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>00.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Packaging C</td>
+                                                        <td>500g</td>
+                                                        <td>200</td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>00.00</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -307,84 +317,104 @@ thead th {
                 </div>
             </div>
         <!----------------------------------------------------------END     OF     MODAL -------------------------------------->
+
+        <!-----------------------------------------------------------------------  MODAL -------------------------------------->
+      
         
         
-        
-        
-        
-         <!-----------------------------------------------------------------------  MODAL DETAILS 2 -------------------------------------->
-            <div class="modal fade" id="details2" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
+            <div class="modal fade" id="partial" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg">
                     <div class="panel panel-primary">
                         <form action="#" method="post" accept-charset="utf-8">
                             <div class="modal-body" style="padding: 5px;">
                                 <div id="page-wrapper">
                                     <div class="table-responsive">
-                                        <center><b>Supplier 2</b>
+                                        <center><b>Partial Delivery</b>
                                             <br>
-                                            <b>02/06/18</b></center>
-                                        <table class="table table-striped" id="table-mutasi">
-                                            <thead>
-                                                <tr>
-                                                    <th>Ordered Date</th>
-                                                    <th>Credit Terms</th>
-                                                    <th>Item Name</th>
-                                                    <th>Type</th>
-                                                    <th>Quantity/ Weight(g)</th>
-                                                    <th>Unit Price</th>
-                                                    <th>Amount</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>February 06, 2018</td>
-                                                    <td>30 Days</td>
-                                                    <td>Raw coffee A</td>
-                                                    <td>City Roast</td>
-                                                    <td>20000</td>
-                                                    <td>39.90</td>
-                                                    <td>877800</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>February 06, 2018</td>
-                                                    <td>30 Days</td>
-                                                    <td>Packaging C</td>
-                                                    <td>Light Roast</td>
-                                                    <td>200</td>
-                                                    <td>170.00</td>
-                                                    <td>34000</td>
-                                                </tr>
-                                                
-                                            </tbody>
-                                        </table>
+                                            <b>Current Date: 1/31/18</b></center>
+                                        <form>
+                                            <table class="table table-striped" id="table-mutasi">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Item Name</th>
+                                                        <th>Type</th>
+                                                        <th>Original Weight(g)</th>
+                                                        <th>Yield Weight(g)</th>
+                                                        <th>Yield(g)</th>
+                                                        <th>Date Received</th>
+                                                        <th>Received By</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>coffee A</td>
+                                                        <td>City Roast</td>
+                                                        <td>200000</td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>00.00</td>
+                                                        <td>
+                                                            <input type="date" class="form-control">
+                                                        </td>
+                                                        <td><select class="form-control" name="supplier">
+                                                                <option>Ms. A</option>
+                                                                <option>Mr. B</option>
+                                                                <option>Mr. C</option>
+                                                            </select>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Packaging C</td>
+                                                        <td>500g</td>
+                                                        <td>200</td>
+                                                        <td>
+                                                            <input type="text" class="form-control">
+                                                        </td>
+                                                        <td>00.00</td>
+                                                        <td>
+                                                            <input type="date" class="form-control">
+                                                        </td>
+                                                        <td>
+                                                            <select class="form-control" name="supplier">
+                                                                <option>Ms. A</option>
+                                                                <option>Mr. B</option>
+                                                                <option>Mr. C</option>
+                                                            </select>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
                             <div class="panel-footer" align="center" style="margin-bottom:-14px;">
                                 <button type="button" class="btn btn-default btn-close" data-dismiss="modal">CLOSE</button>
+                                <button type="submit" class="btn btn-success accept">Save</button>
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
         
-        <!----------------------------------------------------------END     OF     MODAL -------------------------------------->
+         <!----------------------------------------------------------END     OF     MODAL -------------------------------------->
         
         
         
         
-          
-         <!-----------------------------------------------------------------------  MODAL DETAILS 3 -------------------------------------->
-            <div class="modal fade" id="details3" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
+        
+         <!-----------------------------------------------------------------------  MODAL DETAILS 1 -------------------------------------->
+            <div class="modal fade" id="details1" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg">
                     <div class="panel panel-primary">
                         <form action="#" method="post" accept-charset="utf-8">
                             <div class="modal-body" style="padding: 5px;">
                                 <div id="page-wrapper">
                                     <div class="table-responsive">
-                                        <center><b>Supplier 2</b>
+                                        <center><b>Supplier 1</b>
                                             <br>
-                                            <b>02/07/18</b></center>
+                                            <b>2/05/18</b></center>
                                         <table class="table table-striped" id="table-mutasi">
                                             <thead>
                                                 <tr>
@@ -399,7 +429,7 @@ thead th {
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td>February 07, 2018</td>
+                                                    <td>February 05, 2018</td>
                                                     <td>30 Days</td>
                                                     <td>Raw coffee A</td>
                                                     <td>City Roast</td>
@@ -408,10 +438,10 @@ thead th {
                                                     <td>877800</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>February 07, 2018</td>
+                                                    <td>February 05, 2018</td>
                                                     <td>30 Days</td>
                                                     <td>Packaging C</td>
-                                                    <td>500g</td>
+                                                    <td>Medium Roast</td>
                                                     <td>200</td>
                                                     <td>160.00</td>
                                                     <td>32000</td>
@@ -429,23 +459,7 @@ thead th {
                     </div>
                 </div>
             </div>
-        
         <!----------------------------------------------------------END     OF     MODAL -------------------------------------->
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
             <div class="content">
                 <div class="container-fluid">
                     <div class="row">
@@ -467,13 +481,6 @@ thead th {
                                                 <li class="active">
                                                     <a href="./PO2.html">
                                                         Orders
-                                                        <div class="ripple-container"></div>
-                                                    </a>
-                                                </li>
-                                                <span></span>
-                                                <li class="">
-                                                    <a href="./PO3.html">
-                                                        Partial Delivery
                                                         <div class="ripple-container"></div>
                                                     </a>
                                                 </li>
@@ -503,8 +510,7 @@ thead th {
                                             <th><b class="pull-left">Date Ordered</b></th>
                                             <th><b class="pull-left">Supplier</b></th>
                                             <th><b class="pull-left">See Details</b></th>
-                                            <th><b class="pull-left">Status</b></th>
-                                            
+                                            <th><b class="pull-left">Types of Delivery</b></th>
                                         </thead>
                                         <tbody>
                                             <tr>
@@ -512,23 +518,25 @@ thead th {
                                                 <td>02/05/18</td>
                                                 <td>Supplier 1</td>
                                                 <td><a class="btn btn-info btn-sm" data-toggle="modal" data-target="#details1">Details</a></td>
-                                                <td>pending
+                                                <td><a class="btn btn-warning btn-sm" data-toggle="modal" data-target="#partial">Partial</a><a class="btn btn-success btn-sm" data-toggle="modal" data-target="#full">Full</a>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>8</td>
                                                 <td>02/06/18</td>
                                                 <td>Supplier 2</td>
-                                                
-                                                <td><a class="btn btn-info btn-sm" data-toggle="modal" data-target="#details2">Details</a></td>
-                                                <td>pending
+                                                <td><a class="btn btn-info btn-sm" data-toggle="modal" data-target="#details1">Details</a></td>
+                                                <td><a class="btn btn-warning btn-sm" data-toggle="modal" data-target="#partial">Partial</a><a class="btn btn-success btn-sm" data-toggle="modal" data-target="#full">Full</a>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>9</td>
                                                 <td>02/07/18</td>
                                                 <td>Supplier 2</td>
                                             
-                                                <td><a class="btn btn-info btn-sm" data-toggle="modal" data-target="#details3">Details</a></td>
-                                                <td><a class="btn btn-success btn-sm" data-toggle="modal" data-target="#blend1">Received</a></td>
+                                                <td><a class="btn btn-info btn-sm" data-toggle="modal" data-target="#details1">Details</a></td>
+                                                <td><a class="btn btn-warning btn-sm" data-toggle="modal" data-target="#partial">Partial</a><a class="btn btn-success btn-sm" data-toggle="modal" data-target="#full">Full</a>
+                                                </td>
                                             </tr>
                                         </tbody>
                                     </table>
