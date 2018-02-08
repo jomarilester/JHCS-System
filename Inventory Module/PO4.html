@@ -168,246 +168,219 @@ thead th {
                     <div class="row">
                         <div class="col-md-12">
                         <div class="col-md-12">
-                            <div class="card card-nav-tabs">
+                            <div class="card card-nav-tabs" >
+                                <!--------------------------- MODAL Full Payment ------------------------------->
                                 
-                                
-                                
-                                            <!--------------------------- MODAL PO BALANCE 1 ------------------------------->
-                                
-                <div class="modal fade" id="pobalance1" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="panel panel-primary">
-                            <div class="panel-heading">
-                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                                <h4 class="panel-title" id="contactLabel"><center>Balance</center> </h4>
-                            </div>
+                                <div class="modal fade" id="pobalance1" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="panel panel-primary">
+                                            <div class="panel-heading">
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                                <h4 class="panel-title" id="contactLabel"><center>Balance</center> </h4>
+                                            </div>
 
-                            <form action="#" method="post" accept-charset="utf-8">
-                            <div class="modal-body" style="padding: 5px;">
-                                <div class="row">
-                                    <div class="col-md-6 form-group">
-                                        <div class="form-group label-floating">
-                                            <label for="email">Total Balance:</label>
-                                            <input class="form-control" type="text" value="  P34,000.00   " id="example-number-input" disabled="" />
-                                        </div>
-                                    </div>
-                                </div>
-                            <center>
-                          <a class="btn btn-primary" data-toggle="collapse" href="#collapsePayment" aria-expanded="false" aria-controls="collapseExample" data-background-color="red">
-                            Add Payment
-                          </a></center>
-                          <div class="collapse" id="collapsePayment">
-                              <div class="card-block">
-                                <form action="#" method="post" accept-charset="utf-8">
-                                    <div class="modal-body" style="padding: 5px;">
-                                            <div class="form-group label-floating">
-                                                <div class="form-group">
-                                                    <div class="row">
-                                                        <div class="col-md-4">
+                                            <form action="#" method="post" accept-charset="utf-8">
+                                            <div class="modal-body" style="padding: 0px;">
+                                                <table class="table table-striped" id="table-mutasi">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Item Name</th>
+                                                            <th>Type</th>
+                                                            <th>Yield Weight(g)</th>
+                                                            <th>Amount</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            
+                                                            <td>Raw coffee A</td>
+                                                            <td>City Roast</td>
+                                                            <td>20000</td>  
+                                                            <td>180000</td>
+                                                        </tr>
+                                                        <tr>
+                                                           
+                                                            <td>Raw coffee A</td>
+                                                            <td>City Roast</td>
+                                                            <td>20000</td> 
+                                                            <td>160000</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <div class="container"  >
+                                                    <div class="row justify-content-end"  >
+                                                        <div class="col-md-6 form-group" >
                                                             <div class="form-group label-floating">
-                                                              <label for="email">Date of Payment:</label>
-                                                              <input class="form-control" type="date" name="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-4">
-                                                            <div class="form-group label-floating">
-                                                              <label>Amount:</label>
-                                                              <input class="form-control" type="number" name="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-4">
-                                                            <div class="form-group label-floating">
-                                                              <label>Bank:</label>
-                                                              <input class="form-control" type="text" name="">
+                                                                <label for="email">Total Balance:</label>
+                                                                <input class="form-control" type="text" value="  P34,000.00   " id="example-number-input" disabled="" />
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="row">
-                                                    </div>
-                                                </div>
-                                                </div>
-                                    </div>
-                                        <div class="panel-footer">
-                                            <input type="submit" class="btn btn-success" value="Add" />
-                                            <!--<span class="glyphicon glyphicon-ok"></span>-->
-                                            <input type="reset" class="btn btn-danger" value="Clear" />
-                                            <!--<span class="glyphicon glyphicon-remove"></span>-->
-                                            <button style="float: right;" type="button" class="btn btn-default btn-close" data-dismiss="modal">Close</button>
-                                        </div>
-                                    </form>
-
-                              </div>
-                          </div>
-
-                                </div>  
-
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                                
-                               <!---- END MODAL PO BALANCE 1 ------> 
-                                
-                                
-                                
-            <div class="modal fade" id="Details1" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg" role="document">
-                    <div class="panel panel-primary modal-content">
-                        <form action="#" method="post" accept-charset="utf-8">
-                            <div class="modal-body" style="padding: 5px;">
-                                <div id="page-wrapper">
-                                    <div class="table-responsive">
-                                        <h4><b class="pull-left">Supplier 1</b></h4>
-                                        <h4><b class="pull-right">(Credit Terms)</b></h4>
-                                        <table class="table table-striped" id="table-mutasi">
-                                            <thead>
-                                                <tr>
-                                                    <th>Item Name</th>
-                                                    <th>Type</th>
-                                                 <th>Quantity/ Original Weight(g)</th>
-                                <!--                       <th>Original Weight(g)</th>  -->
-                                                    <th>Yield Weight(g)</th>
-                                                    <th>Yield(g)</th>
-                                                    <th>Unit Price</th>
-                                                    <th>Amount</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    
-                                                    <td>Raw coffee A</td>
-                                                    <td>City Roast</td>
-                                                      <td>20000</td>  
-                                <!--                      <td>20000</td> -->
-                                                    <td>15000</td>
-                                                    <td>50000.00</td>
-                                                    <td>9.00</td>
-                                                    <td>180000</td>
-                                                </tr>
-                                                <tr>
-                                                   
-                                                    <td>Raw coffee A</td>
-                                                    <td>City Roast</td>
-                                                     <td>20000</td> 
-                                <!--                      <td>20000</td> -->
-                                                    <td>16000</td>
-                                                    <td>40000.00</td>
-                                                    <td>8.00</td>
-                                                    <td>160000</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel-footer" align="center" style="margin-bottom:-14px;">
-                                <button type="button" class="btn btn-default btn-close" data-dismiss="modal">CLOSE</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <div class="modal fade" id="Remarks1" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg" role="document">
-                    <div class="panel panel-primary modal-content">
-                        <form action="#" method="post" accept-charset="utf-8">
-                            <div class="modal-body" style="padding: 5px;">
-                                <div id="page-wrapper">
-                                      <div class="container-fluid">
-                                            <div class="row">
-                                                
-                                                <div class="col-md-12">
-                                                    <div class="card">
-                                                        <div class="card-header" data-background-color="blue">
-                                                            <h4>Supplier</h4>
-                                                        </div>
-                                                        <div class="card-content">
-                                                            <form>
-                                                                
-                                                                      
-
-                                                    <div class="row">
-                                                        <div class="col-md-5">
-                                                            <div class="form-group label-floating">
-                                                              <label for="email">Date:</label>
-                                                              <input class="form-control" type="date" name="">
-                                                            </div>
-                                                        </div>
-                                                        
-                                                        
-                                                        <div class="col-md-5">
-                                                            <br>
-                                                                 <div class="form-group label-floating">
-                                                                            <label class="control-label">CR No.:</label>
-                                                                            <input type="text" class="form-control">
-                                                                </div>
-                                                        </div>
-                                                   </div>
-                                                     
-                                                                
-                                                                
-                                                       
-                                                    <div class="row">
-                                                        <div class="col-md-5">
-                                                            <br>
-                                                                 <div class="form-group label-floating">
-                                                                            <label class="control-label">Amount</label>
-                                                                            <input type="text" class="form-control">
-                                                                </div>
-                                                        </div>
-                                                   </div>         
-                                                                
-                                                                 
-                                                    <div class="row">
-                                                          <div class="col-md-5">
-                                                            <div class="form-group label-floating">
-                                                                    <label class="control-label">Trucking Fee</label>
-                                                                    <input type="text" class="form-control">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                                
-                                                                   
-                                                    <div class="row">
-                                                          <div class="col-md-5">
-                                                            <div class="form-group label-floating">
-                                                                    <label class="control-label">Bank</label>
-                                                                    <input type="text" class="form-control">
-                                                            </div>
-                                                        </div>
-                                                        
-                                                           <div class="col-md-5">
-                                                                        <div class="form-group label-floating">
-                                                                            <label class="control-label">Type of Roast</label>
-                                                                            <select class="form-control" id="">
-                                                                                <option>-- --</option>
-                                                                                <option>Cash</option>
-                                                                                <option>Cheque</option>
-                                                                                
-                                                                            </select>
+                                                </div><center>
+                                                <a class="btn btn-primary" data-toggle="collapse" href="#collapsePayment" aria-expanded="false" aria-controls="collapseExample" data-background-color="red">
+                                                Add Payment
+                                                </a></center>
+                                                <div class="collapse" id="collapsePayment">
+                                                    <div class="card-block">
+                                                        <form action="#" method="post" accept-charset="utf-8">
+                                                            <div class="modal-body" style="padding: 5px;">
+                                                                <div class="form-group label-floating">
+                                                                    <div class="form-group">
+                                                                        <div class="row">
+                                                                            <div class="col-md-4">
+                                                                                <div class="form-group label-floating">
+                                                                                  <label for="email">Date of Payment:</label>
+                                                                                  <input class="form-control" type="date" name="">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-4">
+                                                                                <div class="form-group label-floating">
+                                                                                  <label>Amount:</label>
+                                                                                  <input class="form-control" type="number" name="">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-4">
+                                                                                <div class="form-group label-floating">
+                                                                                  <label>Bank:</label>
+                                                                                  <input class="form-control" type="text" name="">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row">
                                                                         </div>
                                                                     </div>
-                                                    </div>
-                                                    <div class="row">
-                                                                 <div align="center">
-                                                                        <button type="submit" class="btn btn-success accept">Add</button>
-                                                                        <button type="button" class="btn btn-danger btn-close" data-dismiss="modal">CLOSE</button>
-                                                                        <div class="clearfix"></div>
                                                                 </div>
-                                                         </div>               
-                                             </form>
-                                         </div>
-                                   </div>
-                              </div>
-                     </div>
-              </div>
+                                                            </div>
+                                                            <div class="panel-footer">
+                                                                <input type="submit" class="btn btn-success" value="Add" />
+                                                                <input type="reset" class="btn btn-danger" value="Clear" />
+                                                                <button style="float: right;" type="button" class="btn btn-danger btn-close" data-dismiss="modal">Close</button>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                  
+                                
+                               <!---- END MODAL PO BALANCE 1 ------> 
+                               <!--------------------------- MODAL Partial Payment ------------------------------->
+                                
+                                <div class="modal fade" id="pobalance2" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="panel panel-primary modal-content">
+                                            <div class="panel-heading">
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                                <h4 class="panel-title" id="contactLabel"><center>Balance</center> </h4>
+                                            </div>
+
+                                            <form action="#" method="post" accept-charset="utf-8">
+                                            <div class="modal-body" style="padding: 0px;">
+                                                <table class="table table-striped" id="table-mutasi">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Item Name</th>
+                                                            <th>Type</th>
+                                                            <th>Yield Weight(g)</th>
+                                                            <th>Amount</th>
+                                                            <th>Payment</th>
+                                                            <th>Payment Date</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            
+                                                            <td>Raw coffee A</td>
+                                                            <td>City Roast</td>
+                                                            <td>20000</td>  
+                                                            <td>180000</td>
+                                                            <td><input class="form-control" type="number" name=""></td>
+                                                            <td><input class="form-control" type="date" name=""></td>
+                                                        </tr>
+                                                        <tr>
+                                                           
+                                                            <td>Raw coffee A</td>
+                                                            <td>City Roast</td>
+                                                            <td>20000</td> 
+                                                            <td>160000</td>
+                                                            <td><input class="form-control" type="number" name=""></td>
+                                                            <td><input class="form-control" type="date" name=""></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <div class="container"  >
+                                                    <div class="row justify-content-end"  >
+                                                        <div class="col-md-6 form-group" >
+                                                            <div class="form-group label-floating">
+                                                                <label for="email">Total Balance:</label>
+                                                                <input class="form-control" type="text" value="  P34,000.00   " id="example-number-input" disabled="" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div><center>
+                                                <button type="submit" class="btn btn-success accept">Record Payment</button></center>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                  
+                                
+                               <!---- END MODAL PO BALANCE 1 ------> 
+                                     
+                                <div class="modal fade" id="Details1" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg" role="document">
+                                        <div class="panel panel-primary modal-content">
+                                            <form action="#" method="post" accept-charset="utf-8">
+                                                <div class="modal-body" style="padding: 5px;">
+                                                    <div id="page-wrapper">
+                                                        <div class="table-responsive">
+                                                            <h4><b class="pull-left">Supplier 1</b></h4>
+                                                            <h4><b class="pull-right">(Credit Terms)</b></h4>
+                                                            <table class="table table-striped" id="table-mutasi">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Item Name</th>
+                                                                        <th>Type</th>
+                                                                        <th>Quantity/ Original Weight(g)</th>
+                                                                        <th>Yield Weight(g)</th>
+                                                                        <th>Yield(g)</th>
+                                                                        <th>Unit Price</th>
+                                                                        <th>Amount</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        
+                                                                        <td>Raw coffee A</td>
+                                                                        <td>City Roast</td>
+                                                                        <td>20000</td>  
+                                                                        <td>15000</td>
+                                                                        <td>50000.00</td>
+                                                                        <td>9.00</td>
+                                                                        <td>180000</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                       
+                                                                        <td>Raw coffee A</td>
+                                                                        <td>City Roast</td>
+                                                                        <td>20000</td> 
+                                                                        <td>16000</td>
+                                                                        <td>40000.00</td>
+                                                                        <td>8.00</td>
+                                                                        <td>160000</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="panel-footer" align="center" style="margin-bottom:-14px;">
+                                                    <button type="button" class="btn btn-default btn-close" data-dismiss="modal">CLOSE</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                           
-                        </form>
-                    </div>
-                </div>
-            </div>
                                 <div class="card-header" data-background-color="blue">
                                     <div class="nav-tabs-navigation">
                                         <div class="nav-tabs-wrapper">
@@ -458,8 +431,8 @@ thead th {
                                             <th><b class="pull-left">Supplier</b></th>
                                        
                                        
-                                            <th><b class="pull-left">Balance</b></th>
-                                            <th></th>
+                                            <th><b class="pull-left">Payment type</b></th>
+                                            <th><b class="pull-left">See Details</b></th>
                                         </thead>
                                         <tbody>
                                             <tr>
@@ -467,11 +440,9 @@ thead th {
                                                 <td>01/31/18</td>
                                                 <td>02/02/18</td>
                                                 <td>Supplier 1</td>
-                                               
-                                            
-											<td><center><div class=" btn btn-primary btn-sm" data-background-color="red" data-toggle="modal" data-target="#pobalance1" data-original-title >
-                                            unpaid
-                                            </div></center> </td>
+    											<td><center><a class=" btn btn-success btn-sm" data-toggle="modal" data-target="#pobalance1">full</a>
+                                                <a class=" btn btn-warning btn-sm" data-toggle="modal" data-target="#pobalance2">partial</a></center> 
+                                                </td>
                                                 <td><a class="btn btn-info btn-sm" data-toggle="modal" data-target="#Details1">Details</a></td>
                                             </tr>
                                             <tr>
@@ -479,12 +450,11 @@ thead th {
                                                 <td>01/31/18</td>
                                                 <td>02/02/18</td>
                                                 <td>Supplier 2</td>
-                                           
-                                           
-											<td><center><div class=" btn btn-primary btn-sm" data-background-color="red" data-toggle="modal" data-target="#pobalance2" data-original-title >
-                                            unpaid
-                                            </div></center> </td>
-                                                <td><a class="btn btn-info btn-sm" data-toggle="modal" data-target="#Details2">Details</a>
+    											<td><center>
+                                                    <a class=" btn btn-success btn-sm" data-toggle="modal" data-target="#pobalance1">full</a>
+                                                    <a class=" btn btn-warning btn-sm" data-toggle="modal" data-target="#pobalance2">partial</a></center> </td>
+                                                <td>
+                                                    <a class="btn btn-info btn-sm" data-toggle="modal" data-target="#Details1">Details</a>
                                                 </td>
                                             </tr>
                                     
