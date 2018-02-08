@@ -32,6 +32,11 @@
     tbody td {
         text-align: right;
     }
+
+    .select-pane {
+        display: none;
+    }
+
     </style>
 </head>
 
@@ -135,119 +140,180 @@
                                 <div class="card-header" data-background-color="purple">
                                     <h3 class="title"><center>Walk-In Client Order</center></h3>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-10">
                                     <div class="card">
                                         <div class="card-content">
-                                            <form action="#" method="post" accept-charset="utf-8">
-                                                <div class="modal-body" style="padding: 5px;">
-                                                    <div class="row">
-                                                        <div class="row">
-                                                            <div class="col-md-12">
-                                                                <div class="form-group label-floating">
-                                                                    <label for="email">Date:</label>
-                                                                    <input class="form-control" type="date" name="">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row">
-                                                            <div class="col-md-12">
-                                                                <div class="form-group label-floating">
-                                                                    <label for="email">Client's Name:</label>
-                                                                    <input class="form-control" type="text" name="" required/>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row">
-                                                            <div class="col-md-4">
-                                                                <div class="form-group label-floating">
-                                                                    <label for="email">Total Amount:</label>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-6">
-                                                                <div class="form-group label-floating">
-                                                                    <label><b>Php 750.00</b></label>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </form>
+											<div class="row">
+												 <div class="col-lg-7">
+													<div class="form-group">
+														<label class="col-md-6 control">Select Type of Order:</label>
+														<div class="col-md-6">
+															<select class="form-control nav">
+																<option value=""></option>
+																<option value="coffee">Coffee</option>
+																<option value="machine">Machine</option>
+															</select>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="select-pane" id="coffee">
+												<form action="#" method="post" accept-charset="utf-8">
+															<div class="row">
+																<div class="col-md-3" >
+																	<div class="form-group label-floating">
+																		<label for="email">Date:</label>
+																		<input class="form-control" type="date" name="">
+																	</div>
+																</div>
+															</div>
+															<div class="row">
+																<div class="col-md-4">
+																	<div class="form-group label-floating">
+																		<label for="email">Client's Name:</label>
+																		<input class="form-control" type="text" name="" required/>
+																	</div>
+																</div>
+															</div>
+															<div class="row">
+																<div class="col-md-4">
+																	<div class="form-group label-floating">
+																		<label for="email">Total Amount:</label>
+																	</div>
+																</div>
+																<div class="col-md-6">
+																	<div class="form-group label-floating">
+																		<label><b>Php 750.00</b></label>
+																	</div>
+																</div>
+															</div>
+												</form><br><hr><br>
+												<div class="row">
+														<div class="form-conttrol label-floating">
+															<div class="col-md-4">
+																<label> Coffee Blend:</label>
+															</div>
+															<div class="col-md-2">
+																<label>Type of Bag:</label>
+															</div>
+															<div class="col-md-1">
+																<label>Size:</label>
+															</div>
+															<div class="col-md-1">
+																<label>Qty:</label>
+															</div>
+															<div class="col-md-2">
+																<label>Unit Price:</label>
+															</div>
+															<div class="col-md-2">
+																<label>Add Another:</label>
+															</div>
+														</div>
+														<input type="hidden" name="count" value="1" />
+														<div class="control-group " id="fields">
+															<div class="controls"  id="coffee">
+																<form class="input-append label-floating">
+																	<div id="field">
+																		<div class="input" id="field1">
+																			<div class="col-md-4">
+																				<select class="form-control" name="coffee">
+																					<option value="">Guatemala Rainforest</option>
+																					<option value="">Cordillera Sunrise</option>
+																					<option value="">Sumatra Night</option>
+																					<option value="">Espresso</option>
+																				</select>
+																			</div>
+																			<div class="col-md-2">
+																				<select class="form-control" name="coffee">
+																					<option value="clear">Clear</option>
+																					<option value="brown">Brown</option>
+																				</select>
+																			</div>
+																			<div class="col-md-1">
+																				<select class="form-control" name="coffee">
+																					<option value="clear">250g</option>
+																					<option value="brown">500g</option>
+																					<option value="brown">1000g</option>
+																				</select>
+																			</div>
+																			<div class="col-md-1">
+																				<input class="form-control" placeholder="3" />
+																			</div>
+																			<div class="col-md-2">
+																				<br>
+																				<p>Php 250.00</p>
+																			</div>
+																		</div>
+																		<div class="col-md-2">
+																			<button id="b1" class="btn btn-success add-more " type="button">+</button>
+																		</div>
+																	</div>
+																</form>
+															</div>
+														</div>
+													</div>
+												
+											</div>
+											<div class="select-pane" id="machine">
+												<form action="#" method="post" accept-charset="utf-8">
+															<div class="row">
+																<div class="col-md-3" >
+																	<div class="form-group label-floating">
+																		<label for="email">Date:</label>
+																		<input class="form-control" type="date" name="">
+																	</div>
+																</div>
+															</div>
+															<div class="row">
+																<div class="col-md-8">
+																	<div class="form-group label-floating">
+																		<label for="email">Client's Name:</label>
+																		<input class="form-control" type="text" name="" required/>
+																	</div>
+																</div>
+															</div>
+															<div class="row">
+																<div class="col-md-4">
+																	<div class="form-group label-floating">
+																		<label for="email">Machine Type:</label>
+																		<input class="form-control" type="text" name="" required/>
+																	</div>
+																</div>
+																<div class="col-md-4">
+																	<div class="form-group label-floating">
+																		<label for="email">Quantity:</label>
+																		<input class="form-control" type="text" name="" required/>
+																	</div>
+																</div>
+															</div>
+															<div class="row">
+																<div class="col-md-4">
+																	<div class="form-group label-floating">
+																		<label for="email">Unit Price:</label>
+																	</div>
+																</div>
+																<div class="col-md-6">
+																	<div class="form-group label-floating">
+																		<label><b>Php 750.00</b></label>
+																	</div>
+																</div>
+															</div>
+															<div class="row">
+																<div class="col-md-4">
+																	<div class="form-group label-floating">
+																		<label for="email">Total Amount:</label>
+																	</div>
+																</div>
+																<div class="col-md-6">
+																	<div class="form-group label-floating">
+																		<label><b>Php 750.00</b></label>
+																	</div>
+																</div>
+															</div>
+												</form>
+											</div>
                                             <div class="text-center">
                                                 <button class="btn btn-success">Add Sales</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card">
-                                        <div class="card-content table-responsive">
-                                            <div class="modal-body" style="padding: 5px;">
-                                                <div class="row">
-                                                    <div class="form-conttrol label-floating">
-                                                        <div class="col-md-4">
-                                                            <label> Coffee Blend:</label>
-                                                        </div>
-                                                        <div class="col-md-2">
-                                                            <label>Type of Bag:</label>
-                                                        </div>
-                                                        <div class="col-md-1">
-                                                            <label>Size:</label>
-                                                        </div>
-                                                        <div class="col-md-1">
-                                                            <label>Qty:</label>
-                                                        </div>
-                                                        <div class="col-md-2">
-                                                            <label>Unit Price:</label>
-                                                        </div>
-                                                        <div class="col-md-2">
-                                                            <label>Add Another:</label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <input type="hidden" name="count" value="1" />
-                                                    <div class="control-group " id="fields">
-                                                        <div class="controls" id="profs">
-                                                            <form class="input-append label-floating">
-                                                                <div id="field">
-                                                                    <div class="input" id="field1">
-                                                                        <div class="col-md-4">
-                                                                            <select class="form-control" name="coffee">
-                                                                                <option value="">Guatemala Rainforest</option>
-                                                                                <option value="">Cordillera Sunrise</option>
-                                                                                <option value="">Sumatra Night</option>
-                                                                                <option value="">Espresso</option>
-                                                                            </select>
-                                                                        </div>
-                                                                        <div class="col-md-2">
-                                                                            <select class="form-control" name="coffee">
-                                                                                <option value="clear">Clear</option>
-                                                                                <option value="brown">Brown</option>
-                                                                            </select>
-                                                                        </div>
-                                                                        <div class="col-md-1">
-                                                                            <select class="form-control" name="coffee">
-                                                                                <option value="clear">250g</option>
-                                                                                <option value="brown">500g</option>
-                                                                                <option value="brown">1000g</option>
-                                                                            </select>
-                                                                        </div>
-                                                                        <div class="col-md-1">
-                                                                            <input class="form-control" placeholder="3" />
-                                                                        </div>
-                                                                        <div class="col-md-2">
-                                                                            <br>
-                                                                            <p>Php 250.00</p>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-md-2">
-                                                                        <button id="b1" class="btn btn-success add-more " type="button">+</button>
-                                                                    </div>
-                                                                </div>
-                                                            </form>
-                                                        </div>
-                                                    </div>
-                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -366,6 +432,22 @@ $('#eventForm').formValidation({
         }
     }
 });
+</script>
+<script type="text/javascript">
+	$(document).on('change', 'select.nav', function() {
+		var $this = this;
+		var target = $this.value;
+		$('div.select-pane').hide();
+		$('div[id="' + target + '"]').show();
+	})
+
+	$(document).on('click', '.series-select', function() {
+		var $this = this;
+		var txt = $this.text + '<span class="caret"></span>';
+		$($this).closest('li.dropdown').find('a.dropdown-toggle').html(txt);
+
+
+	})
 </script>
 <script type="text/javascript">
 $(document).ready(function() {
