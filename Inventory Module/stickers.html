@@ -11,20 +11,17 @@
     <meta name="viewport" content="width=device-width" />
     <!-- Bootstrap core CSS     -->
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/css/dataTables.bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/css/jquery.dataTable.min.css" rel="stylesheet" />
     <!--  Material Dashboard CSS    -->
     <link href="../assets/css/material-dashboard.css?v=1.2.0" rel="stylesheet" />
     <!--  CSS for Demo Purpose, don't include it in your project     -->
     <link href="../assets/css/demo.css" rel="stylesheet" />
     <!--     Fonts and icons     -->
-    <link href="css.css" rel="stylesheet" />
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="favicon.ico">
 </head>
-<style>
-.title {
-    font-size: large;
-}
-</style>
 
 <body>
     <div class="wrapper">
@@ -254,53 +251,53 @@
                                                         <table id="fresh-datatables" class="table table-striped table-hover responsive" cellspacing="0" width="100%">
                                                         <thead>
                                                           <tr>
-                                                            <th><b>In-Out</b></th>
+                                                            <th><b>Delivery Receipt No.</b></th>
+                                                            <th><b>Delivery</b></th>
                                                             <th><b>Date</b></th>
-                                                            <th><b>Client-Supplier</b></th>
                                                             <th><b>Quantity</b></th>
                                                             <th><b>Remarks</b></th>
                                                           </tr>
                                                         </thead>
                                                         <tbody>
                                                           <tr>
+                                                            <td>12345</td>
                                                             <td>In</td>
                                                             <td>Dec 5, 2017</td>
-                                                            <td>Supplier 1</td>
                                                             <td>300 pcs</td>
                                                             <td></td>
                                                           </tr>
                                                           <tr>
+                                                            <td>23456</td>
                                                             <td>In</td>
                                                             <td>Dec 12, 2017</td>
-                                                            <td>Client 2</td>
                                                             <td>100 pcs</td>
                                                             <td>Wrong Sticker</td>
                                                           </tr>
                                                           <tr>
+                                                            <td>34567</td>
                                                             <td>In</td>
                                                             <td>Dec 15, 2017</td>
-                                                            <td>Supplier 3</td>
                                                             <td>500 pcs</td>
                                                             <td></td>
                                                           </tr>
                                                           <tr>
+                                                            <td>45678</td>
                                                             <td>Out</td>
                                                             <td>Dec 8, 2017</td>
-                                                            <td>Supplier 1</td>
                                                             <td>200 pcs</td>
                                                             <td>Wrong Sticker Design</td>
                                                           </tr>
                                                           <tr>
+                                                            <td>56789</td>
                                                             <td>Out</td>
                                                             <td>Dec 9, 2017</td>
-                                                            <td>Client 5</td>
                                                             <td>300 pcs</td>
                                                             <td></td>
                                                           </tr>
                                                           <tr>
+                                                            <td>67890</td>
                                                             <td>Out</td>
                                                             <td>Dec 17, 2017</td>
-                                                            <td>Client 7</td>
                                                             <td>200 pcs</td>
                                                             <td>Sample</td>
                                                           </tr>
@@ -339,6 +336,12 @@
                                                                         <label class="col-md-6 control">Discrepancy :</label>
                                                                         <div class="col-md-4">
                                                                             <input placeholder="0 piece" class="form-control" disabled />
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label class="col-md-6 control">Remarks :</label>
+                                                                        <div class="col-md-10">
+                                                                            <textarea style="resize:vertical;" class="form-control" rows="2" name="remarks"></textarea>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -454,11 +457,25 @@
 <script src="../assets/js/material-dashboard.js?v=1.2.0"></script>
 <!-- Material Dashboard DEMO methods, don't include it in your project! -->
 <script src="../assets/js/demo.js"></script>
-<script type="text/javascript">
+<script src="../assets/js/jquery.js"></script>
+<script src="../assets/js/jquery.datatables.js"></script>
+<script>
 $(document).ready(function() {
+    $('#fresh-datatables').DataTable({
+        select: {
+            style: 'single'
+        }
 
-    // Javascript method's body can be found in assets/js/demos.js
-    demo.initDashboardPageCharts();
+    });
+    $('#datePicker')
+        .datepicker({
+            format: 'mm/dd/yyyy'
+        })
+        .on('changeDate', function(e) {
+            // Revalidate the date field
+            $('#eventForm').formValidation('revalidateField', 'date');
+        });
+
 
 });
 </script>
