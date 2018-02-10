@@ -13,7 +13,6 @@
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="../assets/css/dataTables.bootstrap.min.css" rel="stylesheet" />
     <link href="../assets/css/jquery.dataTable.min.css" rel="stylesheet" />
-    <link href="../assets/css/bootstrap-datepicker3.min.css" rel="stylesheet">
     <!--  Material Dashboard CSS    -->
     <link href="../assets/css/material-dashboard.css?v=1.2.0" rel="stylesheet" />
     <!--  CSS for Demo Purpose, don't include it in your project     -->
@@ -21,6 +20,7 @@
     <!--     Fonts and icons     -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="favicon.ico">
 </head>
 
 <style type="text/css">
@@ -177,13 +177,6 @@ input {
                                             <div class="nav-tabs-wrapper">
                                                 <span class="nav-tabs-title"> </span>
                                                 <ul class="nav nav-tabs" data-tabs="tabs">
-                                                    <form class="pull-right">
-                                                        <label>Set Date from </label>
-                                                        <input type="date" name="">
-                                                        <label> to </label>
-                                                        <input type="date" name="">
-                                                        <button type="Submit">Submit</button>
-                                                    </form>
                                                     <span></span>
                                                     <li class="active">
                                                         <a href="./inventoryreport.html">
@@ -204,6 +197,12 @@ input {
                                     </div>
                                 </div>
                                 <div class="card-content table-responsive">
+                                      <label>Set Date from </label>
+                                        <input type="date" name="">
+                                        <label> to </label>
+                                        <input type="date" name=""><br><br>
+                                    <hr>
+                                    <h4>Generate Inventory  Report</h4>
                                     <table id="example" class="display  hover order-column table table-responsive" cellspacing="0" width="100%">
                                         <thead>
                                             <tr>
@@ -307,7 +306,7 @@ input {
 <script src="../assets/js/material-dashboard.js?v=1.2.0"></script>
 <!-- Material Dashboard DEMO methods, don't include it in your project! -->
 <script src="../assets/js/demo.js"></script>
-<script type="text/javascript">
+<script>
 $(document).ready(function() {
     $('#example').DataTable({
         dom: 'Bfrtip',
@@ -315,10 +314,16 @@ $(document).ready(function() {
             'excel', 'pdf', 'print'
         ]
     });
-});
+    $('#datePicker')
+        .datepicker({
+            format: 'mm/dd/yyyy'
+        })
+        .on('changeDate', function(e) {
+            // Revalidate the date field
+            $('#eventForm').formValidation('revalidateField', 'date');
+        });
 
-$(document).ready(function() {
-    $('table.display').DataTable();
+
 });
 </script>
 
