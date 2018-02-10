@@ -1,0 +1,5 @@
+concerns/clarifications on:
+packaging and stickers
+delivery and purchase order (delivery -one to many- po?)
+in/out (inventory stocks)
+collections
