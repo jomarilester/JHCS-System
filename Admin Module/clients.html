@@ -30,6 +30,7 @@
     <link rel="stylesheet" type="text/css" href="../assets/css/fresh-datatables.css">
     <!--   Fonts   -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+
 </head>
 
 <style>
@@ -139,6 +140,7 @@ thead th {
     background-color: chartreuse;
 }
 </style>    
+
     
 <body>
     <div class="wrapper">
@@ -310,6 +312,93 @@ thead th {
             <div class="content" style="margin-top: 0px;">
                 <div class="container-fluid">
                     <div class="card">
+                        <div class="modal fade" id="deactivate" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="panel panel-primary">
+                                            <div class="panel-heading" >
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                                <h4 class="panel-title" id="contactLabel"><span class="glyphicon glyphicon-warning-sign"></span> Deactivation </h4>
+                                            </div>
+                                            
+                                                <div class="modal-body" style="padding: 5px;">
+                                                    
+                                                    
+                                                    
+                                                    <div class="row" style="text-align: center">
+                                                        <br>
+                                                        <h4> Are you sure you want to deactivate this client?</h4>
+                                                        <br>
+                                                    </div>
+                                                </div>
+                                                <div class="panel-footer" style="margin-bottom:-14px;">
+                                                    <input type="submit" class="btn btn-danger" value="Yes" />
+                                                    <!--<span class="glyphicon glyphicon-ok"></span>-->
+                                                    
+                                                    <!--<span class="glyphicon glyphicon-remove"></span>-->
+                                                    <button type="button" class="btn btn-success btn-close" data-dismiss="modal">No</button>
+                                                </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal fade" id="archive" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="panel panel-primary">
+                                            <div class="panel-heading" >
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                                <h4 class="panel-title" id="contactLabel"><span class="glyphicon glyphicon-address-book"></span> Archiving </h4>
+                                            </div>
+                                            
+                                                <div class="modal-body" style="padding: 5px;">
+                                                    
+                                                    
+                                                    
+                                                    <div class="row" style="text-align: center">
+                                                        <br>
+                                                        <h4> Are you sure you want to archive this client?</h4>
+                                                        <br>
+                                                    </div>
+                                                </div>
+                                                <div class="panel-footer" style="margin-bottom:-14px;">
+                                                    <input type="submit" class="btn btn-danger" value="Yes" />
+                                                    <!--<span class="glyphicon glyphicon-ok"></span>-->
+                                                    
+                                                    <!--<span class="glyphicon glyphicon-remove"></span>-->
+                                                    <button type="button" class="btn btn-success btn-close" data-dismiss="modal">No</button>
+                                                </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal fade" id="blacklist" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="panel panel-primary">
+                                            <div class="panel-heading" >
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                                <h4 class="panel-title" id="contactLabel"><span class="glyphicon glyphicon-database-ban"></span> Blacklist </h4>
+                                            </div>
+                                            
+                                                <div class="modal-body" style="padding: 5px;">
+                                                    
+                                                    
+                                                    
+                                                    <div class="row" style="text-align: center">
+                                                        <br>
+                                                        <h4> Are you sure you want to blacklist this client?</h4>
+                                                        <br>
+                                                    </div>
+                                                </div>
+                                                <div class="panel-footer" style="margin-bottom:-14px;">
+                                                    <input type="submit" class="btn btn-danger" value="Yes" />
+                                                    <!--<span class="glyphicon glyphicon-ok"></span>-->
+                                                    
+                                                    <!--<span class="glyphicon glyphicon-remove"></span>-->
+                                                    <button type="button" class="btn btn-success btn-close" data-dismiss="modal">No</button>
+                                                </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
                          <div class="card-header " data-background-color="green">
                                 <h4 class="title">List of Clients
                                      <a class="btn btn-info btn-lg" data-toggle="modal" data-target="#contact" data-original-title style="float: right; margin-right: 30px; margin-top: -12px; ">
@@ -349,13 +438,12 @@ thead th {
                                                 <td>chef22@manor.com</td>
                                                 <td>442-4896</td>
                                                 <td>
-                                                    <div class="onoffswitch">
-                                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
-                                                        <label class="onoffswitch-label" for="myonoffswitch">
-                                                            <span class="onoffswitch-inner"></span>
-                                                            <span class="onoffswitch-switch"></span>
-                                                        </label>
-                                                    </div>
+                                                    <span data-toggle="modal" data-target="#deactivate">
+                                                    <a href="#" class="deactivate" data-toggle="tooltip" data-placement="bottom" title="Deactivate"><i class="fa fa-close"></i></a> </span>
+                                                    <span data-toggle="modal" data-target="#archive">
+                                                    <a href="#" class="archive" data-toggle="tooltip" data-placement="bottom" title="Archive"><i class="fa fa-archive"></i></a> </span>
+                                                    <span data-toggle="modal" data-target="#blacklist">
+                                                    <a href="#" class="blacklist" data-toggle="tooltip" data-placement="bottom" title="Blacklist"><i class="fa fa-ban"></i></a> </span>
                                                 </td>
                                                 <td><a href="./addcontract.html" class="btn btn-sm btn-round" size="25">Contract</a></td>
                                                  <td>
@@ -372,13 +460,12 @@ thead th {
                                                 <td>maecalpito@gmail.com</td>
                                                 <td>442-4785</td>
                                                 <td>
-                                                    <div class="onoffswitch">
-                                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
-                                                        <label class="onoffswitch-label" for="myonoffswitch">
-                                                            <span class="onoffswitch-inner"></span>
-                                                            <span class="onoffswitch-switch"></span>
-                                                        </label>
-                                                    </div>
+                                                    <span data-toggle="modal" data-target="#deactivate">
+                                                    <a href="#" class="deactivate" data-toggle="tooltip" data-placement="bottom" title="Deactivate"><i class="fa fa-close"></i></a> </span>
+                                                    <span data-toggle="modal" data-target="#archive">
+                                                    <a href="#" class="archive" data-toggle="tooltip" data-placement="bottom" title="Archive"><i class="fa fa-archive"></i></a> </span>
+                                                    <span data-toggle="modal" data-target="#blacklist">
+                                                    <a href="#" class="blacklist" data-toggle="tooltip" data-placement="bottom" title="Blacklist"><i class="fa fa-ban"></i></a> </span>
                                                 </td>
                                                 <td><a href="./addcontract.html" class="btn btn-sm btn-round" size="25">Contract</a></td>
                                                  <td>
@@ -395,13 +482,12 @@ thead th {
                                                 <td>khalil22@gmail.com</td>
                                                 <td>442-4875</td>
                                                 <td>
-                                                    <div class="onoffswitch">
-                                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
-                                                        <label class="onoffswitch-label" for="myonoffswitch">
-                                                            <span class="onoffswitch-inner"></span>
-                                                            <span class="onoffswitch-switch"></span>
-                                                        </label>
-                                                    </div>
+                                                    <span data-toggle="modal" data-target="#deactivate">
+                                                    <a href="#" class="deactivate" data-toggle="tooltip" data-placement="bottom" title="Deactivate"><i class="fa fa-close"></i></a> </span>
+                                                    <span data-toggle="modal" data-target="#archive">
+                                                    <a href="#" class="archive" data-toggle="tooltip" data-placement="bottom" title="Archive"><i class="fa fa-archive"></i></a> </span>
+                                                    <span data-toggle="modal" data-target="#blacklist">
+                                                    <a href="#" class="blacklist" data-toggle="tooltip" data-placement="bottom" title="Blacklist"><i class="fa fa-ban"></i></a> </span>
                                                 </td>
                                                 <td><a href="./addcontract.html" class="btn btn-sm btn-round" size="25">Contract</a></td>
                                                  <td>
@@ -418,13 +504,12 @@ thead th {
                                                 <td>jamesreid@gmail.com</td>
                                                 <td>442-5896</td>
                                                 <td>
-                                                    <div class="onoffswitch">
-                                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
-                                                        <label class="onoffswitch-label" for="myonoffswitch">
-                                                            <span class="onoffswitch-inner"></span>
-                                                            <span class="onoffswitch-switch"></span>
-                                                        </label>
-                                                    </div>
+                                                    <span data-toggle="modal" data-target="#deactivate">
+                                                    <a href="#" class="deactivate" data-toggle="tooltip" data-placement="bottom" title="Deactivate"><i class="fa fa-close"></i></a> </span>
+                                                    <span data-toggle="modal" data-target="#archive">
+                                                    <a href="#" class="archive" data-toggle="tooltip" data-placement="bottom" title="Archive"><i class="fa fa-archive"></i></a> </span>
+                                                    <span data-toggle="modal" data-target="#blacklist">
+                                                    <a href="#" class="blacklist" data-toggle="tooltip" data-placement="bottom" title="Blacklist"><i class="fa fa-ban"></i></a> </span>
                                                 </td>
                                                 <td><a href="./addcontract.html" class="btn btn-sm btn-round" size="25">Contract</a></td>
                                                  <td>
@@ -500,7 +585,10 @@ thead th {
 <script src="../assets/js/jquery.js"></script>
 <script src="../assets/js/jquery.datatables.js"></script>
 <script>
+
 $(document).ready(function() {
+    $('[data-toggle="tooltip"]').tooltip();   
+
     $('#fresh-datatables').DataTable({
         "pagingType": "full_numbers",
         "lengthMenu": [
