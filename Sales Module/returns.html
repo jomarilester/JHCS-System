@@ -175,6 +175,7 @@
                                                             <thead>
                                                                 <tr>
                                                                     <th><b>Client Return No.</b></th>
+																	<th><b>Delivery Receipt No.</b></th>
                                                                     <th><b>Date of Return</b></th>
                                                                     <th><b>Quantity Returned</b></th>
                                                                     <th><b>Client</b></th>
@@ -188,6 +189,7 @@
                                                             <tbody>
                                                                 <tr>
                                                                     <td>00001</td>
+																	<td>DR0123</td>
                                                                     <td>October 1, 2017</td>
 																	<td>3</td>
                                                                     <td>Client 1</td>
@@ -202,6 +204,7 @@
                                                                 </tr>
                                                                 <tr>
                                                                     <td>00002</td>
+																	<td>DR0124</td>
                                                                     <td>October 3, 2017</td>
 																	<td>2</td>
                                                                     <td>Client 2</td>
@@ -216,6 +219,7 @@
                                                                 </tr>
                                                                 <tr>
                                                                     <td>00003</td>
+																	<td>DR0125</td>
                                                                     <td>October 5, 2017</td>
 																	<td>1</td>
                                                                     <td>Client 3</td>
@@ -318,7 +322,7 @@
                                                 <div class="form-group">
                                                     <label class="col-md-6 control">Delivery Receipt No :</label>
                                                     <div class="col-md-6">
-                                                        <input id="" name="name" type="text" class="form-control">
+                                                        <p class="form-control" contenteditable="true">DR0123</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -405,9 +409,9 @@
 													</div>
 													<div class="col-lg-6">
 														<div class="form-group">
-															<label class="col-md-6 control">Quantity Returned :</label>
+															<label class="col-md-5 control">Quantity Returned :</label>
 															<div class="col-md-6">
-																<input class="form-control" name="coffeeType" placeholder="Date" type="date" required />
+																<input class="form-control" name="coffeeType" type="text" required />
 															</div>
 														</div>
 													</div>
@@ -418,6 +422,14 @@
 															<label class="col-md-4 control">Client Name :</label>
 															<div class="col-md-7">
 																<input class="form-control" name="coffeeType" type="text" required />
+															</div>
+														</div>
+													</div>
+													<div class="col-lg-6">
+														<div class="form-group">
+															<label class="col-md-4 control">Delivery Receipt No. :</label>
+															<div class="col-md-7">
+																<p class="form-control" contenteditable="true">DR0123</p>
 															</div>
 														</div>
 													</div>
