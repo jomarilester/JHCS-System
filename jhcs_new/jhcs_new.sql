@@ -255,12 +255,33 @@ LOCK TABLES `supplier` WRITE;
 UNLOCK TABLES;
 
 --
--- Dumping events for database 'jhcs_new'
+-- Table structure for table `user`
 --
 
+DROP TABLE IF EXISTS `user`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `user` (
+  `user_id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_name` varchar(45) NOT NULL,
+  `first_name` varchar(45) NOT NULL,
+  `last_name` varchar(45) NOT NULL,
+  `contact_number` varchar(45) NOT NULL,
+  `user_type` enum('admin','sales','inventory') NOT NULL,
+  `email` varchar(45) NOT NULL,
+  PRIMARY KEY (`user_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
 --
--- Dumping routines for database 'jhcs_new'
+-- Dumping data for table `user`
 --
+
+LOCK TABLES `user` WRITE;
+/*!40000 ALTER TABLE `user` DISABLE KEYS */;
+INSERT INTO `user` VALUES (1,'avylian','Avy','Maslian','09123456789','sales','avylian@gmail.com'),(2,'jom','Jom','Julhusin','09987654321','inventory','jom@gmail.com'),(3,'jin','Jin','Dullao','09456123878','admin','jin@gmail.com');
+/*!40000 ALTER TABLE `user` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -271,4 +292,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-02-09  2:04:17
+-- Dump completed on 2018-02-13 15:11:26
