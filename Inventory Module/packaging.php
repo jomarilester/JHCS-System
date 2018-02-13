@@ -11,21 +11,17 @@
     <meta name="viewport" content="width=device-width" />
     <!-- Bootstrap core CSS     -->
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/css/dataTables.bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/css/jquery.dataTable.min.css" rel="stylesheet" />
     <!--  Material Dashboard CSS    -->
     <link href="../assets/css/material-dashboard.css?v=1.2.0" rel="stylesheet" />
     <!--  CSS for Demo Purpose, don't include it in your project     -->
     <link href="../assets/css/demo.css" rel="stylesheet" />
     <!--     Fonts and icons     -->
-    <link href="css.css" rel="stylesheet" />
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="favicon.ico">
 </head>
-<style>
-.title {
-    font-size: large;
-
-}
-</style>
 
 <body>
     <div class="wrapper">
@@ -41,49 +37,49 @@
             <div class="sidebar-wrapper">
                 <ul class="nav">
                     <li class="">
-                        <a href="dashboard.html">
+                        <a href="dashboard.php">
                             <i class="material-icons">dashboard</i>
                             <p>Dashboard</p>
                         </a>
                     </li>
                     <li class="active">
-                        <a href="inventorystocks.html">
+                        <a href="inventorystocks.php">
                             <i class="material-icons">assessment</i>
                             <p>Inventory Stocks</p>
                         </a>
                     </li>
                     <li>
-                        <a href="inventoryreport.html">
+                        <a href="inventoryreport.php">
                             <i class="material-icons">content_paste</i>
                             <p>Inventory Report</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./PO.html">
+                        <a href="./PO.php">
                             <i class="material-icons">shopping cart</i>
                             <p>Purchase Order</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./inventoryout.html">
+                        <a href="./inventoryout.php">
                             <i class="material-icons">reply</i>
                             <p>Inventory Out</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./itemlist.html">
+                        <a href="./itemlist.php">
                             <i class="material-icons">storage</i>
                             <p>Items</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./returnslist.html">
+                        <a href="./returnslist.php">
                             <i class="material-icons">input</i>
                             <p>Returns</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./sampleslist.html">
+                        <a href="./sampleslist.php">
                             <i class="material-icons">dvr</i>
                             <p>Samples</p>
                         </a>
@@ -112,16 +108,16 @@
                                 <a href="#pablo" class="dropdown-toggle" data-toggle="dropdown">
                                         <i class="material-icons">person</i>
                                         <p class="hidden-lg hidden-md">Profile</p>
-                                </a>
+                                    </a>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a href="./user.html">User Profile</a>
+                                        <a href="./user.php">User Profile</a>
                                     </li>
                                     <li>
-                                        <a href="./changepassword.html">Change Password</a>
+                                        <a href="./changepassword.php">Change Password</a>
                                     </li>
                                     <li>
-                                        <a href="./activitylogs.html">Activity Logs</a>
+                                        <a href="./activitylogs.php">Activity Logs</a>
                                     </li>
                                     <li>
                                         <a href="#">Logout</a>
@@ -142,43 +138,43 @@
                                         <div class="nav-tabs-wrapper">
                                             <span class="nav-tabs-title"> </span>
                                             <ul class="nav nav-tabs" data-tabs="tabs">
-                                                <li class="">
-                                                    <a href="./inventorystocks.html">
+                                                <li>
+                                                    <a href="./inventorystocks.php">
                                                         Raw Coffee
                                                         <div class="ripple-container"></div>
                                                     </a>
                                                 </li>
                                                 <span></span>
-                                                <li class="active">
-                                                    <a href="./blends.html">
+                                                <li class="">
+                                                    <a href="./blends.php">
                                                         Existing Blends
                                                         <div class="ripple-container"></div>
                                                     </a>
                                                 </li>
                                                 <span></span>
                                                 <li class="">
-                                                    <a href="./clientblends.html">
+                                                    <a href="./clientblends.php">
                                                         Client Blends
                                                         <div class="ripple-container"></div>
                                                     </a>
                                                 </li>
                                                 <span></span>
-                                                <li>
-                                                    <a href="./packaging.html">
+                                                <li class="active">
+                                                    <a href="./packaging.php">
                                                         Packaging
                                                         <div class="ripple-container"></div>
                                                     </a>
                                                 </li>
                                                 <span></span>
                                                 <li class="">
-                                                    <a href="./Stickers.html">
+                                                    <a href="./stickers.php">
                                                         Stickers
                                                         <div class="ripple-container"></div>
                                                     </a>
                                                 </li>
                                                 <span></span>
                                                 <li class="">
-                                                    <a href="./machines.html">
+                                                    <a href="./machines.php">
                                                        Machines
                                                         <div class="ripple-container"></div>
                                                     </a>
@@ -190,30 +186,28 @@
                                 <div class="card-content">
                                     <table id="example" class="table hover order-column" cellspacing="0" width="100%">
                                         <thead>
-                                            <th><b class="pull-left">Type of Blend</b></th>
-                                            <th><b class="pull-left">Raw Coffee A</b></th>
-                                            <th><b class="pull-left">Raw Coffee B</b></th>
-                                            <th><b class="pull-left">Raw Coffee C</b></th>
-                                            <th><b class="pull-left">Raw Coffee D</b></th>
-                                            <th><b class="pull-left">Raw Coffee E</b></th>
-                                            <th><b class="pull-left">Raw Coffee F</b></th>
+                                            <th><b class="pull-left">Item Code</b></th>
+                                            <th><b class="pull-left">Type</b></th>
+                                            <th><b class="pull-left">Grams</b></th>
+                                            <th><b class="pull-left">Reorder Level (per pc)</b></th>
+                                            <th><b class="pull-left">Stock Limit (per pc)</b></th>
+                                            <th><b class="pull-left">Number of stocks (per pc)</b></th>
                                             <th><b class="pull-left">Cue Card</b></th>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>Blend A</td>
-                                                <td></td>
-                                                <td>30%</td>
-                                                <td>50%</td>
-                                                <td>20%</td>
-                                                <td></td>
-                                                <td></td>
+                                                <td>BrwnBg250</td>
+                                                <td>Brown Bag</td>
+                                                <td>250 g</td>
+                                                <td>200</td>
+                                                <td>1000</td>
+                                                <td>800</td>
                                                 <td>
                                                     <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#machinecard">Details</button>
+                                                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#packagingcard">Details</button>
 
                                                 <!-- Modal -->
-                                                <div class="modal fade" id="machinecard" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                                <div class="modal fade" id="packagingcard" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                                                   <div class="modal-dialog modal-lg">
                                                     <div class="panel panel-primary">
                                                         <div class="panel-heading">
@@ -222,7 +216,7 @@
                                                         </div>
                                                       <div class="modal-body" style="padding: 5px;">
                                                             <div class="col-lg-12 col-md-12 col-sm-12 text-center" style="padding-bottom: 10px;">
-                                                                <h3><b>Blend A</b></h3>
+                                                                <h3><b>Brown Bag (250 g)</b></h3>
                                                                 <hr>
                                                             </div>
                                                           <label>Set Date from </label>
@@ -236,7 +230,7 @@
                                                           <tr>
                                                             <th><b>Delivery Receipt No.</b></th>
                                                             <th><b>Delivery</b></th>
-                                                            <th><b>Client</b></th>
+                                                            <th><b>Client/Supplier</b></th>
                                                             <th><b>Date</b></th>
                                                             <th><b>Quantity</b></th>
                                                             <th><b>Remarks</b></th>
@@ -245,58 +239,103 @@
                                                         <tbody>
                                                           <tr>
                                                             <td>12345</td>
-                                                            <td>Out</td>
-                                                            <td>Client 1</td>
+                                                            <td>In</td>
+                                                            <td>Supplier 1</td>
                                                             <td>Dec 5, 2017</td>
-                                                            <td>250 grams</td>
+                                                            <td>300 pcs</td>
                                                             <td></td>
                                                           </tr>
                                                           <tr>
                                                             <td>23456</td>
-                                                            <td>Out</td>
+                                                            <td>In</td>
                                                             <td>Client 2</td>
                                                             <td>Dec 12, 2017</td>
-                                                            <td>500 grams</td>
-                                                            <td></td>
+                                                            <td>100 pcs</td>
+                                                            <td>Wrong Packaging</td>
                                                           </tr>
                                                           <tr>
                                                             <td>34567</td>
                                                             <td>In</td>
-                                                            <td>Client 3</td>
+                                                            <td>Supplier 3</td>
                                                             <td>Dec 15, 2017</td>
-                                                            <td>8 pcs</td>
-                                                            <td>Spoiled</td>
+                                                            <td>500 pcs</td>
+                                                            <td></td>
                                                           </tr>
                                                           <tr>
                                                             <td>45678</td>
                                                             <td>Out</td>
-                                                            <td>Client 4</td>
+                                                            <td>Supplier 1</td>
                                                             <td>Dec 8, 2017</td>
-                                                            <td>2 pcs</td>
-                                                            <td></td>
+                                                            <td>200 pcs</td>
+                                                            <td>Damaged</td>
                                                           </tr>
                                                           <tr>
                                                             <td>56789</td>
                                                             <td>Out</td>
                                                             <td>Client 5</td>
                                                             <td>Dec 9, 2017</td>
-                                                            <td>4 pcs</td>
+                                                            <td>300 pcs</td>
                                                             <td></td>
                                                           </tr>
                                                           <tr>
                                                             <td>67890</td>
-                                                            <td>In</td>
-                                                            <td>Client 6</td>
+                                                            <td>Out</td>
+                                                            <td>Client 7</td>
                                                             <td>Dec 17, 2017</td>
-                                                            <td>6 pcs</td>
-                                                            <td>Spoiled</td>
+                                                            <td>200 pcs</td>
+                                                            <td>Sample</td>
                                                           </tr>
                                                         </tbody>
-                                                      </table>
+                                                      </table><hr>
+                                                          <div class="row">
+                                                            <div class="col-lg-6 col-md-6 col-offset-6">
+                                                                <div class="form-group">
+                                                                    <label class="col-md-4 control">Total In :</label>
+                                                                    <div class="col-md-4">
+                                                                        <p>900 pieces</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label class="col-md-4 control">Total Out :</label>
+                                                                    <div class="col-md-7">
+                                                                        <p>700 pieces</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label class="col-md-4 control">Ending Inventory :</label>
+                                                                    <div class="col-md-5">
+                                                                        <p>200 pieces</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                                                    <div class="form-group">
+                                                                        <label class="col-md-6 control">Physical Count :</label>
+                                                                        <div class="col-md-4">
+                                                                            <input id="" name="count" type="number" class="form-control">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label class="col-md-6 control">Discrepancy :</label>
+                                                                        <div class="col-md-4">
+                                                                            <input placeholder="0 piece" class="form-control" disabled />
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label class="col-md-6 control">Remarks :</label>
+                                                                        <div class="col-md-10">
+                                                                            <textarea style="resize:vertical;" class="form-control" rows="2" name="remarks"></textarea>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                         </div>
                                                       </div>
                                                       <div class="modal-footer">
-                                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                        <button type="submit" class="btn btn-success">OK</button>
+                                                          <button style="float: right;" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                                                       </div>
                                                     </div>
                                                   </div>
@@ -304,95 +343,73 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>Blend B</td>
-                                                <td></td>
-                                                <td>10%</td>
-                                                <td>10%</td>
-                                                <td>50%</td>
-                                                <td>10%</td>
-                                                <td>20%</td>
+                                                <td>BrwnBg500</td>
+                                                <td>Brown Bag</td>
+                                                <td>500 g</td>
+                                                <td>200</td>
+                                                <td>1000</td>
+                                                <td>700</td>
                                                 <td>
                                                     <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#machinecard">Details</button>
+                                                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#packagingcard">Details</button>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>Blend C</td>
-                                                <td>10%</td>
-                                                <td></td>
-                                                <td></td>
-                                                <td>50%</td>
-                                                <td></td>
-                                                <td>40%</td>
+                                                <td>BrwnBg1000</td>
+                                                <td>Brown Bag</td>
+                                                <td>1000 g</td>
+                                                <td>200</td>
+                                                <td>1000</td>
+                                                <td>800</td>
                                                 <td>
                                                     <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#machinecard">Details</button>
+                                                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#packagingcard">Details</button>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>Blend D</td>
-                                                <td>30%</td>
-                                                <td></td>
-                                                <td>40%</td>
-                                                <td>20%</td>
-                                                <td>10%</td>
-                                                <td></td>
+                                                <td>ClrBg250</td>
+                                                <td>Clear Bag</td>
+                                                <td>250 g</td>
+                                                <td>200</td>
+                                                <td>1000</td>
+                                                <td>600</td>
                                                 <td>
                                                     <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#machinecard">Details</button>
+                                                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#packagingcard">Details</button>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>Blend E</td>
-                                                <td>30%</td>
-                                                <td>20%</td>
-                                                <td>20%</td>
-                                                <td></td>
-                                                <td>20%</td>
-                                                <td>10%</td>
+                                                <td>ClrBg500</td>
+                                                <td>Clear Bag</td>
+                                                <td>500 g</td>
+                                                <td>200</td>
+                                                <td>1000</td>
+                                                <td>500</td>
                                                 <td>
                                                     <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#machinecard">Details</button>
+                                                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#packagingcard">Details</button>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>Blend F</td>
-                                                <td></td>
-                                                <td>50%</td>
-                                                <td>20%</td>
-                                                <td></td>
-                                                <td>30%</td>
-                                                <td></td>
+                                                <td>ClrBg1000</td>
+                                                <td>Clear Bag</td>
+                                                <td>1000 g</td>
+                                                <td>200</td>
+                                                <td>1000</td>
+                                                <td>500</td>
                                                 <td>
                                                     <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#machinecard">Details</button>
+                                                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#packagingcard">Details</button>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>Blend G</td>
-                                                <td>40%</td>
-                                                <td>10%</td>
-                                                <td>20%</td>
-                                                <td>30%</td>
+                                                <td><b>Total</b></td>
                                                 <td></td>
                                                 <td></td>
-                                                <td>
-                                                    <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#machinecard">Details</button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Blend H</td>
                                                 <td></td>
-                                                <td>30%</td>
-                                                <td>20%</td>
-                                                <td>30%</td>
-                                                <td>20%</td>
+                                                <td>3900 pcs</td>
                                                 <td></td>
-                                                <td>
-                                                    <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#machinecard">Details</button>
-                                                </td>
+                                                <td></td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -422,11 +439,25 @@
 <script src="../assets/js/material-dashboard.js?v=1.2.0"></script>
 <!-- Material Dashboard DEMO methods, don't include it in your project! -->
 <script src="../assets/js/demo.js"></script>
-<script type="text/javascript">
+<script src="../assets/js/jquery.js"></script>
+<script src="../assets/js/jquery.datatables.js"></script>
+<script>
 $(document).ready(function() {
+    $('#fresh-datatables').DataTable({
+        select: {
+            style: 'single'
+        }
 
-    // Javascript method's body can be found in assets/js/demos.js
-    demo.initDashboardPageCharts();
+    });
+    $('#datePicker')
+        .datepicker({
+            format: 'mm/dd/yyyy'
+        })
+        .on('changeDate', function(e) {
+            // Revalidate the date field
+            $('#eventForm').formValidation('revalidateField', 'date');
+        });
+
 
 });
 </script>
@@ -453,4 +484,5 @@ $(document).ready(function() {
     
                 })
 </script> 
+
 </html>

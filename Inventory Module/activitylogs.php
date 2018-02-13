@@ -6,13 +6,16 @@
     <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png" />
     <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>Inventory Out</title>
+
+    <title>Activity Log</title>
+
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
     <!-- Bootstrap core CSS     -->
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="../assets/css/dataTables.bootstrap.min.css" rel="stylesheet" />
-    <link href="../assets/css/jquery.dataTable.min.css" rel="stylesheet" />
+	<link href="../assets/css/dataTables.bootstrap.min.css" rel="stylesheet" />
+		<link href="../assets/css/jquery.dataTable.min.css" rel="stylesheet" />
+	<link href="../assets/css/bootstrap-datepicker3.min.css" rel="stylesheet">
     <!--  Material Dashboard CSS    -->
     <link href="../assets/css/material-dashboard.css?v=1.2.0" rel="stylesheet" />
     <!--  CSS for Demo Purpose, don't include it in your project     -->
@@ -20,7 +23,6 @@
     <!--     Fonts and icons     -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons' rel='stylesheet' type='text/css'>
-    <link rel="shortcut icon" href="favicon.ico">
 </head>
 
 <body>
@@ -37,49 +39,49 @@
             <div class="sidebar-wrapper">
                 <ul class="nav">
                     <li class="">
-                        <a href="dashboard.html">
+                        <a href="dashboard.php">
                             <i class="material-icons">dashboard</i>
                             <p>Dashboard</p>
                         </a>
                     </li>
                     <li>
-                        <a href="inventorystocks.html">
+                        <a href="inventorystocks.php">
                             <i class="material-icons">assessment</i>
                             <p>Inventory Stocks</p>
                         </a>
                     </li>
                     <li>
-                        <a href="inventoryreport.html">
+                        <a href="inventoryreport.php">
                             <i class="material-icons">content_paste</i>
                             <p>Inventory Report</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./PO.html">
+                        <a href="./PO.php">
                             <i class="material-icons">shopping cart</i>
                             <p>Purchase Order</p>
                         </a>
                     </li>
-                    <li class="active">
-                        <a href="./inventoryout.html">
+                    <li>
+                        <a href="./inventoryout.php">
                             <i class="material-icons">reply</i>
                             <p>Inventory Out</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./itemlist.html">
+                        <a href="./itemlist.php">
                             <i class="material-icons">storage</i>
                             <p>Items</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./returnslist.html">
+                        <a href="./returnslist.php">
                             <i class="material-icons">input</i>
                             <p>Returns</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./sampleslist.html">
+                        <a href="./sampleslist.php">
                             <i class="material-icons">dvr</i>
                             <p>Samples</p>
                         </a>
@@ -91,6 +93,15 @@
         <div class="main-panel">
             <nav class="navbar navbar-transparent navbar-absolute">
                 <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#"> </a>
+                    </div>
                     <div class="collapse navbar-collapse">
                         <ul class="nav navbar-nav navbar-right">
                             <li class="dropdown">
@@ -100,16 +111,16 @@
                                 <a href="#pablo" class="dropdown-toggle" data-toggle="dropdown">
                                         <i class="material-icons">person</i>
                                         <p class="hidden-lg hidden-md">Profile</p>
-                                </a>
+                                    </a>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a href="./user.html">User Profile</a>
+                                        <a href="./user.php">User Profile</a>
                                     </li>
                                     <li>
-                                        <a href="./changepassword.html">Change Password</a>
+                                        <a href="./changepassword.php">Change Password</a>
                                     </li>
                                     <li>
-                                        <a href="./activitylogs.html">Activity Logs</a>
+                                        <a href="./activitylogs.php">Activity Logs</a>
                                     </li>
                                     <li>
                                         <a href="#">Logout</a>
@@ -124,113 +135,64 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="card card-nav-tabs">
-                                <div class="card-header" data-background-color="blue">
-                                    <div class="nav-tabs-navigation">
-                                        <div class="nav-tabs-wrapper">
-                                            <span class="nav-tabs-title"> </span>
-                                            <ul class="nav nav-tabs" data-tabs="tabs">
-                                                <li class="">
-                                                    <a href="./inventoryout.html">
-                                                        Raw Coffee
-                                                        <div class="ripple-container"></div>
-                                                    </a>
-                                                </li>
-                                                <span></span>
-                                                <li class="active">
-                                                    <a href="./packagingO.html">
-                                                        Packaging
-                                                        <div class="ripple-container"></div>
-                                                    </a>
-                                                </li>
-                                                <span></span>
-                                                <li class="">
-                                                    <a href="./machineO.html">
-                                                        Machines
-                                                        <div class="ripple-container"></div>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-content ">
-                                    <br>
-                                    <table id="example" class="table hover order-column" cellspacing="0" width="100%">
+                            <div class="card">
+            <div class="content" style="margin-top: 0px;">
+                <div class="container-fluid">
+                    <div class="card">  
+                        <div class="card-header" data-background-color="blue">
+                            <h4 class="title"><i class="material-icons">timeline</i>  Activity Logs</h4>
+                        </div>
+                        <div class="card-content">
+                        <div class="card-content table-responsive">
+                            <div class="col-md-12 col-md-offset-0">
+                                <div class="fresh-datatables">
+                                    <!--  Available colors for the full background: full-color-blue, full-color-azure, full-color-green, full-color-red, full-color-orange, full-color-purple, full-color-gray
+                                    Available colors only for the toolbar: toolbar-color-blue, toolbar-color-azure, toolbar-color-green, toolbar-color-red, toolbar-color-orange, toolbar-color-purple, toolbar-color-gray -->
+                                    <table id="fresh-datatables" class="table table-striped table-no-bordered table-hover" cellspacing="0" width="100%" style="width:100%">
                                         <thead>
-                                            <th><b>Delivery Receipt No.</b></th>
-                                            <th><b>Client</b></th>
-                                            <th><b>Date</b></th>
-                                            <th><b>250g clear bag</b></th>
-                                            <th><b>500g clear bag</b></th>
-                                            <th><b>1000g clear bag</b></th>
-                                            <th><b>250g brown bags</b></th>
-                                            <th><b>500g brown bag</b></th>
-                                            <th><b>1000g brown bag</b></th>
-                                            <th><b>Requested by</b></th>
-                                            <th><b>Released by</b></th>
+                                            <tr>
+                                                <th><b>Date & Time</b></th>
+                                                <th><b>User</b></th>
+                                                <th><b>Activity</b></th>
+                                            </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>12345</td>
-                                                <td>Camayan</td>
-                                                <td>01/30/18</td>
-                                                <td>11</td>
-                                                <td></td>
-                                                <td></td>
-                                                <td>2</td>
-                                                <td>5</td>
-                                                <td></td>
-                                                <td>Domeng</td>
-                                                <td>Jhen</td>
-                                            </tr>
-                                            <tr>
-                                                <td>23456</td>
-                                                <td>Le Chef S W</td>
-                                                <td>01/30/18</td>
-                                                <td></td>
-                                                <td>17</td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td>1</td>
-                                                <td>Jhen</td>
+                                                <td>Oct 3, 2017 9:11:00</td>
                                                 <td>Lani</td>
+                                                <td>Activity 1</td>
                                             </tr>
                                             <tr>
-                                                <td>34567</td>
-                                                <td>Volante</td>
-                                                <td>02/1/18</td>
-                                                <td></td>
-                                                <td>126</td>
-                                                <td></td>
-                                                <td></td>
-                                                <td>2</td>
-                                                <td>7</td>
-                                                <td>Domeng</td>
-                                                <td>Jhen</td>
+                                                <td>Oct 7, 2017 11:28:00</td>
+                                                <td>Lani</td>
+                                                <td>Activity 2</td>
                                             </tr>
                                             <tr>
-                                                <td>45678</td>
-                                                <td>Escala</td>
-                                                <td>02/2/18</td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td>15</td>
-                                                <td>10</td>
-                                                <td></td>
-                                                <td>Domeng</td>
-                                                <td>Jhen</td>
+                                                <td>Oct 11, 2017 13:35:00</td>
+                                                <td>Lani</td>
+                                                <td>Activity 3</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Oct 15, 2017 15:49:00</td>
+                                                <td>Lani</td>
+                                                <td>Activity 4</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Oct 18, 2017 16:59:00</td>
+                                                <td>Lani</td>
+                                                <td>Activity 5</td>
                                             </tr>
                                         </tbody>
                                     </table>
                                 </div>
                             </div>
                         </div>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
         </div>
     </div>
 </body>
@@ -254,14 +216,44 @@
 <script src="../assets/js/demo.js"></script>
 <script src="../assets/js/jquery.js"></script>
 <script src="../assets/js/jquery.datatables.js"></script>
-<script type="text/javascript">
+<script>
 $(document).ready(function() {
-    var table = $('#example').DataTable({
-        select: {
-            style: 'single'
+    $('#fresh-datatables').DataTable({
+        "pagingType": "full_numbers",
+        "lengthMenu": [
+            [10, 25, 50, -1],
+            [10, 25, 50, "All"]
+        ],
+        responsive: true,
+        language: {
+            search: "_INPUT_",
+            searchPlaceholder: "Search records",
         }
+
     });
 
+
+    var table = $('#fresh-datatables').DataTable();
+
+    // Edit record
+    table.on('click', '.edit', function() {
+        $tr = $(this).closest('tr');
+
+        var data = table.row($tr).data();
+        alert('You press on Row: ' + data[0] + ' ' + data[1] + ' ' + data[2] + '\'s row.');
+    });
+
+    // Delete a record
+    table.on('click', '.remove', function(e) {
+        $tr = $(this).closest('tr');
+        table.row($tr).remove().draw();
+        e.preventDefault();
+    });
+
+    //Like record
+    table.on('click', '.like', function() {
+        alert('You clicked on Like button');
+    });
 });
 </script>
 

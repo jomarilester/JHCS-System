@@ -11,17 +11,21 @@
     <meta name="viewport" content="width=device-width" />
     <!-- Bootstrap core CSS     -->
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="../assets/css/dataTables.bootstrap.min.css" rel="stylesheet" />
-    <link href="../assets/css/jquery.dataTable.min.css" rel="stylesheet" />
     <!--  Material Dashboard CSS    -->
     <link href="../assets/css/material-dashboard.css?v=1.2.0" rel="stylesheet" />
     <!--  CSS for Demo Purpose, don't include it in your project     -->
     <link href="../assets/css/demo.css" rel="stylesheet" />
     <!--     Fonts and icons     -->
+    <link href="css.css" rel="stylesheet" />
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons' rel='stylesheet' type='text/css'>
-    <link rel="shortcut icon" href="favicon.ico">
 </head>
+<style>
+.title {
+    font-size: large;
+
+}
+</style>
 
 <body>
     <div class="wrapper">
@@ -36,50 +40,50 @@
             </div>
             <div class="sidebar-wrapper">
                 <ul class="nav">
-                    <li>
-                        <a href="dashboard.html">
+                    <li class="">
+                        <a href="dashboard.php">
                             <i class="material-icons">dashboard</i>
                             <p>Dashboard</p>
                         </a>
                     </li>
-                    <li>
-                        <a href="inventorystocks.html">
+                    <li class="active">
+                        <a href="inventorystocks.php">
                             <i class="material-icons">assessment</i>
                             <p>Inventory Stocks</p>
                         </a>
                     </li>
                     <li>
-                        <a href="inventoryreport.html">
+                        <a href="inventoryreport.php">
                             <i class="material-icons">content_paste</i>
                             <p>Inventory Report</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./PO.html">
+                        <a href="./PO.php">
                             <i class="material-icons">shopping cart</i>
                             <p>Purchase Order</p>
                         </a>
                     </li>
-                    <li class="active">
-                        <a href="./inventoryout.html">
+                    <li>
+                        <a href="./inventoryout.php">
                             <i class="material-icons">reply</i>
                             <p>Inventory Out</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./itemlist.html">
+                        <a href="./itemlist.php">
                             <i class="material-icons">storage</i>
                             <p>Items</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./returnslist.html">
+                        <a href="./returnslist.php">
                             <i class="material-icons">input</i>
                             <p>Returns</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./sampleslist.html">
+                        <a href="./sampleslist.php">
                             <i class="material-icons">dvr</i>
                             <p>Samples</p>
                         </a>
@@ -91,6 +95,14 @@
         <div class="main-panel">
             <nav class="navbar navbar-transparent navbar-absolute">
                 <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
                     <div class="collapse navbar-collapse">
                         <ul class="nav navbar-nav navbar-right">
                             <li class="dropdown">
@@ -103,13 +115,13 @@
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a href="./user.html">User Profile</a>
+                                        <a href="./user.php">User Profile</a>
                                     </li>
                                     <li>
-                                        <a href="./changepassword.html">Change Password</a>
+                                        <a href="./changepassword.php">Change Password</a>
                                     </li>
                                     <li>
-                                        <a href="./activitylogs.html">Activity Logs</a>
+                                        <a href="./activitylogs.php">Activity Logs</a>
                                     </li>
                                     <li>
                                         <a href="#">Logout</a>
@@ -131,22 +143,43 @@
                                             <span class="nav-tabs-title"> </span>
                                             <ul class="nav nav-tabs" data-tabs="tabs">
                                                 <li class="">
-                                                    <a href="./inventoryout.html">
+                                                    <a href="./inventorystocks.php">
                                                         Raw Coffee
                                                         <div class="ripple-container"></div>
                                                     </a>
                                                 </li>
                                                 <span></span>
-                                                <li class="">
-                                                    <a href="./packagingO.html">
-                                                        Packaging
+                                                <li>
+                                                    <a href="./blends.php">
+                                                        Existing Blends
                                                         <div class="ripple-container"></div>
                                                     </a>
                                                 </li>
                                                 <span></span>
                                                 <li class="active">
-                                                    <a href="./machineO.html">
-                                                        Machines
+                                                    <a href="./clientblends.php">
+                                                        Client Blends
+                                                        <div class="ripple-container"></div>
+                                                    </a>
+                                                </li>
+                                                <span></span>
+                                                <li>
+                                                    <a href="./packaging.php">
+                                                        Packaging
+                                                        <div class="ripple-container"></div>
+                                                    </a>
+                                                </li>
+                                                <span></span>
+                                                <li class="">
+                                                    <a href="./Stickers.php">
+                                                        Stickers
+                                                        <div class="ripple-container"></div>
+                                                    </a>
+                                                </li>
+                                                <span></span>
+                                                <li class="">
+                                                    <a href="./machines.php">
+                                                       Machines
                                                         <div class="ripple-container"></div>
                                                     </a>
                                                 </li>
@@ -154,65 +187,98 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card-content ">
-                                    <br>
+                                <div class="card-content">
                                     <table id="example" class="table hover order-column" cellspacing="0" width="100%">
                                         <thead>
-                                            <th><b class="pull-left">Delivery Receipt No.</b></th>
-                                            <th><b class="pull-left">Tagging Number</b></th>
-                                            <th><b class="pull-left">Client</b></th>
-                                            <th><b class="pull-left">Date Installed</b></th>
-                                            <th><b class="pull-left">No. of machines installed</b></th>
-                                            <th><b class="pull-left">Remarks</b></th>
+                                            <th><b class="pull-left">Type of Blend</b></th>
+                                            <th><b class="pull-left">Raw Coffee A</b></th>
+                                            <th><b class="pull-left">Raw Coffee B</b></th>
+                                            <th><b class="pull-left">Raw Coffee C</b></th>
+                                            <th><b class="pull-left">Raw Coffee D</b></th>
+                                            <th><b class="pull-left">Raw Coffee E</b></th>
+                                            <th><b class="pull-left">Raw Coffee F</b></th>
+                                            <th><b class="pull-left">Unit Price</b></th>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>12345</td>
-                                                <td>123456</td>
-                                                <td>Tazabelle</td>
-                                                <td>01/12/18</td>
-                                                <td>3</td>
-                                                <td>Rented</td>
+                                                <td>Client A Blend</td>
+                                                <td></td>
+                                                <td>30%</td>
+                                                <td>50%</td>
+                                                <td>20%</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td>199</td>
                                             </tr>
                                             <tr>
-                                                <td>23456</td>
-                                                <td>345554</td>
-                                                <td>Cafe Lupe</td>
-                                                <td>01/12/18</td>
-                                                <td>2</td>
-                                                <td>Rented</td>
+                                                <td>Client B Blend</td>
+                                                <td></td>
+                                                <td>10%</td>
+                                                <td>10%</td>
+                                                <td>50%</td>
+                                                <td>10%</td>
+                                                <td>20%</td>
+                                                <td>250</td>
                                             </tr>
                                             <tr>
-                                                <td>34567</td>
-                                                <td>345745</td>
-                                                <td>The Merry Cooks, Inc.</td>
-                                                <td>01/12/18</td>
-                                                <td>1</td>
-                                                <td>Sold</td>
+                                                <td>Client C Blend</td>
+                                                <td>10%</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td>50%</td>
+                                                <td></td>
+                                                <td>40%</td>
+                                                <td>300</td>
                                             </tr>
                                             <tr>
-                                                <td>45678</td>
-                                                <td>653454</td>
-                                                <td>Patch Cafe</td>
-                                                <td>01/13/18</td>
-                                                <td>3</td>
-                                                <td>Rented</td>
+                                                <td>Client D Blend</td>
+                                                <td>30%</td>
+                                                <td></td>
+                                                <td>40%</td>
+                                                <td>20%</td>
+                                                <td>10%</td>
+                                                <td></td>
+                                                <td>350</td>
                                             </tr>
                                             <tr>
-                                                <td>56789</td>
-                                                <td>464543</td>
-                                                <td>Connie's Kitchen</td>
-                                                <td>01/15/18</td>
-                                                <td>5</td>
-                                                <td>Rented</td>
+                                                <td>Client E Blend</td>
+                                                <td>30%</td>
+                                                <td>20%</td>
+                                                <td>20%</td>
+                                                <td></td>
+                                                <td>20%</td>
+                                                <td>10%</td>
+                                                <td>199</td>
                                             </tr>
                                             <tr>
-                                                <td>67890</td>
-                                                <td>452323</td>
-                                                <td>The Manor Hotel</td>
-                                                <td>01/15/18</td>
-                                                <td>2</td>
-                                                <td>Sold</td>
+                                                <td>Client F Blend</td>
+                                                <td></td>
+                                                <td>50%</td>
+                                                <td>20%</td>
+                                                <td></td>
+                                                <td>30%</td>
+                                                <td></td>
+                                                <td>250</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Client G Blend</td>
+                                                <td>40%</td>
+                                                <td>10%</td>
+                                                <td>20%</td>
+                                                <td>30%</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td>199</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Client H Blend</td>
+                                                <td></td>
+                                                <td>30%</td>
+                                                <td>20%</td>
+                                                <td>30%</td>
+                                                <td>20%</td>
+                                                <td></td>
+                                                <td>199</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -223,7 +289,6 @@
                 </div>
             </div>
         </div>
-    </div>
 </body>
 <!--   Core JS Files   -->
 <script src="../assets/js/jquery-3.2.1.min.js" type="text/javascript"></script>
@@ -243,15 +308,11 @@
 <script src="../assets/js/material-dashboard.js?v=1.2.0"></script>
 <!-- Material Dashboard DEMO methods, don't include it in your project! -->
 <script src="../assets/js/demo.js"></script>
-<script src="../assets/js/jquery.js"></script>
-<script src="../assets/js/jquery.datatables.js"></script>
 <script type="text/javascript">
 $(document).ready(function() {
-    var table = $('#example').DataTable({
-        select: {
-            style: 'single'
-        }
-    });
+
+    // Javascript method's body can be found in assets/js/demos.js
+    demo.initDashboardPageCharts();
 
 });
 </script>

@@ -13,7 +13,6 @@
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="../assets/css/dataTables.bootstrap.min.css" rel="stylesheet" />
     <link href="../assets/css/jquery.dataTable.min.css" rel="stylesheet" />
-    <link href="../assets/css/bootstrap-datepicker3.min.css" rel="stylesheet">
     <!--  Material Dashboard CSS    -->
     <link href="../assets/css/material-dashboard.css?v=1.2.0" rel="stylesheet" />
     <!--  CSS for Demo Purpose, don't include it in your project     -->
@@ -21,17 +20,18 @@
     <!--     Fonts and icons     -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="favicon.ico">
 </head>
 
 <style type="text/css">
+label,
+input {
+    color: black;
+}
 
 .title {
     font-size: large;
 
-}
-
-label {
-    color: black;
 }
 </style>
 
@@ -49,49 +49,49 @@ label {
             <div class="sidebar-wrapper">
                 <ul class="nav">
                     <li>
-                        <a href="dashboard.html">
+                        <a href="dashboard.php">
                             <i class="material-icons">dashboard</i>
                             <p>Dashboard</p>
                         </a>
                     </li>
                     <li>
-                        <a href="inventorystocks.html">
+                        <a href="inventorystocks.php">
                             <i class="material-icons">assessment</i>
                             <p>Inventory Stocks</p>
                         </a>
                     </li>
                     <li class="active">
-                        <a href="inventoryreport.html">
+                        <a href="inventoryreport.php">
                             <i class="material-icons">content_paste</i>
                             <p>Inventory Report</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./PO.html">
+                        <a href="./PO.php">
                             <i class="material-icons">shopping cart</i>
                             <p>Purchase Order</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./inventoryout.html">
+                        <a href="./inventoryout.php">
                             <i class="material-icons">reply</i>
                             <p>Inventory Out</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./itemlist.html">
+                        <a href="./itemlist.php">
                             <i class="material-icons">storage</i>
                             <p>Items</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./returnslist.html">
+                        <a href="./returnslist.php">
                             <i class="material-icons">input</i>
                             <p>Returns</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./sampleslist.html">
+                        <a href="./sampleslist.php">
                             <i class="material-icons">dvr</i>
                             <p>Samples</p>
                         </a>
@@ -124,13 +124,13 @@ label {
                                     </a>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a href="./user.html">User Profile</a>
+                                        <a href="./user.php">User Profile</a>
                                     </li>
                                     <li>
-                                        <a href="./changepassword.html">Change Password</a>
+                                        <a href="./changepassword.php">Change Password</a>
                                     </li>
                                     <li>
-                                        <a href="./activitylogs.html">Activity Logs</a>
+                                        <a href="./activitylogs.php">Activity Logs</a>
                                     </li>
                                     <li>
                                         <a href="#">Logout</a>
@@ -153,15 +153,15 @@ label {
                                                 <span class="nav-tabs-title"> </span>
                                                 <ul class="nav nav-tabs" data-tabs="tabs">
                                                     <span></span>
-                                                    <li>
-                                                        <a href="./inventoryreport.html">
+                                                    <li class="active">
+                                                        <a href="./inventoryreport.php">
                                                             Date In
                                                             <div class="ripple-container"></div>
                                                         </a>
                                                     </li>
                                                     <span></span>
-                                                    <li class="active">
-                                                        <a href="./inventoryreport2.html">
+                                                    <li class="">
+                                                        <a href="./inventoryreport2.php">
                                                             Date Out
                                                             <div class="ripple-container"></div>
                                                         </a>
@@ -171,21 +171,18 @@ label {
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card-content">
+                                <div class="card-content table-responsive">
                                       <label>Set Date from </label>
                                         <input type="date" name="">
                                         <label> to </label>
                                         <input type="date" name=""><br><br>
                                     <hr>
                                     <h4>Generate Inventory  Report</h4>
-                                    <table id="example" class="display table table-hover table-responsive" cellspacing="0" width="100%">
+                                    <table id="example" class="display  hover order-column table table-responsive" cellspacing="0" width="100%">
                                         <thead>
                                             <tr>
-                                                <th><b>Date Out</b></th>
-                                                <th><b>Client</b></th>
-                                                <th><b>Grams</b></th>
-                                                <th><b>Qty/Bag</b></th>
-                                                <th><b>Total</b></th>
+                                                <th><b>Date In</b></th>
+                                                <th><b></b></th>
                                                 <th><b>Coffee A</b></th>
                                                 <th><b>Coffee B</b></th>
                                                 <th><b>Coffee C</b></th>
@@ -193,129 +190,101 @@ label {
                                                 <th><b>Coffee E</b></th>
                                                 <th><b>Coffee F</b></th>
                                                 <th><b>Packaging</b></th>
-                                                <th><b>Type of Service</b></th>
+                                                <th><b>Sticker</b></th>
+                                                <th><b>Machine</b></th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>10/02/2017</td>
-                                                <td>Client 1</td>
-                                                <td>500</td>
-                                                <td>50</td>
-                                                <td>-25000</td>
-                                                <td>-</td>
-                                                <td>-10000</td>
-                                                <td>-2500</td>
-                                                <td>-</td>
-                                                <td>-</td>
-                                                <td>-12500</td>
-                                                <td>Clear Bag</td>
-                                                <td>Retail</td>
+                                                <td>09/30/17</td>
+                                                <td><b>Beginning Inventory</b></td>
+                                                <td>3000 g</td>
+                                                <td>8000 g</td>
+                                                <td>4000 g</td>
+                                                <td>5000 g</td>
+                                                <td>3000 g</td>
+                                                <td>7000 g</td>
+                                                <td>1000 pcs</td>
+                                                <td>1500 pcs</td>
+                                                <td>15 pcs</td>
                                             </tr>
                                             <tr>
-                                                <td>10/02/2017</td>
-                                                <td>Client 2</td>
-                                                <td>500</td>
-                                                <td>1</td>
-                                                <td>-500</td>
-                                                <td>-51</td>
-                                                <td>-376</td>
+                                                <td>10/02/17</td>
+                                                <td>Gourmet Farms</td>
+                                                <td>2000 g</td>
+                                                <td>6000 g</td>
                                                 <td>-</td>
-                                                <td>-73</td>
+                                                <td>3000 g</td>
                                                 <td>-</td>
                                                 <td>-</td>
-                                                <td>Clear Bag</td>
+                                                <td>-</td>
+                                                <td>-</td>
                                                 <td>-</td>
                                             </tr>
                                             <tr>
-                                                <td>10/02/2017</td>
-                                                <td>Client 3</td>
-                                                <td>500</td>
-                                                <td>2</td>
-                                                <td>-1000</td>
+                                                <td>10/02/17</td>
+                                                <td>Gourmet Farms</td>
+                                                <td>2000 g</td>
                                                 <td>-</td>
-                                                <td>-700</td>
+                                                <td>4000 g</td>
+                                                <td>-</td>
+                                                <td>3000 g</td>
                                                 <td>-</td>
                                                 <td>-</td>
                                                 <td>-</td>
-                                                <td>-300</td>
-                                                <td>Clear</td>
-                                                <td>Coffee Service</td>
+                                                <td>-</td>
                                             </tr>
                                             <tr>
-                                                <td>10/03/2017</td>
-                                                <td>Client 4</td>
-                                                <td>250</td>
-                                                <td>6</td>
-                                                <td>-1500</td>
-                                                <td>-300</td>
-                                                <td>-1200</td>
+                                                <td>10/02/17</td>
+                                                <td>Gourmet Farms</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>2000 g</td>
+                                                <td>-</td>
+                                                <td>3000 g</td>
+                                                <td>8000 g</td>
                                                 <td>-</td>
                                                 <td>-</td>
                                                 <td>-</td>
-                                                <td>-</td>
-                                                <td>Brown Bag</td>
-                                                <td>Retail</td>
                                             </tr>
                                             <tr>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
+                                                <td>10/3/17</td>
+                                                <td>Other Supplier</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>250 pcs</td>
+                                                <td>500 pcs</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td>10/12/17</td>
+                                                <td>Other Supplier</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>100 pcs</td>
+                                                <td>100 pcs</td>
+                                                <td>2 pcs</td>
                                             </tr>
                                             <tr>
                                                 <td><b>Total</b></td>
                                                 <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td>-351</td>
-                                                <td>-12276</td>
-                                                <td>-2500</td>
-                                                <td>-73</td>
-                                                <td>-</td>
-                                                <td>-12800</td>
-                                                <td></td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td><b>Ending Inventory</b></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td>6649</td>
-                                                <td>1724</td>
-                                                <td>7500</td>
-                                                <td>7927</td>
-                                                <td>9000</td>
-                                                <td>2200</td>
-                                                <td></td>
-                                                <td></td>
+                                                <td>7000 g</td>
+                                                <td>14000 g</td>
+                                                <td>10000 g</td>
+                                                <td>8000 g</td>
+                                                <td>9000 g</td>
+                                                <td>15000 g</td>
+                                                <td>350 pcs</td>
+                                                <td>600 pcs</td>
+                                                <td>2 pcs</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -335,7 +304,7 @@ label {
 <script src="../assets/js/dataTables.bootstrap.min.js" type="text/javascript"></script>
 <script src="../assets/FileExport/buttons.flash.min.js" type="text/javascript"></script>
 <script src="../assets/FileExport/dataTables.buttons.min.js" type="text/javascript"></script>
-<script src="../assets/FileExport/buttons.html5.min.js" type="text/javascript"></script>
+<script src="../assets/FileExport/buttons.php5.min.js" type="text/javascript"></script>
 <script src="../assets/FileExport/buttons.print.min.js" type="text/javascript"></script>
 <script src="../assets/FileExport/jszip.min.js" type="text/javascript"></script>
 <script src="../assets/FileExport/pdfmake.min.js" type="text/javascript"></script>

@@ -37,49 +37,49 @@
             <div class="sidebar-wrapper">
                 <ul class="nav">
                     <li class="">
-                        <a href="dashboard.html">
+                        <a href="dashboard.php">
                             <i class="material-icons">dashboard</i>
                             <p>Dashboard</p>
                         </a>
                     </li>
                     <li class="active">
-                        <a href="inventorystocks.html">
+                        <a href="inventorystocks.php">
                             <i class="material-icons">assessment</i>
                             <p>Inventory Stocks</p>
                         </a>
                     </li>
                     <li>
-                        <a href="inventoryreport.html">
+                        <a href="inventoryreport.php">
                             <i class="material-icons">content_paste</i>
                             <p>Inventory Report</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./PO.html">
+                        <a href="./PO.php">
                             <i class="material-icons">shopping cart</i>
                             <p>Purchase Order</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./inventoryout.html">
+                        <a href="./inventoryout.php">
                             <i class="material-icons">reply</i>
                             <p>Inventory Out</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./itemlist.html">
+                        <a href="./itemlist.php">
                             <i class="material-icons">storage</i>
                             <p>Items</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./returnslist.html">
+                        <a href="./returnslist.php">
                             <i class="material-icons">input</i>
                             <p>Returns</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./sampleslist.html">
+                        <a href="./sampleslist.php">
                             <i class="material-icons">dvr</i>
                             <p>Samples</p>
                         </a>
@@ -111,13 +111,13 @@
                                     </a>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a href="./user.html">User Profile</a>
+                                        <a href="./user.php">User Profile</a>
                                     </li>
                                     <li>
-                                        <a href="./changepassword.html">Change Password</a>
+                                        <a href="./changepassword.php">Change Password</a>
                                     </li>
                                     <li>
-                                        <a href="./activitylogs.html">Activity Logs</a>
+                                        <a href="./activitylogs.php">Activity Logs</a>
                                     </li>
                                     <li>
                                         <a href="#">Logout</a>
@@ -139,42 +139,42 @@
                                             <span class="nav-tabs-title"> </span>
                                             <ul class="nav nav-tabs" data-tabs="tabs">
                                                 <li>
-                                                    <a href="./inventorystocks.html">
+                                                    <a href="./inventorystocks.php">
                                                         Raw Coffee
                                                         <div class="ripple-container"></div>
                                                     </a>
                                                 </li>
                                                 <span></span>
                                                 <li class="">
-                                                    <a href="./blends.html">
+                                                    <a href="./blends.php">
                                                         Existing Blends
                                                         <div class="ripple-container"></div>
                                                     </a>
                                                 </li>
                                                 <span></span>
                                                 <li class="">
-                                                    <a href="./clientblends.html">
+                                                    <a href="./clientblends.php">
                                                         Client Blends
                                                         <div class="ripple-container"></div>
                                                     </a>
                                                 </li>
                                                 <span></span>
-                                                <li class="active">
-                                                    <a href="./packaging.html">
+                                                <li>
+                                                    <a href="./packaging.php">
                                                         Packaging
                                                         <div class="ripple-container"></div>
                                                     </a>
                                                 </li>
                                                 <span></span>
                                                 <li class="">
-                                                    <a href="./stickers.html">
+                                                    <a href="./stickers.php">
                                                         Stickers
                                                         <div class="ripple-container"></div>
                                                     </a>
                                                 </li>
                                                 <span></span>
-                                                <li class="">
-                                                    <a href="./machines.html">
+                                                <li class="active">
+                                                    <a href="./machines.php">
                                                        Machines
                                                         <div class="ripple-container"></div>
                                                     </a>
@@ -187,36 +187,37 @@
                                     <table id="example" class="table hover order-column" cellspacing="0" width="100%">
                                         <thead>
                                             <th><b class="pull-left">Item Code</b></th>
-                                            <th><b class="pull-left">Type</b></th>
-                                            <th><b class="pull-left">Grams</b></th>
-                                            <th><b class="pull-left">Reorder Level (per pc)</b></th>
-                                            <th><b class="pull-left">Stock Limit (per pc)</b></th>
-                                            <th><b class="pull-left">Number of stocks (per pc)</b></th>
+                                            <th><b class="pull-left">Machine</b></th>
+                                            <th><b class="pull-left">Reorder Level</b></th>
+                                            <th><b class="pull-left">Stock Limit</b></th>
+                                            <th><b class="pull-left">Supplier</b></th>
+                                            <th><b class="pull-left">Number of Stocks </b></th>
                                             <th><b class="pull-left">Cue Card</b></th>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>BrwnBg250</td>
-                                                <td>Brown Bag</td>
-                                                <td>250 g</td>
-                                                <td>200</td>
-                                                <td>1000</td>
-                                                <td>800</td>
+                                                <td>Mchn1</td>
+                                                <td>Machine A</td>
+                                                <td>5</td>
+                                                <td>20</td>
+                                                <td>Supplier A</td>
+                                                <td>9</td>
                                                 <td>
                                                     <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#packagingcard">Details</button>
+                                                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#machinecard">Details</button>
 
                                                 <!-- Modal -->
-                                                <div class="modal fade" id="packagingcard" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                                <div class="modal fade" id="machinecard" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                                                   <div class="modal-dialog modal-lg">
                                                     <div class="panel panel-primary">
                                                         <div class="panel-heading">
                                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                                             <h4 class="panel-title" id="contactLabel"><span class="glyphicon glyphicon-info-sign"></span>Cue Card Details</h4>
                                                         </div>
+                                                          
                                                       <div class="modal-body" style="padding: 5px;">
                                                             <div class="col-lg-12 col-md-12 col-sm-12 text-center" style="padding-bottom: 10px;">
-                                                                <h3><b>Brown Bag (250 g)</b></h3>
+                                                                <h3><b>Machine A</b></h3>
                                                                 <hr>
                                                             </div>
                                                           <label>Set Date from </label>
@@ -242,7 +243,7 @@
                                                             <td>In</td>
                                                             <td>Supplier 1</td>
                                                             <td>Dec 5, 2017</td>
-                                                            <td>300 pcs</td>
+                                                            <td>4 pcs</td>
                                                             <td></td>
                                                           </tr>
                                                           <tr>
@@ -250,15 +251,15 @@
                                                             <td>In</td>
                                                             <td>Client 2</td>
                                                             <td>Dec 12, 2017</td>
-                                                            <td>100 pcs</td>
-                                                            <td>Wrong Packaging</td>
+                                                            <td>6 pcs</td>
+                                                            <td></td>
                                                           </tr>
                                                           <tr>
                                                             <td>34567</td>
                                                             <td>In</td>
                                                             <td>Supplier 3</td>
                                                             <td>Dec 15, 2017</td>
-                                                            <td>500 pcs</td>
+                                                            <td>8 pcs</td>
                                                             <td></td>
                                                           </tr>
                                                           <tr>
@@ -266,15 +267,15 @@
                                                             <td>Out</td>
                                                             <td>Supplier 1</td>
                                                             <td>Dec 8, 2017</td>
-                                                            <td>200 pcs</td>
-                                                            <td>Damaged</td>
+                                                            <td>2 pcs</td>
+                                                            <td></td>
                                                           </tr>
                                                           <tr>
                                                             <td>56789</td>
                                                             <td>Out</td>
                                                             <td>Client 5</td>
                                                             <td>Dec 9, 2017</td>
-                                                            <td>300 pcs</td>
+                                                            <td>4 pcs</td>
                                                             <td></td>
                                                           </tr>
                                                           <tr>
@@ -282,8 +283,8 @@
                                                             <td>Out</td>
                                                             <td>Client 7</td>
                                                             <td>Dec 17, 2017</td>
-                                                            <td>200 pcs</td>
-                                                            <td>Sample</td>
+                                                            <td>6 pcs</td>
+                                                            <td></td>
                                                           </tr>
                                                         </tbody>
                                                       </table><hr>
@@ -292,19 +293,19 @@
                                                                 <div class="form-group">
                                                                     <label class="col-md-4 control">Total In :</label>
                                                                     <div class="col-md-4">
-                                                                        <p>900 pieces</p>
+                                                                        <p>18 pieces</p>
                                                                     </div>
                                                                 </div>
                                                                 <div class="form-group">
                                                                     <label class="col-md-4 control">Total Out :</label>
                                                                     <div class="col-md-7">
-                                                                        <p>700 pieces</p>
+                                                                        <p>12 pieces</p>
                                                                     </div>
                                                                 </div>
                                                                 <div class="form-group">
                                                                     <label class="col-md-4 control">Ending Inventory :</label>
                                                                     <div class="col-md-5">
-                                                                        <p>200 pieces</p>
+                                                                        <p>6 pieces</p>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -313,13 +314,13 @@
                                                                     <div class="form-group">
                                                                         <label class="col-md-6 control">Physical Count :</label>
                                                                         <div class="col-md-4">
-                                                                            <input id="" name="count" type="number" class="form-control">
+                                                                            <input class="form-control" type="number" name="count" required />
                                                                         </div>
                                                                     </div>
                                                                     <div class="form-group">
                                                                         <label class="col-md-6 control">Discrepancy :</label>
                                                                         <div class="col-md-4">
-                                                                            <input placeholder="0 piece" class="form-control" disabled />
+                                                                            <input placeholder="" class="form-control" disabled />
                                                                         </div>
                                                                     </div>
                                                                     <div class="form-group">
@@ -334,7 +335,7 @@
                                                         </div>
                                                       </div>
                                                       <div class="modal-footer">
-                                                        <button type="submit" class="btn btn-success">OK</button>
+                                                        <button type="submit" class="btn btn-success accept">OK</button>
                                                           <button style="float: right;" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                                                       </div>
                                                     </div>
@@ -343,63 +344,123 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>BrwnBg500</td>
-                                                <td>Brown Bag</td>
-                                                <td>500 g</td>
-                                                <td>200</td>
-                                                <td>1000</td>
-                                                <td>700</td>
+                                                <td>Mchn2</td>
+                                                <td>Machine B</td>
+                                                <td>5</td>
+                                                <td>20</td>
+                                                <td>Supplier B</td>
+                                                <td>15</td>
                                                 <td>
                                                     <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#packagingcard">Details</button>
+                                                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#machinecard">Details</button>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>BrwnBg1000</td>
-                                                <td>Brown Bag</td>
-                                                <td>1000 g</td>
-                                                <td>200</td>
-                                                <td>1000</td>
-                                                <td>800</td>
+                                                <td>Mchn3</td>
+                                                <td>Machine C</td>
+                                                <td>5</td>
+                                                <td>20</td>
+                                                <td>Supplier C</td>
+                                                <td>10</td>
                                                 <td>
                                                     <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#packagingcard">Details</button>
+                                                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#machinecard">Details</button>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>ClrBg250</td>
-                                                <td>Clear Bag</td>
-                                                <td>250 g</td>
-                                                <td>200</td>
-                                                <td>1000</td>
-                                                <td>600</td>
+                                                <td>Mchn4</td>
+                                                <td>Machine D</td>
+                                                <td>5</td>
+                                                <td>20</td>
+                                                <td>Supplier D</td>
+                                                <td>12</td>
                                                 <td>
                                                     <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#packagingcard">Details</button>
+                                                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#machinecard">Details</button>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>ClrBg500</td>
-                                                <td>Clear Bag</td>
-                                                <td>500 g</td>
-                                                <td>200</td>
-                                                <td>1000</td>
-                                                <td>500</td>
+                                                <td>Mchn5</td>
+                                                <td>Machine E</td>
+                                                <td>5</td>
+                                                <td>20</td>
+                                                <td>Supplier E</td>
+                                                <td>7</td>
                                                 <td>
                                                     <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#packagingcard">Details</button>
+                                                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#machinecard">Details</button>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>ClrBg1000</td>
-                                                <td>Clear Bag</td>
-                                                <td>1000 g</td>
-                                                <td>200</td>
-                                                <td>1000</td>
-                                                <td>500</td>
+                                                <td>Mchn6</td>
+                                                <td>Machine F</td>
+                                                <td>5</td>
+                                                <td>20</td>
+                                                <td>Supplier F</td>
+                                                <td>9</td>
                                                 <td>
                                                     <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#packagingcard">Details</button>
+                                                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#machinecard">Details</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Mchn7</td>
+                                                <td>Machine G</td>
+                                                <td>5</td>
+                                                <td>20</td>
+                                                <td>Supplier G</td>
+                                                <td>6</td>
+                                                <td>
+                                                    <!-- Button trigger modal -->
+                                                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#machinecard">Details</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Mchn8</td>
+                                                <td>Machine H</td>
+                                                <td>5</td>
+                                                <td>20</td>
+                                                <td>Supplier H</td>
+                                                <td>8</td>
+                                                <td>
+                                                    <!-- Button trigger modal -->
+                                                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#machinecard">Details</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Mchn9</td>
+                                                <td>Machine I</td>
+                                                <td>5</td>
+                                                <td>20</td>
+                                                <td>Supplier I</td>
+                                                <td>17</td>
+                                                <td>
+                                                    <!-- Button trigger modal -->
+                                                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#machinecard">Details</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Mchn10</td>
+                                                <td>Machine J</td>
+                                                <td>5</td>
+                                                <td>20</td>
+                                                <td>Supplier J</td>
+                                                <td>14</td>
+                                                <td>
+                                                    <!-- Button trigger modal -->
+                                                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#machinecard">Details</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Mchn11</td>
+                                                <td>Machine K</td>
+                                                <td>5</td>
+                                                <td>20</td>
+                                                <td>Supplier K</td>
+                                                <td>13</td>
+                                                <td>
+                                                    <!-- Button trigger modal -->
+                                                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#machinecard">Details</button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -407,7 +468,7 @@
                                                 <td></td>
                                                 <td></td>
                                                 <td></td>
-                                                <td>3900 pcs</td>
+                                                <td>120</td>
                                                 <td></td>
                                                 <td></td>
                                             </tr>
@@ -457,8 +518,6 @@ $(document).ready(function() {
             // Revalidate the date field
             $('#eventForm').formValidation('revalidateField', 'date');
         });
-
-
 });
 </script>
 <script>

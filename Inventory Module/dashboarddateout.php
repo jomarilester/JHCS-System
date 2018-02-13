@@ -22,6 +22,7 @@
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons' rel='stylesheet' type='text/css'>
 </head>
+
 <style>
 .title {
     font-size: large;
@@ -43,49 +44,49 @@
             <div class="sidebar-wrapper">
                 <ul class="nav">
                     <li class="active">
-                        <a href="dashboard.html">
+                        <a href="dashboard.php">
                             <i class="material-icons">dashboard</i>
                             <p>Dashboard</p>
                         </a>
                     </li>
                     <li>
-                        <a href="inventorystocks.html">
+                        <a href="inventorystocks.php">
                             <i class="material-icons">assessment</i>
                             <p>Inventory Stocks</p>
                         </a>
                     </li>
                     <li>
-                        <a href="inventoryreport.html">
+                        <a href="inventoryreport.php">
                             <i class="material-icons">content_paste</i>
                             <p>Inventory Report</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./PO.html">
+                        <a href="./PO.php">
                             <i class="material-icons">shopping cart</i>
                             <p>Purchase Order</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./inventoryout.html">
+                        <a href="./inventoryout.php">
                             <i class="material-icons">reply</i>
                             <p>Inventory Out</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./itemlist.html">
+                        <a href="./itemlist.php">
                             <i class="material-icons">storage</i>
                             <p>Items</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./returnslist.html">
+                        <a href="./returnslist.php">
                             <i class="material-icons">input</i>
                             <p>Returns</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./sampleslist.html">
+                        <a href="./sampleslist.php">
                             <i class="material-icons">dvr</i>
                             <p>Samples</p>
                         </a>
@@ -114,16 +115,16 @@
                                 <a href="#pablo" class="dropdown-toggle" data-toggle="dropdown">
                                         <i class="material-icons">person</i>
                                         <p class="hidden-lg hidden-md">Profile</p>
-                                </a>
+                                    </a>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a href="./user.html">User Profile</a>
+                                        <a href="./user.php">User Profile</a>
                                     </li>
                                     <li>
-                                        <a href="./changepassword.html">Change Password</a>
+                                        <a href="./changepassword.php">Change Password</a>
                                     </li>
                                     <li>
-                                        <a href="./activitylogs.html">Activity Logs</a>
+                                        <a href="./activitylogs.php">Activity Logs</a>
                                     </li>
                                     <li>
                                         <a href="#">Logout</a>
@@ -148,14 +149,11 @@
                                         <small>grams</small>
                                     </h3>
                                 </div>
-                                <a href="inventorystocks.html">
                                 <div class="card-footer">
                                     <div class="stats">
                                         <i class="material-icons">date_range</i> Details
                                     </div>
                                 </div>
-                                </a>
-
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-6">
@@ -169,13 +167,11 @@
                                         <small>pieces</small>
                                     </h3>
                                 </div>
-                                <a href="Packaging.html">
                                 <div class="card-footer">
                                     <div class="stats">
                                         <i class="material-icons">date_range</i> Details
                                     </div>
                                 </div>
-                                </a>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-6">
@@ -185,11 +181,10 @@
                                 </div>
                                 <div class="card-content">
                                     <p class="category">Stickers</p>
-                                    <h3 class="title"> 850
+                                    <h3 class="title"> 850 <br>
                                     <small>pieces</small>
                                     </h3>
                                 </div>
-                                <a href="Stickers.html">
                                 <div class="card-footer">
                                     <div class="stats">
                                         <i class="material-icons">date_range</i> Details
@@ -204,17 +199,15 @@
                                 </div>
                                 <div class="card-content">
                                     <p class="category">Machines</p>
-                                    <h3 class="title">75
+                                    <h3 class="title">75<br>
                                     <small>pieces</small>
                                     </h3>
                                 </div>
-                                <a href="machines.html">
                                 <div class="card-footer">
                                     <div class="stats">
                                         <i class="material-icons">date_range</i> Details
                                     </div>
                                 </div>
-                                </a>
                             </div>
                         </div>
                     </div>
@@ -240,15 +233,15 @@
                                                         <div class="ripple-container"> </div>
                                                     </li>
                                                     <span></span>
-                                                    <li class="active center">
-                                                        <a href="./dashboard.html">
+                                                    <li>
+                                                        <a href="./dashboard.php">
                                                             Date In
                                                             <div class="ripple-container"></div>
                                                         </a>
                                                     </li>
                                                     <span></span>
-                                                    <li class="">
-                                                        <a href="./dashboarddateout.html">
+                                                    <li class="active">
+                                                        <a href="./blends.php">
                                                             Date Out
                                                             <div class="ripple-container"></div>
                                                         </a>
@@ -257,96 +250,162 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="card-content table-responsive">
-                                        <div class="col-md-12 col-md-offset-0">
-                                            <div class="fresh-datatables color-blue">
-                                                <table id="fresh-datatables" class="table table-striped table-no-bordered table-hover" cellspacing="0" width="100%" style="width:100%">
-                                                    <thead>
-                                                        <th><b>Date In</b></th>
-                                                        <th><b></b></th>
-                                                        <th><b>Coffee A</b></th>
-                                                        <th><b>Coffee B</b></th>
-                                                        <th><b>Coffee C</b></th>
-                                                        <th><b>Coffee D</b></th>
-                                                        <th><b>Coffee E</b></th>
-                                                        <th><b>Coffee F</b></th>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>Sept 30, 2017</td>
-                                                            <td>Beginning Inventory</td>
-                                                            <td>3000 g</td>
-                                                            <td>8000 g</td>
-                                                            <td>4000 g</td>
-                                                            <td>5000 g</td>
-                                                            <td>3000 g</td>
-                                                            <td>7000 g</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Oct 1, 2017</td>
-                                                            <td>Gourmet Farms</td>
-                                                            <td>2000 g</td>
-                                                            <td>6000 g</td>
-                                                            <td>-</td>
-                                                            <td>3000 g</td>
-                                                            <td>-</td>
-                                                            <td>-</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Oct 2, 2017</td>
-                                                            <td>Gourmet Farms</td>
-                                                            <td>2000 g</td>
-                                                            <td>-</td>
-                                                            <td>4000 g</td>
-                                                            <td>-</td>
-                                                            <td>3000 g</td>
-                                                            <td>-</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Oct 3, 2017</td>
-                                                            <td>Gourmet Farms</td>
-                                                            <td>-</td>
-                                                            <td>-</td>
-                                                            <td>2000 g</td>
-                                                            <td>-</td>
-                                                            <td>3000 g</td>
-                                                            <td>8000 g</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Oct 4, 2017</td>
-                                                            <td>Gourmet Farms</td>
-                                                            <td>-</td>
-                                                            <td>-</td>
-                                                            <td>2000 g</td>
-                                                            <td>-</td>
-                                                            <td>3000 g</td>
-                                                            <td>8000 g</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Oct 5, 2017</td>
-                                                            <td>Gourmet Farms</td>
-                                                            <td>2000 g</td>
-                                                            <td>-</td>
-                                                            <td>4000 g</td>
-                                                            <td>-</td>
-                                                            <td>3000 g</td>
-                                                            <td>-</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td><b>Total</b></td>
-                                                            <td></td>
-                                                            <td>7000 g</td>
-                                                            <td>14000 g</td>
-                                                            <td>10000 g</td>
-                                                            <td>8000 g</td>
-                                                            <td>9000 g</td>
-                                                            <td>15000 g</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
+                                </div>
+                                <div class="card-content table-responsive">
+                                    <table class="table table-hover" id="out">
+                                        <thead class="text-info">
+                                            <th><b>Date Out</b></th>
+                                            <th><b>Client</b></th>
+                                            <th><b>Grams</b></th>
+                                            <th><b>Qty/Bag</b></th>
+                                            <th><b>Total</b></th>
+                                            <th><b>Coffee A</b></th>
+                                            <th><b>Coffee B</b></th>
+                                            <th><b>Coffee C</b></th>
+                                            <th><b>Coffee D</b></th>
+                                            <th><b>Coffee E</b></th>
+                                            <th><b>Coffee F</b></th>
+                                            <th><b>Packaging</b></th>
+                                            <th><b>Type of Service</b></th>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Oct 2, 2017</td>
+                                                <td>Client 1</td>
+                                                <td>500</td>
+                                                <td>50</td>
+                                                <td>-25000</td>
+                                                <td>-</td>
+                                                <td>-10000</td>
+                                                <td>-2500</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-12500</td>
+                                                <td>Clear Bag</td>
+                                                <td>Retail</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Oct 2, 2017</td>
+                                                <td>Client 2</td>
+                                                <td>500</td>
+                                                <td>1</td>
+                                                <td>-500</td>
+                                                <td>-51</td>
+                                                <td>-376</td>
+                                                <td>-</td>
+                                                <td>-73</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>Clear Bag</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Oct 3, 2017</td>
+                                                <td>Client 3</td>
+                                                <td>500</td>
+                                                <td>2</td>
+                                                <td>-1000</td>
+                                                <td>-</td>
+                                                <td>-700</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-300</td>
+                                                <td>Clear</td>
+                                                <td>Coffee Service</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Oct 3, 2017</td>
+                                                <td>Client 4</td>
+                                                <td>250</td>
+                                                <td>6</td>
+                                                <td>-1500</td>
+                                                <td>-300</td>
+                                                <td>-1200</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>Brown Bag</td>
+                                                <td>Retail</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Oct 4, 2017</td>
+                                                <td>Client 4</td>
+                                                <td>250</td>
+                                                <td>6</td>
+                                                <td>-1500</td>
+                                                <td>-300</td>
+                                                <td>-1200</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>Brown Bag</td>
+                                                <td>Retail</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Oct 5, 2017</td>
+                                                <td>Client 3</td>
+                                                <td>500</td>
+                                                <td>2</td>
+                                                <td>-1000</td>
+                                                <td>-</td>
+                                                <td>-700</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-300</td>
+                                                <td>Clear</td>
+                                                <td>Coffee Service</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>Total</b></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td>-351</td>
+                                                <td>-12276</td>
+                                                <td>-2500</td>
+                                                <td>-73</td>
+                                                <td>-</td>
+                                                <td>-12800</td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>Ending Inventory</b></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td>6649</td>
+                                                <td>1724</td>
+                                                <td>7500</td>
+                                                <td>7927</td>
+                                                <td>9000</td>
+                                                <td>2200</td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
                         </div>
