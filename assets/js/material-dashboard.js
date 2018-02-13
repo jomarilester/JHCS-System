@@ -158,7 +158,7 @@ md = {
 
             mobile_menu_content = '';
 
-            nav_content = $navbar.html();
+            nav_content = $navbar.php();
 
             nav_content = '<ul class="nav nav-mobile-menu">' + nav_content + '</ul>';
 

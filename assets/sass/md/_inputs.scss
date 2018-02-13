@@ -168,8 +168,8 @@
 // -----
 // Labels with form-group signalled state
 //
-// Reference http://www.google.com/design/spec/components/text-fields.html
-// MDL implementation: http://www.getmdl.io/components/index.html#textfields-section
+// Reference http://www.google.com/design/spec/components/text-fields.php
+// MDL implementation: http://www.getmdl.io/components/index.php#textfields-section
 //.variations(unquote(" label.control-label"), color, $mdb-input-placeholder-color);  // default label color variations
 
 .form-group {
@@ -178,8 +178,8 @@
   // -----
   // Labels with form-group signalled state
   //
-  // Reference http://www.google.com/design/spec/components/text-fields.html
-  // MDL implementation: http://www.getmdl.io/components/index.html#textfields-section
+  // Reference http://www.google.com/design/spec/components/text-fields.php
+  // MDL implementation: http://www.getmdl.io/components/index.php#textfields-section
   &.label-static,
   &.label-placeholder,
   &.label-floating {
