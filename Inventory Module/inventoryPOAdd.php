@@ -62,56 +62,57 @@ thead th {
             <img src="<?php echo base_url("assets/img/logo.png"); ?>" alt="image1" width="250px" height="150px">
         </div>
         <div class="sidebar-wrapper">
-            <ul class="nav">
-                <li class="">
-                    <a href="dashboard.php">
-                        <i class="material-icons">dashboard</i>
-                        <p>Dashboard</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="inventorystocks.php">
-                        <i class="material-icons">assessment</i>
-                        <p>Inventory Stocks</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="inventoryreport.php">
-                        <i class="material-icons">content_paste</i>
-                        <p>Inventory Report</p>
-                    </a>
-                </li>
-                <li class="active">
-                    <a href="./PO.php">
-                        <i class="material-icons">shopping cart</i>
-                        <p>Purchase Order</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="./inventoryout.php">
-                        <i class="material-icons">reply</i>
-                        <p>Inventory Out</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="./itemlist.php">
-                        <i class="material-icons">storage</i>
-                        <p>Items</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="./returnslist.php">
-                        <i class="material-icons">input</i>
-                        <p>Returns</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="./sampleslist.php">
-                        <i class="material-icons">dvr</i>
-                        <p>Samples</p>
-                    </a>
-                </li>
-            </ul>
+                <ul class="nav">
+                    <li>
+                        <a href="<?php echo base_url(); ?>inventoryDashboard">
+                            <i class="material-icons">dashboard</i>
+                            <p>Dashboard</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="<?php echo base_url(); ?>inventoryStocks.php">
+                            <i class="material-icons">assessment</i>
+                            <p>Inventory Stocks</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="<?php echo base_url(); ?>inventoryInventoryReport.php">
+                            <i class="material-icons">content_paste</i>
+                            <p>Inventory Report</p>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="<?php echo base_url(); ?>inventoryPOAdd.php">
+                            <i class="material-icons">shopping cart</i>
+                            <p>Purchase Order</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="<?php echo base_url(); ?>inventoryOutRawCoffee.php">
+                            <i class="material-icons">reply</i>
+                            <p>Inventory Out</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="<?php echo base_url(); ?>inventoryItemList.php">
+                            <i class="material-icons">storage</i>
+                            <p>Items</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="<?php echo base_url(); ?>inventoryReturnsList.php">
+                            <i class="material-icons">input</i>
+                            <p>Returns</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="<?php echo base_url(); ?>inventorySamplesList.php">
+                            <i class="material-icons">dvr</i>
+                            <p>Samples</p>
+                        </a>
+                    </li>
+                    
+                </ul>
         </div>
     </div>
          

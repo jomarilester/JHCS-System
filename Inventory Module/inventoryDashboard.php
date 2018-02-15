@@ -47,49 +47,49 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="sidebar-wrapper">
                 <ul class="nav">
                     <li class="active">
-                        <a href="dashboard.php">
+                        <a href="<?php echo base_url(); ?>inventoryDashboard">
                             <i class="material-icons">dashboard</i>
                             <p>Dashboard</p>
                         </a>
                     </li>
                     <li>
-                        <a href="inventorystocks.php">
+                        <a href="<?php echo base_url(); ?>inventoryStocks.php">
                             <i class="material-icons">assessment</i>
                             <p>Inventory Stocks</p>
                         </a>
                     </li>
                     <li>
-                        <a href="inventoryreport.php">
+                        <a href="<?php echo base_url(); ?>inventoryInventoryReport.php">
                             <i class="material-icons">content_paste</i>
                             <p>Inventory Report</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./PO.php">
+                        <a href="<?php echo base_url(); ?>inventoryPOAdd.php">
                             <i class="material-icons">shopping cart</i>
                             <p>Purchase Order</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./inventoryout.php">
+                        <a href="<?php echo base_url(); ?>inventoryOutRawCoffee.php">
                             <i class="material-icons">reply</i>
                             <p>Inventory Out</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./itemlist.php">
+                        <a href="<?php echo base_url(); ?>inventoryItemList.php">
                             <i class="material-icons">storage</i>
                             <p>Items</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./returnslist.php">
+                        <a href="<?php echo base_url(); ?>inventoryReturnsList.php">
                             <i class="material-icons">input</i>
                             <p>Returns</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./sampleslist.php">
+                        <a href="<?php echo base_url(); ?>inventorySamplesList.php">
                             <i class="material-icons">dvr</i>
                             <p>Samples</p>
                         </a>
@@ -121,13 +121,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a href="./user.php">User Profile</a>
+                                        <a href="<?php echo base_url(); ?>inventoryUser.php">User Profile</a>
                                     </li>
                                     <li>
-                                        <a href="./changepassword.php">Change Password</a>
+                                        <a href="<?php echo base_url(); ?>inventoryChangePassword.php">Change Password</a>
                                     </li>
                                     <li>
-                                        <a href="./activitylogs.php">Activity Logs</a>
+                                        <a href="<?php echo base_url(); ?>inventoryActivityLogs.php">Activity Logs</a>
                                     </li>
                                     <li>
                                         <a href="#">Logout</a>
@@ -152,7 +152,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                         <small>grams</small>
                                     </h3>
                                 </div>
-                                <a href="inventorystocks.php">
+                                <a href="<?php echo base_url(); ?>inventoryStocks.php">
                                 <div class="card-footer">
                                     <div class="stats">
                                         <i class="material-icons">date_range</i> Details
@@ -173,7 +173,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                         <small>pieces</small>
                                     </h3>
                                 </div>
-                                <a href="Packaging.php">
+                                <a href="<?php echo base_url(); ?>inventoryPackaging.php">
                                 <div class="card-footer">
                                     <div class="stats">
                                         <i class="material-icons">date_range</i> Details
@@ -193,7 +193,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <small>pieces</small>
                                     </h3>
                                 </div>
-                                <a href="Stickers.php">
+                                <a href="<?php echo base_url(); ?>inventoryStickers.php">
                                 <div class="card-footer">
                                     <div class="stats">
                                         <i class="material-icons">date_range</i> Details
@@ -212,7 +212,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <small>pieces</small>
                                     </h3>
                                 </div>
-                                <a href="machines.php">
+                                <a href="<?php echo base_url(); ?>inventoryMachines.php">
                                 <div class="card-footer">
                                     <div class="stats">
                                         <i class="material-icons">date_range</i> Details
@@ -245,14 +245,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                                     </li>
                                                     <span></span>
                                                     <li class="active center">
-                                                        <a href="./dashboard.php">
+                                                        <a href="<?php echo base_url(); ?>inventoryDashboard.php">
                                                             Date In
                                                             <div class="ripple-container"></div>
                                                         </a>
                                                     </li>
                                                     <span></span>
                                                     <li class="">
-                                                        <a href="./dashboarddateout.php">
+                                                        <a href="<?php echo base_url(); ?>inventoryDashboardDateOut.php">
                                                             Date Out
                                                             <div class="ripple-container"></div>
                                                         </a>

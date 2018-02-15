@@ -53,49 +53,49 @@ input {
             <div class="sidebar-wrapper">
                 <ul class="nav">
                     <li>
-                        <a href="dashboard.php">
+                        <a href="<?php echo base_url(); ?>inventoryDashboard">
                             <i class="material-icons">dashboard</i>
                             <p>Dashboard</p>
                         </a>
                     </li>
                     <li>
-                        <a href="inventorystocks.php">
+                        <a href="<?php echo base_url(); ?>inventoryStocks.php">
                             <i class="material-icons">assessment</i>
                             <p>Inventory Stocks</p>
                         </a>
                     </li>
                     <li class="active">
-                        <a href="inventoryreport.php">
+                        <a href="<?php echo base_url(); ?>inventoryInventoryReport.php">
                             <i class="material-icons">content_paste</i>
                             <p>Inventory Report</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./PO.php">
+                        <a href="<?php echo base_url(); ?>inventoryPOAdd.php">
                             <i class="material-icons">shopping cart</i>
                             <p>Purchase Order</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./inventoryout.php">
+                        <a href="<?php echo base_url(); ?>inventoryOutRawCoffee.php">
                             <i class="material-icons">reply</i>
                             <p>Inventory Out</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./itemlist.php">
+                        <a href="<?php echo base_url(); ?>inventoryItemList.php">
                             <i class="material-icons">storage</i>
                             <p>Items</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./returnslist.php">
+                        <a href="<?php echo base_url(); ?>inventoryReturnsList.php">
                             <i class="material-icons">input</i>
                             <p>Returns</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./sampleslist.php">
+                        <a href="<?php echo base_url(); ?>inventorySamplesList.php">
                             <i class="material-icons">dvr</i>
                             <p>Samples</p>
                         </a>

@@ -22,7 +22,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!--  CSS for Demo Purpose, don't include it in your project     -->
     <link rel="stylesheet" href="<?php echo base_url("assets/css/demo.css"); ?>" />
     <!--     Fonts and icons     -->
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" >
     <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons' type='text/css'>
     <link rel="shortcut icon" href="favicon.ico">
 </head>
@@ -40,50 +40,50 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </div>
             <div class="sidebar-wrapper">
                 <ul class="nav">
-                    <li class="">
-                        <a href="dashboard.php">
+                    <li>
+                        <a href="<?php echo base_url(); ?>inventoryDashboard">
                             <i class="material-icons">dashboard</i>
                             <p>Dashboard</p>
                         </a>
                     </li>
                     <li class="active">
-                        <a href="inventorystocks.php">
+                        <a href="<?php echo base_url(); ?>inventoryStocks.php">
                             <i class="material-icons">assessment</i>
                             <p>Inventory Stocks</p>
                         </a>
                     </li>
                     <li>
-                        <a href="inventoryreport.php">
+                        <a href="<?php echo base_url(); ?>inventoryInventoryReport.php">
                             <i class="material-icons">content_paste</i>
                             <p>Inventory Report</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./PO.php">
+                        <a href="<?php echo base_url(); ?>inventoryPOAdd.php">
                             <i class="material-icons">shopping cart</i>
                             <p>Purchase Order</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./inventoryout.php">
+                        <a href="<?php echo base_url(); ?>inventoryOutRawCoffee.php">
                             <i class="material-icons">reply</i>
                             <p>Inventory Out</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./itemlist.php">
+                        <a href="<?php echo base_url(); ?>inventoryItemList.php">
                             <i class="material-icons">storage</i>
                             <p>Items</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./returnslist.php">
+                        <a href="<?php echo base_url(); ?>inventoryReturnsList.php">
                             <i class="material-icons">input</i>
                             <p>Returns</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./sampleslist.php">
+                        <a href="<?php echo base_url(); ?>inventorySamplesList.php">
                             <i class="material-icons">dvr</i>
                             <p>Samples</p>
                         </a>
@@ -170,14 +170,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                                     </a>
                                                 </li>
                                                 <span></span>
-                                                <li class="">
+                                                <li class="active">
                                                     <a href="./stickers.php">
                                                         Stickers
                                                         <div class="ripple-container"></div>
                                                     </a>
                                                 </li>
                                                 <span></span>
-                                                <li class="active">
+                                                <li class="">
                                                     <a href="./machines.php">
                                                        Machines
                                                         <div class="ripple-container"></div>
@@ -191,37 +191,36 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <table id="example" class="table hover order-column" cellspacing="0" width="100%">
                                         <thead>
                                             <th><b class="pull-left">Item Code</b></th>
-                                            <th><b class="pull-left">Machine</b></th>
-                                            <th><b class="pull-left">Reorder Level</b></th>
-                                            <th><b class="pull-left">Stock Limit</b></th>
+                                            <th><b class="pull-left">Sticker</b></th>
+                                            <th><b class="pull-left">Reorder Level (per pc)</b></th>
+                                            <th><b class="pull-left">Stock Limit (per pc)</b></th>
                                             <th><b class="pull-left">Supplier</b></th>
-                                            <th><b class="pull-left">Number of Stocks </b></th>
+                                            <th><b class="pull-left">Number of Stocks (per pc)</b></th>
                                             <th><b class="pull-left">Cue Card</b></th>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>Mchn1</td>
-                                                <td>Machine A</td>
-                                                <td>5</td>
+                                                <td>Stckr1</td>
+                                                <td>Coffee A Sticker</td>
                                                 <td>20</td>
+                                                <td>300</td>
                                                 <td>Supplier A</td>
-                                                <td>9</td>
+                                                <td>60</td>
                                                 <td>
                                                     <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#machinecard">Details</button>
+                                                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#stickercard">Details</button>
 
                                                 <!-- Modal -->
-                                                <div class="modal fade" id="machinecard" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                                <div class="modal fade" id="stickercard" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                                                   <div class="modal-dialog modal-lg">
                                                     <div class="panel panel-primary">
                                                         <div class="panel-heading">
                                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                                             <h4 class="panel-title" id="contactLabel"><span class="glyphicon glyphicon-info-sign"></span>Cue Card Details</h4>
                                                         </div>
-                                                          
                                                       <div class="modal-body" style="padding: 5px;">
                                                             <div class="col-lg-12 col-md-12 col-sm-12 text-center" style="padding-bottom: 10px;">
-                                                                <h3><b>Machine A</b></h3>
+                                                                <h3><b>Coffee A Sticker</b></h3>
                                                                 <hr>
                                                             </div>
                                                           <label>Set Date from </label>
@@ -247,7 +246,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                                             <td>In</td>
                                                             <td>Supplier 1</td>
                                                             <td>Dec 5, 2017</td>
-                                                            <td>4 pcs</td>
+                                                            <td>300 pcs</td>
                                                             <td></td>
                                                           </tr>
                                                           <tr>
@@ -255,15 +254,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                                             <td>In</td>
                                                             <td>Client 2</td>
                                                             <td>Dec 12, 2017</td>
-                                                            <td>6 pcs</td>
-                                                            <td></td>
+                                                            <td>100 pcs</td>
+                                                            <td>Wrong Sticker</td>
                                                           </tr>
                                                           <tr>
                                                             <td>34567</td>
                                                             <td>In</td>
                                                             <td>Supplier 3</td>
                                                             <td>Dec 15, 2017</td>
-                                                            <td>8 pcs</td>
+                                                            <td>500 pcs</td>
                                                             <td></td>
                                                           </tr>
                                                           <tr>
@@ -271,15 +270,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                                             <td>Out</td>
                                                             <td>Supplier 1</td>
                                                             <td>Dec 8, 2017</td>
-                                                            <td>2 pcs</td>
-                                                            <td></td>
+                                                            <td>200 pcs</td>
+                                                            <td>Wrong Sticker Design</td>
                                                           </tr>
                                                           <tr>
                                                             <td>56789</td>
                                                             <td>Out</td>
                                                             <td>Client 5</td>
                                                             <td>Dec 9, 2017</td>
-                                                            <td>4 pcs</td>
+                                                            <td>300 pcs</td>
                                                             <td></td>
                                                           </tr>
                                                           <tr>
@@ -287,8 +286,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                                             <td>Out</td>
                                                             <td>Client 7</td>
                                                             <td>Dec 17, 2017</td>
-                                                            <td>6 pcs</td>
-                                                            <td></td>
+                                                            <td>200 pcs</td>
+                                                            <td>Sample</td>
                                                           </tr>
                                                         </tbody>
                                                       </table><hr>
@@ -297,19 +296,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                                                 <div class="form-group">
                                                                     <label class="col-md-4 control">Total In :</label>
                                                                     <div class="col-md-4">
-                                                                        <p>18 pieces</p>
+                                                                        <p>900 pieces</p>
                                                                     </div>
                                                                 </div>
                                                                 <div class="form-group">
                                                                     <label class="col-md-4 control">Total Out :</label>
                                                                     <div class="col-md-7">
-                                                                        <p>12 pieces</p>
+                                                                        <p>700 pieces</p>
                                                                     </div>
                                                                 </div>
                                                                 <div class="form-group">
                                                                     <label class="col-md-4 control">Ending Inventory :</label>
                                                                     <div class="col-md-5">
-                                                                        <p>6 pieces</p>
+                                                                        <p>200 pieces</p>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -318,13 +317,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                                                     <div class="form-group">
                                                                         <label class="col-md-6 control">Physical Count :</label>
                                                                         <div class="col-md-4">
-                                                                            <input class="form-control" type="number" name="count" required />
+                                                                            <input id="" name="count" type="number" class="form-control">
                                                                         </div>
                                                                     </div>
                                                                     <div class="form-group">
                                                                         <label class="col-md-6 control">Discrepancy :</label>
                                                                         <div class="col-md-4">
-                                                                            <input placeholder="" class="form-control" disabled />
+                                                                            <input placeholder="0 piece" class="form-control" disabled />
                                                                         </div>
                                                                     </div>
                                                                     <div class="form-group">
@@ -339,7 +338,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                                         </div>
                                                       </div>
                                                       <div class="modal-footer">
-                                                        <button type="submit" class="btn btn-success accept">OK</button>
+                                                        <button type="submit" class="btn btn-success">OK</button>
                                                           <button style="float: right;" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                                                       </div>
                                                     </div>
@@ -348,123 +347,68 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>Mchn2</td>
-                                                <td>Machine B</td>
-                                                <td>5</td>
+                                                <td>Stckr2</td>
+                                                <td>Coffee B Sticker</td>
                                                 <td>20</td>
-                                                <td>Supplier B</td>
-                                                <td>15</td>
+                                                <td>400</td>
+                                                <td>supplier B</td>
+                                                <td>100</td>
                                                 <td>
                                                     <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#machinecard">Details</button>
+                                                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#stickercard">Details</button>
+
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>Mchn3</td>
-                                                <td>Machine C</td>
-                                                <td>5</td>
-                                                <td>20</td>
-                                                <td>Supplier C</td>
-                                                <td>10</td>
+                                                <td>Stckr3</td>
+                                                <td>Coffee C Sticker</td>
+                                                <td>100</td>
+                                                <td>500</td>
+                                                <td>supplier B</td>
+                                                <td>250</td>
                                                 <td>
                                                     <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#machinecard">Details</button>
+                                                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#stickercard">Details</button>
+
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>Mchn4</td>
-                                                <td>Machine D</td>
-                                                <td>5</td>
-                                                <td>20</td>
-                                                <td>Supplier D</td>
-                                                <td>12</td>
+                                                <td>Stckr4</td>
+                                                <td>Coffee D Sticker</td>
+                                                <td>50</td>
+                                                <td>400</td>
+                                                <td>supplier B</td>
+                                                <td>91</td>
                                                 <td>
                                                     <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#machinecard">Details</button>
+                                                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#stickercard">Details</button>
+
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>Mchn5</td>
-                                                <td>Machine E</td>
-                                                <td>5</td>
-                                                <td>20</td>
-                                                <td>Supplier E</td>
-                                                <td>7</td>
+                                                <td>Stckr5</td>
+                                                <td>Coffee E Sticker</td>
+                                                <td>80</td>
+                                                <td>400</td>
+                                                <td>supplier B</td>
+                                                <td>120</td>
                                                 <td>
                                                     <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#machinecard">Details</button>
+                                                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#stickercard">Details</button>
+
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>Mchn6</td>
-                                                <td>Machine F</td>
-                                                <td>5</td>
-                                                <td>20</td>
-                                                <td>Supplier F</td>
-                                                <td>9</td>
+                                                <td>Stckr6</td>
+                                                <td>Coffee F Sticker</td>
+                                                <td>50</td>
+                                                <td>300</td>
+                                                <td>supplier B</td>
+                                                <td>100</td>
                                                 <td>
                                                     <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#machinecard">Details</button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Mchn7</td>
-                                                <td>Machine G</td>
-                                                <td>5</td>
-                                                <td>20</td>
-                                                <td>Supplier G</td>
-                                                <td>6</td>
-                                                <td>
-                                                    <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#machinecard">Details</button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Mchn8</td>
-                                                <td>Machine H</td>
-                                                <td>5</td>
-                                                <td>20</td>
-                                                <td>Supplier H</td>
-                                                <td>8</td>
-                                                <td>
-                                                    <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#machinecard">Details</button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Mchn9</td>
-                                                <td>Machine I</td>
-                                                <td>5</td>
-                                                <td>20</td>
-                                                <td>Supplier I</td>
-                                                <td>17</td>
-                                                <td>
-                                                    <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#machinecard">Details</button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Mchn10</td>
-                                                <td>Machine J</td>
-                                                <td>5</td>
-                                                <td>20</td>
-                                                <td>Supplier J</td>
-                                                <td>14</td>
-                                                <td>
-                                                    <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#machinecard">Details</button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Mchn11</td>
-                                                <td>Machine K</td>
-                                                <td>5</td>
-                                                <td>20</td>
-                                                <td>Supplier K</td>
-                                                <td>13</td>
-                                                <td>
-                                                    <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#machinecard">Details</button>
+                                                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#stickercard">Details</button>
+
                                                 </td>
                                             </tr>
                                             <tr>
@@ -472,7 +416,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                                 <td></td>
                                                 <td></td>
                                                 <td></td>
-                                                <td>120</td>
+                                                <td>901 </td>
                                                 <td></td>
                                                 <td></td>
                                             </tr>
@@ -522,6 +466,8 @@ $(document).ready(function() {
             // Revalidate the date field
             $('#eventForm').formValidation('revalidateField', 'date');
         });
+
+
 });
 </script>
 <script>
