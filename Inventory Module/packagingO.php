@@ -7,20 +7,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 <head>
     <meta charset="utf-8" />
-    <link rel="apple-touch-icon" sizes="76x76" href="<?php echo base_url("assets/img/apple-icon.png"); ?>" />
-    <link rel="icon" type="image/png" href="<?php echo base_url("assets/img/favicon.png"); ?>" />
+    <link rel="apple-touch-icon" sizes="76x76" href="<?php echo base_url(); ?>assets/img/apple-icon.png"/>
+    <link rel="icon" type="image/png" href="<?php echo base_url(); ?>assets/img/favicon.png"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>Inventory Out</title>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
     <!-- Bootstrap core CSS     -->
-    <link rel="stylesheet" href="<?php echo base_url("assets/css/bootstrap.min.css"); ?>" />
-    <link rel="stylesheet" href="<?php echo base_url("assets/css/dataTables.bootstrap.min.css"); ?>" />
-    <link rel="stylesheet" href="<?php echo base_url("assets/css/jquery.dataTable.min.css"); ?>" />
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/dataTables.bootstrap.min.css"/>
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/jquery.dataTable.min.css"/>
     <!--  Material Dashboard CSS    -->
-    <link rel="stylesheet" href="<?php echo base_url("assets/css/material-dashboard.css?v=1.2.0"); ?>" />
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/material-dashboard.css?v=1.2.0"/>
     <!--  CSS for Demo Purpose, don't include it in your project     -->
-    <link rel="stylesheet" href="<?php echo base_url("assets/css/demo.css"); ?>" />
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/demo.css"/>
     <!--     Fonts and icons     -->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" >
     <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons' type='text/css'>
@@ -29,14 +29,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 <body>
     <div class="wrapper">
-        <div class="sidebar" data-color="blue" data-image="<?php echo base_url("assets/img/sidebar-0.jpg"); ?>">
+        <div class="sidebar" data-color="blue" data-image="<?php echo base_url(); ?>assets/img/sidebar-0.jpg">
             <!--
         Tip 1: You can change the color of the sidebar using: data-color="purple | blue | green | orange | red"
 
         Tip 2: you can also add an image using data-image tag
     -->
             <div class="logo">
-                <img src="<?php echo base_url("assets/img/logo.png"); ?>" alt="image1" width="250px" height="150px">
+                <img src="<?php echo base_url(); ?>assets/img/logo.png" alt="image1" width="250px" height="150px">
             </div>
             <div class="sidebar-wrapper">
                 <ul class="nav">
@@ -239,25 +239,25 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </div>
 </body>
 <!--   Core JS Files   -->
-<script src="<?php echo base_url("assets/js/jquery-3.2.1.min.js"); ?>" type="text/javascript"></script>
-<script src="<?php echo base_url("assets/js/bootstrap.min.js"); ?>" type="text/javascript"></script>
-<script src="<?php echo base_url("assets/js/material.min.js"); ?>" type="text/javascript"></script>
+<script src="<?php echo base_url(); ?>assets/js/jquery-3.2.1.min.js" type="text/javascript"></script>
+<script src="<?php echo base_url(); ?>assets/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="<?php echo base_url(); ?>assets/js/material.min.js" type="text/javascript"></script>
 <!--  Charts Plugin -->
-<script src="<?php echo base_url("assets/js/chartist.min.js"); ?>"></script>
+<script src="<?php echo base_url(); ?>assets/js/chartist.min.js"></script>
 <!--  Dynamic Elements plugin -->
-<script src="<?php echo base_url("assets/js/arrive.min.js"); ?>"></script>
+<script src="<?php echo base_url(); ?>assets/js/arrive.min.js"></script>
 <!--  PerfectScrollbar Library -->
-<script src="<?php echo base_url("assets/js/perfect-scrollbar.jquery.min.js"); ?>"></script>
+<script src="<?php echo base_url(); ?>assets/js/perfect-scrollbar.jquery.min.js"></script>
 <!--  Notifications Plugin    -->
-<script src="<?php echo base_url("assets/js/bootstrap-notify.js"); ?>"></script>
+<script src="<?php echo base_url(); ?>assets/js/bootstrap-notify.js"></script>
 <!--  Google Maps Plugin    -->
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
 <!-- Material Dashboard javascript methods -->
-<script src="<?php echo base_url("assets/js/material-dashboard.js?v=1.2.0"); ?>"></script>
+<script src="<?php echo base_url(); ?>assets/js/material-dashboard.js?v=1.2.0"></script>
 <!-- Material Dashboard DEMO methods, don't include it in your project! -->
-<script src="<?php echo base_url("assets/js/demo.js"); ?>"></script>
-<script src="<?php echo base_url("assets/js/jquery.js"); ?>"></script>
-<script src="<?php echo base_url("assets/js/jquery.datatables.js"); ?>"></script>
+<script src="<?php echo base_url(); ?>assets/js/demo.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/jquery.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/jquery.datatables.js"></script>
 <script type="text/javascript">
 $(document).ready(function() {
     var table = $('#example').DataTable({
