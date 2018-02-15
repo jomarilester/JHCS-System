@@ -144,7 +144,7 @@ thead th {
     
 <body>
     <div class="wrapper">
-        <div class="sidebar" data-color="green" data-image="../assets/img/sidebar-1.jpg">
+        <div class="sidebar" data-color="green" data-image="<?php echo base_url(); ?>assets/img/sidebar-1.jpg">
             <!--
         Tip 1: You can change the color of the sidebar using: data-color="purple | blue | green | orange | red"
         Tip 2: you can also add an image using data-image tag
@@ -155,44 +155,44 @@ thead th {
             <div class="sidebar-wrapper">
                 <ul class="nav">
                     <li>
-                        <a href="dashboard.html">
+                        <a href="<?php echo base_url(); ?>adminDashboard">
                             <i class="material-icons">dashboard</i>
                             
                             <p>Dashboard</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./itemlist.html">
+                        <a href="<?php echo base_url(); ?>adminItemList">
                             <i class="material-icons">list</i>
                             <p>Item</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./product_inventory.html">
+                        <a href="<?php echo base_url(); ?>adminProductInventory">
                             <i class="material-icons">assessment</i>
                             <p>Inventory</p>
                         </a>
                     </li>
-                    <li>
-                        <a href="./accounts.html">
+                    <li >
+                        <a href="<?php echo base_url(); ?>adminAccounts">
                             <i class="material-icons">account_circle</i>
                             <p>User Accounts</p>
                         </a>
                     </li>
                     <li class="active">
-                        <a href="./clients.html">
+                        <a href="<?php echo base_url(); ?>adminClients">
                             <i class="material-icons">person</i>
                             <p>Clients</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./supplier.html">
+                        <a href="<?php echo base_url(); ?>adminSupplier">
                             <i class="material-icons">person</i>
                             <p>Suppliers</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./sales_report.html">
+                        <a href="<?php echo base_url(); ?>adminSalesReport">
                             <i class="material-icons">library_books</i>
                             <p>Reports</p>
                         </a>
@@ -224,13 +224,13 @@ thead th {
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a href="./user.html">User Profile</a>
+                                        <a href="<?php echo base_url(); ?>adminUser">User Profile</a>
                                     </li>
                                     <li>
-                                        <a href="./changepassword.html">Change Password</a>
+                                        <a href="<?php echo base_url(); ?>adminChangePassword">Change Password</a>
                                     </li>
                                     <li>
-                                        <a href="./activitylogs.html">Activity Logs</a>
+                                        <a href="<?php echo base_url(); ?>adminActivityLogs">Activity Logs</a>
                                     </li>
                                     <li>
                                         <a href="#">Logout</a>

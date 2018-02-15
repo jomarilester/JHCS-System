@@ -25,56 +25,55 @@
 
 <body>
     <div class="wrapper">
-        <div class="sidebar" data-color="green" data-image="../assets/img/sidebar-1.jpg">
+        <div class="sidebar" data-color="green" data-image="<?php echo base_url(); ?>assets/img/sidebar-1.jpg">
             <!--
         Tip 1: You can change the color of the sidebar using: data-color="purple | blue | green | orange | red"
-
         Tip 2: you can also add an image using data-image tag
     -->
-            <div class="logo">
+            <div class="logo ">
                 <img src="<?php echo base_url(); ?>assets/img/logo.png" alt="image1" width="250px" height="150px">
             </div>
             <div class="sidebar-wrapper">
                 <ul class="nav">
                     <li>
-                        <a href="dashboard.php">
+                        <a href="<?php echo base_url(); ?>adminDashboard">
                             <i class="material-icons">dashboard</i>
                             
                             <p>Dashboard</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./itemlist.php">
+                        <a href="<?php echo base_url(); ?>adminItemList">
                             <i class="material-icons">list</i>
                             <p>Item</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./product_inventory.php">
+                        <a href="<?php echo base_url(); ?>adminProductInventory">
                             <i class="material-icons">assessment</i>
                             <p>Inventory</p>
                         </a>
                     </li>
-                    <li>
-                        <a href="./accounts.php">
+                    <li >
+                        <a href="<?php echo base_url(); ?>adminAccounts">
                             <i class="material-icons">account_circle</i>
                             <p>User Accounts</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./clients.php">
+                        <a href="<?php echo base_url(); ?>adminClients">
                             <i class="material-icons">person</i>
                             <p>Clients</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./supplier.php">
+                        <a href="<?php echo base_url(); ?>adminSupplier">
                             <i class="material-icons">person</i>
                             <p>Suppliers</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./sales_report.php">
+                        <a href="<?php echo base_url(); ?>adminSalesReport">
                             <i class="material-icons">library_books</i>
                             <p>Reports</p>
                         </a>
@@ -92,27 +91,27 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#"> </a>
+                        <a class="navbar-brand" href="#"></a>
                     </div>
                     <div class="collapse navbar-collapse">
                         <ul class="nav navbar-nav navbar-right">
                             <li class="dropdown">
                                 <li>
-                                    <p class="title">Hi, User 1</p>
+                                    <p class="title">Hi, Player!</p>
                                 </li>
                                 <a href="#pablo" class="dropdown-toggle" data-toggle="dropdown">
                                         <i class="material-icons">person</i>
                                         <p class="hidden-lg hidden-md">Profile</p>
-                                    </a>
+                                </a>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a href="./user.php">User Profile</a>
+                                        <a href="<?php echo base_url(); ?>adminUser">User Profile</a>
                                     </li>
                                     <li>
-                                        <a href="./changepassword.php">Change Password</a>
+                                        <a href="<?php echo base_url(); ?>adminChangePassword">Change Password</a>
                                     </li>
                                     <li>
-                                        <a href="./activitylogs.php">Activity Logs</a>
+                                        <a href="<?php echo base_url(); ?>adminActivityLogs">Activity Logs</a>
                                     </li>
                                     <li>
                                         <a href="#">Logout</a>
