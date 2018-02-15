@@ -7,7 +7,7 @@
     <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
     <link rel="shortcut icon" type="image/png" href="../assets/img/favicon.ico">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>Clients</title>
+    <title>User Account</title>
     <!--   Style   -->
     <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/fresh-datatables.css">
@@ -30,118 +30,113 @@
     <link rel="stylesheet" type="text/css" href="../assets/css/fresh-datatables.css">
     <!--   Fonts   -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
-
-</head>
-
-<style>
-/*
+    <style>
+    /*
         td.highlight {
             background-color: whitesmoke !important;
         }
 */
 
-.table thead,
-thead th {
-    text-align: center;
-    font-size: 120%;
-}
+    .table thead,
+    thead th {
+        text-align: center;
+        font-size: 120%;
+    }
+    /* Custom Style */
 
+    .onoffswitch {
+        position: relative;
+        width: 110px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+    }
 
-/* Custom Style */
+    .onoffswitch-checkbox {
+        display: none;
+    }
 
-.onoffswitch {
-    position: relative;
-    width: 110px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-}
+    .onoffswitch-label {
+        display: block;
+        overflow: hidden;
+        cursor: pointer;
+        border: 2px solid #999999;
+        border-radius: 20px;
+    }
 
-.onoffswitch-checkbox {
-    display: none;
-}
+    .onoffswitch-inner {
+        display: block;
+        width: 200%;
+        margin-left: -100%;
+        -moz-transition: margin 0.3s ease-in 0s;
+        -webkit-transition: margin 0.3s ease-in 0s;
+        -o-transition: margin 0.3s ease-in 0s;
+        transition: margin 0.3s ease-in 0s;
+    }
 
-.onoffswitch-label {
-    display: block;
-    overflow: hidden;
-    cursor: pointer;
-    border: 2px solid #999999;
-    border-radius: 20px;
-}
+    .onoffswitch-inner:before,
+    .onoffswitch-inner:after {
+        display: block;
+        float: left;
+        width: 50%;
+        height: 30px;
+        padding: 0;
+        line-height: 30px;
+        font-size: 14px;
+        color: white;
+        font-family: Trebuchet, Arial, sans-serif;
+        font-weight: bold;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
 
-.onoffswitch-inner {
-    display: block;
-    width: 200%;
-    margin-left: -100%;
-    -moz-transition: margin 0.3s ease-in 0s;
-    -webkit-transition: margin 0.3s ease-in 0s;
-    -o-transition: margin 0.3s ease-in 0s;
-    transition: margin 0.3s ease-in 0s;
-}
+    .onoffswitch-inner:before {
+        content: " Enabled";
+        padding-left: 10px;
+        background-color: #2FCCFF;
+        color: #FFFFFF;
+    }
 
-.onoffswitch-inner:before,
-.onoffswitch-inner:after {
-    display: block;
-    float: left;
-    width: 50%;
-    height: 30px;
-    padding: 0;
-    line-height: 30px;
-    font-size: 14px;
-    color: white;
-    font-family: Trebuchet, Arial, sans-serif;
-    font-weight: bold;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
+    .onoffswitch-inner:after {
+        content: "Disabled";
+        padding-right: 10px;
+        background-color: #EEEEEE;
+        color: #999999;
+        text-align: right;
+    }
 
-.onoffswitch-inner:before {
-    content: " Enabled";
-    padding-left: 10px;
-    background-color: #2FCCFF;
-    color: #FFFFFF;
-}
+    .onoffswitch-switch {
+        display: block;
+        width: 18px;
+        margin: 7px;
+        background: #FFFFFF;
+        border: 2px solid #999999;
+        border-radius: 20px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 70px;
+        -moz-transition: all 0.3s ease-in 0s;
+        -webkit-transition: all 0.3s ease-in 0s;
+        -o-transition: all 0.3s ease-in 0s;
+        transition: all 0.3s ease-in 0s;
+    }
 
-.onoffswitch-inner:after {
-    content: "Disabled";
-    padding-right: 10px;
-    background-color: #EEEEEE;
-    color: #999999;
-    text-align: right;
-}
+    .onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-inner {
+        margin-left: 0;
+    }
 
-.onoffswitch-switch {
-    display: block;
-    width: 18px;
-    margin: 7px;
-    background: #FFFFFF;
-    border: 2px solid #999999;
-    border-radius: 20px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 70px;
-    -moz-transition: all 0.3s ease-in 0s;
-    -webkit-transition: all 0.3s ease-in 0s;
-    -o-transition: all 0.3s ease-in 0s;
-    transition: all 0.3s ease-in 0s;
-}
+    .onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-switch {
+        right: 0px;
+    }
 
-.onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-inner {
-    margin-left: 0;
-}
+    .navbar {
+        background-color: chartreuse;
+    }
+    </style>
+</head>
 
-.onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-switch {
-    right: 0px;
-}
-
-.navbar {
-    background-color: chartreuse;
-}
-</style>    
-
-    
 <body>
     <div class="wrapper">
         <div class="sidebar" data-color="green" data-image="../assets/img/sidebar-1.jpg">
@@ -155,44 +150,44 @@ thead th {
             <div class="sidebar-wrapper">
                 <ul class="nav">
                     <li>
-                        <a href="dashboard.php">
+                        <a href="dashboard.html">
                             <i class="material-icons">dashboard</i>
                             
                             <p>Dashboard</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./itemlist.php">
+                        <a href="./itemlist.html">
                             <i class="material-icons">list</i>
                             <p>Item</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./product_inventory.php">
+                        <a href="./product_inventory.html">
                             <i class="material-icons">assessment</i>
                             <p>Inventory</p>
                         </a>
                     </li>
-                    <li>
-                        <a href="./accounts.php">
+                    <li class="active">
+                        <a href="./accounts.html">
                             <i class="material-icons">account_circle</i>
                             <p>User Accounts</p>
                         </a>
                     </li>
-                    <li class="active">
-                        <a href="./clients.php">
+                    <li>
+                        <a href="./clients.html">
                             <i class="material-icons">person</i>
                             <p>Clients</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./supplier.php">
+                        <a href="./supplier.html">
                             <i class="material-icons">person</i>
                             <p>Suppliers</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./sales_report.php">
+                        <a href="./sales_report.html">
                             <i class="material-icons">library_books</i>
                             <p>Reports</p>
                         </a>
@@ -224,13 +219,13 @@ thead th {
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a href="./user.php">User Profile</a>
+                                        <a href="./user.html">User Profile</a>
                                     </li>
                                     <li>
-                                        <a href="./changepassword.php">Change Password</a>
+                                        <a href="./changepassword.html">Change Password</a>
                                     </li>
                                     <li>
-                                        <a href="./activitylogs.php">Activity Logs</a>
+                                        <a href="./activitylogs.html">Activity Logs</a>
                                     </li>
                                     <li>
                                         <a href="#">Logout</a>
@@ -242,77 +237,72 @@ thead th {
                 </div>
             </nav>
         
-        <div class="modal fade" id="contact" tabindex="1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="panel panel-primary">
-                        <div class="panel-heading">
-                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                            <h4 class="panel-title" id="contactLabel"><span class="glyphicon glyphicon-info-sign" ></span> Create New Account</h4>
-                        </div>
-                        <form action="#" method="post" accept-charset="utf-8">
-                            <div class="modal-body" style="padding-left: 100px;">
-                                <h6> Personal Information </h6>
-                                <div class="row">
-                                    <div class="col-lg-10 col-md-6 col-sm-6" style="padding-bottom: 15px;">
-                                        <input class="form-control" name="client" placeholder="Client" type="text" required autofocus />
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-10 col-md-6 col-sm-6" style="padding-bottom: 15px;">
-                                        <input class="form-control" name="contactpersonnel" placeholder="Contact Personnel" type="text" required />
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div>
-                                        <div class="col-lg-10 col-md-6 col-sm-6" style="padding-bottom: 15px;">
-                                            <input class="form-control" name="position " placeholder="Position" type="text" required />
+             <div class="modal fade" id="edit" tabindex="1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="panel panel-primary">
+                                            <div class="panel-heading">
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                                <h4 class="panel-title" id="contactLabel"><span class="glyphicon glyphicon-info-sign" ></span> Edit Item Information</h4>
+                                            </div>
+                                            <form action="#" method="post" accept-charset="utf-8">
+                                                  <div class="modal-body" style="padding-left: 100px;">
+                                                     <div class="form-group row">
+                                                        <div for="example-number-input" class="col-2 col-form-label">
+                                                            <label for="type">Last Name</label>
+                                                            <input class="form-control" type="textarea" value="Caguioa" id="example-number-input">
+                                                        </div>
+                                                    </div>
+                                                        
+                                                         <p><div class="form-group row">
+                                                        <div for="example-number-input" class="col-2 col-form-label">
+                                                            <label for="type">First Name</label>
+                                                            <input class="form-control" type="textarea" value="Christine" id="example-number-input">
+                                                        </div>
+                                                    </div>
+                                                        <div class="form-group row">
+                                                        <div for="example-number-input" class="col-2 col-form-label">
+                                                            <label for="type">Position</label>
+                                                            <input class="form-control" type="textarea" value="Accountant" id="example-number-input">
+                                                        </div>
+                                                    </div>
+                                                        <div class="form-group row">
+                                                        <div for="example-number-input" class="col-2 col-form-label">
+                                                            <label for="type">Address</label>
+                                                            <input class="form-control" type="textarea" value="Green Valley" id="example-number-input">
+                                                        </div>
+                                                    </div>
+                                                        <div class="form-group row">
+                                                        <div for="example-number-input" class="col-2 col-form-label">
+                                                            <label for="type">Email</label>
+                                                            <input class="form-control" type="textarea" value="2152498@slu.edu.ph" id="example-number-input">
+                                                        </div>
+                                                    </div>
+                                                      
+                                                        <div class="form-group row">
+                                                        <div for="example-number-input" class="col-2 col-form-label">
+                                                            <label for="type">Cellphone Number</label>
+                                                            <input class="form-control" type="number" value="091741311225" id="example-number-input">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="panel-footer" style="margin-bottom:-14px;">
+                                                            <input type="submit" class="btn btn-success" value="Add" style="float: right;" />
+                                                            <!--<span class="glyphicon glyphicon-ok"></span>-->
+                                                            <button style="float: right;" type="button" class="btn btn-default btn-close" data-dismiss="modal">Close</button>
+                                                        </div>
+                                                    </div>
+                                                      
+                                                    </div>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-lg-10 col-md-6 col-sm-6" style="padding-bottom: 15px;">
-                                        <input class="form-control" name="email" placeholder="Email" type="text" required />
-                                    </div>
-                                </div>
-                                 <div class="row">
-                                    <div class="col-lg-10 col-md-6 col-sm-6" style="padding-bottom: 15px;">
-                                        <input class="form-control" name="tel number" placeholder="Telephone Number" type="text" required />
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-10 col-md-12 col-sm-12">
-                                        <textarea style="resize:vertical;" class="form-control" placeholder="Address" rows="2" name="address" required></textarea>
-                                    </div>
-                                </div>
-                                <h6> Product </h6>
-                                <div class="row">
-                                    <div class="col-lg-10 col-md-6 col-sm-6" style="padding-bottom: 15px;">
-                                        <select class="form-control" name="position" placeholder="Client Type" type="text" required>
-                                            <option>Wholesale</option>
-                                            <option>Retail</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel-footer" style="margin-bottom:-14px;">
-                                <input type="submit" class="btn btn-success" value="Add" />
-                                <!--<span class="glyphicon glyphicon-ok"></span>-->
-                                <input type="reset" class="btn btn-danger" value="Clear" />
-                                <!--<span class="glyphicon glyphicon-remove"></span>-->
-                                <button style="float: right;" type="button" class="btn btn-default btn-close" data-dismiss="modal">Close</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        
-        -
-        
-        
+            
             <div class="content" style="margin-top: 0px;">
                 <div class="container-fluid">
-                    <div class="card">
-                        <div class="modal fade" id="deactivate" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
+                    <div class="row">
+                        <div class="card">
+                            <div class="modal fade" id="deactivate" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
                                     <div class="modal-dialog">
                                         <div class="panel panel-primary">
                                             <div class="panel-heading" >
@@ -399,127 +389,131 @@ thead th {
                                         </div>
                                     </div>
                                 </div>
-                         <div class="card-header " data-background-color="green">
-                                <h4 class="title">List of Clients
-                                     <a class="btn btn-info btn-lg" data-toggle="modal" data-target="#contact" data-original-title style="float: right; margin-right: 30px; margin-top: -12px; ">
-                                    Create New Account
-                                    </a></h4>
+                            <div class="card-header " data-background-color="green">
+                                <h4 class="title">List of Users </h4>
                             </div>
-                        <div class="card-content table-responsive">
-                            <div class="col-md-12 col-md-offset-0">
-                                <div class="fresh-datatables">
-                                    <!--  Available colors for the full background: full-color-blue, full-color-azure, full-color-purple, full-color-red, full-color-orange, full-color-purple, full-color-gray
-                                    Available colors only for the toolbar: toolbar-color-blue, toolbar-color-azure, toolbar-color-purple, toolbar-color-red, toolbar-color-orange, toolbar-color-purple, toolbar-color-gray -->
-                                    <table id="fresh-datatables" class="table table-striped table-no-bordered table-hover" cellspacing="0" width="100%" style="width:100%">
-                                        <thead>
-                                            <tr>
-                                                <th><b>Client No.</b></th>
-                                                <th><b>Client</b></th>
-                                                <th><b>Client Type</b></th>
-                                                <th><b>Contact Personnel</b></th>
-                                                <th><b>Position</b></th>
-                                                <th><b>Address</b></th>
-                                                <th><b>Email</b></th>
-                                                <th><b>Telephone No.</b></th>
-                                                <th><b class="pull-left">Actions</b></th>
-                                                <th><b class="pull-left">Contract</b></th>
-                                                <th class="disabled-sorting"><b>Edit</b></th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            
-                                            <tr>
-                                                <td>C1</td>
-                                                <td>The Legend Villas</td>
-                                                <td>Wholesale</td>
-                                                <td>Jesselyn Amagan</td>
-                                                <td>General Manager</td>
-                                                <td>Mandaluyong City</td>
-                                                <td>chef22@manor.com</td>
-                                                <td>442-4896</td>
-                                                <td>
-                                                    <span data-toggle="modal" data-target="#deactivate">
+                            <div class="card-content table-responsive">
+                                <a href="newaccounts.html" class="btn btn-success" data-original-title style="float: right"> Create New Account</a>
+                                <div class="col-md-12 col-md-offset-0">
+                                    <div class="fresh-datatables">
+                                        <table id="fresh-datatables" class="table table-striped table-no-bordered table-hover" cellspacing="0" width="100%" style="width:100%">
+                                            <thead>
+                                                <tr>
+                                                    <th><b>User No.</b></th>
+                                                    <th><b>Last Name</b></th>
+                                                    <th><b>First Name</b></th>
+                                                    <th><b>Position</b></th>
+                                                    <th><b>Address</b></th>
+                                                    <th><b>Email</b></th>
+                                                    <th><b>Cellphone No.</b></th>
+                                                    <th><b class="pull-left">Actions</b></th>
+                                                    <th class="disabled-sorting"><b>Edit</b></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>U1</td>
+                                                    <td>Fernandez</td>
+                                                    <td>Mariella</td>
+                                                    <td>Manager</td>
+                                                    <td>Liwanag Loakan</td>
+                                                    <td>2153118@slu.edu.ph</td>
+                                                    <td>09174131225</td>
+                                                    <td>
+                                                        <span data-toggle="modal" data-target="#deactivate">
+                                                    <a href="#" class="deactivate" data-toggle="tooltip" data-placement="bottom" title="Deactivate"><i class="fa fa-close"></i></a> </span>
+                                                    <span data-toggle="modal" data-target="#archive">
+                                                    <a href="#" class="archive" data-toggle="tooltip" data-placement="bottom" title="Archive"><i class="fa fa-archive"></i></a></span>
+                                                    <span data-toggle="modal" data-target="#blacklist">
+                                                    <a href="#" class="blacklist" data-toggle="tooltip" data-placement="bottom" title="Blacklist"><i class="fa fa-ban"></i></a></span>
+                                                    </td>
+                                                    <td>
+                                                                <a class="btn btn-warning btn-sm" style="margin-top: 0px" data-toggle="modal" data-target="#edit">Edit</a>
+                                                </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>U2</td>
+                                                    <td>Maslian</td>
+                                                    <td>Averey</td>
+                                                    <td>Sales Clerk</td>
+                                                    <td>Quirino Hill</td>
+                                                    <td>2152578@slu.edu.ph</td>
+                                                    <td>09174131225</td>
+                                                    <td>
+                                                        <span data-toggle="modal" data-target="#deactivate">
+                                                    <a href="#" class="deactivate" data-toggle="tooltip" data-placement="bottom" title="Deactivate"><i class="fa fa-close"></i></a> </span>
+                                                    <span data-toggle="modal" data-target="#archive">
+                                                    <a href="#" class="archive" data-toggle="tooltip" data-placement="bottom" title="Archive"><i class="fa fa-archive"></i></a> </span>
+                                                    <span data-toggle="modal" data-target="#blacklist">
+                                                    <a href="#" class="blacklist" data-toggle="tooltip" data-placement="bottom" title="Blacklist"><i class="fa fa-ban"></i></a></span>
+                                                    </td>
+                                                   <td>
+                                                                <a class="btn btn-warning btn-sm" style="margin-top: 0px" data-toggle="modal" data-target="#edit">Edit</a>
+                                                </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>U3</td>
+                                                    <td>Dullao</td>
+                                                    <td>Jeanne</td>
+                                                    <td>Inventory Custodian</td>
+                                                    <td>Ambiong</td>
+                                                    <td>2155296@slu.edu.ph</td>
+                                                    <td>09174131225</td>
+                                                    <td>
+                                                        <span data-toggle="modal" data-target="#deactivate">
                                                     <a href="#" class="deactivate" data-toggle="tooltip" data-placement="bottom" title="Deactivate"><i class="fa fa-close"></i></a> </span>
                                                     <span data-toggle="modal" data-target="#archive">
                                                     <a href="#" class="archive" data-toggle="tooltip" data-placement="bottom" title="Archive"><i class="fa fa-archive"></i></a> </span>
                                                     <span data-toggle="modal" data-target="#blacklist">
                                                     <a href="#" class="blacklist" data-toggle="tooltip" data-placement="bottom" title="Blacklist"><i class="fa fa-ban"></i></a> </span>
-                                                </td>
-                                                <td><a href="./addcontract.php" class="btn btn-sm btn-round" size="25">Contract</a></td>
-                                                 <td>
+                                                    </td>
+                                                    <td>
                                                                 <a class="btn btn-warning btn-sm" style="margin-top: 0px" data-toggle="modal" data-target="#edit">Edit</a>
                                                 </td>
-                                            </tr>
-                                            <tr>
-                                                <td>C2</td>
-                                                <td>Point and Grill</td>
-                                                <td>Wholesale</td>
-                                                <td>Annysa Calpito</td>
-                                                <td>Manager</td>
-                                                <td>Session Road</td>
-                                                <td>maecalpito@gmail.com</td>
-                                                <td>442-4785</td>
-                                                <td>
-                                                    <span data-toggle="modal" data-target="#deactivate">
+                                                </tr>
+                                                <tr>
+                                                    <td>U4</td>
+                                                    <td>Caguioa</td>
+                                                    <td>Christine</td>
+                                                    <td>Accountant</td>
+                                                    <td>Green Valley</td>
+                                                    <td>2152498@slu.edu.ph</td>
+                                                    <td>09174131225</td>
+                                                    <td>
+                                                        <span data-toggle="modal" data-target="#deactivate">
                                                     <a href="#" class="deactivate" data-toggle="tooltip" data-placement="bottom" title="Deactivate"><i class="fa fa-close"></i></a> </span>
                                                     <span data-toggle="modal" data-target="#archive">
                                                     <a href="#" class="archive" data-toggle="tooltip" data-placement="bottom" title="Archive"><i class="fa fa-archive"></i></a> </span>
                                                     <span data-toggle="modal" data-target="#blacklist">
                                                     <a href="#" class="blacklist" data-toggle="tooltip" data-placement="bottom" title="Blacklist"><i class="fa fa-ban"></i></a> </span>
-                                                </td>
-                                                <td><a href="./addcontract.php" class="btn btn-sm btn-round" size="25">Contract</a></td>
-                                                 <td>
+                                                    </td>
+                                                    <td>
                                                                 <a class="btn btn-warning btn-sm" style="margin-top: 0px" data-toggle="modal" data-target="#edit">Edit</a>
                                                 </td>
-                                            </tr>
-                                            <tr>
-                                                <td>C3</td>
-                                                <td>De Vera Inn</td>
-                                                <td>Retail</td>
-                                                <td>Khalil Ramos</td>
-                                                <td>Manager</td>
-                                                <td>Aurora Hill</td>
-                                                <td>khalil22@gmail.com</td>
-                                                <td>442-4875</td>
-                                                <td>
-                                                    <span data-toggle="modal" data-target="#deactivate">
+                                                </tr>
+                                                <tr>
+                                                    <td>U5</td>
+                                                    <td>Calpito</td>
+                                                    <td>Keiffer</td>
+                                                    <td>Delivery Man</td>
+                                                    <td>Liwanag Loakan</td>
+                                                    <td>2152579@slu.edu.ph</td>
+                                                    <td>09174131225</td> 
+                                                    <td>
+                                                        <span data-toggle="modal" data-target="#deactivate">
                                                     <a href="#" class="deactivate" data-toggle="tooltip" data-placement="bottom" title="Deactivate"><i class="fa fa-close"></i></a> </span>
                                                     <span data-toggle="modal" data-target="#archive">
                                                     <a href="#" class="archive" data-toggle="tooltip" data-placement="bottom" title="Archive"><i class="fa fa-archive"></i></a> </span>
                                                     <span data-toggle="modal" data-target="#blacklist">
-                                                    <a href="#" class="blacklist" data-toggle="tooltip" data-placement="bottom" title="Blacklist"><i class="fa fa-ban"></i></a> </span>
-                                                </td>
-                                                <td><a href="./addcontract.php" class="btn btn-sm btn-round" size="25">Contract</a></td>
-                                                 <td>
+                                                    <a href="#" class="blacklist" data-toggle="tooltip" data-placement="bottom" title="Blacklist"><i class="fa fa-ban"></i></a>  </span>
+                                                    </td> 
+                                                    <td>
                                                                 <a class="btn btn-warning btn-sm" style="margin-top: 0px" data-toggle="modal" data-target="#edit">Edit</a>
                                                 </td>
-                                            </tr>
-                                            <tr>
-                                                <td>C4</td>
-                                                <td>Eurotel</td>
-                                                <td>Wholesale</td>
-                                                <td>James Reid</td>
-                                                <td>Manager</td>
-                                                <td>Legarda</td>
-                                                <td>jamesreid@gmail.com</td>
-                                                <td>442-5896</td>
-                                                <td>
-                                                    <span data-toggle="modal" data-target="#deactivate">
-                                                    <a href="#" class="deactivate" data-toggle="tooltip" data-placement="bottom" title="Deactivate"><i class="fa fa-close"></i></a> </span>
-                                                    <span data-toggle="modal" data-target="#archive">
-                                                    <a href="#" class="archive" data-toggle="tooltip" data-placement="bottom" title="Archive"><i class="fa fa-archive"></i></a> </span>
-                                                    <span data-toggle="modal" data-target="#blacklist">
-                                                    <a href="#" class="blacklist" data-toggle="tooltip" data-placement="bottom" title="Blacklist"><i class="fa fa-ban"></i></a> </span>
-                                                </td>
-                                                <td><a href="./addcontract.php" class="btn btn-sm btn-round" size="25">Contract</a></td>
-                                                 <td>
-                                                                <a class="btn btn-warning btn-sm" style="margin-top: 0px" data-toggle="modal" data-target="#edit">Edit</a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -584,11 +578,15 @@ thead th {
 <script src="../assets/js/demo.js"></script>
 <script src="../assets/js/jquery.js"></script>
 <script src="../assets/js/jquery.datatables.js"></script>
-<script>
-
+<script type="text/javascript">
 $(document).ready(function() {
-    $('[data-toggle="tooltip"]').tooltip();   
-
+    // Javascript method's body can be found in assets/js/demos.js
+    demo.initDashboardPageCharts();
+});
+</script>
+<script>
+$(document).ready(function() {
+    $('[data-toggle="tooltip"]').tooltip(); 
     $('#fresh-datatables').DataTable({
         "pagingType": "full_numbers",
         "lengthMenu": [
