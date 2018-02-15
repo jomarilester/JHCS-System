@@ -154,44 +154,44 @@ thead th {
             <div class="sidebar-wrapper">
                 <ul class="nav">
                     <li>
-                        <a href="dashboard.php">
+                        <a href="dashboard.html">
                             <i class="material-icons">dashboard</i>
                             
                             <p>Dashboard</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./itemlist.php">
+                        <a href="./itemlist.html">
                             <i class="material-icons">list</i>
                             <p>Item</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./product_inventory.php">
+                        <a href="./product_inventory.html">
                             <i class="material-icons">assessment</i>
                             <p>Inventory</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./accounts.php">
+                        <a href="./accounts.html">
                             <i class="material-icons">account_circle</i>
                             <p>User Accounts</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./clients.php">
+                        <a href="./clients.html">
                             <i class="material-icons">person</i>
                             <p>Clients</p>
                         </a>
                     </li>
                     <li class="active">
-                        <a href="./supplier.php">
+                        <a href="./supplier.html">
                             <i class="material-icons">person</i>
                             <p>Suppliers</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./sales_report.php">
+                        <a href="./sales_report.html">
                             <i class="material-icons">library_books</i>
                             <p>Reports</p>
                         </a>
@@ -223,13 +223,13 @@ thead th {
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a href="./user.php">User Profile</a>
+                                        <a href="./user.html">User Profile</a>
                                     </li>
                                     <li>
-                                        <a href="./changepassword.php">Change Password</a>
+                                        <a href="./changepassword.html">Change Password</a>
                                     </li>
                                     <li>
-                                        <a href="./activitylogs.php">Activity Logs</a>
+                                        <a href="./activitylogs.html">Activity Logs</a>
                                     </li>
                                     <li>
                                         <a href="#">Logout</a>
@@ -467,11 +467,10 @@ thead th {
                                 </div>
                          <div class="card-header " data-background-color="green">
                                 <h4 class="title">List of Suppliers
-                                     <a class="btn btn-info btn-lg" data-toggle="modal" data-target="#contact" data-original-title style="float: right; margin-right: 30px; margin-top: -12px; ">
-                                    Create New Account
-                                    </a></h4>
+                                     </h4>
                             </div>
                         <div class="card-content table-responsive">
+                              <a href="newsuppliers.html" class="btn btn-success" data-original-title style="float: right"> Create New Account</a>
                             <div class="col-md-12 col-md-offset-0">
                                 <div class="fresh-datatables">
                                     <!--  Available colors for the full background: full-color-blue, full-color-azure, full-color-purple, full-color-red, full-color-orange, full-color-purple, full-color-gray

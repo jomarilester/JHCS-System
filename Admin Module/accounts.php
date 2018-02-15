@@ -7,7 +7,7 @@
     <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
     <link rel="shortcut icon" type="image/png" href="../assets/img/favicon.ico">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>User Accounts</title>
+    <title>User Account</title>
     <!--   Style   -->
     <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/fresh-datatables.css">
@@ -150,44 +150,44 @@
             <div class="sidebar-wrapper">
                 <ul class="nav">
                     <li>
-                        <a href="dashboard.php">
+                        <a href="dashboard.html">
                             <i class="material-icons">dashboard</i>
                             
                             <p>Dashboard</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./itemlist.php">
+                        <a href="./itemlist.html">
                             <i class="material-icons">list</i>
                             <p>Item</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./product_inventory.php">
+                        <a href="./product_inventory.html">
                             <i class="material-icons">assessment</i>
                             <p>Inventory</p>
                         </a>
                     </li>
                     <li class="active">
-                        <a href="./accounts.php">
+                        <a href="./accounts.html">
                             <i class="material-icons">account_circle</i>
                             <p>User Accounts</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./clients.php">
+                        <a href="./clients.html">
                             <i class="material-icons">person</i>
                             <p>Clients</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./supplier.php">
+                        <a href="./supplier.html">
                             <i class="material-icons">person</i>
                             <p>Suppliers</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./sales_report.php">
+                        <a href="./sales_report.html">
                             <i class="material-icons">library_books</i>
                             <p>Reports</p>
                         </a>
@@ -219,13 +219,13 @@
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a href="./user.php">User Profile</a>
+                                        <a href="./user.html">User Profile</a>
                                     </li>
                                     <li>
-                                        <a href="./changepassword.php">Change Password</a>
+                                        <a href="./changepassword.html">Change Password</a>
                                     </li>
                                     <li>
-                                        <a href="./activitylogs.php">Activity Logs</a>
+                                        <a href="./activitylogs.html">Activity Logs</a>
                                     </li>
                                     <li>
                                         <a href="#">Logout</a>
@@ -236,82 +236,6 @@
                     </div>
                 </div>
             </nav>
-            <div class="modal fade" id="contact" tabindex="1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="panel panel-primary">
-                        <div class="panel-heading">
-                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                            <h4 class="panel-title" id="contactLabel"><span class="glyphicon glyphicon-info-sign" ></span> Create New Account</h4>
-                        </div>
-                        <form action="#" method="post" accept-charset="utf-8">
-                            <div class="modal-body" style="padding-left: 100px;">
-                                <h6> Personal Information </h6>
-                                <div class="row">
-                                    <div class="col-lg-10 col-md-6 col-sm-6" style="padding-bottom: 15px;">
-                                        <input class="form-control" name="firstname" placeholder="First Name" type="text" required autofocus />
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-10 col-md-6 col-sm-6" style="padding-bottom: 15px;">
-                                        <input class="form-control" name="lastname" placeholder="Last Name" type="text" required />
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div>
-                                        <div class="col-lg-10 col-md-6 col-sm-6" style="padding-bottom: 15px;">
-                                            <input class="form-control" name="email" placeholder="E-mail" type="text" required />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-10 col-md-6 col-sm-6" style="padding-bottom: 15px;">
-                                        <input class="form-control" name="cp number" placeholder="Cellphone Number" type="text" required />
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-10 col-md-12 col-sm-12">
-                                        <textarea style="resize:vertical;" class="form-control" placeholder="Address" rows="2" name="address" required></textarea>
-                                    </div>
-                                </div>
-                                <h6> Position </h6>
-                                <div class="row">
-                                    <div class="col-lg-10 col-md-6 col-sm-6" style="padding-bottom: 15px;">
-                                        <select class="form-control" name="position" placeholder="Position" type="text" required>
-                                            <option>Sales Clerk</option>
-                                            <option>Inventory Custodian</option>
-                                            <option>Manager</option>
-                                            <option>Delivery Man</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <h6> User Credentials </h6>
-                                <div class="row">
-                                    <div class="col-lg-10 col-md-6 col-sm-6" style="padding-bottom: 15px;">
-                                        <input class="form-control" name="username" placeholder="Username" type="text" required />
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-10 col-md-6 col-sm-6" style="padding-bottom: 15px;">
-                                        <input class="form-control" name="password" placeholder="Password" type="password" required />
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-10 col-md-6 col-sm-6" style="padding-bottom: 15px;">
-                                        <input class="form-control" name="cpassword" placeholder="Confirm Password" type="password" required />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel-footer" style="margin-bottom:-14px;">
-                                <input type="submit" class="btn btn-success" value="Add" />
-                                <!--<span class="glyphicon glyphicon-ok"></span>-->
-                                <input type="reset" class="btn btn-danger" value="Clear" />
-                                <!--<span class="glyphicon glyphicon-remove"></span>-->
-                                <button style="float: right;" type="button" class="btn btn-default btn-close" data-dismiss="modal">Close</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
         
              <div class="modal fade" id="edit" tabindex="1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
                                     <div class="modal-dialog">
@@ -466,12 +390,10 @@
                                     </div>
                                 </div>
                             <div class="card-header " data-background-color="green">
-                                <h4 class="title">List of Users
-                                     <a class="btn btn-info btn-lg" data-toggle="modal" data-target="#contact" data-original-title style="float: right; margin-right: 30px; margin-top: -12px; ">
-                                    Create New Account
-                                    </a></h4>
+                                <h4 class="title">List of Users </h4>
                             </div>
                             <div class="card-content table-responsive">
+                                <a href="newaccounts.html" class="btn btn-success" data-original-title style="float: right"> Create New Account</a>
                                 <div class="col-md-12 col-md-offset-0">
                                     <div class="fresh-datatables">
                                         <table id="fresh-datatables" class="table table-striped table-no-bordered table-hover" cellspacing="0" width="100%" style="width:100%">

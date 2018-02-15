@@ -155,44 +155,44 @@ thead th {
             <div class="sidebar-wrapper">
                 <ul class="nav">
                     <li>
-                        <a href="dashboard.php">
+                        <a href="dashboard.html">
                             <i class="material-icons">dashboard</i>
                             
                             <p>Dashboard</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./itemlist.php">
+                        <a href="./itemlist.html">
                             <i class="material-icons">list</i>
                             <p>Item</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./product_inventory.php">
+                        <a href="./product_inventory.html">
                             <i class="material-icons">assessment</i>
                             <p>Inventory</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./accounts.php">
+                        <a href="./accounts.html">
                             <i class="material-icons">account_circle</i>
                             <p>User Accounts</p>
                         </a>
                     </li>
                     <li class="active">
-                        <a href="./clients.php">
+                        <a href="./clients.html">
                             <i class="material-icons">person</i>
                             <p>Clients</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./supplier.php">
+                        <a href="./supplier.html">
                             <i class="material-icons">person</i>
                             <p>Suppliers</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./sales_report.php">
+                        <a href="./sales_report.html">
                             <i class="material-icons">library_books</i>
                             <p>Reports</p>
                         </a>
@@ -224,13 +224,13 @@ thead th {
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a href="./user.php">User Profile</a>
+                                        <a href="./user.html">User Profile</a>
                                     </li>
                                     <li>
-                                        <a href="./changepassword.php">Change Password</a>
+                                        <a href="./changepassword.html">Change Password</a>
                                     </li>
                                     <li>
-                                        <a href="./activitylogs.php">Activity Logs</a>
+                                        <a href="./activitylogs.html">Activity Logs</a>
                                     </li>
                                     <li>
                                         <a href="#">Logout</a>
@@ -241,73 +241,6 @@ thead th {
                     </div>
                 </div>
             </nav>
-        
-        <div class="modal fade" id="contact" tabindex="1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="panel panel-primary">
-                        <div class="panel-heading">
-                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                            <h4 class="panel-title" id="contactLabel"><span class="glyphicon glyphicon-info-sign" ></span> Create New Account</h4>
-                        </div>
-                        <form action="#" method="post" accept-charset="utf-8">
-                            <div class="modal-body" style="padding-left: 100px;">
-                                <h6> Personal Information </h6>
-                                <div class="row">
-                                    <div class="col-lg-10 col-md-6 col-sm-6" style="padding-bottom: 15px;">
-                                        <input class="form-control" name="client" placeholder="Client" type="text" required autofocus />
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-10 col-md-6 col-sm-6" style="padding-bottom: 15px;">
-                                        <input class="form-control" name="contactpersonnel" placeholder="Contact Personnel" type="text" required />
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div>
-                                        <div class="col-lg-10 col-md-6 col-sm-6" style="padding-bottom: 15px;">
-                                            <input class="form-control" name="position " placeholder="Position" type="text" required />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-10 col-md-6 col-sm-6" style="padding-bottom: 15px;">
-                                        <input class="form-control" name="email" placeholder="Email" type="text" required />
-                                    </div>
-                                </div>
-                                 <div class="row">
-                                    <div class="col-lg-10 col-md-6 col-sm-6" style="padding-bottom: 15px;">
-                                        <input class="form-control" name="tel number" placeholder="Telephone Number" type="text" required />
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-10 col-md-12 col-sm-12">
-                                        <textarea style="resize:vertical;" class="form-control" placeholder="Address" rows="2" name="address" required></textarea>
-                                    </div>
-                                </div>
-                                <h6> Product </h6>
-                                <div class="row">
-                                    <div class="col-lg-10 col-md-6 col-sm-6" style="padding-bottom: 15px;">
-                                        <select class="form-control" name="position" placeholder="Client Type" type="text" required>
-                                            <option>Wholesale</option>
-                                            <option>Retail</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel-footer" style="margin-bottom:-14px;">
-                                <input type="submit" class="btn btn-success" value="Add" />
-                                <!--<span class="glyphicon glyphicon-ok"></span>-->
-                                <input type="reset" class="btn btn-danger" value="Clear" />
-                                <!--<span class="glyphicon glyphicon-remove"></span>-->
-                                <button style="float: right;" type="button" class="btn btn-default btn-close" data-dismiss="modal">Close</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        
-        -
-        
         
             <div class="content" style="margin-top: 0px;">
                 <div class="container-fluid">
@@ -401,11 +334,10 @@ thead th {
                                 </div>
                          <div class="card-header " data-background-color="green">
                                 <h4 class="title">List of Clients
-                                     <a class="btn btn-info btn-lg" data-toggle="modal" data-target="#contact" data-original-title style="float: right; margin-right: 30px; margin-top: -12px; ">
-                                    Create New Account
-                                    </a></h4>
+                                    </h4>
                             </div>
                         <div class="card-content table-responsive">
+                              <a href="newclients.html" class="btn btn-success" data-original-title style="float: right"> Create New Account</a>
                             <div class="col-md-12 col-md-offset-0">
                                 <div class="fresh-datatables">
                                     <!--  Available colors for the full background: full-color-blue, full-color-azure, full-color-purple, full-color-red, full-color-orange, full-color-purple, full-color-gray
@@ -445,7 +377,7 @@ thead th {
                                                     <span data-toggle="modal" data-target="#blacklist">
                                                     <a href="#" class="blacklist" data-toggle="tooltip" data-placement="bottom" title="Blacklist"><i class="fa fa-ban"></i></a> </span>
                                                 </td>
-                                                <td><a href="./addcontract.php" class="btn btn-sm btn-round" size="25">Contract</a></td>
+                                                <td><a href="./addcontract.html" class="btn btn-sm btn-round" size="25">Contract</a></td>
                                                  <td>
                                                                 <a class="btn btn-warning btn-sm" style="margin-top: 0px" data-toggle="modal" data-target="#edit">Edit</a>
                                                 </td>
@@ -467,7 +399,7 @@ thead th {
                                                     <span data-toggle="modal" data-target="#blacklist">
                                                     <a href="#" class="blacklist" data-toggle="tooltip" data-placement="bottom" title="Blacklist"><i class="fa fa-ban"></i></a> </span>
                                                 </td>
-                                                <td><a href="./addcontract.php" class="btn btn-sm btn-round" size="25">Contract</a></td>
+                                                <td><a href="./addcontract.html" class="btn btn-sm btn-round" size="25">Contract</a></td>
                                                  <td>
                                                                 <a class="btn btn-warning btn-sm" style="margin-top: 0px" data-toggle="modal" data-target="#edit">Edit</a>
                                                 </td>
@@ -489,7 +421,7 @@ thead th {
                                                     <span data-toggle="modal" data-target="#blacklist">
                                                     <a href="#" class="blacklist" data-toggle="tooltip" data-placement="bottom" title="Blacklist"><i class="fa fa-ban"></i></a> </span>
                                                 </td>
-                                                <td><a href="./addcontract.php" class="btn btn-sm btn-round" size="25">Contract</a></td>
+                                                <td><a href="./addcontract.html" class="btn btn-sm btn-round" size="25">Contract</a></td>
                                                  <td>
                                                                 <a class="btn btn-warning btn-sm" style="margin-top: 0px" data-toggle="modal" data-target="#edit">Edit</a>
                                                 </td>
@@ -511,7 +443,7 @@ thead th {
                                                     <span data-toggle="modal" data-target="#blacklist">
                                                     <a href="#" class="blacklist" data-toggle="tooltip" data-placement="bottom" title="Blacklist"><i class="fa fa-ban"></i></a> </span>
                                                 </td>
-                                                <td><a href="./addcontract.php" class="btn btn-sm btn-round" size="25">Contract</a></td>
+                                                <td><a href="./addcontract.html" class="btn btn-sm btn-round" size="25">Contract</a></td>
                                                  <td>
                                                                 <a class="btn btn-warning btn-sm" style="margin-top: 0px" data-toggle="modal" data-target="#edit">Edit</a>
                                                 </td>
